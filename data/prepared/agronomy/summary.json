@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "prepared_at_utc": "2026-11-08T10:08:01.715758+00:00",
+  "checked_date": "2026-11-08",
+  "timezone": "Asia/Jakarta",
+  "scope": "Public agronomy reference and two historical coarse-grid GAEZ anchors; no verified farm",
+  "numeric_status": "reference_values_and_gaez_pixels_prepared_and_checked",
+  "records": {
+    "crop_references": 3,
+    "conditional_rules": 9,
+    "farm_input_fields": 91,
+    "empty_strategy_slots": 3,
+    "gaez_point_layer_samples": 12
+  },
+  "public_reference_ready_for_demo": true,
+  "farm_recommendation_ready": false,
+  "economics_available": false,
+  "gaez": {
+    "version": 5,
+    "period": "2001-2020",
+    "period_code": "HP0120",
+    "climate": "AGERA5",
+    "scenario": "HIST",
+    "resolution_degrees": 0.08333333333333333,
+    "crop_codes": [
+      "RCW",
+      "MZE",
+      "SOY"
+    ],
+    "management_codes": [
+      "HRLM",
+      "HILM"
+    ],
+    "values_are_categorical": true,
+    "continuous_score_available": false,
+    "sample_points_are_verified_farms": false,
+    "global_archive_downloaded": false
+  },
+  "validation": {
+    "script": "scripts/data/agronomy/validate_prepared.py",
+    "checks": [
+      "JSON parse",
+      "file sizes and SHA256 manifest",
+      "all 91 farmer values null",
+      "source IDs unique and references resolved",
+      "evidence excerpts present in snapshots",
+      "GAEZ dimensions/legend/pixel bounds",
+      "no inferred continuous suitability score"
+    ]
+  },
+  "gaps": [
+    "Actual farmer boundary, area and records",
+    "Farmer-selected cultivar, sowing/transplant/harvest dates and local phenology calibration",
+    "Irrigation capacity/allocations, drainage and soil profile/laboratory results",
+    "Local pest host ranges, residue fate and nitrogen balance evidence",
+    "Farm-gate prices, marketable yields, costs and farmer priorities",
+    "Locally validated crop-sequence model and recommendation review"
+  ],
+  "access_limits": [
+    "FAO crop-information maize/soybean URLs returned 404",
+    "Direct GAEZ catalogue API returned 502; public bucket dimensions and legend succeeded",
+    "Linked GAEZ XLSX lookups unavailable by attempted routes; equivalent public dimension JSON verified",
+    "SIAP TANAM current location-specific output and public machine API not tested"
+  ],
+  "authoritative_files": [
+    "crop-reference.json",
+    "agronomy-rules.json",
+    "farm-input-template.json",
+    "farm-input-data-dictionary.json",
+    "strategy-comparison-template.json",
+    "gaez-baseline-point.json",
+    "source-evidence.json"
+  ]
+}

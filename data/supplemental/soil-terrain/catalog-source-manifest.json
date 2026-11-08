@@ -1,0 +1,126 @@
+{
+  "prepared_at_utc": "2026-11-08T11:19:53.860830+00:00",
+  "records": [
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/",
+      "path": "raw/soilgrids-data-index.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 6709,
+      "sha256": "33134ffe3d89f7f78911abb88e504f4ec0551cc2df5b64375363a1a1eb2f69b7",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/",
+      "path": "raw/soilgrids-root-index.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 3733,
+      "sha256": "908f9da6a0b0d3157891d38102ed5155089d863ac94c1d7179b029722973f39d",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/",
+      "path": "raw/soilgrids-latest-index.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 4010,
+      "sha256": "1c4d8aecc02598f29beb6e7c89ce864a900218360c48c055ae56a2ea03bbbf9b",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/phh2o/phh2o_0-5cm_mean/tileSG-021-071/",
+      "path": "raw/phh2o-local-tile-index.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 4252,
+      "sha256": "111b121feb83137474573d8c4c841c5b46c12c95ff33a8ba9b9d457ad05ca12f",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fwv0033.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=wv0033_0-5cm_mean",
+      "path": "raw/retention-map-describe.xml",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 2539,
+      "sha256": "5d7aba89d60ca869ce403a2c0b964ccfe0f273b7446cf7b0d91893ee12a931e3",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs_01.html",
+      "path": "raw/soilgrids-properties.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 47346,
+      "sha256": "1b0a5c1e951092827eed732dff02deed6ed9aad6f2ff0b54543444dc46259772",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://docs.isric.org/globaldata/soilgrids/wcs.html",
+      "path": "raw/wcs-docs.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 33434,
+      "sha256": "d2a64fdd74c466cf58a44cc70bbeb2baf943f28c708fd1be2232e582feecdeda",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://maps.isric.org/generated/soilgrids/wv0033.html",
+      "path": "raw/retention-wv0033-page.html",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 32899,
+      "sha256": "596e8409bcb9d04519c70d725862e84d00e989f71bbc7074277ab420d9d97656",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://data.isric.org/geonetwork/srv/api/records/14e7c761-6f87-4f4c-9035-adb282439a44/formatters/xml",
+      "path": "raw/retention-wv0033-iso.xml",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": "cached",
+      "bytes": 49194,
+      "sha256": "4e8989c72249f36395ffbe2a651aff1d6b7ac0393231d907b08404b18fdeab32",
+      "range_requested": null,
+      "content_type": null,
+      "content_range": null
+    },
+    {
+      "url": "https://data.isric.org/geonetwork/srv/api/records/c6cb5073-78dd-4d8d-be81-9d546a1c004f/formatters/xml",
+      "path": "raw/retention-wv0010-iso.xml",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": 200,
+      "bytes": 47971,
+      "sha256": "2d6704f0fcf636ed8a1d496de328fe008370ac370120ee4bb315a904e9dc4921",
+      "range_requested": null,
+      "content_type": "application/xml",
+      "content_range": null
+    },
+    {
+      "url": "https://data.isric.org/geonetwork/srv/api/records/f5a1188a-09f8-4ef6-b841-93f08e3903f4/formatters/xml",
+      "path": "raw/retention-wv1500-iso.xml",
+      "accessed_at_utc": "2026-11-08T11:19:53.860830+00:00",
+      "http_status": 200,
+      "bytes": 48130,
+      "sha256": "b30b92a03dea4c8da71fb60d0a4ee910862f7e0092f6404cb0849b96bd5f636f",
+      "range_requested": null,
+      "content_type": "application/xml",
+      "content_range": null
+    }
+  ]
+}

@@ -1,0 +1,6843 @@
+{
+  "schema_version": "1.1-supplemental",
+  "status": "additive_contract_not_backend_implementation",
+  "prepared_base_path": "data/prepared/agronomy/farm-input-data-dictionary.json",
+  "method_spec": "specs/rotation-method-v1.json",
+  "original_fields": 91,
+  "supplemental_fields": 28,
+  "null_policy": {
+    "null": "unknown/not supplied",
+    "zero": "known numerical zero subject to semantic constraints",
+    "false": "explicit false, not unknown",
+    "empty_array": "explicitly confirmed none, not unknown",
+    "not_applicable": "rule applicability/status, never fabricated field value"
+  },
+  "precedence": {
+    "prepared_data": "Immutable; supplements do not rewrite prepared values",
+    "contract": "Use this typed overlay together with base dictionary during future implementation",
+    "legacy_weights": "Unused in MVP; no sum-to-one validation, normalization, ranking or composite score",
+    "horizon_aliases": "Reject differences between legacy priorities horizon/excluded fields and canonical planning fields; no silent precedence"
+  },
+  "cross_field_validation": [
+    "Coordinates longitude [-180,180], latitude [-90,90]; negative latitude valid. Spatial support checked separately per layer.",
+    "Validate GeoJSON ring closure/self-intersections/finite coordinates and geodesic area outside structural JSON Schema.",
+    "Sowing <= transplanting <= harvest where events apply; dates are ISO8601 date-only. Timestamp fields require an offset.",
+    "Horizon start < end_exclusive. Keep biological crop dates beyond horizon; clip exposure only.",
+    "Duration minimum <= maximum; explicit source, crop/cultivar mapping, origin and elapsed day-zero convention; do not silently convert fractional source days.",
+    "Locked prefix <=actual sequence length; <=3 automatic slots; continuation must be explicitly confirmed; no inferred continuation.",
+    "Null preparation gap never means zero; release=harvest+1day; next field start>=release+declared gap.",
+    "Separate nursery resource must be explicit for any nursery/main-field overlap; total sowing-based duration already includes nursery.",
+    "Soil depth bottom>top; field capacity>=wilting point; analyte method/depth/date required; pH not averaged across depths.",
+    "Array histories/prices/costs/fertilizers/pests use named record shapes and per-record provenance; empty array needs explicit confirmation.",
+    "Economics remains deferred even when records exist. Match crop/units/moisture/season/location before any future comparison.",
+    "Legacy priority weights are retained unused; no weighting, ranking or fabricated priority.",
+    "All actual input values stay null in this supplement; source context and scenario assumptions require their own explicit data class."
+  ],
+  "fields": [
+    {
+      "path": "farm.farm_id",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Opaque farm identifier; no personal name required",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "optional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.field_id",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Opaque field identifier; does not assert a mapped boundary",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "optional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.geometry_geojson",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "const": "Polygon"
+                  },
+                  "coordinates": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "prefixItems": [
+                          {
+                            "type": "number",
+                            "minimum": -180,
+                            "maximum": 180
+                          },
+                          {
+                            "type": "number",
+                            "minimum": -90,
+                            "maximum": 90
+                          }
+                        ],
+                        "items": {
+                          "type": "number"
+                        },
+                        "minItems": 2,
+                        "maxItems": 3
+                      },
+                      "minItems": 4
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "type",
+                  "coordinates"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "const": "MultiPolygon"
+                  },
+                  "coordinates": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "number",
+                              "minimum": -180,
+                              "maximum": 180
+                            },
+                            {
+                              "type": "number",
+                              "minimum": -90,
+                              "maximum": 90
+                            }
+                          ],
+                          "items": {
+                            "type": "number"
+                          },
+                          "minItems": 2,
+                          "maxItems": 3
+                        },
+                        "minItems": 4
+                      },
+                      "minItems": 1
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "type",
+                  "coordinates"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "decimal degrees EPSG:4326 [longitude,latitude]",
+      "unit_status": "specified",
+      "meaning": "Farmer field boundary, if actually surveyed",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Requires semantic GeoJSON validation: finite coordinates, closed rings >=4 positions, longitude [-180,180], latitude [-90,90], nonzero area, no self-intersection. This schema checks structure only; do not use a satellite footprint as field boundary.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.representative_longitude",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "degree_east",
+      "unit_status": "specified",
+      "meaning": "Explicit point longitude",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Negative longitudes valid globally; supported AOI is checked separately.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.representative_latitude",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "degree_north",
+      "unit_status": "specified",
+      "meaning": "Explicit point latitude",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Negative latitude is valid and expected in Yogyakarta-Klaten. Never impose nonnegative latitude.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.area_ha_reported",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "ha",
+      "unit_status": "specified",
+      "meaning": "Reported area",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Known zero can be stored but active farm area must be >0; never infer area from a MODIS pixel.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.area_ha_geometry",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "ha",
+      "unit_status": "specified",
+      "meaning": "Geodesic area derived from a valid farmer boundary",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "acquisition_class": "derived_geometry",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Derived value with method and CRS provenance; never trusted as an independent measurement.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.village",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "location.village",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.district",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "location.district",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.province",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "location.province",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.country_code",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "ISO3166-1 alpha2 country code",
+      "rule_ids": [
+        "coverage"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.boundary_recorded_at",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Boundary collection timestamp with offset",
+      "rule_ids": [
+        "coverage"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.location.boundary_source",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "location.boundary source",
+      "rule_ids": [
+        "coverage"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.crop_id",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "padi",
+              "jagung",
+              "kedelai"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Actual crop reported by farmer",
+      "rule_ids": [
+        "calendar",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "gaez_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.cultivar",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "current crop.cultivar",
+      "rule_ids": [
+        "calendar",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Public example varieties do not select this field.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.seed_source",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "current crop.seed source",
+      "rule_ids": [
+        "calendar",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Public example varieties do not select this field.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.production_system",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Original free-text production description, retained without automatic ecological inference",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Use supplemental establishment_method, rice_ecosystem and rice_water_regime separately.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.sowing_date",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "sowing date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Date-only ISO8601; expected harvest is a plan and not an observed harvest.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.transplanting_date",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "transplanting date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Date-only ISO8601; expected harvest is a plan and not an observed harvest.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.expected_harvest_date",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "expected harvest date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Date-only ISO8601; expected harvest is a plan and not an observed harvest.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.observed_growth_stage",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "current crop.observed growth stage",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Record stage vocabulary and observation source; no growth stage inferred from MODIS.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.stage_observed_at",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "current crop.stage observed at",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.rotation_history",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/history_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Observed or explicitly reported past crops",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Null means unknown; [] means explicitly confirmed no records. History alone never defines the future continuation.",
+      "record_shape": "history_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.system",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "none",
+              "surface",
+              "sprinkler",
+              "drip",
+              "mixed",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.system",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "System type does not establish water reliability or continuous flooding.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.source",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.source",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.rainfed",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.rainfed",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "True means farmer reports rainfed; false does not prove assured irrigation; null is unknown.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.availability_window_start",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.availability window start",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.availability_window_end",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.availability window end",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.capacity_m3_day",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "m3/day",
+      "unit_status": "specified",
+      "meaning": "irrigation.capacity m3 day",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Measured/reported context only; does not enable irrigation-demand calculation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.allocation_m3_season",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "m3/season",
+      "unit_status": "specified",
+      "meaning": "irrigation.allocation m3 season",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Measured/reported context only; does not enable irrigation-demand calculation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.application_efficiency_fraction",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "fraction_0_1",
+      "unit_status": "specified",
+      "meaning": "irrigation.application efficiency fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Measured/reported context only; does not enable irrigation-demand calculation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.water_cost_idr_m3",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/m3",
+      "unit_status": "specified",
+      "meaning": "irrigation.water cost idr m3",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Measured/reported context only; does not enable irrigation-demand calculation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.water_table_depth_m",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "m_below_soil_surface",
+      "unit_status": "specified",
+      "meaning": "irrigation.water table depth m",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Depth positive below surface and negative above surface; datum and observation date required.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.drainage_condition",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "good_reported",
+              "poor_reported",
+              "variable_reported",
+              "locally_verified",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.drainage condition",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Good reported drainage is not locally verified crop suitability.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.flooding_history",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/flood_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "irrigation.flooding history",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "flood_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.sampling_date",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "soil lab.sampling date",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.laboratory",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "soil lab.laboratory",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Lab method must identify analyte-specific extraction or measurement method; one generic method label is insufficient for all analytes.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.method",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "soil lab.method",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Lab method must identify analyte-specific extraction or measurement method; one generic method label is insufficient for all analytes.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.depth_top_cm",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "cm_below_soil_surface",
+      "unit_status": "specified",
+      "meaning": "soil lab.depth top cm",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Bottom > top; retain each sampled horizon. Never average pH across depths.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.depth_bottom_cm",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "cm_below_soil_surface",
+      "unit_status": "specified",
+      "meaning": "soil lab.depth bottom cm",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Bottom > top; retain each sampled horizon. Never average pH across depths.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.ph_h2o",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 14
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "pH_H2O_dimensionless",
+      "unit_status": "specified",
+      "meaning": "soil lab.ph h2o",
+      "rule_ids": [
+        "ph_reference"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.organic_carbon_percent",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "percent_dry_soil_mass",
+      "unit_status": "specified",
+      "meaning": "soil lab.organic carbon percent",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.total_n_percent",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "percent_dry_soil_mass",
+      "unit_status": "specified",
+      "meaning": "soil lab.total n percent",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.available_p_mg_kg",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "mg_P/kg_dry_soil",
+      "unit_status": "specified",
+      "meaning": "soil lab.available p mg kg",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.exchangeable_k_cmolc_kg",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "cmol_charge/kg_dry_soil",
+      "unit_status": "specified",
+      "meaning": "soil lab.exchangeable k cmolc kg",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.ec_ds_m",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "dS/m",
+      "unit_status": "specified",
+      "meaning": "soil lab.ec ds m",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.texture_class",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "soil lab.texture class",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.bulk_density_g_cm3",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "g/cm3",
+      "unit_status": "specified",
+      "meaning": "soil lab.bulk density g cm3",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.field_capacity_fraction",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "m3_water/m3_soil",
+      "unit_status": "specified",
+      "meaning": "soil lab.field capacity fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.wilting_point_fraction",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "m3_water/m3_soil",
+      "unit_status": "specified",
+      "meaning": "soil lab.wilting point fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.rootable_depth_cm",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "cm",
+      "unit_status": "specified",
+      "meaning": "soil lab.rootable depth cm",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual laboratory/profile observation only. Public soil prediction belongs in context, never here. Total N is not available N; field capacity >= wilting point; texture class must name its classification system.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.soil_lab.report_file",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "Local document reference; no public upload implied",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "field_measured",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.tillage",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/dated_activity"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.tillage",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "dated_activity",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.residue_fate",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/residue_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.residue fate",
+      "rule_ids": [
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "residue_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.fertilizer_history",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/fertilizer_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.fertilizer history",
+      "rule_ids": [
+        "legume_mechanism",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "fertilizer_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.organic_amendments",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/amendment_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.organic amendments",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "amendment_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.legume_inoculation",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/inoculation_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.legume inoculation",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "inoculation_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.nodulation_observations",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/nodulation_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.nodulation observations",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "nodulation_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.pest_disease_weed_history",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/pest_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.pest disease weed history",
+      "rule_ids": [
+        "pest_break"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "pest_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.pesticide_history",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/pesticide_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "management.pesticide history",
+      "rule_ids": [
+        "pest_break",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "pesticide_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.resources.labor_available_days_season",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "person_days/season",
+      "unit_status": "specified",
+      "meaning": "resources.labor available days season",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "One person-day basis and season dates required; clarify working hours per person-day in provenance.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.resources.machinery_access",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/dated_activity"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "resources.machinery access",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "dated_activity",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.resources.seed_access",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/crop_access"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "resources.seed access",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "crop_access",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.resources.budget_idr_season",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/season",
+      "unit_status": "specified",
+      "meaning": "resources.budget idr season",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.buyer_access",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/dated_activity"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.buyer access",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "dated_activity",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.crop_preferences",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.crop preferences",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Preference alone is not permission to generate a crop; planning.allowed_crop_ids must be explicit.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.contract_constraints",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/crop_constraint"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.contract constraints",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "crop_constraint",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.farm_gate_prices",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/price_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.farm gate prices",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "price_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.expected_marketable_yield_kg_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "kg_marketable_product/ha",
+      "unit_status": "specified",
+      "meaning": "market.expected marketable yield kg ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Crop, moisture, quality, location, season and empirical/assumed provenance required; never substitute catalog potential yield.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.transport_storage_costs",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/cost_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.transport storage costs",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "cost_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.currency",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "IDR"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.currency",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.market.price_observed_at",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "market.price observed at",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.seed_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.seed idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.fertilizer_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.fertilizer idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.pest_management_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.pest management idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.labor_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.labor idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.machinery_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.machinery idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.irrigation_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.irrigation idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.other_idr_ha",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "IDR/ha/season",
+      "unit_status": "specified",
+      "meaning": "costs.other idr ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Same crop, field-area basis and reference season; record actual/assumed status and avoid double counting transport/storage or irrigation water costs.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.costs.reference_season",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/window_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "costs.reference season",
+      "rule_ids": [
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "deferred_economics",
+      "value": null,
+      "validation_notes": "Season start inclusive, end exclusive, matching each monetary cost; no free-text season conversion silently.",
+      "record_shape": "window_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.water_saving_weight",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "fraction_0_1",
+      "unit_status": "specified",
+      "meaning": "priorities.water saving weight",
+      "rule_ids": [],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "legacy_unused",
+      "value": null,
+      "validation_notes": "Retained for compatibility only. MVP/spec uses explicit priority labels with no weights, weighting or composite score. Do not request, infer, sum, normalize or use these values.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.net_income_weight",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "fraction_0_1",
+      "unit_status": "specified",
+      "meaning": "priorities.net income weight",
+      "rule_ids": [],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "legacy_unused",
+      "value": null,
+      "validation_notes": "Retained for compatibility only. MVP/spec uses explicit priority labels with no weights, weighting or composite score. Do not request, infer, sum, normalize or use these values.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.soil_health_weight",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "fraction_0_1",
+      "unit_status": "specified",
+      "meaning": "priorities.soil health weight",
+      "rule_ids": [],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "legacy_unused",
+      "value": null,
+      "validation_notes": "Retained for compatibility only. MVP/spec uses explicit priority labels with no weights, weighting or composite score. Do not request, infer, sum, normalize or use these values.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.risk_tolerance",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "low",
+              "moderate",
+              "high",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "priorities.risk tolerance",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Self-described preference, never converted into a numerical benefit ranking.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.planning_horizon_start",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "priorities.planning horizon start",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Horizon [start,end_exclusive); label legacy end as exclusive. Reject disagreement with planning.horizon.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.planning_horizon_end",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "priorities.planning horizon end",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Horizon [start,end_exclusive); label legacy end as exclusive. Reject disagreement with planning.horizon.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.priorities.excluded_crops",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            "uniqueItems": true
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "priorities.excluded crops",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "initial",
+      "value": null,
+      "validation_notes": "Unique crop IDs; [] is explicitly no exclusions; null is unknown. Reject disagreement with planning.excluded_crop_ids.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.provenance.respondent_role",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "provenance.respondent role",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.provenance.information_source",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "provenance.information source",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.provenance.recorded_at",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "provenance.recorded at",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Timestamp alone is not agronomic approval. Review needs scope, reviewer identity/role, evidence and result.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.provenance.local_extension_reviewed_at",
+      "origin": "prepared_91",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "provenance.local extension reviewed at",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Timestamp alone is not agronomic approval. Review needs scope, reviewer identity/role, evidence and result.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.establishment_method",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "direct_seeded",
+              "transplanted",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.current crop.establishment method",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Establishment is separate from ecosystem and water regime.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.rice_ecosystem",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "irrigated_lowland",
+              "rainfed_lowland",
+              "rainfed_upland",
+              "flood_prone"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.current crop.rice ecosystem",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Reference vocabulary from FAO; field assignment requires farmer/adviser observation. Null for unknown; non-rice uses rule applicability, not fake rice value.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.current_crop.rice_water_regime",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "flooded_paddy",
+              "intermittently_flooded_paddy",
+              "nonflooded_aerobic",
+              "mixed_or_variable",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.current crop.rice water regime",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Operational app vocabulary, not direct FAO/GAEZ category codes; record actual dates, water control and flooding observations.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.irrigation.water_control",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "can_supply_and_drain_reported",
+              "supply_only_reported",
+              "drain_only_reported",
+              "no_control_reported",
+              "locally_verified",
+              "other_documented"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.irrigation.water control",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "No inference from irrigation system type. Capability and actual availability differ.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.soil_management_for_transition",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/dated_activity"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.management.soil management for transition",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "dated_activity",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.nutrient_balance",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/nutrient_balance_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.management.nutrient balance",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "acquisition_class": "farmer_reported",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Balance components remain unknown until measured/sourced; this schema does not calculate a fertilizer or nitrogen credit.",
+      "record_shape": "nutrient_balance_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "farm.management.local_host_range_evidence",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/host_range_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "farm.management.local host range evidence",
+      "rule_ids": [
+        "pest_break"
+      ],
+      "acquisition_class": "local_adviser",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "host_range_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.horizon",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/window_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.horizon",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "window_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.allowed_crop_ids",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            "uniqueItems": true
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.allowed crop ids",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Unique IDs. Explicit [] differs from null; future exclusions affect mutable slots and do not erase the existing continuation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.excluded_crop_ids",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            "uniqueItems": true
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.excluded crop ids",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Unique IDs. Explicit [] differs from null; future exclusions affect mutable slots and do not erase the existing continuation.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.existing_sequence",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/crop_slot"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.existing sequence",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Explicit future continuation or confirmed phase-anchored repetition; historical records are not automatically a continuation.",
+      "record_shape": "crop_slot",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.slot_start_dates",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.slot start dates",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Ordered field-start dates; <=3 automatically generated slots; per-slot establishment determines which biological date is meant.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.locked_prefix_length",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "slot_count",
+      "unit_status": "specified",
+      "meaning": "planning.locked prefix length",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Must be <=sequence length. Zero is explicit none locked; null is unknown.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.continuation_confirmed",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.continuation confirmed",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "generator_required",
+      "value": null,
+      "validation_notes": "Must be true for a generated comparison of an existing continuation. False is an explicit rejection, not unknown.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.duration_by_crop",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/duration_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "days",
+      "unit_status": "specified",
+      "meaning": "planning.duration by crop",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Every selected crop/cultivar needs an explicit duration basis and source; a public example is never farmer-selected by default.",
+      "record_shape": "duration_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.preparation_gap_days",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "integer",
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "days",
+      "unit_status": "specified",
+      "meaning": "planning.preparation gap days",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Null is not zero. Gap begins after field release (harvest+1day); per-slot overrides require provenance.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.nursery_separate_from_main_field",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.nursery separate from main field",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Separate nursery must be explicit before allowing overlap with an earlier main-field crop.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.nursery_location_ref",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.nursery location ref",
+      "rule_ids": [
+        "calendar"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Actual or explicit scenario resource reference; no fabricated farm geometry.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "planning.selected_priorities",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "water_context",
+                "soil_context",
+                "pest_management",
+                "calendar_constraints",
+                "economic_information"
+              ]
+            },
+            "uniqueItems": true
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "planning.selected priorities",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Presentation highlights only; no default weights, scores, ranking or benefits.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.time_mode",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "enum": [
+              "historical_replay",
+              "historical_analogue_not_forecast",
+              "recent_partial"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.time mode",
+      "rule_ids": [
+        "climate_exposure",
+        "temperature_reference",
+        "vegetation_context"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.climate_window",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/window_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.climate window",
+      "rule_ids": [
+        "climate_exposure",
+        "temperature_reference"
+      ],
+      "acquisition_class": "scenario_configuration",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "window_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.explicit_climate_context",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.explicit climate context",
+      "rule_ids": [
+        "coverage",
+        "climate_exposure",
+        "temperature_reference"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Select exact source/path and explicit regional/example support; never silently nearest-point fallback.",
+      "record_shape": null,
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.layer_support",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/layer_support_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.layer support",
+      "rule_ids": [
+        "coverage",
+        "climate_exposure",
+        "vegetation_context",
+        "ph_reference",
+        "gaez_context"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "",
+      "record_shape": "layer_support_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.ph_reference_input",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/ph_context_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "pH_H2O_dimensionless",
+      "unit_status": "specified",
+      "meaning": "context.ph reference input",
+      "rule_ids": [
+        "ph_reference"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Laboratory measurement and model prediction remain distinct; containing cell, depth, source/method/date or model epoch required.",
+      "record_shape": "ph_context_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.temperature_reference_input",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/temperature_context_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": "degree_C",
+      "unit_status": "specified",
+      "meaning": "context.temperature reference input",
+      "rule_ids": [
+        "temperature_reference"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Historical window summary; never Tmax threshold/failure-day calculation.",
+      "record_shape": "temperature_context_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.vegetation_reference_input",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/vegetation_context_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.vegetation reference input",
+      "rule_ids": [
+        "vegetation_context"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Exact extracted pixel and strict-good QA; no inferred species, crop dates, history or fallow.",
+      "record_shape": "vegetation_context_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "context.gaez_reference_input",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/gaez_context_record"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "context.gaez reference input",
+      "rule_ids": [
+        "gaez_context"
+      ],
+      "acquisition_class": "public_reference_selection",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Historical categorical reference with HRLM and HILM separate; RCW is wetland rice and not confirmed farmer ecology.",
+      "record_shape": "gaez_context_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    },
+    {
+      "path": "provenance.fields",
+      "origin": "supplemental_addition",
+      "schema": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/field_provenance_record"
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "units": null,
+      "unit_status": "not_applicable",
+      "meaning": "provenance.fields",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "acquisition_class": "provenance_metadata",
+      "requirement_stage": "conditional",
+      "value": null,
+      "validation_notes": "Per-field data class, source and observation/recording dates; public context never replaces field actuals.",
+      "record_shape": "field_provenance_record",
+      "provenance_required": true,
+      "public_source_may_replace_field_actual": false
+    }
+  ],
+  "$defs": {
+    "source_record": {
+      "type": "object",
+      "properties": {
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recorded_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "location_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source_ref",
+        "observed_at",
+        "recorded_at",
+        "location_basis",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "dated_activity": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date",
+        "description",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "crop_access": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available_from": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "available_until": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "cultivar",
+        "available",
+        "available_from",
+        "available_until",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "crop_constraint": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "constraint": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "constraint",
+        "start_date",
+        "end_date",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "price_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product_form": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quality_grade": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "moisture_percent": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "percent_product_mass"
+        },
+        "price_value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "specified_by_price_unit"
+        },
+        "price_unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "IDR/kg",
+                "IDR/t",
+                "IDR/quintal"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "IDR"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "buyer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "market_location": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "cultivar",
+        "product_form",
+        "quality_grade",
+        "moisture_percent",
+        "price_value",
+        "price_unit",
+        "currency",
+        "buyer",
+        "market_location",
+        "observed_on",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "cost_record": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "transport",
+                "storage",
+                "seed",
+                "fertilizer",
+                "pest_management",
+                "labor",
+                "machinery",
+                "irrigation",
+                "other"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "IDR_per_declared_basis"
+        },
+        "currency": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "IDR"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "per_ha_per_season",
+                "per_field_per_season",
+                "per_kg",
+                "per_trip",
+                "per_person_day",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "basis_description": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "season_start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "season_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "category",
+        "value",
+        "currency",
+        "basis",
+        "basis_description",
+        "crop_id",
+        "season_start",
+        "season_end",
+        "observed_on",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "fertilizer_record": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product_name": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product_kg_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_product/ha"
+        },
+        "nitrogen_percent_by_mass": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "percent_product_mass"
+        },
+        "p2o5_percent_by_mass": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "percent_product_mass"
+        },
+        "k2o_percent_by_mass": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "percent_product_mass"
+        },
+        "basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "product_mass",
+                "elemental_nutrient_mass",
+                "oxide_mass",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "application_date",
+        "product_name",
+        "product_kg_ha",
+        "nitrogen_percent_by_mass",
+        "p2o5_percent_by_mass",
+        "k2o_percent_by_mass",
+        "basis",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "amendment_record": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "material": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "amount_kg_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_material/ha"
+        },
+        "moisture_percent": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "percent_material_mass"
+        },
+        "dry_matter_basis": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "analysis_report_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "application_date",
+        "material",
+        "amount_kg_ha",
+        "moisture_percent",
+        "dry_matter_basis",
+        "analysis_report_ref",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "inoculation_record": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "inoculated": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "organism_or_strain": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dose_value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "specified_by_dose_unit"
+        },
+        "dose_unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "application_date",
+        "crop_id",
+        "cultivar",
+        "inoculated",
+        "product",
+        "organism_or_strain",
+        "dose_value",
+        "dose_unit",
+        "method",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "nodulation_record": {
+      "type": "object",
+      "properties": {
+        "observation_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "growth_stage": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "plants_sampled": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "plant_count"
+        },
+        "nodules_per_plant": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "nodule_count/plant"
+        },
+        "nodule_internal_colour": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "protocol": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "observation_date",
+        "crop_id",
+        "growth_stage",
+        "plants_sampled",
+        "nodules_per_plant",
+        "nodule_internal_colour",
+        "observer",
+        "protocol",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "pest_record": {
+      "type": "object",
+      "properties": {
+        "organism_scientific_name": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "organism_local_name": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "identification_status": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "unconfirmed_symptom",
+                "identified_by_farmer",
+                "identified_by_adviser",
+                "laboratory_confirmed"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "first_observed_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last_observed_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "severity_value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "specified_by_severity_unit_or_scale"
+        },
+        "severity_unit_or_scale": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "identification_source": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "management": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "organism_scientific_name",
+        "organism_local_name",
+        "identification_status",
+        "crop_id",
+        "first_observed_on",
+        "last_observed_on",
+        "severity_value",
+        "severity_unit_or_scale",
+        "identification_source",
+        "management",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "pesticide_record": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "target_organism": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "active_ingredient": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "product": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dose_value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "specified_by_dose_unit"
+        },
+        "dose_unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "application_date",
+        "crop_id",
+        "target_organism",
+        "active_ingredient",
+        "product",
+        "dose_value",
+        "dose_unit",
+        "method",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "flood_record": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maximum_water_depth_cm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "cm_above_soil_surface"
+        },
+        "cause": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_or_reported": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "observed",
+                "reported"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "start_date",
+        "end_date",
+        "maximum_water_depth_cm",
+        "cause",
+        "observed_or_reported",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "residue_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "retained_surface",
+                "incorporated",
+                "removed",
+                "burned",
+                "fed_to_livestock",
+                "mixed",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fraction_of_aboveground_residue": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "fraction_0_1"
+        },
+        "dry_mass_kg_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_dry_residue/ha"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "date",
+        "fate",
+        "fraction_of_aboveground_residue",
+        "dry_mass_kg_ha",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "history_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sowing_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transplanting_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "harvest_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "yield_kg_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_harvested_product/ha"
+        },
+        "yield_moisture_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "irrigation_system": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rice_ecosystem": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "irrigated_lowland",
+                "rainfed_lowland",
+                "rainfed_upland",
+                "flood_prone"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rice_water_regime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "flooded_paddy",
+                "intermittently_flooded_paddy",
+                "nonflooded_aerobic",
+                "mixed_or_variable",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pests": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/pest_record"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "residue_fate": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/residue_record"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "cultivar",
+        "sowing_date",
+        "transplanting_date",
+        "harvest_date",
+        "yield_kg_ha",
+        "yield_moisture_basis",
+        "irrigation_system",
+        "rice_ecosystem",
+        "rice_water_regime",
+        "pests",
+        "residue_fate",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "duration_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "minimum_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "maximum_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "basis_event": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "sowing",
+                "transplanting"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "counting_convention": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "elapsed_day_zero"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_origin_wording": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_minimum_days": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "source_maximum_days": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "normalization_policy": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "no_rounding_needed",
+                "explicit_source_integer_alternative",
+                "documented_external_conversion"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "normalization_note": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "minimum_days",
+        "maximum_days",
+        "basis_event",
+        "counting_convention",
+        "source_ref",
+        "source_origin_wording",
+        "source_minimum_days",
+        "source_maximum_days",
+        "normalization_policy",
+        "normalization_note",
+        "cultivar"
+      ],
+      "additionalProperties": false
+    },
+    "crop_slot": {
+      "type": "object",
+      "properties": {
+        "slot_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cultivar": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "date_status": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "observed",
+                "planned",
+                "scenario_assumption"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sowing_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transplanting_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "harvest_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "establishment_method": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "direct_seeded",
+                "transplanted",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duration": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "preparation_gap_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "nursery_separate_from_main_field": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nursery_location_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rice_ecosystem": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "irrigated_lowland",
+                "rainfed_lowland",
+                "rainfed_upland",
+                "flood_prone"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rice_water_regime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "flooded_paddy",
+                "intermittently_flooded_paddy",
+                "nonflooded_aerobic",
+                "mixed_or_variable",
+                "other_documented"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "slot_id",
+        "crop_id",
+        "cultivar",
+        "date_status",
+        "sowing_date",
+        "transplanting_date",
+        "harvest_date",
+        "establishment_method",
+        "duration",
+        "preparation_gap_days",
+        "nursery_separate_from_main_field",
+        "nursery_location_ref",
+        "rice_ecosystem",
+        "rice_water_regime",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "nutrient_balance_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nutrient": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "N",
+                "P",
+                "K"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fertilizer_input_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "organic_input_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "measured_fixation_kg_n_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "harvest_export_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "residue_export_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "other_input_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "losses_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "stock_change_kg_element_ha": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "kg_element/ha/declared_period"
+        },
+        "measurement_method": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/source_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "crop_id",
+        "period_start",
+        "period_end",
+        "nutrient",
+        "fertilizer_input_kg_element_ha",
+        "organic_input_kg_element_ha",
+        "measured_fixation_kg_n_ha",
+        "harvest_export_kg_element_ha",
+        "residue_export_kg_element_ha",
+        "other_input_kg_element_ha",
+        "losses_kg_element_ha",
+        "stock_change_kg_element_ha",
+        "measurement_method",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "host_range_record": {
+      "type": "object",
+      "properties": {
+        "organism_scientific_name": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "host_status": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "host",
+                "non_host",
+                "uncertain"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "local_reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewed_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scope_and_limitations": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "organism_scientific_name",
+        "crop_id",
+        "host_status",
+        "source_ref",
+        "local_reviewer",
+        "reviewed_on",
+        "scope_and_limitations"
+      ],
+      "additionalProperties": false
+    },
+    "field_provenance_record": {
+      "type": "object",
+      "properties": {
+        "field_path": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "data_class": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "farmer_reported",
+                "field_measured",
+                "local_adviser",
+                "derived_geometry",
+                "public_reference_context",
+                "scenario_assumption"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recorded_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uncertainty_note": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "field_path",
+        "data_class",
+        "source_ref",
+        "observed_at",
+        "recorded_at",
+        "uncertainty_note"
+      ],
+      "additionalProperties": false
+    },
+    "layer_support_record": {
+      "type": "object",
+      "properties": {
+        "layer_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "support_identifier": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "support_geometry_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "selection_basis": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "containing_extracted_support",
+                "explicit_regional_context",
+                "explicit_demo_support",
+                "outside_coverage"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "period_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_observations": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "observation_count"
+        },
+        "expected_observations": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "observation_count"
+        },
+        "qa_policy_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "layer_id",
+        "source_ref",
+        "support_identifier",
+        "support_geometry_ref",
+        "selection_basis",
+        "period_start",
+        "period_end",
+        "valid_observations",
+        "expected_observations",
+        "qa_policy_ref"
+      ],
+      "additionalProperties": false
+    },
+    "ph_context_record": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 14
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "pH_H2O_dimensionless"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "laboratory_measurement",
+                "soilgrids_prediction"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "top_cm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "cm_below_soil_surface"
+        },
+        "bottom_cm": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "cm_below_soil_surface"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sampled_on": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model_epoch": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "containing_cell_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "origin",
+        "top_cm",
+        "bottom_cm",
+        "method",
+        "source_ref",
+        "sampled_on",
+        "model_epoch",
+        "containing_cell_ref"
+      ],
+      "additionalProperties": false
+    },
+    "window_record": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end_exclusive": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "format": "date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "start_date",
+        "end_exclusive"
+      ],
+      "additionalProperties": false
+    },
+    "temperature_context_record": {
+      "type": "object",
+      "properties": {
+        "crop_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "padi",
+                "jagung",
+                "kedelai"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mean_t2m_c": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "degree_C"
+        },
+        "window": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/window_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "complete_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        },
+        "expected_days": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "days"
+        }
+      },
+      "required": [
+        "crop_id",
+        "mean_t2m_c",
+        "window",
+        "source_ref",
+        "complete_days",
+        "expected_days"
+      ],
+      "additionalProperties": false
+    },
+    "vegetation_context_record": {
+      "type": "object",
+      "properties": {
+        "exact_pixel_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "window": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/window_record"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "qa_policy_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_observations": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "observation_count"
+        },
+        "expected_observations": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "observation_count"
+        },
+        "mixed_pixel_context_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "exact_pixel_id",
+        "source_ref",
+        "window",
+        "qa_policy_ref",
+        "valid_observations",
+        "expected_observations",
+        "mixed_pixel_context_ref"
+      ],
+      "additionalProperties": false
+    },
+    "gaez_context_record": {
+      "type": "object",
+      "properties": {
+        "containing_cell_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "crop_code": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "RCW",
+                "MZE",
+                "SOY"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "management_regime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "HRLM",
+                "HILM",
+                "explicit_unknown"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "legend_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model_period": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "category_code": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "x-unit": "categorical_code_not_numeric_score"
+        }
+      },
+      "required": [
+        "containing_cell_ref",
+        "crop_code",
+        "management_regime",
+        "source_ref",
+        "legend_ref",
+        "model_period",
+        "category_code"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

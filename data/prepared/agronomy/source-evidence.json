@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "prepared_at_utc": "2026-11-08T10:08:01.715758+00:00",
+  "timezone_for_user_dates": "Asia/Jakarta",
+  "sources": [
+    {
+      "id": "fao-crop-rotation",
+      "url": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+      "accessed_at_utc": "2026-11-08T09:55:09.067969+00:00",
+      "path": "sources/fao-crop-rotation.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 24026,
+      "sha256": "927d4c7b0059a6a1b401d0fcb5dac577b6d297ec3a87afb3dee9f0e63b978fb3",
+      "final_url": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+      "evidence_excerpt": "Crop rotation also has an important phytosanitary function"
+    },
+    {
+      "id": "gaez-crop-list",
+      "url": "https://github.com/user-attachments/files/25523134/Appendix.4-1.List.of.Crops.xlsx",
+      "accessed_at_utc": "2026-11-08T09:55:10.001490+00:00",
+      "path": "sources/gaez-crop-list.xlsx",
+      "status": "failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "gaez-theme4-mapping",
+      "url": "https://github.com/user-attachments/files/21917536/_readme_RES05.xlsx",
+      "accessed_at_utc": "2026-11-08T09:55:10.097935+00:00",
+      "path": "sources/gaez-theme4-mapping.xlsx",
+      "status": "failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "id": "gaez-crop-res05",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.json",
+      "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+      "path": "sources/gaez-crop-res05.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 9874,
+      "sha256": "a925fd16f32279fa96af0d34e3b2d04a85e594bbca8ededcb7d3fd102c17e5b2",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.json"
+    },
+    {
+      "id": "gaez-period",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.json",
+      "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+      "path": "sources/gaez-period.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 965,
+      "sha256": "d6ce86f2dac4a86577b4b139c3301e9fe5d0d20ad6c8ddb1d7045905d259c345",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.json"
+    },
+    {
+      "id": "gaez-ssp",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.json",
+      "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+      "path": "sources/gaez-ssp.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 695,
+      "sha256": "58f0a7efe8d6548813e05318e7f64e2bc45bd461cbe16ea03378561f1a661956",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.json"
+    },
+    {
+      "id": "gaez-clim",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.json",
+      "accessed_at_utc": "2026-11-08T09:57:41.339364+00:00",
+      "path": "sources/gaez-clim.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 1162,
+      "sha256": "5e73e95aacaa92021face4102350a4a48f6d948621ce2a0488bed58b5d336318",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.json"
+    },
+    {
+      "id": "gaez-wsim-res05",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.json",
+      "accessed_at_utc": "2026-11-08T09:57:42.838320+00:00",
+      "path": "sources/gaez-wsim-res05.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 838,
+      "sha256": "94414300c40ca683fa4e976cc7ed76831213946e6e50736b354bf9ecd8cc997b",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.json"
+    },
+    {
+      "id": "gaez-mapset-config",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/GAEZ-V5.RES05-SIX.json",
+      "accessed_at_utc": "2026-11-08T09:57:43.747804+00:00",
+      "path": "sources/gaez-mapset-config.json",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "gaez-six-legend",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "accessed_at_utc": "2026-11-08T09:59:13.970827+00:00",
+      "path": "sources/gaez-six-legend.json",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 1365,
+      "sha256": "aa154e6eaf0dfd188df8861cc6a21e82251eb7ea21ce895dac79eae889772167",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json"
+    },
+    {
+      "id": "gaez-six-legend-sld",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.sld",
+      "accessed_at_utc": "2026-11-08T09:59:14.724267+00:00",
+      "path": "sources/gaez-six-legend.sld",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 1785,
+      "sha256": "4bda0fe69c5596ae1ec28d3a5c317ae840387e353b0c8354e681033ea298b606",
+      "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.sld"
+    },
+    {
+      "id": "gaez-user-guide",
+      "url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/21.-GAEZ-v5-Platform-User-Guide.md",
+      "accessed_at_utc": "2026-11-08T09:54:16.218787+00:00",
+      "path": "sources/gaez-user-guide.md",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 12344,
+      "sha256": "8b0fc35f2526d6d391d67540477a96c42911fa5059ce88a30874a2469ccb3e6c",
+      "final_url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/21.-GAEZ-v5-Platform-User-Guide.md",
+      "evidence_excerpt": "HP0120 for 2001-2020"
+    },
+    {
+      "id": "gaez-crops",
+      "url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/14.-Appendix-4%E2%80%901-Crops.md",
+      "accessed_at_utc": "2026-11-08T09:54:16.218787+00:00",
+      "path": "sources/gaez-crops.md",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 174,
+      "sha256": "c79771c9d15c8146b62b64755731cb58eac4ebf746a9fcc7eb2c521554ce0996",
+      "final_url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/14.-Appendix-4%E2%80%901-Crops.md"
+    },
+    {
+      "id": "fao-water-needs",
+      "url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+      "accessed_at_utc": "2026-11-08T09:54:16.221433+00:00",
+      "path": "sources/fao-water-needs.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 35613,
+      "sha256": "8a415afc75f3f9dbf2a6a7dea0d1009f1c89173ba5b96f7613365c7b00f819fa",
+      "final_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+      "evidence_excerpt": "The water need of a crop thus consists of transpiration plus evaporation."
+    },
+    {
+      "id": "fao-seasonal-water",
+      "url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+      "accessed_at_utc": "2026-11-08T09:54:16.221433+00:00",
+      "path": "sources/fao-seasonal-water.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 127577,
+      "sha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+      "final_url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+      "evidence_excerpt": "The values indicated in the table provide a rough estimate"
+    },
+    {
+      "id": "fao-paddy-irrigation",
+      "url": "https://www.fao.org/4/t7202e/t7202e07.htm",
+      "accessed_at_utc": "2026-11-08T09:54:17.113807+00:00",
+      "path": "sources/fao-paddy-irrigation.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 12445,
+      "sha256": "c5c75e149444743945445cf2cc39efbf29d40f8e01466657aa94fbd14b3c8e01",
+      "final_url": "https://www.fao.org/4/t7202e/t7202e07.htm",
+      "evidence_excerpt": "from panicle initiation to flowering; duration approximately one month."
+    },
+    {
+      "id": "fao-maize",
+      "url": "https://www.fao.org/land-water/databases-and-software/crop-information/maize/",
+      "accessed_at_utc": "2026-11-08T09:54:17.265249+00:00",
+      "path": "sources/fao-maize.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "fao-soybean",
+      "url": "https://www.fao.org/land-water/databases-and-software/crop-information/soybean/",
+      "accessed_at_utc": "2026-11-08T09:54:17.278345+00:00",
+      "path": "sources/fao-soybean.html",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "kementan-inpari32",
+      "url": "https://sulbar.brmp.pertanian.go.id/berita/brmp-sulawesi-barat-dampingi-penanaman-varietas-unggul-inpari-32-hdb-di-desa-bumiayu",
+      "accessed_at_utc": "2026-11-08T09:54:17.555099+00:00",
+      "path": "sources/kementan-inpari32.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 58610,
+      "sha256": "80cea237b45f1336f5414b4eba256b3d7a71c8956188e814239cf69a3117bcbd",
+      "final_url": "https://sulbar.brmp.pertanian.go.id/berita/brmp-sulawesi-barat-dampingi-penanaman-varietas-unggul-inpari-32-hdb-di-desa-bumiayu",
+      "evidence_excerpt": "masa panen sekitar 120 hari setelah semai"
+    },
+    {
+      "id": "kementan-anjasmoro",
+      "url": "https://pustaka.bppsdmp.pertanian.go.id/index-berita/varietas-anjasmoro-si-kedelai-biji-besar",
+      "accessed_at_utc": "2026-11-08T09:54:17.853028+00:00",
+      "path": "sources/kementan-anjasmoro.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 98721,
+      "sha256": "b251ed636309e058ca00a2e747a5c7ab01e4c7b0b8ae52154cf3875120a9b64a",
+      "final_url": "https://pustaka.bppsdmp.pertanian.go.id/index-berita/varietas-anjasmoro-si-kedelai-biji-besar",
+      "evidence_excerpt": "sekitar 82 – 92 hari"
+    },
+    {
+      "id": "kementan-jakarin",
+      "url": "https://diy.brmp.pertanian.go.id/berita/kunjungan-kepala-bpsi-serealia-ke-ip2sip-banyakan",
+      "accessed_at_utc": "2026-11-08T09:54:17.853028+00:00",
+      "path": "sources/kementan-jakarin.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 64307,
+      "sha256": "13a1f14c8db48e4922e9eaa59bd550f05f27cd7903d4d1d2f1a427f34d20e48a",
+      "final_url": "https://diy.brmp.pertanian.go.id/berita/kunjungan-kepala-bpsi-serealia-ke-ip2sip-banyakan",
+      "evidence_excerpt": "memiliki umur tanam 100 hst"
+    },
+    {
+      "id": "kementan-siap-tanam",
+      "url": "https://brmp.pertanian.go.id/index.php/layanan/layanan-elektronik/siap-tanam",
+      "accessed_at_utc": "2026-11-08T09:54:17.999714+00:00",
+      "path": "sources/kementan-siap-tanam.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 47921,
+      "sha256": "ad820a4782175e1c6be0e42a14d67409f35aa2a72eca1e570216e9218996be12",
+      "final_url": "https://brmp.pertanian.go.id/index.php/layanan/layanan-elektronik/siap-tanam"
+    },
+    {
+      "id": "fao-aquacrop-inputs",
+      "url": "https://www.fao.org/aquacrop/overview/input-requirements/",
+      "accessed_at_utc": "2026-11-08T09:54:18.175602+00:00",
+      "path": "sources/fao-aquacrop-inputs.html",
+      "status": "downloaded",
+      "http_status": 200,
+      "bytes": 60183,
+      "sha256": "d6dbb82d3f6eaf88dbf356e29e3ff40c7854377e7071a330b6beaaacbb9aca30",
+      "final_url": "https://www.fao.org/aquacrop/overview/input-requirements/"
+    },
+    {
+      "id": "ecocrop-rice",
+      "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1574",
+      "path": "sources/ecocrop-rice.html",
+      "status": "inherited_local_snapshot",
+      "access_date": "2026-11-08",
+      "accessed_at_utc": null,
+      "access_note": "Original audit snapshot; exact download timestamp not recorded. Copied without new network access.",
+      "sha256": "73e150aaf5c203a6b4c55e95d87284cfd3b5c70a425b888c9c436bb74b217e6c",
+      "bytes": 6144,
+      "provider": "FAO ECOCROP",
+      "limitations": [
+        "Historical species-level reference, original development discontinued around 2015.",
+        "Not a current local cultivar database."
+      ]
+    },
+    {
+      "id": "ecocrop-maize",
+      "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175",
+      "path": "sources/ecocrop-maize.html",
+      "status": "inherited_local_snapshot",
+      "access_date": "2026-11-08",
+      "accessed_at_utc": null,
+      "access_note": "Original audit snapshot; exact download timestamp not recorded. Copied without new network access.",
+      "sha256": "285c1b1cc3522c5e34ddc552ec46306a364a7c44897421e421e1657bb8194bb0",
+      "bytes": 6393,
+      "provider": "FAO ECOCROP",
+      "limitations": [
+        "Historical species-level reference, original development discontinued around 2015.",
+        "Not a current local cultivar database."
+      ]
+    },
+    {
+      "id": "ecocrop-soybean",
+      "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1150",
+      "path": "sources/ecocrop-soybean.html",
+      "status": "inherited_local_snapshot",
+      "access_date": "2026-11-08",
+      "accessed_at_utc": null,
+      "access_note": "Original audit snapshot; exact download timestamp not recorded. Copied without new network access.",
+      "sha256": "a78789773709a0c3ba7789365bd399b8b84027b54bce17479535257d97bf8094",
+      "bytes": 7274,
+      "provider": "FAO ECOCROP",
+      "limitations": [
+        "Historical species-level reference, original development discontinued around 2015.",
+        "Not a current local cultivar database."
+      ]
+    }
+  ],
+  "notes": [
+    "Excerpts are short locators; quantitative facts are curated in crop-reference.json.",
+    "Downloaded source HTML is a provenance snapshot, not an endorsement of unrelated page claims.",
+    "Two historical GAEZ point samples are data-access anchors, not verified farmer fields."
+  ]
+}

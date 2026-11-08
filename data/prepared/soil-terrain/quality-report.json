@@ -1,0 +1,463 @@
+{
+  "soil_grid_alignment": true,
+  "raster_count": 180,
+  "out_of_range_issues": [],
+  "quantile_ordering": [
+    {
+      "property": "phh2o",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "phh2o",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "phh2o",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "phh2o",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "phh2o",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "sand",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "sand",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "sand",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "sand",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "sand",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "silt",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "silt",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "silt",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "silt",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "silt",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "clay",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "clay",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "clay",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "clay",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "clay",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "soc",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "soc",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "soc",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "soc",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "soc",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "nitrogen",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "nitrogen",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "nitrogen",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "nitrogen",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "nitrogen",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cec",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cec",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cec",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cec",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cec",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "bdod",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "bdod",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "bdod",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "bdod",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "bdod",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cfvo",
+      "depth": "0-5cm",
+      "comparable_cells": 0,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cfvo",
+      "depth": "5-15cm",
+      "comparable_cells": 0,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cfvo",
+      "depth": "15-30cm",
+      "comparable_cells": 0,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cfvo",
+      "depth": "30-60cm",
+      "comparable_cells": 0,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "cfvo",
+      "depth": "60-100cm",
+      "comparable_cells": 0,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0010",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0010",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0010",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0010",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0010",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0033",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0033",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0033",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0033",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv0033",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv1500",
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv1500",
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv1500",
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv1500",
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    },
+    {
+      "property": "wv1500",
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "q05_greater_than_q95": 0
+    }
+  ],
+  "quantile_inversion_cells": 0,
+  "quantile_pairs_without_comparable_cells": [
+    {
+      "property": "cfvo",
+      "depth": "0-5cm"
+    },
+    {
+      "property": "cfvo",
+      "depth": "5-15cm"
+    },
+    {
+      "property": "cfvo",
+      "depth": "15-30cm"
+    },
+    {
+      "property": "cfvo",
+      "depth": "30-60cm"
+    },
+    {
+      "property": "cfvo",
+      "depth": "60-100cm"
+    }
+  ],
+  "texture_mean_closure": [
+    {
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "sum_percent_min": 99.89999999999999,
+      "sum_percent_max": 100.10000000000001,
+      "sum_percent_mean": 99.99705882352941,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.10000000000001,
+      "sum_percent_mean": 99.99852941176471,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "sum_percent_min": 99.89999999999999,
+      "sum_percent_max": 100.10000000000001,
+      "sum_percent_mean": 100.00294117647059,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "sum_percent_min": 99.89999999999999,
+      "sum_percent_max": 100.1,
+      "sum_percent_mean": 100.0,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.10000000000001,
+      "sum_percent_mean": 100.0029411764706,
+      "outside_99_5_to_100_5_percent": 0
+    }
+  ],
+  "retention_mean_monotonicity": [
+    {
+      "depth": "0-5cm",
+      "comparable_cells": 68,
+      "nonmonotonic_retention_cells": 0
+    },
+    {
+      "depth": "5-15cm",
+      "comparable_cells": 68,
+      "nonmonotonic_retention_cells": 0
+    },
+    {
+      "depth": "15-30cm",
+      "comparable_cells": 68,
+      "nonmonotonic_retention_cells": 0
+    },
+    {
+      "depth": "30-60cm",
+      "comparable_cells": 68,
+      "nonmonotonic_retention_cells": 0
+    },
+    {
+      "depth": "60-100cm",
+      "comparable_cells": 68,
+      "nonmonotonic_retention_cells": 0
+    }
+  ],
+  "zero_policy": "Zero values remain in raw files and raw_value CSV, but converted value is blank and qa_status=zero_unresolved. This conservative exclusion does not assert that every zero is source nodata.",
+  "water_capacity_policy": "No volumetric-to-mass conversion or profile available-water storage computed. Retention estimates are not actual current moisture or an irrigation prescription.",
+  "terrain": "Slope in degrees from metre-based UTM49S finite differences; outer edges excluded.",
+  "landcover": "2021 epoch; classification uncertainty and subsequent changes; 250m square is a proxy, not exact MODIS footprint."
+}

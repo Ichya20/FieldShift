@@ -1,0 +1,851 @@
+{
+  "created_at_utc": "2026-11-08T11:26:12.885052+00:00",
+  "sources": [
+    {
+      "file": "sources/MOD13Q1-bands.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:11:57.631913+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:11:48.987156+00:00",
+          "ended_at_utc": "2026-11-08T11:11:57.627896+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+          "error": ""
+        }
+      ],
+      "bytes": 2366,
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753",
+      "retrieved_at_utc": "2026-11-08T11:05:57.007341+00:00",
+      "retrieval_time_basis": "file modification time of successful same-session curl probe",
+      "http_status": null,
+      "status_note": "Probe succeeded with curl --fail; exact status was not captured",
+      "file": "raw/MOD13Q1-dates-primary.json",
+      "bytes": 36238,
+      "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9"
+    },
+    {
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/bands",
+      "retrieved_at_utc": "2026-11-08T11:06:05.782243+00:00",
+      "retrieval_time_basis": "file modification time of successful same-session curl probe",
+      "http_status": null,
+      "status_note": "Probe succeeded with curl --fail; exact status was not captured",
+      "file": "sources/MYD13Q1-bands.json",
+      "bytes": 2366,
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303"
+    },
+    {
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753",
+      "retrieved_at_utc": "2026-11-08T11:05:57.208920+00:00",
+      "retrieval_time_basis": "file modification time of successful same-session curl probe",
+      "http_status": null,
+      "status_note": "Probe succeeded with curl --fail; exact status was not captured",
+      "file": "raw/MYD13Q1-dates-primary.json",
+      "bytes": 32993,
+      "sha256": "ebdcf0f395e57b1c03d9f19e78a89772a97f7b82f3d684bd96cc757d4fd851fc"
+    },
+    {
+      "file": "raw/power-regional-20261025-20261107.json",
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+      "effective_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:11:59.745568+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:11:57.640389+00:00",
+          "ended_at_utc": "2026-11-08T11:11:59.739391+00:00",
+          "return_code": 0,
+          "result": "200|https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+          "error": ""
+        }
+      ],
+      "bytes": 4172,
+      "sha256": "64e662c2371fe141115eb43f96e682090ab6bde7a9975d9714d625320ef5f308",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_primary-A2026001-A2026145.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:12:51.495123+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:11:59.745568+00:00",
+          "ended_at_utc": "2026-11-08T11:12:51.486644+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19831,
+      "sha256": "5a37ced94903e77d57265b13f94fbd3826065f37ed26c51c91ab5b45fddb683c",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_primary-A2026161-A2026289.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:12:59.137783+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:12:09.171476+00:00",
+          "ended_at_utc": "2026-11-08T11:12:59.123328+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 17895,
+      "sha256": "8f45e5b065b250080d7838d981063c7fa56a4968aeae4b163cb77af888760788",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_candidate-A2026001-A2026145.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:13:21.647393+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:12:51.502705+00:00",
+          "ended_at_utc": "2026-11-08T11:13:21.633013+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19819,
+      "sha256": "98ec22fbd055e5082d0131e7e48ac46ff7e3c07b830473864bc4a2ecf337407e",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_candidate-A2026161-A2026289.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:13:29.781889+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:12:59.137783+00:00",
+          "ended_at_utc": "2026-11-08T11:13:29.761873+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 17879,
+      "sha256": "101ac85b0d7db18b25bb4fcb5773a90220dfbc5f5c01021aedf22a7a8e33af8d",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "sources/MYD13Q1-earthengine-catalog.html",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+      "effective_url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:24:08.853372+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:24:07.643285+00:00",
+          "ended_at_utc": "2026-11-08T11:24:08.852951+00:00",
+          "return_code": 0,
+          "result": "200|https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+          "error": ""
+        }
+      ],
+      "bytes": 111352,
+      "sha256": "56b60a57e8a6eb73ff973e7e6227325d92365032bbc9d30ceb04db06907b6de6",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021009-A2021153.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:14:16.361577+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:13:21.647921+00:00",
+          "ended_at_utc": "2026-11-08T11:14:16.345752+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19844,
+      "sha256": "706868c4d1b5ba5d0974d3bbd05af43c87581a8beb9c080590d5bdb6f36dea76",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021169-A2021313.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:14:27.901112+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:13:29.781889+00:00",
+          "ended_at_utc": "2026-11-08T11:14:27.897584+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19846,
+      "sha256": "a58da1906b390f5343d31ece6cf81f5bffee779034595161cc88c4df76e8dfaa",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021329-A2022105.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:15:13.954878+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:14:16.377392+00:00",
+          "ended_at_utc": "2026-11-08T11:15:13.933788+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19842,
+      "sha256": "fc976c7e37af687be3f482c5c439cb69de7ffbb48964de526b2007ec14b74ed9",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2022121-A2022265.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:15:24.315108+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:14:27.901112+00:00",
+          "ended_at_utc": "2026-11-08T11:15:24.304791+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19848,
+      "sha256": "c43245b2b4d6ea1b2b8f5c1ecfe4c8cac645d46d89abda6a8557c7a3444c7afd",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2022281-A2023057.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:16:07.887369+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:15:13.954878+00:00",
+          "ended_at_utc": "2026-11-08T11:16:07.872014+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19847,
+      "sha256": "d47c8e02ba1ef9dd4422f1036b42a244abadd4e92c4fcb2fef456a62d9f55e66",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2023073-A2023217.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:16:19.359011+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:15:24.315108+00:00",
+          "ended_at_utc": "2026-11-08T11:16:19.343107+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19844,
+      "sha256": "db61900d9b0cb8b262c48e8cddb9c4ec0f6c3befc579ff1b963bb8971a12156a",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2023233-A2024009.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:17:05.831331+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:16:07.887369+00:00",
+          "ended_at_utc": "2026-11-08T11:17:05.816934+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19845,
+      "sha256": "a1edca42b46adad6dc8b8eef43425b18329dc9dd5798ec1e9f1778b749e9b1e2",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024025-A2024169.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:17:14.564892+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:16:19.360014+00:00",
+          "ended_at_utc": "2026-11-08T11:17:14.556788+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19843,
+      "sha256": "3f93165ebbeaa34d9462e7170ddbc14d8e3a70f57e12042ded4753b3de7c42f2",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024185-A2024329.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:17:58.761605+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:17:05.838687+00:00",
+          "ended_at_utc": "2026-11-08T11:17:58.741684+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19844,
+      "sha256": "9131e06f0c69eb003a9433f4c4b3864af3595c94563d80573712d24c7e1c25d9",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024345-A2025121.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:18:03.424446+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:17:14.564892+00:00",
+          "ended_at_utc": "2026-11-08T11:18:03.419002+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19847,
+      "sha256": "7d2c96726c10b3913d78591dd377bc17fa6c51ac3d2314431e5fc133f53500aa",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2025137-A2025281.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:18:50.188485+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:17:58.761605+00:00",
+          "ended_at_utc": "2026-11-08T11:18:50.174385+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19846,
+      "sha256": "b10ed1e35bb63a9352f436284cc68d556cd76f19e6506f996e1be4e031a6d657",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2025297-A2026073.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:18:59.351314+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:18:03.424446+00:00",
+          "ended_at_utc": "2026-11-08T11:18:59.339136+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19844,
+      "sha256": "8fabbb126ce9bacf4c100c6b5a794a764c46c32a5587cf1c5b848cdf9dd55f57",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2026089-A2026233.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:19:44.520716+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:18:50.188485+00:00",
+          "ended_at_utc": "2026-11-08T11:19:44.506625+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19844,
+      "sha256": "e2b6681eb8aeeb64bef193b56558b88bf1fe2cdc14a922899787cbedd679e926",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2026249-A2026281.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:19:20.326926+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:18:59.351314+00:00",
+          "ended_at_utc": "2026-11-08T11:19:20.317047+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 6224,
+      "sha256": "9f889a6a0c8616e6fd8b792b5b9595540a8ba162d55cea326138737c33086164",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021009-A2021153.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:19:50.193774+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:19:20.326926+00:00",
+          "ended_at_utc": "2026-11-08T11:19:50.189096+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19833,
+      "sha256": "a3317fee00067c4a08af0c67a645c4bc49cdf12b786c767e9ea9c551c38a8ed5",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021169-A2021313.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:20:16.587903+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:19:44.520716+00:00",
+          "ended_at_utc": "2026-11-08T11:20:16.569275+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19835,
+      "sha256": "61b258b160b4329339d726a4283de7dcdcad6a2ebbea22d622b2ac4b01d71b31",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021329-A2022105.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:20:22.220180+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:19:50.207992+00:00",
+          "ended_at_utc": "2026-11-08T11:20:22.206364+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19829,
+      "sha256": "f476de1a5c656cd46cd58272ed7b8bf6903a58aa4c97eeb9dd4a3bf9b6e955ac",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2022121-A2022265.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:20:46.844888+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:20:16.589348+00:00",
+          "ended_at_utc": "2026-11-08T11:20:46.841926+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19838,
+      "sha256": "96c8ca30c4fa5e5334732dd9794e0e2a13670db12988e2b51926793058d75bdf",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2022281-A2023057.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:20:52.052668+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:20:22.220180+00:00",
+          "ended_at_utc": "2026-11-08T11:20:52.040486+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19838,
+      "sha256": "d198a60fd88e492bcbb894c6fb2f1052bc3090f10e42f0ebdee47bc08ba1b51e",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2023073-A2023217.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:21:20.580758+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:20:46.844888+00:00",
+          "ended_at_utc": "2026-11-08T11:21:20.563451+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19832,
+      "sha256": "6878375dd46f0faa4dfdf76f20d31341a05956d254149cc8ee6c230d1418789e",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2023233-A2024009.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:21:26.357744+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:20:52.052668+00:00",
+          "ended_at_utc": "2026-11-08T11:21:26.341333+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19833,
+      "sha256": "944108a6d0cb4c1c0827025c5f46c33a04671966ba06eb09b5d5ab63a5c9a754",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024185-A2024329.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:21:59.400306+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:21:26.358749+00:00",
+          "ended_at_utc": "2026-11-08T11:21:59.388441+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19836,
+      "sha256": "6fa864bf44061e863cf4361e0fb26dc7de171d16e5293e6129f9fe91705a48e1",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024025-A2024169.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:21:53.105421+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:21:20.582766+00:00",
+          "ended_at_utc": "2026-11-08T11:21:53.082143+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19826,
+      "sha256": "a591432fe9fd81352b662fe8413d745d9d7c7aaff1e9ed1aac8f18318128a21a",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2025137-A2025281.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:22:30.222996+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:21:59.405516+00:00",
+          "ended_at_utc": "2026-11-08T11:22:30.193599+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19831,
+      "sha256": "38b4b2382afc478092f00aa3e89ccc9ef4652f10fbdb044afa9dd25c80bc4f87",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2025297-A2026073.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:22:52.703214+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:22:24.392117+00:00",
+          "ended_at_utc": "2026-11-08T11:22:52.681566+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19826,
+      "sha256": "7a1fea87d4de5278b54f92d5802b674b4af7555b7d14eb785f21c31e5a043061",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2026089-A2026233.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:22:58.812578+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:22:30.225457+00:00",
+          "ended_at_utc": "2026-11-08T11:22:58.788797+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19831,
+      "sha256": "7b7f7723e5d926b9535c5e488ba2cb29876abcd28756e4d49d97ec03a79bede4",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2026249-A2026281.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:23:10.695615+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:22:52.703214+00:00",
+          "ended_at_utc": "2026-11-08T11:23:10.693036+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 6210,
+      "sha256": "e3fc4b7c56b49a15b0ffda58065b1652d2b67f088fa5f8871ba4087c77111b37",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024345-A2025121.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-11-08T11:22:24.388479+00:00",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:21:53.106996+00:00",
+          "ended_at_utc": "2026-11-08T11:22:24.355332+00:00",
+          "return_code": 0,
+          "result": "200|https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0",
+          "error": ""
+        }
+      ],
+      "bytes": 19835,
+      "sha256": "dc2f90bbc7c5cf03849147694a37ffe35f6ae3a75631a38f860c52efd33eef78",
+      "transport": "Windows curl Schannel TLS verification enabled"
+    }
+  ],
+  "failed_sources": [
+    {
+      "file": "sources/MYD13Q1-v61-filespec.html",
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1",
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-11-08T11:11:57.636438+00:00",
+          "ended_at_utc": "2026-11-08T11:11:59.142809+00:00",
+          "return_code": 22,
+          "result": "404|https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1",
+          "error": "curl: (22) The requested URL returned error: 404"
+        },
+        {
+          "attempt": 2,
+          "started_at_utc": "2026-11-08T11:12:01.147777+00:00",
+          "ended_at_utc": "2026-11-08T11:12:03.577842+00:00",
+          "return_code": 22,
+          "result": "404|https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1",
+          "error": "curl: (22) The requested URL returned error: 404"
+        },
+        {
+          "attempt": 3,
+          "started_at_utc": "2026-11-08T11:12:07.578724+00:00",
+          "ended_at_utc": "2026-11-08T11:12:09.171476+00:00",
+          "return_code": 22,
+          "result": "404|https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1",
+          "error": "curl: (22) The requested URL returned error: 404"
+        }
+      ],
+      "status": "failed_after_three_attempts"
+    }
+  ],
+  "derived_files": [
+    {
+      "file": "data-dictionary.json",
+      "bytes": 2824,
+      "sha256": "f6043275ce7e8a7452ee7a129b1f8d67029e8ed4f1db54dab8e23799996bd06f"
+    },
+    {
+      "file": "footprint-comparison.json",
+      "bytes": 14673,
+      "sha256": "8539c00701700e5682e287aae54174e8d81e533c81e58992c5cd0e038f7c2027"
+    },
+    {
+      "file": "frozen-prepared-before.json",
+      "bytes": 72033,
+      "sha256": "355403ef1f1e3496986ffca6cdc41db9a0319be72c7c9c1e1aaf4ddf26d55275"
+    },
+    {
+      "file": "MOD13Q1-monthly-good-only.csv",
+      "bytes": 2330,
+      "sha256": "843b393adf539691deaebc5d00747daf71d131691ab94e2e6b8352291e1381ea"
+    },
+    {
+      "file": "MOD13Q1-supplemental-qa.csv",
+      "bytes": 11950,
+      "sha256": "07004a0d80a60b6409ca799f02ceb5bfff423fb9bb47a229023f33b5edcbc7c5"
+    },
+    {
+      "file": "MYD13Q1-monthly-good-only.csv",
+      "bytes": 14220,
+      "sha256": "70450a233b9663ad5939e16c71965b6aa3d8e2ce225b6486c307e58658932de6"
+    },
+    {
+      "file": "MYD13Q1-supplemental-qa.csv",
+      "bytes": 83582,
+      "sha256": "d78f452265a0ccccc0103d01e3924a2907fd903575cd7e399300aa75648cb4bf"
+    },
+    {
+      "file": "POWER-recent-recheck.csv",
+      "bytes": 2257,
+      "sha256": "ceaf6a346d98b4ceadb781287687f92aa2206243e37cbb55033eb3589735d38e"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6744,
+      "sha256": "154d8fa3d6dfcb1c25415ba5e4bda93c5775fbad860ebf98db59ebeed72b0a7d"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 29228,
+      "sha256": "f6f98d65098d86ca1cf7e631aa2a471ebb8b2d2a2732fd295581be9b3f0f6917"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 876,
+      "sha256": "aa54d42b30c3ada7a1b017443d405bda0fae089acddf14415c829620d46629f7"
+    }
+  ],
+  "read_only_frozen_inputs": {
+    "data/prepared/climate/daily.csv": {
+      "bytes": 1870342,
+      "sha256": "4c74c3c0eb34406687c07b1a00ad30852a9df9aa19d7a1d82e4ca877f8211008"
+    },
+    "data/prepared/climate/summary.json": {
+      "bytes": 2135,
+      "sha256": "a4e5cdcd6e14a7b45b7e07d2b2b09e4954045251cbf4fbac08d444b1572f16a6"
+    },
+    "data/prepared/vegetation/modis_16day_qa.csv": {
+      "bytes": 66836,
+      "sha256": "130c5211cb28ba29cab2f9a1df1e578a74b9433f1560e9591e7e4aa550f4e0b8"
+    },
+    "data/prepared/vegetation/summary.json": {
+      "bytes": 4222,
+      "sha256": "956cf936adea96a6d3758c1c2c14d4ac6847e96b954012a72e25aec6f57376a5"
+    },
+    "scripts/data/prepare_climate.py": {
+      "bytes": 16973,
+      "sha256": "ef7b6d0f73a24fe6b83cab77e8f8a148b42e0d028a834e42aa491c25e8582049"
+    },
+    "scripts/data/vegetation/prepare_modis.py": {
+      "bytes": 18608,
+      "sha256": "a376a70319785ed309377605caa7c014246520c309d4864e7a721e21d348a478"
+    }
+  }
+}

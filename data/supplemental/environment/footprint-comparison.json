@@ -1,0 +1,485 @@
+{
+  "records": [
+    {
+      "product": "MOD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MOD13Q1-klaten_cropland_primary-A2026001-A2026145.json"
+    },
+    {
+      "product": "MOD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MOD13Q1-klaten_cropland_primary-A2026161-A2026289.json"
+    },
+    {
+      "product": "MOD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MOD13Q1-klaten_cropland_candidate-A2026001-A2026145.json"
+    },
+    {
+      "product": "MOD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MOD13Q1-klaten_cropland_candidate-A2026161-A2026289.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2021009-A2021153.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2021169-A2021313.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2021329-A2022105.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2022121-A2022265.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2022281-A2023057.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2023073-A2023217.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2023233-A2024009.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2024025-A2024169.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2024185-A2024329.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2024345-A2025121.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2025137-A2025281.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2025297-A2026073.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2026089-A2026233.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_primary",
+      "xllcorner": "12181417.98",
+      "yllcorner": "-858750.16",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_primary-A2026249-A2026281.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2021009-A2021153.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2021169-A2021313.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2021329-A2022105.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2022121-A2022265.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2022281-A2023057.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2023073-A2023217.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2023233-A2024009.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2024025-A2024169.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2024185-A2024329.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2024345-A2025121.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2025137-A2025281.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2025297-A2026073.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2026089-A2026233.json"
+    },
+    {
+      "product": "MYD13Q1",
+      "point_id": "klaten_cropland_candidate",
+      "xllcorner": "12180723.03",
+      "yllcorner": "-858981.78",
+      "cellsize": 231.656358264,
+      "nrows": 1,
+      "ncols": 1,
+      "grid_difference_m_from_prepared_Terra": {
+        "xllcorner": 0.0,
+        "yllcorner": 0.0,
+        "cellsize": 0.0
+      },
+      "source_file": "raw/MYD13Q1-klaten_cropland_candidate-A2026249-A2026281.json"
+    }
+  ],
+  "note": "Each sensor retains its header footprint. No resampling or index fusion."
+}

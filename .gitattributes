@@ -1,0 +1,5 @@
+# Data files are verified against SHA-256 manifests at backend startup.
+# Store and check them out byte-for-byte so line-ending conversion never breaks the hashes.
+data/** -text
+outputs/** -text
+specs/** -text

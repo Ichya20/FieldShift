@@ -1,0 +1,50 @@
+{
+  "url": "https://storage.googleapis.com/isric-share-soilgrids/pre-release/wv0010/wv0010_5-15cm_mean.tif",
+  "accessed_at_utc": "2026-11-08T11:21:32.838506+00:00",
+  "source_shape": [
+    58034,
+    159246
+  ],
+  "source_transform": [
+    250.0,
+    0.0,
+    -19949750.0,
+    0.0,
+    -250.0,
+    8361000.000000001,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_bounds": [
+    -19949750.0,
+    -6147499.999999999,
+    19861750.0,
+    8361000.000000001
+  ],
+  "source_crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],EXTENSION[\"PROJ4\",\"+proj=igh +lat_0=0 +lon_0=0 +datum=WGS84 +units=m +no_defs\"]]",
+  "source_nodata_tag": -32768.0,
+  "source_tags": {
+    "Code_version": "v2.0.0",
+    "Covariates": "depth,clm_wcl_srdyrsum,clm_wcl_s08rad,clm_wcl_s04rad,clm_wcl_s07rad,mor_env_demm,clm_wcl_srdyrstd,clm_mod_lstd02std,clm_wcl_p05tot,clm_mod_lstd10std,clm_wcl_bio16,veg_mod_eviyravg,mor_mrg_vdp,clm_wcl_p10tot,clm_mod_lstd11std,mor_mrg_vbf,clm_mod_lstd05std,clm_mod_lstd12std,clm_wcl_p04tot,mor_mrg_twi",
+    "Litter_layers": "FALSE",
+    "Mapped_units": "10-3cm3cm-3",
+    "Model": "Quantile Regression Forests",
+    "Model_type": "ranger",
+    "Mtry": "10",
+    "Number_trees": "200",
+    "Outputs_abstract": "PDTF without BD,",
+    "Outputs_version": "RUN02",
+    "WoSIS_version": "Data stream 7",
+    "AREA_OR_POINT": "Area"
+  },
+  "window_native_pixels": [
+    129138,
+    36877,
+    11,
+    9
+  ],
+  "read_method": "Original TIFF window read, no reprojection/interpolation; output retains source grid and nodata tag.",
+  "remote_full_file_sha256": null,
+  "checksum_note": "Subset bytes are hashed; complete remote source raster was not downloaded or hashed."
+}

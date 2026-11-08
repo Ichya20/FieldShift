@@ -1,0 +1,120 @@
+<VRTDataset rasterXSize="159246" rasterYSize="58034">
+  <SRS>PROJCS["Interrupted_Goode_Homolosine",GEOGCS["GCS_WGS_1984 ellipse",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Interrupted_Goode_Homolosine"],UNIT["Meter",1]]</SRS>
+  <GeoTransform> -1.9949750000000000e+07,  2.5000000000000000e+02,  0.0000000000000000e+00,  8.3610000000000000e+06,  0.0000000000000000e+00, -2.5000000000000000e+02</GeoTransform>
+  <Metadata>
+    <MDI key="Code_version">v2.0.0</MDI>
+    <MDI key="Covariates">depth,mor_env_demm,mor_mrg_twi,clm_wcl_s04rad,mor_mrg_vbf,clm_wcl_srdyrsum,clm_wcl_s07rad,clm_wcl_srdyrstd,clm_wcl_s08rad,clm_mod_lstd01std,clm_mod_lstd12std,veg_mod_eviyravg,clm_mod_lstd05std,clm_wcl_bio18,clm_wcl_p12tot,mor_mrg_vdp,veg_mod_nppy15,clm_mod_lstd11std,mor_mrg_crv,clm_wcl_p04tot</MDI>
+    <MDI key="Litter_layers">FALSE</MDI>
+    <MDI key="Model">Quantile Regression Forests</MDI>
+    <MDI key="Model_type">ranger</MDI>
+    <MDI key="Mtry">6</MDI>
+    <MDI key="Number_trees">200</MDI>
+    <MDI key="Outputs_version">RUN06</MDI>
+    <MDI key="WoSIS_version">Data stream 7</MDI>
+  </Metadata>
+  <VRTRasterBand dataType="Int16" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">509</MDI>
+      <MDI key="STATISTICS_MEAN">125.26820155831</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_STDDEV">73.401710028428</MDI>
+    </Metadata>
+    <NoDataValue>-32768</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.4990196078431373</HistMin>
+        <HistMax>509.4990196078431</HistMax>
+        <BucketCount>510</BucketCount>
+        <IncludeOutOfRange>0</IncludeOutOfRange>
+        <Approximate>1</Approximate>
+        <HistCounts>2|5|8|13|17|13|16|8|23|25|15|24|24|35|39|37|44|47|39|46|43|51|54|58|58|70|55|55|47|49|55|59|65|48|55|62|49|70|62|64|59|63|53|52|53|45|63|67|59|64|56|46|62|78|63|67|61|80|71|66|67|55|68|63|73|71|69|76|50|77|78|77|67|88|87|82|63|81|63|91|79|78|86|85|99|81|82|99|88|91|93|89|96|96|105|117|95|94|106|119|121|115|132|118|132|127|134|117|123|121|123|118|121|117|118|118|113|105|125|113|131|115|111|98|112|96|124|91|93|103|95|93|95|87|79|72|81|101|75|91|84|74|70|86|81|93|90|77|86|65|89|96|80|86|98|82|103|92|81|88|96|88|79|86|73|80|75|74|80|75|73|73|77|77|69|72|70|63|64|78|68|75|58|66|73|61|75|65|57|64|72|66|53|49|41|50|55|71|62|50|46|52|52|53|50|42|48|37|46|41|46|53|36|46|34|44|36|50|49|45|37|40|40|36|34|45|30|39|31|42|27|30|27|35|25|37|24|33|27|24|24|25|23|23|25|33|28|27|25|19|23|23|12|20|15|21|27|33|17|10|29|24|13|17|13|15|10|16|20|13|12|8|15|15|7|18|13|8|11|12|14|10|17|10|6|12|15|8|11|14|8|10|7|6|6|9|6|9|6|8|7|7|5|9|5|7|5|4|4|4|5|11|2|6|2|3|2|2|5|5|5|4|4|2|4|6|3|4|5|4|1|4|3|4|1|4|4|1|1|2|1|2|3|1|2|2|0|3|1|2|1|1|1|1|1|2|1|0|0|1|0|0|2|1|1|1|0|1|1|1|3|2|1|2|3|0|2|0|1|1|1|1|2|1|0|1|2|0|0|0|1|1|2|0|0|1|0|0|1|0|0|0|1|0|0|0|0|2|0|1|0|0|1|1|0|0|1|1|0|0|1|0|0|0|0|1|0|0|0|0|2|0|0|1|0|0|1|1|0|0|0|0|0|0|0|0|1|1|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|2|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|1</HistCounts>
+      </HistItem>
+    </Histograms>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_2-4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49599" yOff="31891" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48249" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49149" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48249" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48249" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49599" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48699" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48699" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_2-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49149" yOff="31891" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48699" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./cfvo_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49149" yOff="31441" xS

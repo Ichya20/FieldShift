@@ -1,0 +1,53 @@
+{
+  "nextPageToken": "ClBEQVRBL0dBRVotVjUvTUFQU0VUL1JFUzA1LVNJWC9HQUVaLVY1LlJFUzA1LVNJWC5IUDAxMjAuQUdFUkE1LkhJU1QuQVZPQy5IUkxNLnRpZg==",
+  "items": [
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.HILM.json",
+      "size": "638"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.HILM.tif",
+      "size": "691791"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.HRLM.json",
+      "size": "638"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.HRLM.tif",
+      "size": "460255"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.LILM.json",
+      "size": "638"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.LILM.tif",
+      "size": "657897"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.LRLM.json",
+      "size": "638"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.ALF.LRLM.tif",
+      "size": "442834"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.AVOC.HILM.json",
+      "size": "640"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.AVOC.HILM.tif",
+      "size": "477410"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.AVOC.HRLM.json",
+      "size": "640"
+    },
+    {
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.AVOC.HRLM.tif",
+      "size": "369157"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-11-08T11:26:13.222968+00:00",
+  "status": "passed",
+  "pass": true,
+  "frozen_files_unchanged": 391,
+  "source_checksums_verified": 38,
+  "vegetation_rows_verified": 304,
+  "checks": [
+    "unchanged frozen package",
+    "source URL/time/size/SHA256",
+    "complete requested composites and unique keys",
+    "sensor identities separate",
+    "VI scale/range and selected dates",
+    "strict QA masks and excluded cloudy data",
+    "Aqua provider QA bit definitions present",
+    "independent monthly good-only means; blanks and no interpolation",
+    "climate ETo matched inputs and equation consistency"
+  ]
+}

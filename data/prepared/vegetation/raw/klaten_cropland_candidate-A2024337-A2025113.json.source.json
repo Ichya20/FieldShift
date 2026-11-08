@@ -1,0 +1,11 @@
+{
+  "file": "raw/klaten_cropland_candidate-A2024337-A2025113.json",
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+  "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+  "request_started_at_utc": "2026-11-08T10:03:23.450836+00:00",
+  "retrieved_at_utc": "2026-11-08T10:04:02.036314+00:00",
+  "http_status": 200,
+  "transport": "curl.exe with Windows Schannel TLS validation",
+  "bytes": 19818,
+  "sha256": "a720347fba627080d610139e6c3a9bc7983dbd157c4dc98d938b4f39f9995703"
+}

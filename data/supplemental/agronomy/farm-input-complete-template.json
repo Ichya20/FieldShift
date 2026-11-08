@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.1-supplemental",
+  "is_template": true,
+  "farm": {
+    "farm_id": null,
+    "field_id": null,
+    "location": {
+      "geometry_geojson": null,
+      "representative_longitude": null,
+      "representative_latitude": null,
+      "area_ha_reported": null,
+      "area_ha_geometry": null,
+      "village": null,
+      "district": null,
+      "province": null,
+      "country_code": null,
+      "boundary_recorded_at": null,
+      "boundary_source": null
+    },
+    "current_crop": {
+      "crop_id": null,
+      "cultivar": null,
+      "seed_source": null,
+      "production_system": null,
+      "sowing_date": null,
+      "transplanting_date": null,
+      "expected_harvest_date": null,
+      "observed_growth_stage": null,
+      "stage_observed_at": null,
+      "establishment_method": null,
+      "rice_ecosystem": null,
+      "rice_water_regime": null
+    },
+    "rotation_history": null,
+    "irrigation": {
+      "system": null,
+      "source": null,
+      "rainfed": null,
+      "availability_window_start": null,
+      "availability_window_end": null,
+      "capacity_m3_day": null,
+      "allocation_m3_season": null,
+      "application_efficiency_fraction": null,
+      "water_cost_idr_m3": null,
+      "water_table_depth_m": null,
+      "drainage_condition": null,
+      "flooding_history": null,
+      "water_control": null
+    },
+    "soil_lab": {
+      "sampling_date": null,
+      "laboratory": null,
+      "method": null,
+      "depth_top_cm": null,
+      "depth_bottom_cm": null,
+      "ph_h2o": null,
+      "organic_carbon_percent": null,
+      "total_n_percent": null,
+      "available_p_mg_kg": null,
+      "exchangeable_k_cmolc_kg": null,
+      "ec_ds_m": null,
+      "texture_class": null,
+      "bulk_density_g_cm3": null,
+      "field_capacity_fraction": null,
+      "wilting_point_fraction": null,
+      "rootable_depth_cm": null,
+      "report_file": null
+    },
+    "management": {
+      "tillage": null,
+      "residue_fate": null,
+      "fertilizer_history": null,
+      "organic_amendments": null,
+      "legume_inoculation": null,
+      "nodulation_observations": null,
+      "pest_disease_weed_history": null,
+      "pesticide_history": null,
+      "soil_management_for_transition": null,
+      "nutrient_balance": null,
+      "local_host_range_evidence": null
+    },
+    "resources": {
+      "labor_available_days_season": null,
+      "machinery_access": null,
+      "seed_access": null,
+      "budget_idr_season": null
+    },
+    "market": {
+      "buyer_access": null,
+      "crop_preferences": null,
+      "contract_constraints": null,
+      "farm_gate_prices": null,
+      "expected_marketable_yield_kg_ha": null,
+      "transport_storage_costs": null,
+      "currency": null,
+      "price_observed_at": null
+    },
+    "costs": {
+      "seed_idr_ha": null,
+      "fertilizer_idr_ha": null,
+      "pest_management_idr_ha": null,
+      "labor_idr_ha": null,
+      "machinery_idr_ha": null,
+      "irrigation_idr_ha": null,
+      "other_idr_ha": null,
+      "reference_season": null
+    },
+    "priorities": {
+      "water_saving_weight": null,
+      "net_income_weight": null,
+      "soil_health_weight": null,
+      "risk_tolerance": null,
+      "planning_horizon_start": null,
+      "planning_horizon_end": null,
+      "excluded_crops": null
+    },
+    "provenance": {
+      "respondent_role": null,
+      "information_source": null,
+      "recorded_at": null,
+      "local_extension_reviewed_at": null
+    }
+  },
+  "planning": {
+    "horizon": null,
+    "allowed_crop_ids": null,
+    "excluded_crop_ids": null,
+    "existing_sequence": null,
+    "slot_start_dates": null,
+    "locked_prefix_length": null,
+    "continuation_confirmed": null,
+    "duration_by_crop": null,
+    "preparation_gap_days": null,
+    "nursery_separate_from_main_field": null,
+    "nursery_location_ref": null,
+    "selected_priorities": null
+  },
+  "context": {
+    "time_mode": null,
+    "climate_window": null,
+    "explicit_climate_context": null,
+    "layer_support": null,
+    "ph_reference_input": null,
+    "temperature_reference_input": null,
+    "vegetation_reference_input": null,
+    "gaez_reference_input": null
+  },
+  "provenance": {
+    "fields": null
+  }
+}

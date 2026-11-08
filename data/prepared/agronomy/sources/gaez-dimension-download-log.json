@@ -1,0 +1,65 @@
+[
+  {
+    "id": "gaez-crop-res05",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.json",
+    "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+    "path": "sources/gaez-crop-res05.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 9874,
+    "sha256": "a925fd16f32279fa96af0d34e3b2d04a85e594bbca8ededcb7d3fd102c17e5b2",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.json"
+  },
+  {
+    "id": "gaez-period",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.json",
+    "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+    "path": "sources/gaez-period.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 965,
+    "sha256": "d6ce86f2dac4a86577b4b139c3301e9fe5d0d20ad6c8ddb1d7045905d259c345",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.json"
+  },
+  {
+    "id": "gaez-ssp",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.json",
+    "accessed_at_utc": "2026-11-08T09:57:41.335974+00:00",
+    "path": "sources/gaez-ssp.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 695,
+    "sha256": "58f0a7efe8d6548813e05318e7f64e2bc45bd461cbe16ea03378561f1a661956",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.json"
+  },
+  {
+    "id": "gaez-clim",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.json",
+    "accessed_at_utc": "2026-11-08T09:57:41.339364+00:00",
+    "path": "sources/gaez-clim.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 1162,
+    "sha256": "5e73e95aacaa92021face4102350a4a48f6d948621ce2a0488bed58b5d336318",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.json"
+  },
+  {
+    "id": "gaez-wsim-res05",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.json",
+    "accessed_at_utc": "2026-11-08T09:57:42.838320+00:00",
+    "path": "sources/gaez-wsim-res05.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 838,
+    "sha256": "94414300c40ca683fa4e976cc7ed76831213946e6e50736b354bf9ecd8cc997b",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.json"
+  },
+  {
+    "id": "gaez-mapset-config",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/GAEZ-V5.RES05-SIX.json",
+    "accessed_at_utc": "2026-11-08T09:57:43.747804+00:00",
+    "path": "sources/gaez-mapset-config.json",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

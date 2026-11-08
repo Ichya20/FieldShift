@@ -1,0 +1,10 @@
+{
+  "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/bands",
+  "retrieved_at_utc": "2026-11-08T11:06:05.782243+00:00",
+  "retrieval_time_basis": "file modification time of successful same-session curl probe",
+  "http_status": null,
+  "status_note": "Probe succeeded with curl --fail; exact status was not captured",
+  "file": "sources/MYD13Q1-bands.json",
+  "bytes": 2366,
+  "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303"
+}

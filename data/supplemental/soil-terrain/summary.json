@@ -1,0 +1,230 @@
+{
+  "module_id": "soil-terrain-supplemental",
+  "prepared_at_utc": "2026-11-08T11:29:01.731548+00:00",
+  "status": "public_sample_evidence_audited_with_explicit_source_holes",
+  "before": {
+    "prepared_rasters": 180,
+    "properties": 12,
+    "depths": 5,
+    "statistics": 3,
+    "legacy_cell_records": 12960,
+    "usable_values": 11900,
+    "ambiguous_zeros": 1056,
+    "negative_sentinels": 4
+  },
+  "after": {
+    "native_rasters_retrieved": 180,
+    "native_properties": 12,
+    "native_depths": 5,
+    "native_grid_shape": [
+      9,
+      11
+    ],
+    "legacy_center_audit_records": 12960,
+    "original_zeros": {
+      "valid_model_quantile_zero": 340,
+      "confirmed_source_nodata": 716,
+      "still_unresolved": 0
+    },
+    "original_negative_sentinels_confirmed_nodata": 4,
+    "legacy_center_interpretable_values_in_supplemental": 12240,
+    "legacy_center_confirmed_nodata_records": 720,
+    "legacy_positive_values_matching_native": 11900,
+    "prepared_files_modified": false,
+    "comparison_status_counts": {
+      "legacy_usable_matches_native": 11900,
+      "legacy_zero_source_nodata_at_coordinate": 716,
+      "legacy_zero_native_zero_verified": 340,
+      "legacy_sentinel_source_nodata_confirmed": 4
+    },
+    "native_subset_total_cells": 17820,
+    "native_subset_valid_cells": 16560,
+    "native_subset_nodata_cells": 1260
+  },
+  "anchors": {
+    "primary": {
+      "coordinate": {
+        "latitude": -7.721875031299882,
+        "longitude": 110.55354472008753
+      },
+      "expected_value_count": 180,
+      "available_value_count": 180,
+      "verified_model_zero_count": 5,
+      "source_nodata_count": 0,
+      "missing_extractions": [],
+      "properties": 12,
+      "depths": 5,
+      "source_support": "Native 250m SoilGrids model cell, not a measured farmer field"
+    },
+    "comparison": {
+      "coordinate": {
+        "latitude": -7.7240416666666665,
+        "longitude": 110.546875
+      },
+      "expected_value_count": 180,
+      "available_value_count": 180,
+      "verified_model_zero_count": 5,
+      "source_nodata_count": 0,
+      "missing_extractions": [],
+      "properties": 12,
+      "depths": 5,
+      "source_support": "Native 250m SoilGrids model cell, not a measured farmer field"
+    }
+  },
+  "zero_interpretation": "Valid cfvo Q0.05 zeros are lower prediction-quantile values with a valid native mask and source nodata=-32768; they are not observed absence of gravel. Other classified zero outputs correspond to explicit source nodata at the same coordinates.",
+  "sources": {
+    "core_properties": "Original public ISRIC GeoTIFF source tiles; bounded native-window reads.",
+    "retention": "Public pre-release GeoTIFF URLs extracted from official ISRIC ISO records; source phase is retained.",
+    "source_manifest": "native-source-manifest.json",
+    "catalog_evidence_manifest": "catalog-source-manifest.json",
+    "direct_subset_checksums": "native-source-manifest.json records[].subset_sha256",
+    "retention_metadata_records": {
+      "wv0010": {
+        "path": "raw/retention-wv0010-iso.xml",
+        "sha256": "2d6704f0fcf636ed8a1d496de328fe008370ac370120ee4bb315a904e9dc4921"
+      },
+      "wv0033": {
+        "path": "raw/retention-wv0033-iso.xml",
+        "sha256": "4e8989c72249f36395ffbe2a651aff1d6b7ac0393231d907b08404b18fdeab32"
+      },
+      "wv1500": {
+        "path": "raw/retention-wv1500-iso.xml",
+        "sha256": "b30b92a03dea4c8da71fb60d0a4ee910862f7e0092f6404cb0849b96bd5f636f"
+      }
+    },
+    "full_global_raster_downloaded": false,
+    "total_http_range_transfer_bytes": null,
+    "range_transfer_note": "The window rasters are small; network range metadata/block bytes were not instrumented. No whole remote global TIFF was fetched."
+  },
+  "gaps": [
+    {
+      "id": "native_source_holes",
+      "kind": "provider_nodata",
+      "status": "retained_not_imputed",
+      "description": "The native grid has 7 masked cells per layer; the earlier geographic grid has 4 masked coordinate positions. Keep null/no-data for these locations; no nearest-valid or coarse fallback."
+    },
+    {
+      "id": "coverage_beyond_sample",
+      "kind": "public_extraction_not_performed",
+      "status": "not_acquired",
+      "description": "This package covers only the bounded Klaten sample window; a new farm/location needs independent layer-specific extraction and QA."
+    },
+    {
+      "id": "retention_model_phase",
+      "kind": "source_limitation",
+      "status": "pre_release_label_retained",
+      "description": "Retention source distribution is labelled pre-release; current field moisture, usable irrigation supply and calibrated profile water capacity are not inferred."
+    }
+  ],
+  "needs_farmer": [
+    "Verified field boundary/area and actual farm location",
+    "Measured soil profile/test method/date, available P/K and salinity where relevant",
+    "Rice water regime, drainage, irrigation availability and field management",
+    "Actual crop/variety history and future planting/harvest dates",
+    "Priorities, resource constraints, prices/costs/yields if later evaluating economics"
+  ],
+  "validation": {
+    "pass": true,
+    "checks": {
+      "all_180_native_rasters_retrieved": true,
+      "all_12960_legacy_centers_audited": true,
+      "every_legacy_bad_record_has_an_audit": true,
+      "legacy_positive_values_all_match_native": true,
+      "no_legacy_positive_values_changed_or_disagreed": true,
+      "all_original_zeros_classified_without_imputation": true,
+      "all_four_negative_sentinels_confirmed_source_nodata": true,
+      "native_subset_checksums_match": true,
+      "all_native_layers250m": true,
+      "native_masks_match_explicit_nodata_tags": true,
+      "all_anchors_180_valid_values": true,
+      "no_quantile_inversions": true,
+      "texture_mean_closure_pass": true,
+      "retention_mean_monotonic": true,
+      "prepared390_files_still_match": true
+    },
+    "prepared_integrity": {
+      "files": 390,
+      "mismatches": [],
+      "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde"
+    },
+    "quantile_inversions": [],
+    "texture_checks": [
+      {
+        "depth": "0-5cm",
+        "valid_cells": 92,
+        "sum_percent_min": 99.9,
+        "sum_percent_max": 100.1,
+        "outside_99_5_to_100_5_percent": 0
+      },
+      {
+        "depth": "5-15cm",
+        "valid_cells": 92,
+        "sum_percent_min": 99.9,
+        "sum_percent_max": 100.1,
+        "outside_99_5_to_100_5_percent": 0
+      },
+      {
+        "depth": "15-30cm",
+        "valid_cells": 92,
+        "sum_percent_min": 99.9,
+        "sum_percent_max": 100.1,
+        "outside_99_5_to_100_5_percent": 0
+      },
+      {
+        "depth": "30-60cm",
+        "valid_cells": 92,
+        "sum_percent_min": 99.9,
+        "sum_percent_max": 100.1,
+        "outside_99_5_to_100_5_percent": 0
+      },
+      {
+        "depth": "60-100cm",
+        "valid_cells": 92,
+        "sum_percent_min": 99.9,
+        "sum_percent_max": 100.1,
+        "outside_99_5_to_100_5_percent": 0
+      }
+    ],
+    "retention_checks": [
+      {
+        "depth": "0-5cm",
+        "valid_cells": 92,
+        "nonmonotonic_cells": 0
+      },
+      {
+        "depth": "5-15cm",
+        "valid_cells": 92,
+        "nonmonotonic_cells": 0
+      },
+      {
+        "depth": "15-30cm",
+        "valid_cells": 92,
+        "nonmonotonic_cells": 0
+      },
+      {
+        "depth": "30-60cm",
+        "valid_cells": 92,
+        "nonmonotonic_cells": 0
+      },
+      {
+        "depth": "60-100cm",
+        "valid_cells": 92,
+        "nonmonotonic_cells": 0
+      }
+    ],
+    "native_mask_identical_across_layers": true,
+    "bad_subset_hashes": []
+  },
+  "reproducibility": {
+    "scripts_directory": "scripts/data/supplemental_soil",
+    "order": [
+      "probe_soil_sources.py",
+      "direct_source_probe.py",
+      "inspect_source_catalog.py",
+      "collect_native_soil.py",
+      "finalize_soil_audit.py"
+    ],
+    "runtime": "Python 3.12 with existing isolated rasterio/numpy vendor; no new packages installed",
+    "read_only_prepared_manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde"
+  }
+}

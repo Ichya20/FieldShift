@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-11-08",
+  "purpose": "Track optional enhancements separately from numeric inputs actually prepared.",
+  "sources": [
+    {"id": "HLS", "role": "30m vegetation refinement", "status": "metadata_only_from_previous_audit", "needed_next": "Earthdata or other authorized public delivery; numeric subset, cloud mask and pixel QA must be validated", "evidence_directory": "work/vegetation-terrain"},
+    {"id": "SMAP", "role": "Surface/root-zone regional moisture context", "status": "metadata_only_from_previous_audit", "needed_next": "Authorized bounded numeric extraction and QA; L4 is model assimilation; review 2026 advisory", "evidence_directory": "work/water-thermal"},
+    {"id": "GPM_IMERG", "role": "Independent rainfall refinement", "status": "metadata_only_from_previous_audit", "needed_next": "Bounded historical extraction and QA; do not silently merge Final and Late versions", "evidence_directory": "work/water-thermal"},
+    {"id": "ECOSTRESS", "role": "Thermal and ET/stress refinement", "status": "metadata_only_from_previous_audit", "needed_next": "Authorized subset, cloud/water masks, valid pixels and product-unit verification", "evidence_directory": "work/water-thermal"},
+    {"id": "NASADEM", "role": "NASA elevation alternative", "status": "metadata_only_from_previous_audit", "needed_next": "Authorized numeric subset and terrain QA; Copernicus fallback carries its own source identity", "evidence_directory": "work/vegetation-terrain"},
+    {"id": "GRACE_GRACE_FO", "role": "Broad regional water-storage context", "status": "metadata_only_from_previous_audit", "needed_next": "Regional series and uncertainty only if needed; unsuitable for one field or irrigation well", "evidence_directory": "work/water-thermal"},
+    {"id": "SIAP_TANAM_BMKG", "role": "Local operational crop calendar and seasonal forecast", "status": "reference_only_no_verified_machine_feed", "needed_next": "Verify current operational forecast issue date, area, permissions and delivery before integration"},
+    {"id": "FARM_MARKET_ECONOMICS", "role": "Revenue/cost comparison", "status": "not_collected", "needed_next": "Farmer-specific prices, costs, yield history or locally validated assumptions; national averages are not farm profit"}
+  ],
+  "interpretation": "None of these metadata-only records may be displayed as measured field conditions. All listed NASA missions are not mandatory for the prototype."
+}

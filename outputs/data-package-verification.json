@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-11-08T11:30:35.854180+00:00",
+  "archive": "outputs/fieldshift-data-publik-v2-2026-11-08.zip",
+  "files": 969,
+  "bytes": 12384051,
+  "crc_pass": true,
+  "sha256": "2fc7890d77cb16385d46a807373d77751bb211ec8c056926f0cc575d2819ebe4",
+  "prepared_files_unchanged": 390,
+  "supplemental_files_hashed": 526
+}

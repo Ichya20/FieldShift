@@ -1,0 +1,20 @@
+{
+  "file": "raw/power-regional-20261025-20261107.json",
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+  "effective_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+  "http_status": 200,
+  "retrieved_at_utc": "2026-11-08T11:11:59.745568+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at_utc": "2026-11-08T11:11:57.640389+00:00",
+      "ended_at_utc": "2026-11-08T11:11:59.739391+00:00",
+      "return_code": 0,
+      "result": "200|https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST",
+      "error": ""
+    }
+  ],
+  "bytes": 4172,
+  "sha256": "64e662c2371fe141115eb43f96e682090ab6bde7a9975d9714d625320ef5f308",
+  "transport": "Windows curl Schannel TLS verification enabled"
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753",
+  "retrieved_at_utc": "2026-11-08T11:05:57.007341+00:00",
+  "retrieval_time_basis": "file modification time of successful same-session curl probe",
+  "http_status": null,
+  "status_note": "Probe succeeded with curl --fail; exact status was not captured",
+  "file": "raw/MOD13Q1-dates-primary.json",
+  "bytes": 36238,
+  "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9"
+}

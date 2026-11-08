@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "public_references": [
+    {
+      "id": "anjasmoro-maturity-after-planting",
+      "source_id": "kementan-variety-catalog-brmp",
+      "locator": "PDF page87 (printed64), Lampiran27",
+      "quote": "Umur masak : 82–93 hari setelah tanam",
+      "fact": {
+        "crop_id": "kedelai",
+        "cultivar": "Anjasmoro",
+        "minimum_days": 82,
+        "maximum_days": 93,
+        "origin_event_wording": "tanam (planting)",
+        "endpoint_wording": "masak (maturity)"
+      },
+      "interpretation": "Explicit public duration origin filled. For a declared direct-seeded scenario, source planting can be mapped to sowing only with an explicit establishment assumption. Method uses elapsed-day-zero by declared convention, not a source guarantee.",
+      "limits": [
+        "Reference cultivar only; farmer cultivar/date not supplied.",
+        "Different published range from original rounded82–92 and PVT82.5–92.5; preserve alternatives.",
+        "Maturity reference does not guarantee exact field harvest date."
+      ]
+    },
+    {
+      "id": "anjasmoro-descriptor-maturity",
+      "source_id": "kementan-anjasmoro-descriptor",
+      "locator": "PDF page1",
+      "quote": "Umur polong masak : 82,5 - 92,5 hari",
+      "fact": {
+        "minimum_days": 82.5,
+        "maximum_days": 92.5,
+        "endpoint_wording": "polong masak"
+      },
+      "interpretation": "Retain fractional descriptor; origin not explicit on this page.",
+      "limits": [
+        "Do not round into integer calendar silently."
+      ]
+    },
+    {
+      "id": "anjasmoro-hst-corroboration",
+      "source_id": "kementan-lakin-2023",
+      "locator": "PDF page39 (printed40), item23",
+      "quote": "berumur 82,5-92,5 HST",
+      "fact": {
+        "minimum_days": 82.5,
+        "maximum_days": 92.5,
+        "origin_abbreviation": "HST"
+      },
+      "interpretation": "Corroborating official HST reference; integer after-planting alternative is independently explicit in catalog.",
+      "limits": [
+        "No local duration calibration; no realized farm yield from the adjoining potential-yield text."
+      ]
+    },
+    {
+      "id": "rice-ecosystem-taxonomy",
+      "source_id": "fao-rice-phase-water-regimes",
+      "locator": "Section2.1.1 Rice area and water regime",
+      "quote": "Irrigated, Rainfed Lowland, Floodprone/Swampland, and Rainfed Upland",
+      "fact": {
+        "reference_categories": [
+          "irrigated",
+          "rainfed_lowland",
+          "floodprone_swampland",
+          "rainfed_upland"
+        ]
+      },
+      "interpretation": "Public vocabulary; local field classification remains unknown.",
+      "limits": [
+        "Historical reference context, not a farm map or current classification."
+      ]
+    },
+    {
+      "id": "rice-upland-definition",
+      "source_id": "fao-rice-ecosystems",
+      "locator": "Rice environment, preceding The rice plant",
+      "quote": "Upland rice is grown under dryland conditions without irrigation and without puddling",
+      "fact": {
+        "no_irrigation": true,
+        "no_puddling": true
+      },
+      "interpretation": "Reference ecological definition only; direct seeding alone is insufficient for assignment.",
+      "limits": [
+        "Never assign field ecosystem from seed-establishment method."
+      ]
+    },
+    {
+      "id": "rice-lowland-and-transition",
+      "source_id": "fao-rice-ecosystems",
+      "locator": "Rice environment, preceding The rice plant",
+      "quote": "In such systems, the preferred cultural practices for rice are often antagonistic to the preferred practices for the non-rice crops, and vice versa.",
+      "fact": {
+        "rice_nonrice_management_review_required": true
+      },
+      "interpretation": "Supports separate drainage, water control and soil-management review.",
+      "limits": [
+        "No locally quantified cost, transition duration, drainage threshold or benefit."
+      ]
+    },
+    {
+      "id": "rice-rainfed-lowland-flooded",
+      "source_id": "fao-rice-ecosystems",
+      "locator": "Rice environment, preceding The rice plant",
+      "quote": "Rainfed lowland rice is grown in bunded fields that are flooded with rainwater for at least part of the cropping season",
+      "fact": {
+        "rainfed_can_be_flooded": true
+      },
+      "interpretation": "Rainfed is not equivalent to upland or nonflooded.",
+      "limits": [
+        "Irrigation status alone does not determine actual water regime."
+      ]
+    }
+  ],
+  "rice_vocabulary": {
+    "ecosystem": {
+      "terms": [
+        "irrigated_lowland",
+        "rainfed_lowland",
+        "rainfed_upland",
+        "flood_prone"
+      ],
+      "type": "normalized_FAO_reference_categories",
+      "source_ids": [
+        "fao-rice-phase-water-regimes",
+        "fao-rice-ecosystems"
+      ]
+    },
+    "water_regime": {
+      "terms": [
+        "flooded_paddy",
+        "intermittently_flooded_paddy",
+        "nonflooded_aerobic",
+        "mixed_or_variable",
+        "other_documented"
+      ],
+      "type": "project_operational_vocabulary_not_FAO_codes",
+      "value": null
+    },
+    "establishment_method": {
+      "terms": [
+        "direct_seeded",
+        "transplanted",
+        "other_documented"
+      ],
+      "type": "separate_project_input",
+      "value": null
+    }
+  },
+  "planting_duration_policy": {
+    "selection": "No cultivar or duration is automatically assigned to an actual farm.",
+    "alternatives": "Keep 82–93 days after planting, 82.5–92.5 HST, 82.5–92.5 days unspecified, and existing rounded 82–92 days as separately sourced references.",
+    "calendar": "Calendar integer source alternatives require explicit source selection, establishment and elapsed-day-zero convention.",
+    "fractional_days": "No silent floor/ceil/midpoint conversion.",
+    "farmer_selected_cultivar": null,
+    "local_duration_days": null
+  },
+  "management_prerequisites": {
+    "paddy_upland_transition": [
+      "actual rice ecosystem",
+      "actual water regime",
+      "drainage and water-table evidence",
+      "ability to control supply and drainage",
+      "soil preparation and declared time gap",
+      "local agronomic review"
+    ],
+    "legume_mechanism": [
+      "inoculation details",
+      "nodulation observations",
+      "residue fate",
+      "nutrient inputs/exports and measurement basis"
+    ],
+    "pest_break": [
+      "identified local organism",
+      "documented crop-specific host range",
+      "management/occurrence history",
+      "local review"
+    ]
+  },
+  "unavailable_effects": {
+    "crop_yield_prediction": null,
+    "nitrogen_credit_kg_ha": null,
+    "water_saving_percent": null,
+    "net_irrigation_mm": null,
+    "gross_irrigation_mm": null,
+    "profit_difference_idr_ha": null,
+    "soil_health_gain": null
+  }
+}

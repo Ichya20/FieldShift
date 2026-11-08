@@ -1,0 +1,210 @@
+{
+  "checked_date": "2026-11-08",
+  "timezone": "Asia/Jakarta",
+  "files": [
+    {
+      "path": "data/prepared/climate/raw/power-19910101-20001231.json",
+      "sha256": "6328fba4606891f7aaa402200e6d00a359d31e1be6a8c0269099b63fae4674ad",
+      "bytes": 724086,
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2",
+          "SRB",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "19910101",
+        "end": "20001231"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "messages": [],
+      "retrieval": {
+        "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=19910101&end=20001231&format=JSON&time-standard=LST",
+        "accessed_at_utc": "2026-11-08T09:56:04.479062+00:00",
+        "bytes": 724086,
+        "http_status": 200
+      }
+    },
+    {
+      "path": "data/prepared/climate/raw/power-20010101-20101231.json",
+      "sha256": "15ab8cc8d86266151aa9306b4b2e137c0abff6d493e7c24cf5b6b6683339b37a",
+      "bytes": 724090,
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2",
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20010101",
+        "end": "20101231"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "messages": [],
+      "retrieval": {
+        "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20010101&end=20101231&format=JSON&time-standard=LST",
+        "accessed_at_utc": "2026-11-08T09:56:07.065171+00:00",
+        "bytes": 724090,
+        "http_status": 200
+      }
+    },
+    {
+      "path": "data/prepared/climate/raw/power-20110101-20201231.json",
+      "sha256": "2ad686f5ffce5b4faacf05c940e3615b3b485ed24748f251d75f4e0eb44e819a",
+      "bytes": 724273,
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2",
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20110101",
+        "end": "20201231"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "messages": [],
+      "retrieval": {
+        "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20110101&end=20201231&format=JSON&time-standard=LST",
+        "accessed_at_utc": "2026-11-08T09:56:10.599136+00:00",
+        "bytes": 724273,
+        "http_status": 200
+      }
+    },
+    {
+      "path": "data/prepared/climate/raw/power-20210101-20251231.json",
+      "sha256": "70e6bcd1a2d3dc3ba8cb1008ee673de767414db9a9cfa4ff26fbef67dd426a74",
+      "bytes": 362850,
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2",
+          "SYN1DEG",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20210101",
+        "end": "20251231"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "messages": [],
+      "retrieval": {
+        "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20210101&end=20251231&format=JSON&time-standard=LST",
+        "note": "Existing sample audited 2026-11-08; exact original access timestamp unavailable"
+      }
+    },
+    {
+      "path": "data/prepared/climate/raw/power-20260101-20261107.json",
+      "sha256": "0407ba1351ba81b594b8f18adf44ee28d278f81fff7a2a23bfcda8be2b0fc82f",
+      "bytes": 62958,
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2",
+          "GEOSIT",
+          "SYN1DEG",
+          "FLASHFLUX",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20260101",
+        "end": "20261107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "messages": [],
+      "retrieval": {
+        "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20260101&end=20261107&format=JSON&time-standard=LST",
+        "accessed_at_utc": "2026-11-08T09:56:13.765221+00:00",
+        "bytes": 62958,
+        "http_status": 200
+      }
+    }
+  ],
+  "documentation": [
+    "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+    "https://power.larc.nasa.gov/docs/methodology/data/sources_meteorology/",
+    "https://www.fao.org/4/x0490e/x0490e06.htm",
+    "https://www.fao.org/4/x0490e/x0490e07.htm",
+    "https://www.fao.org/4/x0490e/x0490e08.htm"
+  ],
+  "scope": "Yogyakarta-Klaten regional context; one representative POWER point, no field boundaries",
+  "baseline": "1991-2020 calculated from daily data, not claimed to be station normals",
+  "resolution": "Meteorology native 0.5 degree latitude x 0.625 degree longitude; other parameters follow original source grids",
+  "method": {
+    "eto": "FAO56 eq6, es from Tmax/Tmin, ea from daily dewpoint, u2 as provided, P from POWER, daily G=0, albedo=0.23, extraterrestrial radiation latitude/day, Rso uses POWER coordinate elevation",
+    "operational_guard": "Rs/Rso clipped to [0.3,1] to keep empirical cloud term physical; flagged per day; additional implementation assumption, not a measured input",
+    "aggregation": "Totals and means are null unless every calendar day valid; anomalies are against same calendar month in baseline",
+    "quantile": "Linear interpolation between ordered monthly observations (type7)",
+    "dry_spell": "Rain <1 mm/day, count resets at month boundary and on missing values; descriptive threshold, not crop failure threshold"
+  },
+  "limitations": [
+    "Regional model estimates, not in-field observations",
+    "Recent 2026 partial and may be revised; not seasonal forecasts",
+    "Daily LST is not timezone Asia/Jakarta",
+    "ETo and P-ETo are screening indicators; irrigation requires crop/stage/soil/management",
+    "Five-year historical sample retained as originally downloaded; fresh earlier and recent requests can reflect different reprocessing vintages"
+  ]
+}

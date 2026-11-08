@@ -1,0 +1,134 @@
+<VRTDataset rasterXSize="159243" rasterYSize="58034">
+  <SRS>PROJCS["Interrupted_Goode_Homolosine",GEOGCS["GCS_WGS_1984 ellipse",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Interrupted_Goode_Homolosine"],UNIT["Meter",1]]</SRS>
+  <GeoTransform> -1.9949000000000000e+07,  2.5000000000000000e+02,  0.0000000000000000e+00,  8.3610000000000000e+06,  0.0000000000000000e+00, -2.5000000000000000e+02</GeoTransform>
+  <Metadata>
+    <MDI key="Code_version">v2.0.0</MDI>
+    <MDI key="Covariates">depth,clm_wcl_srdyrsum,clm_wcl_s04rad,clm_wcl_s08rad,clm_wcl_s07rad,mor_mrg_vbf,clm_wcl_srdyrstd,mor_env_demm,clm_mod_lstd05std,clm_esa_s09avg,mor_mrg_twi,clm_wcl_bio17,clm_wcl_bio07,luc_gfc_trely10,clm_mod_lstd11std,clm_esa_s05avg,clm_mod_lstd01std,clm_mod_lstd03std,clm_mod_lstd04std,clm_wcl_bio19,clm_wcl_bio02,clm_mod_lstd12std,veg_mod_eviyravg,clm_wcl_bio16,clm_mod_lstd02std,clm_wcl_p09tot,veg_mod_evirng,clm_wcl_p10tot,veg_mod_nppy15,clm_mod_lstd10std,clm_wcl_bio18,mor_mrg_vdp,clm_mod_lstd09std,clm_wcl_p12tot,mor_mrg_crv,clm_wcl_p05tot,clm_wcl_p04tot,veg_mod_evievn,clm_wcl_bio15,mor_mrg_dvm</MDI>
+    <MDI key="Litter_layers">FALSE</MDI>
+    <MDI key="Model">Quantile Regression Forests</MDI>
+    <MDI key="Model_type">ranger</MDI>
+    <MDI key="Mtry">12</MDI>
+    <MDI key="Number_trees">200</MDI>
+    <MDI key="Other_synth_profiles">GSOCmapV1.2.0_masked_152160.tiff</MDI>
+    <MDI key="Outputs_abstract">no WISE, March 2020 snapshot, NZ and Siberia gaps, Aussie issue #252</MDI>
+    <MDI key="Outputs_version">RUN18</MDI>
+    <MDI key="WoSIS_version">Data stream 7</MDI>
+  </Metadata>
+  <VRTRasterBand dataType="Int16" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">4113</MDI>
+      <MDI key="STATISTICS_MEAN">529.26437370021</MDI>
+      <MDI key="STATISTICS_MINIMUM">10</MDI>
+      <MDI key="STATISTICS_STDDEV">582.04791290382</MDI>
+    </Metadata>
+    <NoDataValue>-32768</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_2-4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49596" yOff="31891" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48246" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49146" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48246" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-1.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48246" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49596" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48696" yOff="32791" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_3-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48696" yOff="32341" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_2-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49146" yOff="31891" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48696" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49146" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_2-2.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="48696" yOff="31891" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_1-4.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="450" DataType="Int16" BlockXSize="450" BlockYSize="9" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="450" />
+      <DstRect xOff="49596" yOff="31441" xSize="450" ySize="450" />
+      <NODATA>-32768</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">./soc_0-5cm_mean/tileSG-018-027/tileSG-018-027_4-3.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperti

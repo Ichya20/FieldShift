@@ -1,0 +1,27 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "mapsetCode" : "RES05-SIX",
+  "code" : "GAEZ-V5.RES05-SIX.FP2140.ENSEMBLE.SSP126.ALF.HILM",
+  "dimensionMembers" : [ {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "PERIOD",
+    "code" : "FP2140"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "CLIM",
+    "code" : "ENSEMBLE"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "SSP",
+    "code" : "SSP126"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "CROP-RES05",
+    "code" : "ALF"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "WSIM-RES05",
+    "code" : "HILM"
+  } ],
+  "styleCode" : null
+}

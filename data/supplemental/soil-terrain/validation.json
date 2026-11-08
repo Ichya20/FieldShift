@@ -1,0 +1,92 @@
+{
+  "pass": true,
+  "checks": {
+    "all_180_native_rasters_retrieved": true,
+    "all_12960_legacy_centers_audited": true,
+    "every_legacy_bad_record_has_an_audit": true,
+    "legacy_positive_values_all_match_native": true,
+    "no_legacy_positive_values_changed_or_disagreed": true,
+    "all_original_zeros_classified_without_imputation": true,
+    "all_four_negative_sentinels_confirmed_source_nodata": true,
+    "native_subset_checksums_match": true,
+    "all_native_layers250m": true,
+    "native_masks_match_explicit_nodata_tags": true,
+    "all_anchors_180_valid_values": true,
+    "no_quantile_inversions": true,
+    "texture_mean_closure_pass": true,
+    "retention_mean_monotonic": true,
+    "prepared390_files_still_match": true
+  },
+  "prepared_integrity": {
+    "files": 390,
+    "mismatches": [],
+    "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde"
+  },
+  "quantile_inversions": [],
+  "texture_checks": [
+    {
+      "depth": "0-5cm",
+      "valid_cells": 92,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.1,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "5-15cm",
+      "valid_cells": 92,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.1,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "15-30cm",
+      "valid_cells": 92,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.1,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "30-60cm",
+      "valid_cells": 92,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.1,
+      "outside_99_5_to_100_5_percent": 0
+    },
+    {
+      "depth": "60-100cm",
+      "valid_cells": 92,
+      "sum_percent_min": 99.9,
+      "sum_percent_max": 100.1,
+      "outside_99_5_to_100_5_percent": 0
+    }
+  ],
+  "retention_checks": [
+    {
+      "depth": "0-5cm",
+      "valid_cells": 92,
+      "nonmonotonic_cells": 0
+    },
+    {
+      "depth": "5-15cm",
+      "valid_cells": 92,
+      "nonmonotonic_cells": 0
+    },
+    {
+      "depth": "15-30cm",
+      "valid_cells": 92,
+      "nonmonotonic_cells": 0
+    },
+    {
+      "depth": "30-60cm",
+      "valid_cells": 92,
+      "nonmonotonic_cells": 0
+    },
+    {
+      "depth": "60-100cm",
+      "valid_cells": 92,
+      "nonmonotonic_cells": 0
+    }
+  ],
+  "native_mask_identical_across_layers": true,
+  "bad_subset_hashes": []
+}

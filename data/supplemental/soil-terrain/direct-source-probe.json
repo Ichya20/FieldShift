@@ -1,0 +1,114 @@
+{
+  "prepared_at_utc": "2026-11-08T11:10:51.378602+00:00",
+  "results": [
+    {
+      "source_url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05/tileSG-021-071/tileSG-021-071_1-1.tif",
+      "shape": [
+        15,
+        26
+      ],
+      "nodata_tag": -32768.0,
+      "crs_wkt": "PROJCS[\"Interrupted_Goode_Homolosine\",GEOGCS[\"GCS_unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"Unknown\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        250.0,
+        0.0,
+        12018500.0,
+        0.0,
+        -250.0,
+        -849250.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        12018500.0,
+        -853000.0,
+        12025000.0,
+        -849250.0
+      ],
+      "contains_primary": false
+    },
+    {
+      "source_url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05/tileSG-021-071/tileSG-021-071_1-2.tif",
+      "shape": [
+        83,
+        450
+      ],
+      "nodata_tag": -32768.0,
+      "crs_wkt": "PROJCS[\"Interrupted_Goode_Homolosine\",GEOGCS[\"GCS_unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"Unknown\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        250.0,
+        0.0,
+        12025000.0,
+        0.0,
+        -250.0,
+        -849250.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        12025000.0,
+        -870000.0,
+        12137500.0,
+        -849250.0
+      ],
+      "contains_primary": false
+    },
+    {
+      "source_url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05/tileSG-021-071/tileSG-021-071_1-3.tif",
+      "shape": [
+        82,
+        450
+      ],
+      "nodata_tag": -32768.0,
+      "crs_wkt": "PROJCS[\"Interrupted_Goode_Homolosine\",GEOGCS[\"GCS_unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"Unknown\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        250.0,
+        0.0,
+        12137500.0,
+        0.0,
+        -250.0,
+        -849250.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        12137500.0,
+        -869750.0,
+        12250000.0,
+        -849250.0
+      ],
+      "contains_primary": false
+    },
+    {
+      "source_url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05/tileSG-021-071/tileSG-021-071_1-4.tif",
+      "shape": [
+        253,
+        450
+      ],
+      "nodata_tag": -32768.0,
+      "crs_wkt": "PROJCS[\"Interrupted_Goode_Homolosine\",GEOGCS[\"GCS_unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"Unknown\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        250.0,
+        0.0,
+        12250000.0,
+        0.0,
+        -250.0,
+        -849250.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bounds": [
+        12250000.0,
+        -912500.0,
+        12362500.0,
+        -849250.0
+      ],
+      "contains_primary": true,
+      "primary_value": 0.0
+    }
+  ]
+}

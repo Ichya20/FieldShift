@@ -1,0 +1,54 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "code" : "CLIM",
+  "caption" : "Climate Data Source",
+  "description" : null,
+  "type" : "WHAT",
+  "timeSubtype" : null,
+  "additionalInfo" : null,
+  "tags" : null,
+  "members" : {
+    "AGERA5" : {
+      "code" : "AGERA5",
+      "caption" : "AgERA5",
+      "description" : null,
+      "index" : 1
+    },
+    "GFDL-ESM4" : {
+      "code" : "GFDL-ESM4",
+      "caption" : "GFDL-ESM4",
+      "description" : null,
+      "index" : 2
+    },
+    "IPSL-CM6A-LR" : {
+      "code" : "IPSL-CM6A-LR",
+      "caption" : "IPSL-CM6A-LR",
+      "description" : null,
+      "index" : 3
+    },
+    "MPI-ESM1-2-HR" : {
+      "code" : "MPI-ESM1-2-HR",
+      "caption" : "MPI-ESM1-2-HR",
+      "description" : null,
+      "index" : 4
+    },
+    "MRI-ESM2-0" : {
+      "code" : "MRI-ESM2-0",
+      "caption" : "MRI-ESM2-0",
+      "description" : null,
+      "index" : 5
+    },
+    "UKESM1-0-LL" : {
+      "code" : "UKESM1-0-LL",
+      "caption" : "UKESM1-0-LL",
+      "description" : null,
+      "index" : 6
+    },
+    "ENSEMBLE" : {
+      "code" : "ENSEMBLE",
+      "caption" : "ENSEMBLE",
+      "description" : null,
+      "index" : 7
+    }
+  }
+}

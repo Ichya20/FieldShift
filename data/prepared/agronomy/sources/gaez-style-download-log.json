@@ -1,0 +1,24 @@
+[
+  {
+    "id": "gaez-six-legend",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+    "accessed_at_utc": "2026-11-08T09:59:13.970827+00:00",
+    "path": "sources/gaez-six-legend.json",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 1365,
+    "sha256": "aa154e6eaf0dfd188df8861cc6a21e82251eb7ea21ce895dac79eae889772167",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json"
+  },
+  {
+    "id": "gaez-six-legend",
+    "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.sld",
+    "accessed_at_utc": "2026-11-08T09:59:14.724267+00:00",
+    "path": "sources/gaez-six-legend.sld",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 1785,
+    "sha256": "4bda0fe69c5596ae1ec28d3a5c317ae840387e353b0c8354e681033ea298b606",
+    "final_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.sld"
+  }
+]

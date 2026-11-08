@@ -1,0 +1,20 @@
+{
+  "file": "sources/MOD13Q1-bands.json",
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+  "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+  "http_status": 200,
+  "retrieved_at_utc": "2026-11-08T11:11:57.631913+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at_utc": "2026-11-08T11:11:48.987156+00:00",
+      "ended_at_utc": "2026-11-08T11:11:57.627896+00:00",
+      "return_code": 0,
+      "result": "200|https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+      "error": ""
+    }
+  ],
+  "bytes": 2366,
+  "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303",
+  "transport": "Windows curl Schannel TLS verification enabled"
+}

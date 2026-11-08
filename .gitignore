@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.log
+frontend/node_modules/
+frontend/dist/
+
+# Local vendored third-party packages (reinstall with pip --target, see README)
+scripts/data/soil-terrain/_vendor/
+work/validation-deps/

@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-11-08T11:26:12.884010+00:00",
+  "pass": true,
+  "status": "passed",
+  "scope": "Integrity and requested catalog-available numeric samples only; not completeness of all field or agronomic knowledge",
+  "frozen_prepared_files_before": 391,
+  "frozen_prepared_files_after": 391,
+  "changed_frozen_files": [],
+  "unique_product_point_composite_keys": true,
+  "actual_composites": 304,
+  "expected_composites": 304,
+  "strict_good_rows": 69,
+  "maximum_grid_discrepancy_from_frozen_Terra_m": 0.0,
+  "failed_acquisitions": [],
+  "warnings": [
+    {
+      "file": "sources/MYD13Q1-v61-filespec.html",
+      "error": "Previous three-attempt failure retained without retry: https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1"
+    }
+  ],
+  "local_verifier": "scripts/data/supplemental_environment/verify_environment.py"
+}

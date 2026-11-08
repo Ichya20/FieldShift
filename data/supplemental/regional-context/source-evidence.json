@@ -1,0 +1,35 @@
+{
+  "retrieval_policy": "Cached unless -Refresh is passed; no background refresh or backend is installed.",
+  "sources": [
+    {
+      "bytes": 7985,
+      "url": "https://api.bmkg.go.id/publik/prakiraan-cuaca?adm4=33.10.25.1003",
+      "path": "sources/bmkg-klaten-forecast.json",
+      "retrieved_at_utc": "2026-11-08T11:09:52.7745320+00:00",
+      "id": "bmkg-klaten-forecast",
+      "sha256": "474600ba1831e122595b5fb6c21d38b78a19be233c07e51d193acbe0bc7bc790",
+      "retrieval": "HTTPS with system certificate validation; saved response bytes",
+      "http_status": 200
+    },
+    {
+      "bytes": 22941,
+      "url": "https://data.bmkg.go.id/prakiraan-cuaca/",
+      "path": "sources/bmkg-forecast-docs.html",
+      "retrieved_at_utc": "2026-11-08T11:09:53.1076094+00:00",
+      "id": "bmkg-forecast-docs",
+      "sha256": "3dea18f805acf10344def49c232e5cbbb4f94e7bdfa9f1ef66ce41e40a9d97d8",
+      "retrieval": "HTTPS with system certificate validation; saved response bytes",
+      "http_status": 200
+    },
+    {
+      "bytes": 223094,
+      "url": "https://www.bmkg.go.id/cuaca/prakiraan-cuaca/33.10.25.1003",
+      "path": "sources/bmkg-klaten-location.html",
+      "retrieved_at_utc": "2026-11-08T11:09:53.3771669+00:00",
+      "id": "bmkg-klaten-location",
+      "sha256": "2c95c6958cd3e77ab23834acfbfad2c0e75a180846f617314873a3b5023f9cb3",
+      "retrieval": "HTTPS with system certificate validation; saved response bytes",
+      "http_status": 200
+    }
+  ]
+}

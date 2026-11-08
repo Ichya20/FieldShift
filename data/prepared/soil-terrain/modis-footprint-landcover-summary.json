@@ -1,0 +1,49 @@
+{
+  "prepared_utc": "2026-11-08T10:06:19.754959+00:00",
+  "location_role": "comparison demonstration pixel, not a farm boundary",
+  "sample_coordinate": {
+    "latitude": -7.7240416666666665,
+    "longitude": 110.546875
+  },
+  "worldcover_point_class_code": 40,
+  "worldcover_point_class_label": "Cropland",
+  "modis_metadata_file": "data/prepared/vegetation/raw/klaten_cropland_candidate-A2021001-A2021145.json",
+  "modis_metadata_sha256": "ae34cd3484b98306149ec3ff6cffad846e46b57e33f025b9f542fc1e5174cd68",
+  "modis_source_url": "https://modisrest.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+  "sinusoidal_crs": "+proj=sinu +R=6371007.181 +nadgrids=@null +wktext",
+  "sinusoidal_bounds_m": [
+    12180723.03,
+    -858981.78,
+    12180954.686358264,
+    -858750.123641736
+  ],
+  "sinusoidal_cellsize_m": 231.656358264,
+  "nominal_product_resolution_m": 250,
+  "worldcover_epoch": 2021,
+  "worldcover_stats_within_modis_pixel": {
+    "grid_cells": 630,
+    "valid_cells": 630,
+    "class_histogram": {
+      "10": {
+        "label": "Tree cover",
+        "cells": 124
+      },
+      "30": {
+        "label": "Grassland",
+        "cells": 22
+      },
+      "40": {
+        "label": "Cropland",
+        "cells": 436
+      },
+      "50": {
+        "label": "Built-up",
+        "cells": 48
+      }
+    },
+    "cropland_fraction_valid_cells": 0.692063492063492,
+    "built_up_fraction_valid_cells": 0.0761904761904762
+  },
+  "method": "Densify 1x1 REST-reported sinusoidal pixel edges (16 segments/edge), project to WGS84 sphere R=6371007.181, then count native WorldCover cells whose centers lie inside polygon; no all-touched expansion.",
+  "limitations": "WorldCover2021 classification is uncertain and land use may have changed. Class fractions use native grid cell counts; geographic cell areas vary negligibly across this small pixel. This is no claim of farm ownership, field extent, current crop species, or collection version of REST MODIS service."
+}

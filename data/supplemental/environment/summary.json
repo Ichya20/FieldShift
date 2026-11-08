@@ -1,0 +1,655 @@
+{
+  "prepared_at_utc": "2026-11-08T11:26:12.885052+00:00",
+  "as_of_client_date": "2026-11-08",
+  "purpose": "Supplement public environmental context before backend; frozen prepared package is unchanged",
+  "before": {
+    "vegetation": {
+      "product": "Terra MOD13Q1",
+      "period": [
+        "2021-01-01",
+        "2025-12-31"
+      ],
+      "composites": 230,
+      "primary_months_with_strict_good": 31,
+      "comparison_months_with_strict_good": 32
+    },
+    "climate": {
+      "period": [
+        "1991-01-01",
+        "2026-11-07"
+      ],
+      "last_valid_eto": "2026-11-02",
+      "last_valid_rain": "2026-11-05"
+    }
+  },
+  "after": {
+    "additional_vegetation_series": [
+      {
+        "product": "MOD13Q1",
+        "point_id": "klaten_cropland_primary",
+        "expected_composites": 19,
+        "first_catalog_date": "2026-01-01",
+        "last_catalog_date": "2026-10-16",
+        "downloaded_composites": 19,
+        "quality_counts": {
+          "good_strict": 9,
+          "excluded": 2,
+          "marginal_review": 8
+        },
+        "quality_counts_by_year": {
+          "2026": {
+            "good_strict": 9,
+            "excluded": 2,
+            "marginal_review": 8
+          }
+        },
+        "first_selected_observation": "2026-01-06",
+        "last_selected_observation": "2026-10-16",
+        "last_strict_good_observation": "2026-09-21"
+      },
+      {
+        "product": "MOD13Q1",
+        "point_id": "klaten_cropland_candidate",
+        "expected_composites": 19,
+        "first_catalog_date": "2026-01-01",
+        "last_catalog_date": "2026-10-16",
+        "downloaded_composites": 19,
+        "quality_counts": {
+          "good_strict": 7,
+          "marginal_review": 10,
+          "excluded": 2
+        },
+        "quality_counts_by_year": {
+          "2026": {
+            "good_strict": 7,
+            "marginal_review": 10,
+            "excluded": 2
+          }
+        },
+        "first_selected_observation": "2026-01-06",
+        "last_selected_observation": "2026-10-16",
+        "last_strict_good_observation": "2026-09-21"
+      },
+      {
+        "product": "MYD13Q1",
+        "point_id": "klaten_cropland_primary",
+        "expected_composites": 133,
+        "first_catalog_date": "2021-01-09",
+        "last_catalog_date": "2026-10-08",
+        "downloaded_composites": 133,
+        "quality_counts": {
+          "excluded": 88,
+          "marginal_review": 19,
+          "good_strict": 26
+        },
+        "quality_counts_by_year": {
+          "2021": {
+            "excluded": 18,
+            "marginal_review": 1,
+            "good_strict": 4
+          },
+          "2022": {
+            "excluded": 20,
+            "good_strict": 2,
+            "marginal_review": 1
+          },
+          "2023": {
+            "excluded": 10,
+            "good_strict": 8,
+            "marginal_review": 5
+          },
+          "2024": {
+            "excluded": 15,
+            "marginal_review": 5,
+            "good_strict": 3
+          },
+          "2025": {
+            "excluded": 17,
+            "good_strict": 3,
+            "marginal_review": 3
+          },
+          "2026": {
+            "excluded": 8,
+            "good_strict": 6,
+            "marginal_review": 4
+          }
+        },
+        "first_selected_observation": "2021-01-21",
+        "last_selected_observation": "2026-10-10",
+        "last_strict_good_observation": "2026-09-22"
+      },
+      {
+        "product": "MYD13Q1",
+        "point_id": "klaten_cropland_candidate",
+        "expected_composites": 133,
+        "first_catalog_date": "2021-01-09",
+        "last_catalog_date": "2026-10-08",
+        "downloaded_composites": 133,
+        "quality_counts": {
+          "excluded": 90,
+          "marginal_review": 16,
+          "good_strict": 27
+        },
+        "quality_counts_by_year": {
+          "2021": {
+            "excluded": 17,
+            "marginal_review": 2,
+            "good_strict": 4
+          },
+          "2022": {
+            "excluded": 20,
+            "marginal_review": 2,
+            "good_strict": 1
+          },
+          "2023": {
+            "good_strict": 10,
+            "excluded": 11,
+            "marginal_review": 2
+          },
+          "2024": {
+            "excluded": 15,
+            "good_strict": 4,
+            "marginal_review": 4
+          },
+          "2025": {
+            "excluded": 19,
+            "good_strict": 2,
+            "marginal_review": 2
+          },
+          "2026": {
+            "excluded": 8,
+            "good_strict": 6,
+            "marginal_review": 4
+          }
+        },
+        "first_selected_observation": "2021-01-21",
+        "last_selected_observation": "2026-10-10",
+        "last_strict_good_observation": "2026-09-22"
+      }
+    ],
+    "historical_availability_diagnostic": [
+      {
+        "point_id": "klaten_cropland_primary",
+        "history_months": 60,
+        "before_Terra_good_months": 31,
+        "Aqua_good_months_separately": 18,
+        "additional_months_with_Aqua_observation": [
+          "2021-08",
+          "2022-03",
+          "2023-06"
+        ],
+        "months_with_either_sensor_good_observation": 34,
+        "remaining_months_without_either_sensor_good_observation": 26,
+        "role": "availability diagnostic only; no merged NDVI/EVI means, no cross-sensor calibration"
+      },
+      {
+        "point_id": "klaten_cropland_candidate",
+        "history_months": 60,
+        "before_Terra_good_months": 32,
+        "Aqua_good_months_separately": 17,
+        "additional_months_with_Aqua_observation": [
+          "2021-08",
+          "2023-01",
+          "2023-06"
+        ],
+        "months_with_either_sensor_good_observation": 35,
+        "remaining_months_without_either_sensor_good_observation": 25,
+        "role": "availability diagnostic only; no merged NDVI/EVI means, no cross-sensor calibration"
+      }
+    ],
+    "climate_publication_recheck": {
+      "status": "numeric_recheck_downloaded",
+      "period": [
+        "2026-10-25",
+        "2026-11-07"
+      ],
+      "last_valid_date_by_parameter": {
+        "T2M": "2026-11-05",
+        "T2M_MAX": "2026-11-05",
+        "T2M_MIN": "2026-11-05",
+        "PRECTOTCORR": "2026-11-05",
+        "RH2M": "2026-11-05",
+        "WS2M": "2026-11-05",
+        "ALLSKY_SFC_SW_DWN": "2026-11-02",
+        "GWETTOP": "2026-11-05",
+        "GWETROOT": "2026-11-05",
+        "EVPTRNS": "2026-11-05",
+        "PS": "2026-11-05",
+        "T2MDEW": "2026-11-05",
+        "eto_fao56_mm_day": "2026-11-02"
+      },
+      "valid_days_by_parameter": {
+        "T2M": 12,
+        "T2M_MAX": 12,
+        "T2M_MIN": 12,
+        "PRECTOTCORR": 12,
+        "RH2M": 12,
+        "WS2M": 12,
+        "ALLSKY_SFC_SW_DWN": 9,
+        "GWETTOP": 12,
+        "GWETROOT": 12,
+        "EVPTRNS": 12,
+        "PS": 12,
+        "T2MDEW": 12,
+        "eto_fao56_mm_day": 9
+      },
+      "units": {
+        "T2M": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters"
+        },
+        "T2M_MAX": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters Maximum"
+        },
+        "T2M_MIN": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters Minimum"
+        },
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        },
+        "RH2M": {
+          "units": "%",
+          "longname": "Relative Humidity at 2 Meters"
+        },
+        "WS2M": {
+          "units": "m/s",
+          "longname": "Wind Speed at 2 Meters"
+        },
+        "ALLSKY_SFC_SW_DWN": {
+          "units": "MJ/m^2/day",
+          "longname": "All Sky Surface Shortwave Downward Irradiance"
+        },
+        "GWETTOP": {
+          "units": "1",
+          "longname": "Surface Soil Wetness"
+        },
+        "GWETROOT": {
+          "units": "1",
+          "longname": "Root Zone Soil Wetness"
+        },
+        "EVPTRNS": {
+          "units": "MJ/m^2/day",
+          "longname": "Evapotranspiration Energy Flux"
+        },
+        "PS": {
+          "units": "kPa",
+          "longname": "Surface Pressure"
+        },
+        "T2MDEW": {
+          "units": "C",
+          "longname": "Dew/Frost Point at 2 Meters"
+        }
+      },
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "GEOSIT",
+          "FLASHFLUX",
+          "POWER"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20261025",
+        "end": "20261107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8,
+          159.13
+        ]
+      },
+      "source_file": "raw/power-regional-20261025-20261107.json",
+      "overlap_comparison_to_frozen_data": {
+        "T2M": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "T2M_MAX": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "T2M_MIN": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "PRECTOTCORR": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "RH2M": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "WS2M": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "ALLSKY_SFC_SW_DWN": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "GWETTOP": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "GWETROOT": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "EVPTRNS": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "PS": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "T2MDEW": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        },
+        "eto_fao56_mm_day": {
+          "newly_available_dates": [],
+          "no_longer_available_dates": [],
+          "revised_values": []
+        }
+      },
+      "eto_method": {
+        "formula": "FAO56 equation6 daily grass reference, G=0, albedo0.23; dewpoint-derived vapour pressure; supplied2m wind",
+        "guard": "Rs/Rso bounded to0.3..1 with explicit flag; same operational assumption as frozen reference",
+        "reference_code": "scripts/data/prepare_climate.py",
+        "reference_code_sha256": "ef7b6d0f73a24fe6b83cab77e8f8a148b42e0d028a834e42aa491c25e8582049",
+        "reference_equation_validation": "data/prepared/climate/method-validation.json",
+        "reference_equation_validation_sha256": "16fcba53bc25d8093d3f67f28cd8c61b6c264ab1e6d7bb044eb538476bc3e396",
+        "scientific_reference": "https://www.fao.org/4/x0490e/x0490e06.htm"
+      }
+    },
+    "new_raw_rows": {
+      "vegetation_composites": 304,
+      "modis_band_pixel_entries": 3648,
+      "power_daily_dates": 14,
+      "power_parameter_values_including_nulls": 168
+    }
+  },
+  "remaining_gaps": [
+    "Cloud/snow/shadow and marginal observations remain excluded from primary statistics; no interpolation",
+    "Terra/Aqua remain separate sensors; no calibrated combined index series has been validated",
+    "Collection version is not explicit in ORNL subset response; C6.1 QA definition is a reference, not proof of subset collection version",
+    "Historical WorldCover fractions do not prove current crop, field boundary or 2026 land use",
+    "Observation and processing/publication latency remain; downloads are not real-time field monitoring",
+    "POWER forcing remains coarse regional model context, ETo is reference grass ET and P-ETo is not irrigation requirement",
+    "No seasonal forecast or future field weather inferred from historical/rechecked data",
+    "Farmer history, cultivar, irrigation availability and farm observations still unavailable"
+  ],
+  "units": {
+    "NDVI_EVI": "dimensionless; integer times 0.0001",
+    "POWER": "Original API units retained; EVPTRNS MJ/m2/day, not mm/day",
+    "ETo": "derived FAO56 grass-reference mm/day"
+  },
+  "qa_policy": {
+    "name": "Project conservative selection; QA bit definitions from NASA LAADS MOD13Q1 C6.1 filespec",
+    "primary": "reliability=0; MODLAND=0; usefulness<=2; aerosol<=1; all cloud/snow/shadow flags=0; pure-land=1; valid NDVI/EVI/date",
+    "marginal": "reliability in {0,1}; MODLAND<=1; usefulness<=10; aerosol<=2; cloud/snow/shadow flags=0; pure-land=1; valid values, but not primary",
+    "excluded": "All remaining observations; raw values preserved, never used in monthly means",
+    "monthly_assignment": "Selected pixel observation date, not composite interval start; no interpolation",
+    "threshold_note": "Strict usefulness/aerosol thresholds are project choices, not a NASA validated crop recommendation criterion"
+  },
+  "validation": {
+    "checked_at_utc": "2026-11-08T11:26:12.884010+00:00",
+    "pass": true,
+    "status": "passed",
+    "scope": "Integrity and requested catalog-available numeric samples only; not completeness of all field or agronomic knowledge",
+    "frozen_prepared_files_before": 391,
+    "frozen_prepared_files_after": 391,
+    "changed_frozen_files": [],
+    "unique_product_point_composite_keys": true,
+    "actual_composites": 304,
+    "expected_composites": 304,
+    "strict_good_rows": 69,
+    "maximum_grid_discrepancy_from_frozen_Terra_m": 0.0,
+    "failed_acquisitions": [],
+    "warnings": [
+      {
+        "file": "sources/MYD13Q1-v61-filespec.html",
+        "error": "Previous three-attempt failure retained without retry: https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1"
+      }
+    ],
+    "local_verifier": "scripts/data/supplemental_environment/verify_environment.py"
+  },
+  "optional_reference_failures": [
+    {
+      "file": "sources/MYD13Q1-v61-filespec.html",
+      "error": "Previous three-attempt failure retained without retry: https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1"
+    }
+  ],
+  "aqua_alternative_reference": {
+    "file": "sources/MYD13Q1-earthengine-catalog.html",
+    "status": "downloaded",
+    "role": "Provider catalog describes Aqua DetailedQA bit definitions; actual ORNL subset collection version remains unverified"
+  },
+  "qa_definition_sources": [
+    {
+      "file": "data/prepared/vegetation/sources/mod13q1-v61-filespec.html",
+      "sha256": "5ed85b1b4ee4ddf520dbba2b308197b2ab95ab4fe8cfb5b65e790ff246e4ee57",
+      "role": "Frozen NASA MODIS VI bitfield definition; numeric Aqua API band metadata separately checked; ORNL collection version remains unverified"
+    },
+    {
+      "file": "sources/MYD13Q1-bands.json",
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303",
+      "role": "Aqua current band names, valid ranges, fill and scale metadata"
+    }
+  ],
+  "source_hashes": [
+    {
+      "file": "sources/MOD13Q1-bands.json",
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands"
+    },
+    {
+      "file": "raw/MOD13Q1-dates-primary.json",
+      "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753"
+    },
+    {
+      "file": "sources/MYD13Q1-bands.json",
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/bands"
+    },
+    {
+      "file": "raw/MYD13Q1-dates-primary.json",
+      "sha256": "ebdcf0f395e57b1c03d9f19e78a89772a97f7b82f3d684bd96cc757d4fd851fc",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753"
+    },
+    {
+      "file": "raw/power-regional-20261025-20261107.json",
+      "sha256": "64e662c2371fe141115eb43f96e682090ab6bde7a9975d9714d625320ef5f308",
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CRH2M%2CWS2M%2CALLSKY_SFC_SW_DWN%2CGWETTOP%2CGWETROOT%2CEVPTRNS%2CPS%2CT2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20261025&end=20261107&format=JSON&time-standard=LST"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_primary-A2026001-A2026145.json",
+      "sha256": "5a37ced94903e77d57265b13f94fbd3826065f37ed26c51c91ab5b45fddb683c",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_primary-A2026161-A2026289.json",
+      "sha256": "8f45e5b065b250080d7838d981063c7fa56a4968aeae4b163cb77af888760788",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_candidate-A2026001-A2026145.json",
+      "sha256": "98ec22fbd055e5082d0131e7e48ac46ff7e3c07b830473864bc4a2ecf337407e",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026001&endDate=A2026145&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MOD13Q1-klaten_cropland_candidate-A2026161-A2026289.json",
+      "sha256": "101ac85b0d7db18b25bb4fcb5773a90220dfbc5f5c01021aedf22a7a8e33af8d",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026161&endDate=A2026289&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "sources/MYD13Q1-earthengine-catalog.html",
+      "sha256": "56b60a57e8a6eb73ff973e7e6227325d92365032bbc9d30ceb04db06907b6de6",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021009-A2021153.json",
+      "sha256": "706868c4d1b5ba5d0974d3bbd05af43c87581a8beb9c080590d5bdb6f36dea76",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021169-A2021313.json",
+      "sha256": "a58da1906b390f5343d31ece6cf81f5bffee779034595161cc88c4df76e8dfaa",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2021329-A2022105.json",
+      "sha256": "fc976c7e37af687be3f482c5c439cb69de7ffbb48964de526b2007ec14b74ed9",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2022121-A2022265.json",
+      "sha256": "c43245b2b4d6ea1b2b8f5c1ecfe4c8cac645d46d89abda6a8557c7a3444c7afd",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2022281-A2023057.json",
+      "sha256": "d47c8e02ba1ef9dd4422f1036b42a244abadd4e92c4fcb2fef456a62d9f55e66",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2023073-A2023217.json",
+      "sha256": "db61900d9b0cb8b262c48e8cddb9c4ec0f6c3befc579ff1b963bb8971a12156a",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2023233-A2024009.json",
+      "sha256": "a1edca42b46adad6dc8b8eef43425b18329dc9dd5798ec1e9f1778b749e9b1e2",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024025-A2024169.json",
+      "sha256": "3f93165ebbeaa34d9462e7170ddbc14d8e3a70f57e12042ded4753b3de7c42f2",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024185-A2024329.json",
+      "sha256": "9131e06f0c69eb003a9433f4c4b3864af3595c94563d80573712d24c7e1c25d9",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2024345-A2025121.json",
+      "sha256": "7d2c96726c10b3913d78591dd377bc17fa6c51ac3d2314431e5fc133f53500aa",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2025137-A2025281.json",
+      "sha256": "b10ed1e35bb63a9352f436284cc68d556cd76f19e6506f996e1be4e031a6d657",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2025297-A2026073.json",
+      "sha256": "8fabbb126ce9bacf4c100c6b5a794a764c46c32a5587cf1c5b848cdf9dd55f57",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2026089-A2026233.json",
+      "sha256": "e2b6681eb8aeeb64bef193b56558b88bf1fe2cdc14a922899787cbedd679e926",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_primary-A2026249-A2026281.json",
+      "sha256": "9f889a6a0c8616e6fd8b792b5b9595540a8ba162d55cea326138737c33086164",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021009-A2021153.json",
+      "sha256": "a3317fee00067c4a08af0c67a645c4bc49cdf12b786c767e9ea9c551c38a8ed5",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021009&endDate=A2021153&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021169-A2021313.json",
+      "sha256": "61b258b160b4329339d726a4283de7dcdcad6a2ebbea22d622b2ac4b01d71b31",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021169&endDate=A2021313&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2021329-A2022105.json",
+      "sha256": "f476de1a5c656cd46cd58272ed7b8bf6903a58aa4c97eeb9dd4a3bf9b6e955ac",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021329&endDate=A2022105&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2022121-A2022265.json",
+      "sha256": "96c8ca30c4fa5e5334732dd9794e0e2a13670db12988e2b51926793058d75bdf",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022121&endDate=A2022265&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2022281-A2023057.json",
+      "sha256": "d198a60fd88e492bcbb894c6fb2f1052bc3090f10e42f0ebdee47bc08ba1b51e",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022281&endDate=A2023057&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2023073-A2023217.json",
+      "sha256": "6878375dd46f0faa4dfdf76f20d31341a05956d254149cc8ee6c230d1418789e",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023073&endDate=A2023217&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2023233-A2024009.json",
+      "sha256": "944108a6d0cb4c1c0827025c5f46c33a04671966ba06eb09b5d5ab63a5c9a754",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023233&endDate=A2024009&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024185-A2024329.json",
+      "sha256": "6fa864bf44061e863cf4361e0fb26dc7de171d16e5293e6129f9fe91705a48e1",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024185&endDate=A2024329&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024025-A2024169.json",
+      "sha256": "a591432fe9fd81352b662fe8413d745d9d7c7aaff1e9ed1aac8f18318128a21a",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024025&endDate=A2024169&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2025137-A2025281.json",
+      "sha256": "38b4b2382afc478092f00aa3e89ccc9ef4652f10fbdb044afa9dd25c80bc4f87",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025137&endDate=A2025281&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2025297-A2026073.json",
+      "sha256": "7a1fea87d4de5278b54f92d5802b674b4af7555b7d14eb785f21c31e5a043061",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025297&endDate=A2026073&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2026089-A2026233.json",
+      "sha256": "7b7f7723e5d926b9535c5e488ba2cb29876abcd28756e4d49d97ec03a79bede4",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026089&endDate=A2026233&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2026249-A2026281.json",
+      "sha256": "e3fc4b7c56b49a15b0ffda58065b1652d2b67f088fa5f8871ba4087c77111b37",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2026249&endDate=A2026281&kmAboveBelow=0&kmLeftRight=0"
+    },
+    {
+      "file": "raw/MYD13Q1-klaten_cropland_candidate-A2024345-A2025121.json",
+      "sha256": "dc2f90bbc7c5cf03849147694a37ffe35f6ae3a75631a38f860c52efd33eef78",
+      "url": "https://modis.ornl.gov/rst/api/v1/MYD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024345&endDate=A2025121&kmAboveBelow=0&kmLeftRight=0"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0",
+  "prepared_at_utc": "2026-11-08T10:08:01.715758+00:00",
+  "purpose": "Agronomy reference and input readiness; not an application or agronomic advice",
+  "records": {
+    "crops": 3,
+    "rules": 9,
+    "farm_dictionary_fields": 91,
+    "gaez_point_layer_samples": 12
+  },
+  "storage_bytes_excluding_manifest": 1281027,
+  "download_limit_bytes": 20000000,
+  "global_archive_downloaded": false,
+  "files": [
+    {
+      "path": "agronomy-rules.json",
+      "bytes": 5866,
+      "sha256": "34aa63cfabb7e0175cb96d7458f6e6778f2a1b15d637a45e3190f4b57cc4ab39"
+    },
+    {
+      "path": "crop-reference.csv",
+      "bytes": 1791,
+      "sha256": "e1779b953478b73af6b42c397be23f4547a35247b59996c24b7ee1a3ff63ac93"
+    },
+    {
+      "path": "crop-reference.json",
+      "bytes": 10079,
+      "sha256": "33a86c8fe1169e28e5f6261d48ab5950335a16f9ef4bc289b0173b3bf4347411"
+    },
+    {
+      "path": "farm-input-data-dictionary.json",
+      "bytes": 47230,
+      "sha256": "785bd8df64349c634cd1ce3895e4e9fd38ac22cf11c9cceb9920a64db0872a6e"
+    },
+    {
+      "path": "farm-input-template.json",
+      "bytes": 3334,
+      "sha256": "cfd7377504f3119607c137e6d30abea313afca24d98fc9ea5141b0f9328275aa"
+    },
+    {
+      "path": "gaez-baseline-point.csv",
+      "bytes": 3354,
+      "sha256": "91c753887b930df696572471eaac000273be87cc573e172cc54b95b15bd5dae0"
+    },
+    {
+      "path": "gaez-baseline-point.json",
+      "bytes": 48212,
+      "sha256": "a6c41f9ad526c5855885970b74aa8fab2589821156d20ff909a687fdb524fd48"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4590,
+      "sha256": "e24955b1a2b7c57facdd2f3d4da3d9af96a019f816c10c67d2de6757d67f9484"
+    },
+    {
+      "path": "source-evidence.json",
+      "bytes": 14580,
+      "sha256": "840030da7930bbae19ec99a6e5fbbc20f54626fb6055351b556658d8284da330"
+    },
+    {
+      "path": "sources/ecocrop-maize.html",
+      "bytes": 6393,
+      "sha256": "285c1b1cc3522c5e34ddc552ec46306a364a7c44897421e421e1657bb8194bb0"
+    },
+    {
+      "path": "sources/ecocrop-rice.html",
+      "bytes": 6144,
+      "sha256": "73e150aaf5c203a6b4c55e95d87284cfd3b5c70a425b888c9c436bb74b217e6c"
+    },
+    {
+      "path": "sources/ecocrop-soybean.html",
+      "bytes": 7274,
+      "sha256": "a78789773709a0c3ba7789365bd399b8b84027b54bce17479535257d97bf8094"
+    },
+    {
+      "path": "sources/extra-download-log.json",
+      "bytes": 1325,
+      "sha256": "7bf79346d0b7934bdde485f29213e44bd29d439d8954b7e7517312b935b07079"
+    },
+    {
+      "path": "sources/fao-aquacrop-inputs.html",
+      "bytes": 60183,
+      "sha256": "d6dbb82d3f6eaf88dbf356e29e3ff40c7854377e7071a330b6beaaacbb9aca30"
+    },
+    {
+      "path": "sources/fao-crop-rotation.html",
+      "bytes": 24026,
+      "sha256": "927d4c7b0059a6a1b401d0fcb5dac577b6d297ec3a87afb3dee9f0e63b978fb3"
+    },
+    {
+      "path": "sources/fao-paddy-irrigation.html",
+      "bytes": 12445,
+      "sha256": "c5c75e149444743945445cf2cc39efbf29d40f8e01466657aa94fbd14b3c8e01"
+    },
+    {
+      "path": "sources/fao-seasonal-water.html",
+      "bytes": 127577,
+      "sha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62"
+    },
+    {
+      "path": "sources/fao-water-needs.html",
+      "bytes": 35613,
+      "sha256": "8a415afc75f3f9dbf2a6a7dea0d1009f1c89173ba5b96f7613365c7b00f819fa"
+    },
+    {
+      "path": "sources/gaez-baseline-object-inventory.json",
+      "bytes": 74576,
+      "sha256": "9068aa6a9a6caac2f418de824ce5faa8a4cc08f988b2073659fbc875ca489bd8"
+    },
+    {
+      "path": "sources/gaez-clim.json",
+      "bytes": 1162,
+      "sha256": "5e73e95aacaa92021face4102350a4a48f6d948621ce2a0488bed58b5d336318"
+    },
+    {
+      "path": "sources/gaez-crop-res05.json",
+      "bytes": 9874,
+      "sha256": "a925fd16f32279fa96af0d34e3b2d04a85e594bbca8ededcb7d3fd102c17e5b2"
+    },
+    {
+      "path": "sources/gaez-crops.md",
+      "bytes": 174,
+      "sha256": "c79771c9d15c8146b62b64755731cb58eac4ebf746a9fcc7eb2c521554ce0996"
+    },
+    {
+      "path": "sources/gaez-dimension-download-log.json",
+      "bytes": 2974,
+      "sha256": "67897e5aa99b78e55aa926de14fc944f6d587ea1175676573891820759724e4b"
+    },
+    {
+      "path": "sources/gaez-dimension-inventory.json",
+      "bytes": 3070,
+      "sha256": "effcb7398d50d9df8d739739ea021e73e0ad438a0ed243c2c4857b0d093538ff"
+    },
+    {
+      "path": "sources/gaez-hp0120-objects.json",
+      "bytes": 1743,
+      "sha256": "0449e65d376656c0dbd06be0d8d561d332ba3b226ef65e084b399bd1c221a8ce"
+    },
+    {
+      "path": "sources/gaez-mapset-inventory.json",
+      "bytes": 4906,
+      "sha256": "f32547419dfa98867c4519fed8a3bc6f15dd7a64d1a20e889d3f84f0fdad2854"
+    },
+    {
+      "path": "sources/gaez-period.json",
+      "bytes": 965,
+      "sha256": "d6ce86f2dac4a86577b4b139c3301e9fe5d0d20ad6c8ddb1d7045905d259c345"
+    },
+    {
+      "path": "sources/gaez-six-legend.json",
+      "bytes": 1365,
+      "sha256": "aa154e6eaf0dfd188df8861cc6a21e82251eb7ea21ce895dac79eae889772167"
+    },
+    {
+      "path": "sources/gaez-six-legend.sld",
+      "bytes": 1785,
+      "sha256": "4bda0fe69c5596ae1ec28d3a5c317ae840387e353b0c8354e681033ea298b606"
+    },
+    {
+      "path": "sources/gaez-ssp.json",
+      "bytes": 695,
+      "sha256": "58f0a7efe8d6548813e05318e7f64e2bc45bd461cbe16ea03378561f1a661956"
+    },
+    {
+      "path": "sources/gaez-style-download-log.json",
+      "bytes": 1040,
+      "sha256": "e1d69fe1b379537308d57f545de03e5ed527703c67fda02c628c8fca31ead6bc"
+    },
+    {
+      "path": "sources/gaez-style-inventory.json",
+      "bytes": 11097,
+      "sha256": "2cb15646acfb447cf8586e9cf1fa45502b8c9db6f5f10d7ab0dd001238386865"
+    },
+    {
+      "path": "sources/gaez-user-guide.md",
+      "bytes": 12344,
+      "sha256": "8b0fc35f2526d6d391d67540477a96c42911fa5059ce88a30874a2469ccb3e6c"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.header.bin",
+      "bytes": 65536,
+      "sha256": "2f7fbf17c0806a0ceb73ebdaac52b5eddba76d1eb802688618244a3acfdafa0a"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.json",
+      "bytes": 638,
+      "sha256": "c0b9bf0b3d7b68e219e004672488ff6cfb584d22725a67cbc6cc04e6c8ce249e"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tile-81.bin",
+      "bytes": 3792,
+      "sha256": "0b37bd33d3baa2db10e8a492eb90b6c4d7c2537ac476e55c89fbe8f23058c889"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tile.bin",
+      "bytes": 3792,
+      "sha256": "0b37bd33d3baa2db10e8a492eb90b6c4d7c2537ac476e55c89fbe8f23058c889"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.header.bin",
+      "bytes": 65536,
+      "sha256": "d9e241430e27ac93fb6d34cef4cd0819843ce6102f6d7a1aec4f797adf36afba"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.json",
+      "bytes": 638,
+      "sha256": "90070802a849231b8b26eff97add7046096fb98422cab2329001fc5dd226946a"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tile-81.bin",
+      "bytes": 3618,
+      "sha256": "dfc1655e27c2c349298cb0d5b1854b16405d06957af393f7f39e6110d2a5e0cb"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tile.bin",
+      "bytes": 3618,
+      "sha256": "dfc1655e27c2c349298cb0d5b1854b16405d06957af393f7f39e6110d2a5e0cb"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.header.bin",
+      "bytes": 65536,
+      "sha256": "f5a8d6c3c8939f09dc05e6a63bc680e3a82045756ac819513191426be5f6b7e4"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.json",
+      "bytes": 638,
+      "sha256": "a7c22013500317772caa667a4d59bc16131a83a3a47c8790a861b7d80eb83c9d"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tile-81.bin",
+      "bytes": 5833,
+      "sha256": "d17c85a5e2609c6ef5c99a513842d2a9d899b09728b12a53a4632fd711815d36"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tile.bin",
+      "bytes": 5833,
+      "sha256": "d17c85a5e2609c6ef5c99a513842d2a9d899b09728b12a53a4632fd711815d36"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.header.bin",
+      "bytes": 65536,
+      "sha256": "b1ae732df86f929db0d730148b1f568c3bbdf6f5050127e82e497f7c02965b08"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.json",
+      "bytes": 638,
+      "sha256": "81df388d1c76a92a22dc3fbab9f24f8f99b8299513898d0323b73814cbf527f7"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tile-81.bin",
+      "bytes": 5665,
+      "sha256": "d6283ed137f19ca5b51dd8e2016e817ca3c2a8defa7efc72849f4427db4fbe26"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tile.bin",
+      "bytes": 5665,
+      "sha256": "d6283ed137f19ca5b51dd8e2016e817ca3c2a8defa7efc72849f4427db4fbe26"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.header.bin",
+      "bytes": 65536,
+      "sha256": "dea9793979a0e6945b04a907f452ed5d3851b1dd5ac9dce15c2d8bc75b95dd6d"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.json",
+      "bytes": 638,
+      "sha256": "2863d1700e8d6be887f6be9ef6d1d3aabb3a23cf70e8f56f089994192fed72a0"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tile-81.bin",
+      "bytes": 4378,
+      "sha256": "d1f61b58ac55351094ea49823fcbf1c1fbbd299ba957f9ec96e9738374e9020e"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tile.bin",
+      "bytes": 4378,
+      "sha256": "d1f61b58ac55351094ea49823fcbf1c1fbbd299ba957f9ec96e9738374e9020e"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.header.bin",
+      "bytes": 65536,
+      "sha256": "4b32416a4eeb009d6c460bf6a343ca28d12bf66a40dce44193d463a991c59260"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.json",
+      "bytes": 638,
+      "sha256": "7fd430a2f17740810678e00c825640919207dc1b941c1d6d0d093adf76c9762b"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tile-81.bin",
+      "bytes": 4255,
+      "sha256": "f99d7d9b2d28a98a59d8f006e9dbda82698673c9947a0df33a2e821718619ebe"
+    },
+    {
+      "path": "sources/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tile.bin",
+      "bytes": 4255,
+      "sha256": "f99d7d9b2d28a98a59d8f006e9dbda82698673c9947a0df33a2e821718619ebe"
+    },
+    {
+      "path": "sources/gaez-wsim-res05.json",
+      "bytes": 838,
+      "sha256": "94414300c40ca683fa4e976cc7ed76831213946e6e50736b354bf9ecd8cc997b"
+    },
+    {
+      "path": "sources/kementan-anjasmoro.html",
+      "bytes": 98721,
+      "sha256": "b251ed636309e058ca00a2e747a5c7ab01e4c7b0b8ae52154cf3875120a9b64a"
+    },
+    {
+      "path": "sources/kementan-inpari32.html",
+      "bytes": 58610,
+      "sha256": "80cea237b45f1336f5414b4eba256b3d7a71c8956188e814239cf69a3117bcbd"
+    },
+    {
+      "path": "sources/kementan-jakarin.html",
+      "bytes": 64307,
+      "sha256": "13a1f14c8db48e4922e9eaa59bd550f05f27cd7903d4d1d2f1a427f34d20e48a"
+    },
+    {
+      "path": "sources/kementan-siap-tanam.html",
+      "bytes": 47921,
+      "sha256": "ad820a4782175e1c6be0e42a14d67409f35aa2a72eca1e570216e9218996be12"
+    },
+    {
+      "path": "sources/source-download-log.json",
+      "bytes": 5825,
+      "sha256": "01d52d10c448346c5daa2b98c54dfa64331992701c2c15068ef4b66691ea695f"
+    },
+    {
+      "path": "strategy-comparison-template.json",
+      "bytes": 2251,
+      "sha256": "1fd5122fa37720ee41d1e4466ceba7213607c46c3ce3cae887cef7d397eeab33"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 2642,
+      "sha256": "6c15aa26e091fa6dd8ca29ba7259fc5cfa36ea149f3da7c0249d203e739f96af"
+    }
+  ]
+}

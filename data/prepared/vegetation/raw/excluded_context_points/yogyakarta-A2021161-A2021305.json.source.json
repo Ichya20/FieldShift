@@ -1,0 +1,11 @@
+{
+  "file": "raw/yogyakarta-A2021161-A2021305.json",
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.8&longitude=110.37&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+  "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.8&longitude=110.37&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+  "request_started_at_utc": "2026-11-08T09:56:41.860922+00:00",
+  "retrieved_at_utc": "2026-11-08T09:57:19.125755+00:00",
+  "http_status": 200,
+  "transport": "curl.exe with Windows Schannel TLS validation",
+  "bytes": 19802,
+  "sha256": "d10cd4e1a75ec297654fe8025b5018d033930d9064e94358085bafb1a6a166da"
+}

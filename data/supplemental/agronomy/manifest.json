@@ -1,0 +1,145 @@
+{
+  "created_at_utc": "2026-11-08T11:20:55.835174+00:00",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "data/supplemental/agronomy/agronomy-reference-supplement.json",
+      "bytes": 7003,
+      "sha256": "ae44c19564dbadb6cc7db27d66ed964a1ad8381ccf689774e34fb2e4d4b92501"
+    },
+    {
+      "path": "data/supplemental/agronomy/farm-input-complete-template.json",
+      "bytes": 4362,
+      "sha256": "ad038cef8b572faaf3eb4122e68f555fdd844c935514293d740ce8069196aae2"
+    },
+    {
+      "path": "data/supplemental/agronomy/farm-input-complete.schema.json",
+      "bytes": 143785,
+      "sha256": "b5361a71bf1cd347472e4ec7ab204495adc796fd2779d289b85534c707df1cbf"
+    },
+    {
+      "path": "data/supplemental/agronomy/farm-input-contract.json",
+      "bytes": 179384,
+      "sha256": "869b563c3f65b846a04118c588b98dc86628b2f46d7352d610ff8c04bd901ad3"
+    },
+    {
+      "path": "data/supplemental/agronomy/gap-register.json",
+      "bytes": 64501,
+      "sha256": "2e4268640d2f8b8db4ba95af84d3d7832c494f89e853859be8499fccb462e45c"
+    },
+    {
+      "path": "data/supplemental/agronomy/method-rule-input-map.json",
+      "bytes": 28168,
+      "sha256": "f5ddf7b674d5e48cfdbf6941bb92022f6d4ea82c7d11ff270252230e13aadc73"
+    },
+    {
+      "path": "data/supplemental/agronomy/README.md",
+      "bytes": 2920,
+      "sha256": "4b7cca6be1f2a7000484ad9a769914b583b98a76e248e268e857a51a0a4e738f"
+    },
+    {
+      "path": "data/supplemental/agronomy/source-evidence.json",
+      "bytes": 16134,
+      "sha256": "cc423bd1b86dc08d4cae044227027d04c69bb2a903bdd14c06f64c3f5daf4b31"
+    },
+    {
+      "path": "data/supplemental/agronomy/source-snapshots.json",
+      "bytes": 3722,
+      "sha256": "2b2bc66943f1882a3811fddfbba83dbc4a0736c6f86e28c42852782408c571b3"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/fao-rice-ecosystems.html",
+      "bytes": 299265,
+      "sha256": "79fcfa2ae733ff0b80e81e24cdfb15f7ac6bbecef29bf569392d57301819e108"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/fao-rice-ecosystems.txt",
+      "bytes": 202956,
+      "sha256": "cf2c763408babf4b14fb6b329881ce5fc64a415fed813684c45b0d120fd6c574"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/fao-rice-phase-water-regimes.html",
+      "bytes": 61907,
+      "sha256": "bc6b47cde28af0ccb47faa014da2862b48b3dfc9cc93c0fc54bc5d9099021711"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/fao-rice-phase-water-regimes.txt",
+      "bytes": 45689,
+      "sha256": "697e5c70a4fdf7b958bc79f1fba1536dd90cafe4cd7a4b9bde14c1e55f8c566e"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-anjasmoro-descriptor-page-1.png",
+      "bytes": 128304,
+      "sha256": "62cac92e30f0453683951d8fd7e96ba3cc98034e1581cd2dfec1214091c8e3eb"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-anjasmoro-descriptor-relevant-pages.json",
+      "bytes": 1399,
+      "sha256": "cfd9844d12d7e9a593a608bee5ecb9b0d08a5caf6e0d7b88a3e692c707433f91"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-anjasmoro-descriptor.pdf",
+      "bytes": 471439,
+      "sha256": "11ef43a033707b0075da045ee59ba0f2b54ad42fd853ff785c50263ab490caf9"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-lakin-2023-page-39.png",
+      "bytes": 325124,
+      "sha256": "0e1f10c5da860bb978defda3ca96fcd7435a2747f09d693137fe4c27ce68c2e8"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-lakin-2023-relevant-pages.json",
+      "bytes": 6542,
+      "sha256": "671bd3ffedcbed425a9899ca908fd85bdf05a706b0aee8060629f95525fd3e65"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-lakin-2023.pdf",
+      "bytes": 2568698,
+      "sha256": "9927cc4b60e88aebd5efc39cbf328f51f5665fd97b6a567be49ab12b417f4d9d"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-variety-catalog-brmp-page-87.png",
+      "bytes": 105304,
+      "sha256": "2178a3337372b2e72ddc33acc652f10b31081a1e63805f1fc053409f7a6b8621"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-variety-catalog-brmp-relevant-pages.json",
+      "bytes": 14227,
+      "sha256": "0541470667c04537eb5f7ca0f675f3e4b24a7eebed736a903841bdfb0f16a793"
+    },
+    {
+      "path": "data/supplemental/agronomy/sources/kementan-variety-catalog-brmp.pdf",
+      "bytes": 5587934,
+      "sha256": "b2857ed963d8f63c539e4aaea386ec503a50693075583f809bfa374d42b60727"
+    },
+    {
+      "path": "data/supplemental/agronomy/summary.json",
+      "bytes": 6424,
+      "sha256": "ca510a3f906e90eba25ec9443435800f5feecb529ccaa039f05b456a5d51b14e"
+    },
+    {
+      "path": "data/supplemental/agronomy/validation.json",
+      "bytes": 3692,
+      "sha256": "c39d8d2e5843d618aca3ca97ef5df86ee240ba33702a8ca126432164ee104d06"
+    },
+    {
+      "path": "scripts/data/supplemental_agronomy/build_supplement.py",
+      "bytes": 64404,
+      "sha256": "0a9aa73621d727153c5f081391e34c08c67d3466861c302e721b932598adacb3"
+    },
+    {
+      "path": "scripts/data/supplemental_agronomy/fetch_sources.py",
+      "bytes": 3587,
+      "sha256": "8cd1f0003f77304659cb704275e458c800fe9415a738d71f55bd5ac6f800e797"
+    }
+  ],
+  "excludes": [
+    "manifest.json(self)"
+  ],
+  "prepared_invariance": {
+    "prepared_files_checked": 390,
+    "mismatches": [],
+    "prepared_immutable": true,
+    "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde"
+  }
+}

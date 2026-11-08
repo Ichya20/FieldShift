@@ -1,0 +1,131 @@
+[
+  {
+    "file": "soilgrids-data-index.html",
+    "hrefs": [
+      "/:dir_browser/favicon.ico",
+      "/:dir_browser/style.css",
+      "https://www.isric.org/explore/soilgrids/soilgrids-access",
+      "https://data.isric.org",
+      "https://www.isric.org",
+      "/soilgrids/latest/data/?davmount",
+      "./bdod/",
+      "./cec/",
+      "./cfvo/",
+      "./clay/",
+      "./landmask/",
+      "./nitrogen/",
+      "./ocd/",
+      "./ocs/",
+      "./phh2o/",
+      "./sand/",
+      "./silt/",
+      "./soc/",
+      "./wrb/",
+      "checksum.sha256.txt",
+      "README.md",
+      "https://www.isric.org/contact-us",
+      "https://www.isric.org/about/data-policy",
+      "https://www.isric.org/cookies",
+      "https://www.isric.org/about/isric-org"
+    ],
+    "text_excerpt": null
+  },
+  {
+    "file": "soilgrids-root-index.html",
+    "hrefs": [
+      "/:dir_browser/favicon.ico",
+      "/:dir_browser/style.css",
+      "https://www.isric.org/explore/soilgrids/soilgrids-access",
+      "https://data.isric.org",
+      "https://www.isric.org",
+      "/soilgrids/?davmount",
+      "./former/",
+      "./latest/",
+      "README.md",
+      "https://www.isric.org/contact-us",
+      "https://www.isric.org/about/data-policy",
+      "https://www.isric.org/cookies",
+      "https://www.isric.org/about/isric-org"
+    ],
+    "text_excerpt": null
+  },
+  {
+    "file": "soilgrids-latest-index.html",
+    "hrefs": [
+      "/:dir_browser/favicon.ico",
+      "/:dir_browser/style.css",
+      "https://www.isric.org/explore/soilgrids/soilgrids-access",
+      "https://data.isric.org",
+      "https://www.isric.org",
+      "/soilgrids/latest/?davmount",
+      "./data/",
+      "./data_aggregated/",
+      "./docs/",
+      "./legends/",
+      "https://www.isric.org/contact-us",
+      "https://www.isric.org/about/data-policy",
+      "https://www.isric.org/cookies",
+      "https://www.isric.org/about/isric-org"
+    ],
+    "text_excerpt": null
+  },
+  {
+    "url": "https://files.isric.org/soilgrids/latest/data/phh2o/phh2o_0-5cm_mean/",
+    "error": "Bounded response limit exceeded"
+  },
+  {
+    "file": "phh2o-local-tile-index.html",
+    "hrefs": [
+      "/:dir_browser/favicon.ico",
+      "/:dir_browser/style.css",
+      "https://www.isric.org/explore/soilgrids/soilgrids-access",
+      "https://data.isric.org",
+      "https://www.isric.org",
+      "/soilgrids/latest/data/phh2o/phh2o_0-5cm_mean/tileSG-021-071/?davmount",
+      "checksum.sha256.txt",
+      "tileSG-021-071_1-1.tif",
+      "tileSG-021-071_1-2.tif",
+      "tileSG-021-071_1-3.tif",
+      "https://www.isric.org/contact-us",
+      "https://www.isric.org/about/data-policy",
+      "https://www.isric.org/cookies",
+      "https://www.isric.org/about/isric-org"
+    ],
+    "text_excerpt": null
+  },
+  {
+    "file": "retention-map-describe.xml",
+    "hrefs": [],
+    "text_excerpt": " \n \n   \n     \n       \n         -19949750 -6147500 \n         19861750 8361000 \n       \n     \n     wv0033_0-5cm_mean \n     \n       \n         \n           \n             0 0 \n             159245 58033 \n           \n         \n         x y \n         \n           \n             -19949625.000000 8360875.000000 \n           \n         \n         250.000000 0 \n         0 -250.000000 \n       \n     \n     \n       \n         \n           \n             \n             \n             \n               \n                 0 65535 \n                 5 \n               \n             \n           \n         \n       \n     \n     \n       RectifiedGridCoverage \n       image/tiff \n     \n   \n \n"
+  },
+  {
+    "file": "soilgrids-properties.html",
+    "hrefs": [],
+    "text_excerpt": null
+  },
+  {
+    "file": "wcs-docs.html",
+    "hrefs": [],
+    "text_excerpt": null
+  },
+  {
+    "file": "retention-wv0033-page.html",
+    "hrefs": [],
+    "text_excerpt": null
+  },
+  {
+    "file": "retention-wv0033-iso.xml",
+    "hrefs": [],
+    "text_excerpt": " \r\n \r\n   \r\n     14e7c761-6f87-4f4c-9035-adb282439a44 \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     dataset \r\n   \r\n   \r\n     \r\n       \r\n         Data infodesk \r\n       \r\n       \r\n         ISRIC - World Soil Information \r\n       \r\n       \r\n         \r\n           \r\n             \r\n               \r\n                 soilgrids@isric.org \r\n               \r\n             \r\n           \r\n         \r\n       \r\n       \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     \r\n       \r\n         Data infodesk \r\n       \r\n       \r\n         ISRIC - World Soil Information \r\n       \r\n       \r\n         \r\n           \r\n             \r\n               \r\n                 soilgrids@isric.org \r\n               \r\n             \r\n           \r\n         \r\n       \r\n       \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     2023-10-26T14:43:05 \r\n   \r\n   \r\n     ISO 19115:2003/19139 \r\n   \r\n   \r\n     2003/Cor.1:2006 \r\n   \r\n   \r\n     \r\n       \r\n         \r\n           \r\n             +proj=igh +datum=WGS84 +no_defs +towgs84=0,0,0 \r"
+  },
+  {
+    "file": "retention-wv0010-iso.xml",
+    "hrefs": [],
+    "text_excerpt": " \r\n \r\n   \r\n     c6cb5073-78dd-4d8d-be81-9d546a1c004f \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     dataset \r\n   \r\n   \r\n     \r\n       \r\n         Data infodesk \r\n       \r\n       \r\n         ISRIC - World Soil Information \r\n       \r\n       \r\n         \r\n           \r\n             \r\n               \r\n                 soilgrids@isric.org \r\n               \r\n             \r\n           \r\n         \r\n       \r\n       \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     2024-11-26T15:49:50 \r\n   \r\n   \r\n     ISO 19115:2003/19139 \r\n   \r\n   \r\n     2003/Cor.1:2006 \r\n   \r\n   \r\n     \r\n       \r\n         \r\n           \r\n             +proj=igh +datum=WGS84 +no_defs +towgs84=0,0,0 \r\n           \r\n           \r\n             proj4 \r\n           \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     \r\n       \r\n         \r\n           \r\n             SoilGrids250m 2.0 - Volumetric Water Content at 10kPa \r\n           \r\n           \r\n             \r\n               \r\n                 2021-11-05 \r\n               \r\n             "
+  },
+  {
+    "file": "retention-wv1500-iso.xml",
+    "hrefs": [],
+    "text_excerpt": " \r\n \r\n   \r\n     f5a1188a-09f8-4ef6-b841-93f08e3903f4 \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     \r\n   \r\n   \r\n     dataset \r\n   \r\n   \r\n     \r\n       \r\n         Data infodesk \r\n       \r\n       \r\n         ISRIC - World Soil Information \r\n       \r\n       \r\n         \r\n           \r\n             \r\n               \r\n                 soilgrids@isric.org \r\n               \r\n             \r\n           \r\n         \r\n       \r\n       \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     2025-02-05T14:50:21 \r\n   \r\n   \r\n     ISO 19115:2003/19139 \r\n   \r\n   \r\n     2003/Cor.1:2006 \r\n   \r\n   \r\n     \r\n       \r\n         \r\n           \r\n             +proj=igh +datum=WGS84 +no_defs +towgs84=0,0,0 \r\n           \r\n           \r\n             proj4 \r\n           \r\n         \r\n       \r\n     \r\n   \r\n   \r\n     \r\n       \r\n         \r\n           \r\n             SoilGrids250m 2.0 - Volumetric Water Content at 1500kPa \r\n           \r\n           \r\n             \r\n               \r\n                 2021-11-05 \r\n               \r\n           "
+  }
+]

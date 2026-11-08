@@ -1,0 +1,27 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "mapsetCode" : "RES05-SIX",
+  "code" : "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+  "dimensionMembers" : [ {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "PERIOD",
+    "code" : "HP0120"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "CLIM",
+    "code" : "AGERA5"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "SSP",
+    "code" : "HIST"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "CROP-RES05",
+    "code" : "MZE"
+  }, {
+    "workspaceCode" : "GAEZ-V5",
+    "dimensionCode" : "WSIM-RES05",
+    "code" : "HILM"
+  } ],
+  "styleCode" : null
+}

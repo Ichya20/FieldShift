@@ -1,0 +1,36 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "code" : "SSP",
+  "caption" : "SSP",
+  "description" : null,
+  "type" : "WHAT",
+  "timeSubtype" : null,
+  "additionalInfo" : null,
+  "tags" : null,
+  "members" : {
+    "HIST" : {
+      "code" : "HIST",
+      "caption" : "Historical",
+      "description" : null,
+      "index" : 1
+    },
+    "SSP126" : {
+      "code" : "SSP126",
+      "caption" : "SSP126",
+      "description" : null,
+      "index" : 2
+    },
+    "SSP370" : {
+      "code" : "SSP370",
+      "caption" : "SSP370",
+      "description" : null,
+      "index" : 3
+    },
+    "SSP585" : {
+      "code" : "SSP585",
+      "caption" : "SSP585",
+      "description" : null,
+      "index" : 4
+    }
+  }
+}

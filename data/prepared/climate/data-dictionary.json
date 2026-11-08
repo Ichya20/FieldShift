@@ -1,0 +1,84 @@
+{
+  "T2M": {
+    "units": "C",
+    "longname": "Temperature at 2 Meters",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "T2M_MAX": {
+    "units": "C",
+    "longname": "Temperature at 2 Meters Maximum",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "T2M_MIN": {
+    "units": "C",
+    "longname": "Temperature at 2 Meters Minimum",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "PRECTOTCORR": {
+    "units": "mm/day",
+    "longname": "Precipitation Corrected",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "RH2M": {
+    "units": "%",
+    "longname": "Relative Humidity at 2 Meters",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "WS2M": {
+    "units": "m/s",
+    "longname": "Wind Speed at 2 Meters",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "ALLSKY_SFC_SW_DWN": {
+    "units": "MJ/m^2/day",
+    "longname": "All Sky Surface Shortwave Downward Irradiance",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "GWETTOP": {
+    "units": "1",
+    "longname": "Surface Soil Wetness",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "GWETROOT": {
+    "units": "1",
+    "longname": "Root Zone Soil Wetness",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "EVPTRNS": {
+    "units": "MJ/m^2/day",
+    "longname": "Evapotranspiration Energy Flux",
+    "origin": "NASA POWER",
+    "meaning": "Energy flux retained in original units; never relabel as mm/day"
+  },
+  "PS": {
+    "units": "kPa",
+    "longname": "Surface Pressure",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "T2MDEW": {
+    "units": "C",
+    "longname": "Dew/Frost Point at 2 Meters",
+    "origin": "NASA POWER",
+    "missing": "null in JSON, empty numeric CSV field"
+  },
+  "eto_fao56_mm_day": {
+    "units": "mm/day",
+    "origin": "derived",
+    "meaning": "FAO56 grass-reference ETo from regional forcing; not crop ET or irrigation requirement"
+  },
+  "rain_minus_reference_eto_mm_day": {
+    "units": "mm/day",
+    "origin": "derived",
+    "meaning": "Climatic indicator P-ETo; excludes runoff, effective rainfall, storage, crop coefficient and irrigation"
+  }
+}

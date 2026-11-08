@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/",
+      "size": "0"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.csv",
+      "size": "240"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CLIM.json",
+      "size": "1162"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES02.csv",
+      "size": "3403"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES02.json",
+      "size": "15095"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.csv",
+      "size": "1963"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES05.json",
+      "size": "9874"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES06.csv",
+      "size": "1119"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES06.json",
+      "size": "5053"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES07.csv",
+      "size": "684"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.CROP-RES07.json",
+      "size": "3140"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.IM-SQ.csv",
+      "size": "122"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.IM-SQ.json",
+      "size": "502"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.INPUT.csv",
+      "size": "485"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.INPUT.json",
+      "size": "1053"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.LCC.csv",
+      "size": "483"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.LCC.json",
+      "size": "1812"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.csv",
+      "size": "183"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.PERIOD.json",
+      "size": "965"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SLC.csv",
+      "size": "303"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SLC.json",
+      "size": "1471"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SQX.csv",
+      "size": "356"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SQX.json",
+      "size": "1289"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.csv",
+      "size": "125"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.SSP.json",
+      "size": "695"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES02.csv",
+      "size": "485"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES02.json",
+      "size": "1058"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.csv",
+      "size": "265"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WSIM-RES05.json",
+      "size": "838"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WTC.csv",
+      "size": "880"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WTC.json",
+      "size": "2154"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WTS.csv",
+      "size": "97"
+    },
+    {
+      "name": "DATA/GAEZ-V5/DIMENSION/GAEZ-V5.WTS.json",
+      "size": "567"
+    }
+  ]
+}

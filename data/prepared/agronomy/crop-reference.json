@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "prepared_at_utc": "2026-11-08T10:08:01.715758+00:00",
+  "crops": [
+    {
+      "crop_id": "padi",
+      "common_name_id": "Padi",
+      "scientific_name": "Oryza sativa",
+      "gaez_crop_code": "RCW",
+      "reference_status": "documented_generic_reference; local calibration required",
+      "species_temperature_optimum_c": {
+        "min": 20.0,
+        "max": 30.0,
+        "source_id": "ecocrop-rice",
+        "meaning": "historical ECOCROP species optimum; not a cultivar-specific heat threshold"
+      },
+      "species_soil_ph_optimum": {
+        "min": 5.5,
+        "max": 7.0,
+        "source_id": "ecocrop-rice",
+        "measurement_basis": "source species reference; compare laboratory/SoilGrids pH only with method/depth caveats"
+      },
+      "species_annual_rainfall_optimum_mm_year": {
+        "min": 1500,
+        "max": 2000,
+        "source_id": "ecocrop-rice",
+        "meaning": "ANNUAL rainfall climate descriptor; never seasonal irrigation demand"
+      },
+      "species_crop_cycle_reference_days": {
+        "min": 80,
+        "max": 180,
+        "source_id": "ecocrop-rice",
+        "limitations": "Very broad historical species range; cannot schedule a local cultivar from this alone."
+      },
+      "seasonal_crop_water_need_indicative_mm": {
+        "min": 450,
+        "max": 700,
+        "source_id": "fao-seasonal-water",
+        "source_locator": "Section 3.3.4, Table 14",
+        "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+        "status": "rough_planning_reference_only",
+        "local_seasonal_etc_mm": null,
+        "local_net_irrigation_mm": null,
+        "local_gross_irrigation_mm": null
+      },
+      "local_variety_reference": {
+        "name": "Inpari 32 HDB",
+        "duration_days_min": 120,
+        "duration_days_max": 120,
+        "duration_start_event": "sowing/semai",
+        "source_id": "kementan-inpari32",
+        "status": "illustrative_indonesian_variety_reference; not farmer-selected cultivar",
+        "limitations": "Approximate duration depends on location/environment/management. Obtain actual seed description and local advice; HST must not be conflated with rice transplanting or sowing dates."
+      },
+      "phenology": {
+        "source_id": "fao-paddy-irrigation",
+        "stages": [
+          {
+            "id": "vegetative",
+            "description": "Sowing/germination to panicle initiation. Direct-seeded rice has no separate nursery. Transplanted rice includes a nursery phase before transplanting; record both sowing and transplant dates and preserve the origin date of any duration. The FAO irrigation manual lists nursery separately from its post-transplant vegetative stage.",
+            "duration_days": null
+          },
+          {
+            "id": "reproductive",
+            "description": "Panicle initiation to flowering",
+            "duration_days": null
+          },
+          {
+            "id": "ripening",
+            "description": "Flowering to maturity; includes grain growth",
+            "duration_days": null
+          }
+        ],
+        "local_stage_dates": null,
+        "status": "stage_definition_only; no local phenology model calibrated"
+      },
+      "limitations": [
+        "No recommendation, expected yield, nitrogen credit, profit, or soil-health gain is inferred from these generic references.",
+        "Farmer dates/cultivar, irrigation capacity, soil profile and local validation remain necessary."
+      ]
+    },
+    {
+      "crop_id": "jagung",
+      "common_name_id": "Jagung",
+      "scientific_name": "Zea mays",
+      "gaez_crop_code": "MZE",
+      "reference_status": "documented_generic_reference; local calibration required",
+      "species_temperature_optimum_c": {
+        "min": 18.0,
+        "max": 33.0,
+        "source_id": "ecocrop-maize",
+        "meaning": "historical ECOCROP species optimum; not a cultivar-specific heat threshold"
+      },
+      "species_soil_ph_optimum": {
+        "min": 5.0,
+        "max": 7.0,
+        "source_id": "ecocrop-maize",
+        "measurement_basis": "source species reference; compare laboratory/SoilGrids pH only with method/depth caveats"
+      },
+      "species_annual_rainfall_optimum_mm_year": {
+        "min": 600,
+        "max": 1200,
+        "source_id": "ecocrop-maize",
+        "meaning": "ANNUAL rainfall climate descriptor; never seasonal irrigation demand"
+      },
+      "species_crop_cycle_reference_days": {
+        "min": 65,
+        "max": 365,
+        "source_id": "ecocrop-maize",
+        "limitations": "Very broad historical species range; cannot schedule a local cultivar from this alone."
+      },
+      "seasonal_crop_water_need_indicative_mm": {
+        "min": 500,
+        "max": 800,
+        "source_id": "fao-seasonal-water",
+        "source_locator": "Section 3.3.4, Table 14",
+        "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+        "status": "rough_planning_reference_only",
+        "local_seasonal_etc_mm": null,
+        "local_net_irrigation_mm": null,
+        "local_gross_irrigation_mm": null
+      },
+      "local_variety_reference": {
+        "name": "Jakarin",
+        "duration_days_min": 100,
+        "duration_days_max": 100,
+        "duration_start_event": "planting/HST",
+        "source_id": "kementan-jakarin",
+        "status": "illustrative_indonesian_variety_reference; not farmer-selected cultivar",
+        "limitations": "Approximate duration depends on location/environment/management. Obtain actual seed description and local advice; HST must not be conflated with rice transplanting or sowing dates."
+      },
+      "phenology": {
+        "source_id": "fao-seasonal-water",
+        "stages": [
+          {
+            "id": "initial",
+            "duration_days": null
+          },
+          {
+            "id": "crop_development",
+            "duration_days": null
+          },
+          {
+            "id": "mid_season_flowering_and_grain_setting",
+            "duration_days": null
+          },
+          {
+            "id": "late_season_ripening",
+            "duration_days": null
+          }
+        ],
+        "local_stage_dates": null,
+        "status": "stage_definition_only; no local phenology model calibrated"
+      },
+      "limitations": [
+        "No recommendation, expected yield, nitrogen credit, profit, or soil-health gain is inferred from these generic references.",
+        "Farmer dates/cultivar, irrigation capacity, soil profile and local validation remain necessary."
+      ]
+    },
+    {
+      "crop_id": "kedelai",
+      "common_name_id": "Kedelai",
+      "scientific_name": "Glycine max",
+      "gaez_crop_code": "SOY",
+      "reference_status": "documented_generic_reference; local calibration required",
+      "species_temperature_optimum_c": {
+        "min": 20.0,
+        "max": 33.0,
+        "source_id": "ecocrop-soybean",
+        "meaning": "historical ECOCROP species optimum; not a cultivar-specific heat threshold"
+      },
+      "species_soil_ph_optimum": {
+        "min": 5.5,
+        "max": 6.5,
+        "source_id": "ecocrop-soybean",
+        "measurement_basis": "source species reference; compare laboratory/SoilGrids pH only with method/depth caveats"
+      },
+      "species_annual_rainfall_optimum_mm_year": {
+        "min": 600,
+        "max": 1500,
+        "source_id": "ecocrop-soybean",
+        "meaning": "ANNUAL rainfall climate descriptor; never seasonal irrigation demand"
+      },
+      "species_crop_cycle_reference_days": {
+        "min": 75,
+        "max": 180,
+        "source_id": "ecocrop-soybean",
+        "limitations": "Very broad historical species range; cannot schedule a local cultivar from this alone."
+      },
+      "seasonal_crop_water_need_indicative_mm": {
+        "min": 450,
+        "max": 700,
+        "source_id": "fao-seasonal-water",
+        "source_locator": "Section 3.3.4, Table 14",
+        "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+        "status": "rough_planning_reference_only",
+        "local_seasonal_etc_mm": null,
+        "local_net_irrigation_mm": null,
+        "local_gross_irrigation_mm": null
+      },
+      "local_variety_reference": {
+        "name": "Anjasmoro",
+        "duration_days_min": 82,
+        "duration_days_max": 92,
+        "duration_start_event": "not_explicit_in_source",
+        "source_id": "kementan-anjasmoro",
+        "status": "illustrative_indonesian_variety_reference; not farmer-selected cultivar",
+        "limitations": "Approximate duration depends on location/environment/management. Obtain actual seed description and local advice; HST must not be conflated with rice transplanting or sowing dates."
+      },
+      "phenology": {
+        "source_id": "fao-seasonal-water",
+        "stages": [
+          {
+            "id": "initial",
+            "duration_days": null
+          },
+          {
+            "id": "crop_development",
+            "duration_days": null
+          },
+          {
+            "id": "mid_season_flowering_and_grain_setting",
+            "duration_days": null
+          },
+          {
+            "id": "late_season_ripening",
+            "duration_days": null
+          }
+        ],
+        "local_stage_dates": null,
+        "status": "stage_definition_only; no local phenology model calibrated"
+      },
+      "limitations": [
+        "No recommendation, expected yield, nitrogen credit, profit, or soil-health gain is inferred from these generic references.",
+        "Farmer dates/cultivar, irrigation capacity, soil profile and local validation remain necessary."
+      ]
+    }
+  ]
+}

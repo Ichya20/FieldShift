@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.37,
+          -7.8
+        ]
+      },
+      "properties": {
+        "id": "power_regional_yogyakarta",
+        "role": "regional climate context",
+        "verified_farm": false,
+        "support": "Native meteorological grid tens of km, not a surveyed field",
+        "point_landcover_2021": "built-up; not used as cropland vegetation sample"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.54,
+              -7.73
+            ],
+            [
+              110.56,
+              -7.73
+            ],
+            [
+              110.56,
+              -7.71
+            ],
+            [
+              110.54,
+              -7.71
+            ],
+            [
+              110.54,
+              -7.73
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "klaten_subset",
+        "role": "soil, terrain and land-cover extraction extent",
+        "verified_farm": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.55354472008753,
+          -7.721875031299882
+        ]
+      },
+      "properties": {
+        "id": "klaten_cropland_primary",
+        "role": "primary_demonstration_pixel",
+        "verified_farm": false,
+        "crop_species_verified": false,
+        "support": "MODIS pixel nominal 250m; mixed historical land cover"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.546875,
+          -7.7240416666666665
+        ]
+      },
+      "properties": {
+        "id": "klaten_cropland_candidate",
+        "role": "mixed_pixel_comparison",
+        "verified_farm": false,
+        "crop_species_verified": false,
+        "support": "MODIS pixel nominal 250m; mixed historical land cover"
+      }
+    }
+  ]
+}

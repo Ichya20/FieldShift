@@ -1,0 +1,29 @@
+[
+  {
+    "id": "fao-crop-rotation",
+    "url": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/",
+    "accessed_at_utc": "2026-11-08T09:55:09.067969+00:00",
+    "path": "sources/fao-crop-rotation.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 24026,
+    "sha256": "927d4c7b0059a6a1b401d0fcb5dac577b6d297ec3a87afb3dee9f0e63b978fb3",
+    "final_url": "https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/"
+  },
+  {
+    "id": "gaez-crop-list",
+    "url": "https://github.com/user-attachments/files/25523134/Appendix.4-1.List.of.Crops.xlsx",
+    "accessed_at_utc": "2026-11-08T09:55:10.001490+00:00",
+    "path": "sources/gaez-crop-list.xlsx",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "id": "gaez-theme4-mapping",
+    "url": "https://github.com/user-attachments/files/21917536/_readme_RES05.xlsx",
+    "accessed_at_utc": "2026-11-08T09:55:10.097935+00:00",
+    "path": "sources/gaez-theme4-mapping.xlsx",
+    "status": "failed",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get issuer certificate (_ssl.c:1010)>"
+  }
+]

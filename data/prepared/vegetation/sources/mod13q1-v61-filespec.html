@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="orgcode" content="619">
+    <meta name="rno" content="Sadashiva Devadiga">
+    <meta name="content-owner" content="Greg Ederer">
+    <meta name="description" content="LAADS DAAC">
+    <title>LAADS DAAC | NASA</title>
+    <link href="/img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="/img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/img/favicon-57x57.png" rel="icon" type="image/png" sizes="57x57">
+    <link href="/img/favicon-76x76.png" rel="icon" type="image/png" sizes="76x76">
+    <link href="/img/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96">
+    <link href="/img/favicon-128x128.png" rel="icon" type="image/png" sizes="128x128">
+    <link href="/img/favicon-192x192.png" rel="icon" type="image/png" sizes="192x192">
+    <link href="/img/favicon-196x196.png" rel="icon" type="image/png" sizes="196x196">
+    <link href="/img/favicon-228x228.png" rel="icon" type="image/png" sizes="228x228">
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/assets/index-D3PaZvXv.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/assets/index-C47W6w0H.js" type="module"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WNP7MLF');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>
+<header>
+<div id="earthdata-notification-banner"></div>
+<script src="https://status.earthdata.nasa.gov/assets/banner_widget.js"></script>
+
+<nav class="navbar navbar-expand-lg nasa-navbar color-spacesuit-white" role="navigation" aria-label="Primary navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="/" title="LAADS DAAC Home" aria-label="LAADS DAAC Home">
+            <img loading="eager" fetchpriority="high" width="58" height="49" alt="NASA Logo" src="/img/logo.png" class="img-fluid">
+            <span class="ms-4">LAADS DAAC</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-icon">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto align-items-lg-center" role="menubar">
+
+                <!-- Alerts -->
+                <li class="nav-item nav-item-alert" role="none">
+                    <a class="nav-link" href="/alerts-and-issues/" title="System Alerts" aria-label="System Alerts" role="menuitem">
+                        <div class="alert-icon-container" aria-hidden="true">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <span class="d-lg-none ms-2">System Alerts</span>
+                    </a>
+                </li>
+
+                <!-- Data Access -->
+                <li class="nav-item dropdown" role="none">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                       id="dataDropdown" href="/data-access/" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        <i class="fa-solid fa-database nav-icon" aria-hidden="true"></i>
+                        <span>Data Access</span>
+                        <!--<i class="fa-solid fa-caret-down ms-1" aria-hidden="true"></i>-->
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dataDropdown" role="menu">   <li role="none"><a class="dropdown-item" href="/search/" role="menuitem">Find Data</a></li>
+                        <li role="none"><a class="dropdown-item" href="/view-data/" role="menuitem">View Data</a></li>
+                        <li role="none"><a class="dropdown-item" href="/archive/" role="menuitem">Data Archive</a></li>
+                        <li role="none"><a class="dropdown-item" href="/cloud/" role="menuitem">Cloud Access</a></li>
+                        <li role="none"><a class="dropdown-item" href="/tools-and-services/" role="menuitem">Tools & Services</a></li>
+                    </ul>
+                </li>
+
+                <!-- Learn -->
+                <li class="nav-item" role="none">
+                    <a class="nav-link d-flex align-items-center" href="/learn/" role="menuitem">
+                        <i class="fa-solid fa-circle-question nav-icon" aria-hidden="true"></i>
+                        <span>Learn</span>
+                    </a>
+                </li>
+
+                <!-- About -->
+                <li class="nav-item dropdown" role="none">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center"
+                       id="aboutDropdown" href="/about/" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        <i class="fa-solid fa-circle-info nav-icon" aria-hidden="true"></i>
+                        <span>About</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown" role="menu">
+                        <li role="none"><a class="dropdown-item" href="/about/atmosphere/" role="menuitem">Our Atmosphere</a></li>
+                        <li role="none"><a class="dropdown-item" href="/uwg/" role="menuitem">User Working Group</a></li>
+                        <li role="none"><a class="dropdown-item" href="/about/related-sites/" role="menuitem">Related Sites</a></li>
+                        <li role="none"><hr class="dropdown-divider"></li>
+                        <li role="none"><a class="dropdown-item" href="/contact/" role="menuitem">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <!-- User Profile -->
+                <li class="nav-item dropdown" id="profile-menu-option" role="none">
+                    <button class="nav-link dropdown-toggle d-flex align-items-center border-0 bg-transparent"
+                            id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        <i class="fa-solid fa-user nav-icon" aria-hidden="true"></i>
+                        <span>Sign In</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" role="menu">
+                        <!-- Populated dynamically -->
+                    </ul>
+                </li>
+
+                <!-- Search Box -->
+                <li class="nav-item nav-item-search" role="none">
+                    <form class="nav-search-form" action="/find" method="get" role="search" aria-label="Search Google">
+                        <div class="input-group">
+                            <input type="text" class="form-control nav-search-input" id="q" name="q" placeholder="Search" aria-label="Search">
+                            <button class="btn nav-search-button" type="submit" aria-label="Submit search">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    // Ensure the Bootstrap navbar collapse toggles reliably on mobile
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggler = document.querySelector('.navbar .navbar-toggler');
+        const collapseEl = document.getElementById('navbarContent');
+        if (!toggler || !collapseEl) return;
+
+        // Create/get the Collapse instance without auto-toggling on init
+        const collapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+
+        // Force toggle on every click (prevents interference from other handlers)
+        toggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            collapse.toggle();
+        });
+
+        // Optional: close the menu after choosing an item (only on small screens)
+        collapseEl.querySelectorAll('a, button').forEach((el) => {
+            el.addEventListener('click', () => {
+                const togglerVisible = window.getComputedStyle(toggler).display !== 'none';
+                if (togglerVisible) collapse.hide();
+            });
+        });
+
+        // Enable hover for dropdowns on desktop, while retaining click for mobile
+        const isDesktop = () => window.getComputedStyle(toggler).display === 'none';
+
+        document.querySelectorAll('.navbar .nav-item.dropdown').forEach(dropdownEl => {
+            let timeout;
+            const dropdownToggle = dropdownEl.querySelector('.dropdown-toggle');
+            if (!dropdownToggle) return;
+            const dropdown = bootstrap.Dropdown.getOrCreateInstance(dropdownToggle);
+
+            dropdownEl.addEventListener('mouseenter', () => {
+                if (!isDesktop()) return;
+                clearTimeout(timeout);
+                // Delay showing to prevent fly-by openings and ensure user intent
+                timeout = setTimeout(() => {
+                    if (dropdownEl.matches(':hover')) { // Re-check hover state before showing
+                        dropdown.show();
+                    }
+                }, 150);
+            });
+
+            dropdownEl.addEventListener('mouseleave', () => {
+                if (!isDesktop()) return;
+                clearTimeout(timeout);
+                // Delay hiding to allow moving cursor to the menu
+                timeout = setTimeout(() => dropdown.hide(), 200);
+            });
+        });
+
+        // Make top-level dropdown toggles both navigable and togglable
+        collapseEl.querySelectorAll('.nav-item.dropdown > .nav-link.dropdown-toggle[href]').forEach((toggle) => {
+            // On mobile (collapsed navbar), first tap opens dropdown; second tap navigates.
+            // On desktop, click navigates immediately.
+            toggle.addEventListener('click', (e) => {
+                const togglerVisible = window.getComputedStyle(toggler).display !== 'none';
+
+                // Allow modifier/middle clicks to behave normally (new tab/window)
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.which === 2 || e.button === 1) return;
+
+                if (!togglerVisible) {
+                    // Desktop: Bootstrap's dropdown prevents default; force navigation
+                    e.preventDefault();
+                    const href = toggle.getAttribute('href');
+                    if (href) window.location.assign(href);
+                    return;
+                }
+
+                // Mobile: first tap opens, second tap navigates
+                const parentLi = toggle.closest('.nav-item.dropdown');
+                const menu = parentLi ? parentLi.querySelector('.dropdown-menu') : null;
+                const isShown = menu ? menu.classList.contains('show') : false;
+
+                // If Ctrl/Meta/Shift middle-click etc., allow default navigation
+                if (e.ctrlKey || e.metaKey || e.shiftKey || e.which === 2 || e.button === 1) return;
+
+                if (!isShown) {
+                    // Prevent navigation and open dropdown
+                    e.preventDefault();
+                    const dd = bootstrap.Dropdown.getOrCreateInstance(toggle, { autoClose: true });
+                    dd.show();
+                }
+                // If already shown, let the default click proceed to navigate
+            });
+
+            // Keyboard support: Enter/Space
+            toggle.addEventListener('keydown', (e) => {
+                if (e.key !== 'Enter' && e.key !== ' ') return;
+                const togglerVisible = window.getComputedStyle(toggler).display !== 'none';
+
+                if (!togglerVisible) {
+                    // Desktop: navigate
+                    e.preventDefault();
+                    const href = toggle.getAttribute('href');
+                    if (href) window.location.assign(href);
+                    return;
+                }
+
+                // Mobile: first press opens, second navigates
+                const parentLi = toggle.closest('.nav-item.dropdown');
+                const menu = parentLi ? parentLi.querySelector('.dropdown-menu') : null;
+                const isShown = menu ? menu.classList.contains('show') : false;
+                if (!isShown) {
+                    e.preventDefault();
+                    const dd = bootstrap.Dropdown.getOrCreateInstance(toggle, { autoClose: true });
+                    dd.show();
+                }
+                // If shown, allow navigation by not preventing default
+            });
+        });
+    });
+</script>
+
+</header>
+
+<main class="min-h-viewport">
+    <div class="container-xl padding-x-3 padding-y-3">  <!-- begin main content container -->
+        <article class="col-md-10 col-md-offset-1 col-sm-12">
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+
+            <li class="breadcrumb-item"><a href="/filespec"> Filespec</a></li>
+            <li class="breadcrumb-item"><a href="/filespec/MODIS"> MODIS</a></li>
+            <li class="breadcrumb-item"><a href="/filespec/MODIS/61"> 61</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> MOD13Q1</li>
+    </ol>
+</nav>
+
+
+        <pre>MOD_PR13A1       250m/500m  16 days VI Product
+HDF-EOS V2 MODIS VEGETATION INDICES HDF File Specification
+
+Version:	V6.0.12
+Revision:	1
+Date:		11 October 2013
+Product ID:	MOD13A1 
+ESDT:		MOD13Q1/MOD13A1
+Product name: 16 days 250m/500m Vegetation Index
+Product Level:	3
+PGE:		25
+
+Note:
+=====
+This file is for the 250m resolution product, a similar 500m 
+product has the same specification with 500m instead.
+Under 250m only production, the 250m product will not have
+any reference to the EVI, blue, MIR parameters.
+
+
+Product ID(s): MOD13 L3: MOD_PR13Q1/A1
+
+Point of Contact:        Kamel Didan
+               Terrestrial Biophysics and Remote Sensing Group (TBRS)
+               1200 E South Campus Drive, Room 429, Shantz Bldg. #38,
+               Department of Soil, Water and Environmental Science,
+               University of Arizona, Tucson, AZ 85721, USA
+               Office 520 621 8514; Fax 520 621 1791
+               kamel@ag.arizona.edu
+     
+Principal Investigator:  Alfredo Huete
+               Terrestrial Biophysics and Remote Sensing Group (TBRS)
+               1200 E South Campus Drive, Room 429, Shantz Bldg. #38,
+               Department of Soil, Water and Environmental Science,
+               University of Arizona, Tucson, AZ 85721, USA
+               Office 520 621 3228; Fax 520 621 5401
+               ahuete@ag.arizona.edu
+
+			         Kamel Didan
+               Terrestrial Biophysics and Remote Sensing Group (TBRS)
+               1200 E South Campus Drive, Room 429, Shantz Bldg. #38,
+               Department of Soil, Water and Environmental Science,
+               University of Arizona, Tucson, AZ 85721, USA
+               Office 520 621 8514; Fax 520 621 1791
+               kamel@ag.arizona.edu
+
+The at launch MOD13 algorithm will allow the individual processing of two
+vegetation indices at different spatial and temporal resolution. The Level 3 HDF
+filespec will therefore be split in 6 files/products (MOD13Q1, MOD13A1, MOD13A2,
+MOD13A3, MOD13C1, MOD13C2) that each have commonalities with respect
+to spatial and spectral resolutions. The standard DAAC production run will
+process the NDVI/EVI at 250 m,500m,1km, and 0.05 Deg. resolution for 16-day and Monthly 
+intervals. The output products will have datafields for the NDVI and EVI with
+corresponding QA, reflectance data, angular information and spatial statistics
+and std-dev of each VI and for the CMG  scales.
+
+
+
+
+
+Generic Constructs
+
+ECS Metadata Strings:
+Notes:    &quot;FR&quot; is an abbreviation for &quot;FREE_RANGE&quot;.
+          &quot;D/T&quot; is an abbreviation for &quot;DATE/TIME&quot;
+          (A) implies that multiple values are stored within a   single array.
+          A value of &quot;Variable&quot; indicates that this value will vary accoriding to the granule being processed.
+          &quot;M&quot; mean class M.
+
+CoreMetadata.0
+
+This string will contain the following PVL fields:
+
+Field Name                Data Type      # of Values     Value
+ GROUP = INVENTORYMETADATA
+
+   GROUP = CollectionDescriptionClass
+          *SHORTNAME        STRING     1    &quot;MOD13Q1/MOD13A1/MYD13Q1/MYD13A1&quot;
+          *VERSIONID        STRING     1    &quot;6&quot;
+   END_GROUP = CollectionDescriptionClass
+
+
+   GROUP = ECSDataGranule
+          *SIZEMBECSDATAGRANULE  FLOAT        1    Variable
+          *REPROCESSINGPLANNED   STRING      1    &quot;no further update  anticipated&quot;
+          *REPROCESSINGACTUAL    STRING      1    &quot;processed once&quot;
+          *LOCALGRANULEID       TRING         1    Variable
+          *DAYNIGHTFLAG        STRING         1    Variable
+          *PRODUCTIONDATETIME  D/T            1    Variable
+          LOCALVERSIONID       STRING         1    Variable
+   END_GROUP = ECSDataGranule
+
+   GROUP = PGEVersionClass
+          *PGEVERSION     STRING       1    &quot;6.0.0&quot; or Variable
+   END_GROUP = PGEVersionClass
+
+   GROUP = InputGranule
+          *INPUTPOINTER                   STRING    FR    Variable      (A)
+   END_GROUP = InputGranule
+
+GROUP = RangeDateTime
+	RANGEENDINGDATE		D		1		Variable
+	RANGEENDINGTIME		T		1		23.59.59	
+	RANGEBEGINNINGDATE	D		1		Variable
+	RANGEBEGINNINGTIME	T		1		00.00.00
+END_GROUP = RangeDateTime
+
+GROUP = SpatialDomainContainer
+  GROUP = HorizontalSpatialDomainContainer
+    GROUP = GPolygon
+      GROUP = GRing
+	EXCLUSIONGRINGFLAG          STRING     1   &quot;N&quot;
+      END_GROUP = GRing
+
+      GROUP = GRingPoint
+	GRINGPOINTLATITUDE          DOUBLE   4(A)  Variable
+	GRINGPOINTLONGITUDE         DOUBLE   4(A)  Variable
+	GRINGPOINTSEQUENCENO        INTEGER  4(A)  Variable
+      END_GROUP = GRingPoint
+   END_GROUP = GPolygon
+  END_GROUP = HorizontalSpatialDomainContainer
+END_GROUP = SpatialDomainContainer
+   
+   GROUP = MeasuredParameter
+          *PARAMETERNAME                 STRING    FR Variable   (A)
+
+     GROUP = QAFlags
+             AUTOMATICQUALITYFLAG            STRING  1       &quot;No automatic quality assessment is performed in the PGE&quot;
+             AUTOMATICQUALITYFLAGEXPLANATION STRING  1       &quot;Pass&quot;
+             SCIENCEQUALITYFLAG              STRING  1       &quot;Not Investigated&quot;
+             SCIENCEQUALITYFLAGEXPLANATION   STRING  1       &quot;See http://landweb.nascom.nasa.gov/cgi-bin/QA_WWW/qaFlagPage.cgi?sat=terra (or ?sat=aqua) for the product Science Quality status&quot;
+     END_GROUP = QAFlags
+
+     GROUP = QAStats
+          QAPERCENTINTERPOLATEDDATA       INTEGER    1    Variable
+          QAPERCENTMISSINGDATA           INTEGER    1    Variable
+          QAPERCENTOUTOFBOUNDSDATA        INTEGER    1    Variable
+          QAPERCENTCLOUDCOVER             INTEGER    1    Variable
+     END_GROUP = QAStats
+   END_GROUP = MeasuredParameter
+
+   GROUP = AssociatedPlatformInstrumentSensor
+          ASSOCIATEDPLATFORMSHORTNAME    STRING     1   &quot;Terra/Aqua&quot;
+          ASSOCIATEDSENSORSHORTNAME      STRING     1   &quot;MODIS&quot;
+          ASSOCIATEDINSTRUMENTSHORTNAME  STRING     1   &quot;MODIS&quot;
+   END_GROUP = AssociatedPlatformInstrumentSensor
+
+  
+   GROUP = AdditionalAttributes
+          ADDITIONALATTRIBUTENAME  STRING        FR Variable  (A)
+          PARAMETERVALUE           STRING        FR Variable  (A)
+       
+	       ADDITIONALATTRIBUTENAME.1  = QAPERCENTGOODQUALITY
+	       ADDITIONALATTRIBUTENAME.2  = QAPERCENTOTHERQUALITY
+	       ADDITIONALATTRIBUTENAME.3  = QAPERCENTNOTPRODUCEDCLOUD
+	       ADDITIONALATTRIBUTENAME.4  = QAPERCENTNOTPRODUCEDOTHER
+	       ADDITIONALATTRIBUTENAME.5  = NDVI250M16DAYQCLASSPERCENTAGE
+	       ADDITIONALATTRIBUTENAME.6  = EVI250M16DAYQCLASSPERCENTAGE
+	       ADDITIONALATTRIBUTENAME.7  = HORIZONTALTILENUMBER
+	       ADDITIONALATTRIBUTENAME.8  = VERTICALTILENUMBER
+               ADDITIONALATTRIBUTENAME.9  = TILEID
+	       ADDITIONALATTRIBUTENAME.10  = INPUTPRODUCTRESOLUTION
+	       ADDITIONALATTRIBUTENAME.11  = identifier_product_doi
+	       ADDITIONALATTRIBUTENAME.12  = identifier_product_doi_authority
+   END_GROUP = AdditionalAttributes
+
+
+ END_GROUP = INVENTORYMETADATA
+
+
+Product metadata.0
+ArchiveMetadata.0
+This string will contain the following PVL fields:
+                                                  # of
+Field Name               Data Type       # of Values     Value
+ GROUP = ARCHIVEMETADATA
+
+   ***** MODLAND Mandatory V2 archive metadata ***************************
+
+   GROUP = BoundingRectangle
+          *WESTBOUNDINGCOORDINATE              DOUBLE     1    Variable
+          *NORTHBOUNDINGCOORDINATE             DOUBLE     1    Variable
+          *EASTBOUNDINGCOORDINATE              DOUBLE     1    Variable
+          *SOUTHBOUNDINGCOORDINATE             DOUBLE     1    Variable
+   END_GROUP = BoundingRectangle
+
+	ALGORITHMPACKAGEACCEPTANCEDATE		STRING	1		&quot;2004-10-01&quot;
+	ALGORITHMPACKAGEMATURITYCODE		STRING	1		&quot;Normal&quot;
+	ALGORITHMPACKAGENAME		        STRING	1		&quot;MOD_PR13A1&quot;
+	ALGORITHMPACKAGEVERSION			STRING	1		&quot;6&quot;
+	INSTRUMENTNAME				STRING	1		&quot;MODIS&quot;
+	LONGNAME			        STRING	1		&quot;MODIS/Terra (Aqua) Vegetation Indices 16 days L3 Global 250m SIN Grid&quot;
+	PROCESSINGCENTER			STRING	1		&quot;MODAPS&quot;
+  PROCESSINGENVIRONMENT			STRING	1		Variable
+  *INPUTFILENAME                   STRING    FR    Variable      (A)
+  CHARACTERISTICBINANGULARSIZE    DOUBLE  1   Variable
+  CHARACTERISTICBINSIZE           DOUBLE  1   Variable
+  DATACOLUMNS                     INTEGER 1   Variable
+  DATAROWS                        INTEGER 1   Variable
+  GLOBALGRIDCOLUMNS               INTEGER 1   Variable
+  GLOBALGRIDROWS                  INTEGER 1   Variable
+  SPSOPARAMETERS		  STRING	1		2749,4334, 2749a,4334a
+  PERCENTLAND			  INTEGER	1		Variable
+	PRODUCTIONTYPE		  STRING	1		Variable
+	DESCRrevision						        STRING   FR Variable
+ 	GEOANYABNORMAL		  STRING   1  &quot;True/False&quot;
+	GEOESTMAXRMSERROR	  DOUBLE  1 Variable
+	QAPERCENTPOORQ250MOR500M16DAYNDVI INTEGER FR Variable
+	QAPERCENTPOORQ250MOR500M16DAYEVI  INTEGER FR Variable
+	QA_STRUCTURE_STYLE            STRING   1 &quot;C5 or later&quot;
+ END_GROUP = ARCHIVEMETADATA
+
+StructuralMetadata.0
+This string will be populated automatically by HDF-EOS.
+
+Under 250m + 500m Production
+
+Grid Structure:  MOD_Grid_16DAY_250m_500m_VI
+Dimensions:
+Dimension   Dimension                  Name                Value
+Dimension_1               Ydim:        MODIS_Grid_250m_VI        &quot;Data Rows&quot;
+Dimension_2               Xdim:        MODIS_Grid_250m_VI        &quot;Data Columns&quot;
+
+Under 500m Only Production
+
+Grid Structure:  MOD_Grid_16DAY_500m_VI
+Dimensions:
+Dimension   Dimension                  Name                Value
+Dimension_1               Ydim:      MODIS_Grid_500m_VI        &quot;Data Rows&quot;
+Dimension_2  	          Xdim:      MODIS_Grid_500m_VI        &quot;Data Columns&quot;
+
+Corner Locations:    Corner                Values
+UpperLeftPointMtrs    (Variable, Variable)
+LowerRightPointMtrs   (Variable, Variable)
+Geographic Grid Projection Parameters 
+
+Supported Grids: Geographic Grid Integerized Sinusoidal
+Interrupted Goodes Homolosine
+Projection gridID = GCTP_GEO
+ProjParam[0]          not used
+ProjParam[1]          not used
+ProjParam[2]          not used
+ProjParam[3]          not used
+ProParam[4]           not used
+ProjParam[5]          not used
+ProjParam[6]          not used
+ProjParam[7]          not used
+ProjParam[8]          not used
+ProjParam[9]          not used
+ProjParam[10]         not used
+ProjParam[11]         not used
+ProjParam[12]         not used
+Spherecode            not used
+GridOrigin            HDFE_GD_UL
+
+Projection gridID = GCTP_ISINUS
+                                                               
+ProjParam[0]          6371007.181
+ProjParam[1]          TBD
+ProjParam[2]          0.0
+ProjParam[3]          0.0
+ProjParam[4]          0.0
+ProjParam[5]          0.0
+ProjParam[6]          0.0
+ProjParam[7]          0.0
+ProjParam[8]          21600
+ProjParam[9]          0.0
+ProjParam[10]         1.0
+ProjParam[11]         0.0
+ProjParam[12]         0.0
+Spherecode            -1
+GridOrigin            HDFE_GD_UL
+
+Projection gridID     GCTP_GOOD
+ProjParam[0]          not used
+ProjParam[1]          not used
+ProjParam[2]          not used
+ProjParam[3]          not used
+ProjParam[4]          not used
+ProjParam[5]          not used
+ProjParam[6]          not used
+ProjParam[7]          not used
+ProjParam[8]          not used
+ProjParam[9]          not used
+ProjParam[10]         not used
+ProjParam[11]         not used
+ProjParam[12]         not used
+Spherecode            19
+GridOrigin            HDFE_GD_UL
+
+
+ 
+   Global HDF Attributes
+                     Number of             Values or
+                                 Max.
+Attribute  Data          String         Value       Type           Length
+
+	Characteristic  FLOAT32         1         Variable         Bin Angular Size
+	Characteristic  FLOAT32         1         Variable         Bin Size
+	Data Columns    UINT16          1         Variable
+	Data Rows       UINT16          1         Variable
+	Days of Year    UINT16          &quot;Number of Days&quot;        Variable
+	DaysProcessed   UINT16          &quot;Number of Days&quot;        Variable
+	Global Grid     UINT32          1               Variable                Columns
+	Global Grid     UINT32          1               Variable                Rows
+	Number of Days  UINT16          1               Variable
+
+DataFields:
+
+A value of &quot;Variable&quot; indicates that this value will vary according to the granule being processed.
+
+DataField    Name                        Data      Dimensions
+                                         Type
+
+DataFields:
+
+All data stored within DataFields that contain the HDF attributes &quot;scale_factor&quot; and &quot;add_offset&quot; are scaled
+according to the following data conversion:
+
+      file data=(parameter * scale_factor) + add_offset
+      parameter=(file data - add_offset)/scale_factor
+
+A value of &quot;Variable&quot; indicates that this value will vary according to the granule being processed.
+
+Data field     Name              Data type Dimension
+DataField_1    250m 16 days NDVI INT16     Dimension_1
+                                           Dimension_2
+DataField_1 HDF Attributes:
+Attribute      Data Type Number of Values  Value
+                         or Max. String
+                         Length
+long_name      STRING         17           250m 16 days NDVI
+units          STRING         4            NDVI
+valid_range    INT16          2            -2000, 10000
+_FillValue     INT16          1            -3000
+scale_factor   FLOAT64        1            10000
+scale_factor_err              FLOAT64      1    0.0
+add_offset     FLOAT64        1            0.0
+add_offset_err FLOAT64        1            0.0
+calibrated_nt  INT32          1            5
+
+
+Data field     Name              Data type Dimension
+DataField_2    250m 16 days EVI INT16     Dimension_1
+                                          Dimension_2
+DataField_2 HDF Attributes:
+Attribute      Data Type Number of Values  Value
+                         or Max. String
+                         Length
+long_name      STRING         17           250m 16 days EVI
+units          STRING         4            EVI
+valid_range    INT16          2            -2000, 10000
+_FillValue     INT16          1            -3000
+scale_factor   FLOAT64        1            10000
+scale_factor_err              FLOAT64      1    0.0
+add_offset     FLOAT64        1            0.0
+add_offset_err FLOAT64        1            0.0
+calibrated_nt  INT32          1            5
+
+
+Data field   Name                Data type Dimension
+DataField_3  250m 16 days VI Quality     UINT16    Dimension_1
+                                           Dimension_2
+Bit          Description
+0-1      NDVI quality
+         00 VI produced, good quality;
+         01 VI produced, but check other QA
+         10 (pixel not produced due to cloud effects)
+				 		produced but most likley cloudy pixel
+         11 pixel not produced due to other reasons than clouds
+2-5      VI usefulness
+         four bit range 0= highest quality 13 quality so low that it is not useful, 
+	    14 L1B data faulty, 15 not useful for any other reason/not processed
+6-7      aerosol quantity:
+          climatology (00), low (01),  average (10), high (11) 
+8        Adjacent cloud detected; (1)  YES,   (0)  NO
+9        YES (1) NO (0) atmosphere BRDF correction performed
+10       mixed clouds YES (1) NO (0)mixed clouds
+11-13    Land/Water flag  
+		000 ocean; 
+		001: Land (Nothing else but land) 
+		010: Ocean coastlines and lake shorelines 
+		011: Shallow inland water 
+		100: Ephemeral water 
+		101: Deep inland water 
+		110: Moderate or continental ocean 
+		111: Deep ocean 
+14       0 NO; 1 YES possible snow/ice
+15       0 NO; 1 YES possible shadow
+
+
+DataField_4     250m 16 days red reflectance    INT16   Dimension_1
+                                                        Dimension_2
+        DataField_4 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          28      250m 16 days red  reflectance
+        units           STRING          11      reflectance
+        valid_range     INT16           2       0, 10000
+        _FillValue      INT16           1       -1000
+        scale_factor    FLOAT64         1       10000
+        scale_factor_err FLOAT64        1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+
+
+DataField_5     250m 16 days NIR reflectance    INT16   Dimension_1
+                                                        Dimension_2
+        DataField_5 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          28      250m 16 days NIR reflectance
+        units           STRING          11      reflectance
+        valid_range     INT16           2       0, 10000
+        _FillValue      INT16           1       -1000
+        scale_factor    FLOAT64         1       10000
+        scale_factor_err FLOAT64        1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+
+
+DataField_6     250m 16 days blue reflectance   INT16   Dimension_1
+                                                        Dimension_2
+
+        DataField_6 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING  29      250m 16 days blue  reflectance
+        units           STRING  11      reflectance
+        valid_range     INT16   2       0, 10000
+        _FillValue      INT16   1       -1000
+        scale_factor    FLOAT64 1       10000
+        scale_factor_err FLOAT64        1       0.0
+        add_offset      FLOAT64 1       0.0
+        add_offset_err  FLOAT64 1       0.0
+        calibrated_nt   INT32   1       5
+
+
+DataField_7     250m 16 days MIR reflectance    INT16   Dimension_1
+                                                        Dimension_2
+        DataField_7 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          28      250m 16 days MIR reflectance
+        units           STRING          11      reflectance
+        valid_range     INT16           2       0, 10000
+        _FillValue      INT16           1       -1000
+        scale_factor    FLOAT64         1       10000
+        scale_factor_err        FLOAT64 1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+Legend:	 MIR band specification: 
+ 				 The MIR band saved in the VI product is MODIS band 7 
+				 Bandwidth  :2105-2155 nm 
+				 Band center:2130 nm 
+
+
+DataField_8     250m 16 days view zenith angle  INT16   Dimension_1
+                                                        Dimension_2
+        DataField_8 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          38      250m 16 days average view
+                                                        zenith angle
+        units           STRING          7       degrees
+        valid_range     INT16           2       -9000, 9000
+        _FillValue      INT16           1       -10000
+        scale_factor    FLOAT64         1       100
+        scale_factor_err        FLOAT64 1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+
+
+DataField_9    250m 16 days sun zenith angle   INT16   Dimension_1
+                                                       Dimension_2
+        DataField_9 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          37      250m 16 days average sun
+                                                        zenith angle
+        units           STRING          7       degrees
+        valid_range     INT16           2       -9000, 9000
+        _FillValue      INT16           1       -10000
+        scale_factor    FLOAT64         1       100
+        scale_factor_err FLOAT64        1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+
+
+DataField_10    250m 16 days relative azimuth angle  INT16 Dimension_1
+                                                           Dimension_2
+        DataField_10 HDF Attributes:
+        Attribute       Data Type       Number of Values        Value
+                                        or Max. String
+                                        Length
+
+        long_name       STRING          43      250m 16 days average relative
+                                                        azimuth angle
+        units           STRING          7       degrees
+        valid_range     INT16           2       -3600, 3600
+        _FillValue      INT16           1       -4000
+        scale_factor    FLOAT64         1       10
+        scale_factor_err FLOAT64        1       0.0
+        add_offset      FLOAT64         1       0.0
+        add_offset_err  FLOAT64         1       0.0
+        calibrated_nt   INT32           1       5
+
+DataField_11	250m 16 days composite day of the year INT16			Dimension_1	
+										Dimension_2
+
+DataField_11 HDF Attributes:
+
+Attribute			Data Type		Number of Values	Value or Max. String Length
+
+long_name			STRING			38		250m 16 days composite day of the year
+units				STRING			22	     	Julian day of the year
+valid_range			INT16			2		1, 366
+_FillValue			INT16		     	1		-1
+
+
+Data field		Name						Data type	Dimension
+
+DataField_12		250m 16 days pixel reliability	INT8	Dimension_1	
+												Dimension_2
+
+DataField_12 HDF Attributes:
+
+Attribute		Data Type	Number of Values	Value or Max. String Length
+
+long_name		STRING			30		250m 16 days pixel reliability
+units			STRING			4		rank
+valid_range		INT8			2		0, 3
+_FillValue		INT8			1		-1
+
+
+*******************************************************************************
+The 250m 16 days pixel realiability is a summary of all QA indicating how reliable the 
+data/pixel is:
+	-1 : No data, FILL value
+	 0 : Good data, use with confidence
+	 1 : Marginal data, Useful, but look at other QA information
+	 2 : Snow/Ice Target covered with snow/ice
+	 3 : Cloudy data.
+*******************************************************************************
+</pre>
+
+        </article>
+    </div>  <!-- end main content container -->
+</main>
+<footer class="usa-footer bg-carbon-black-important padding-x-3 padding-y-7">
+    <div class="usa-footer__primary-section bg-carbon-black-important">
+        <div class="grid-container grid-container-widescreen padding-x-0">
+            <img fetchpriority="low" width="63.99" height="53.94" class="width-8 margin-bottom-2" alt="NASA Logo"
+                 src="/img/nasa-logo@2x.png"
+                 srcset="/img/nasa-logo.svg">
+        </div>
+        <div class="grid-container grid-container-widescreen">
+            <div class="grid-row">
+                <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4 margin-bottom-2 padding-right-0 tablet:padding-right-2 desktop:margin-bottom-0 color-spacesuit-white">
+                    <div class="hds-footer-details">
+                        <h3 class="heading-22 line-height-md">National Aeronautics and Space Administration</h3>
+                        <p class="p-sm color-carbon-30">NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+                    </div>
+                </div>
+                <div class="grid-col-12 tablet:grid-col-8 desktop:grid-col-12 padding-top-2 border-top-1px hds-footer-secondary">
+                    <ul class="color-carbon-30-important hds-footer-menu hds-footer-menu-horizontal usa-unstyled-list">
+                        <li>
+                            <a href="https://www.nasa.gov/privacy/" target="_blank" aria-label="Privacy Policy">
+                                <span>Privacy Policy</span></a>
+                        </li>
+                        <li>
+                            <a href="/contact/" aria-label="Contact Us">
+                                <span>Contact Us</span></a>
+                        </li>
+                        <li>
+                            <a href="/internal/" target="_blank" aria-label="Internal">
+                                <span>Internal</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.nasa.gov/accessibility/" target="_blank" aria-label="Accessibility">
+                                <span>Accessibility</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desktop:margin-top-0 grid-col-12">
+                    <ul class="color-carbon-40-important hds-footer-menu hds-footer-menu-horizontal hds-menu-meta usa-unstyled-list">
+                        <li class="hds-footer-meta">
+                            <div class="hds-footer-meta-label">Version:</div>
+                            <div class="hds-footer-meta-value">4.0.11</div>
+                        </li>
+                        <li class="hds-footer-meta">
+                            <div class="hds-footer-meta-label">Responsible NASA Official:</div>
+                            <div class="hds-footer-meta-value">Sadashiva Devadiga</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal-components">
+
+    <div id="generate-token-modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title fs-4">&nbsp;Tokens for Downloading LAADS DAAC Data</h1>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>A LAADS DAAC download token will help make file downloads faster, but is only usable for LAADS DAAC web sites. A LAADS DAAC token
+                        will not work with other Earthdata sites.
+
+                      <div id="generate-token-modal-loading" class="hide">
+                        Generating LAADS DAAC token &hellip; <i class="fas fa-sync icon-refresh-animate"></i>
+                      </div>
+                      <div id="generate-token-modal-complete" class="hide">
+                        <p>Please copy and save the token below for use with any supported LAADS download utilities or scripts.</p>
+                        <pre id="generate-token-modal-display-token" class="wrap"></pre>
+
+                        <p>To test, run the following <code>wget</code> download command in your terminal and see if it successfully downloaded the README text file located at the root of the LAADS archive. See also <a href="/tools-and-services/data-download-scripts/#wget" target="_blank">LAADS documentation on how to use wget</a></p>
+                        <pre id="generate-token-modal-display-wget-sample" class="wrap">wget -e robots=off -m -np -R .html,.tmp -nH --cut-dirs=3 "https://ladsweb.modaps.eosdis.nasa.gov/archive/README" --header "Authorization: Bearer <span id="generate-token-modal-display-wget-sample-token"></span>" -P .</pre>
+                      </div>
+                      <div id="generate-token-modal-error" class="hide">
+                        <div class="alert alert-danger" role="alert"><i class="fas fa-times-circle"></i> We are currently unable to generate a LAADS DAAC token. Please try again later or contact <a href="javascript:feedback.showForm()">MODAPS Support</a> with any questions.</div>
+                      </div>
+                    </li>
+                    <li>An Earthdata Download token (EDL) will work on any Earthdata site including all LAADS DAAC sites, but download performance from the LAADS DAAC can be much slower due to the extra network connections needed to check credentials at Earthdata.
+                        <br>
+                        <button id="edl-token-button" type="button" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Generate EDL Token</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <div id="multi-download-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Confirm Download of Multiple Files</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="multi-file-loading-confirm">
+                        Verifying login status&hellip; <i class="fas fa-sync icon-refresh-animate"></i>
+                    </div>
+                    <div id="multi-file-download-confirm">
+                        <p>Please confirm before starting this batch download of <span id="multi-download-modal-num-files"></span> listed below totaling <span id="multi-download-modal-total-file-size"></span>, one file at a time.</p>
+                        <pre id="multi-download-modal-list-of-files"></pre>
+                        <div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle"></i> Once a batch download begins, your browser may not provide a way to cancel the batch aside from closing the browser entirely or stopping individual downloads one at a time. If in doubt, try selecting a smaller number of files for download. <a href="javascript:feedback.showForm()">MODAPS Support</a> is available to help with any questions.</div>
+                        <div class="alert alert-info" role="alert">
+                            <h3>
+                                <i class="fas fa-globe" aria-hidden="true"></i> 
+                                <strong>Browser configurations</strong>
+                            </h3>
+                            <ol>
+                                <li>Some users might have to approve once (e.g., click "Allow") to allow for future downloads of multiple files.</li>
+                                <li>To avoid a new download prompt for each file, ensure the following settings are configured in your browser:
+                                    <ul>
+                                        <li><i class="fab fa-chrome" aria-hidden="true"></i> Chrome: Settings &gt; Advanced &gt; Ask where to save each file before downloading &gt; <em>Off</em></li>
+                                        <li><i class="fab fa-firefox" aria-hidden="true"></i> Firefox:
+                                            <ol>
+                                                <li>Preferences &gt; Files and Applications &gt; <em>Save files to</em>&hellip;</li>
+                                                <li>Click checkbox &ldquo;Do this automatically for files like this from now on&rdquo;</li>
+                                            </ol>
+                                        </li>
+                                        <li><i class="fab fa-safari" aria-hidden="true"></i> Safari: Preferences &gt; General &gt; File download location &gt; <em>[specified folder]</em></li>
+                                        <li><i class="fab fa-edge" aria-hidden="true"></i> Edge: Settings &gt; Downloads &gt; Ask where to save each file before downloading &gt; <em>Off</em></li>
+                                    </ul>
+                                </li>
+                                <li>Unsupported browsers for multi-file downloads (use <i class="fas fa-download"></i> instead):
+                                    <ul>
+                                        <li><i class="fab fa-internet-explorer" aria-hidden="true"></i> Internet Explorer 11 and below</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="multi-file-log-in-confirm">
+                        <div class="alert alert-warning" role="alert">
+                            <a href="/oauth/login" target="_blank" rel="noopener noreferrer">
+                                <h2>
+                                    <i class="fas fa-hand-point-right"></i> Please log in and try again
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="multi-file-error-confirm">
+                        <div class="alert alert-danger" role="alert"><i class="fas fa-times-circle"></i> We are currently having issues verifying your request. Please try again later or contact <a href="javascript:feedback.showForm()">MODAPS Support</a> with any questions.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="multi-download-modal-confirm-download"><i class="fas fa-download"></i> Download Files</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</div>
+<script src="https://fbm.earthdata.nasa.gov/for/LAADS/feedback.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        window.feedback.init({showIcon: false});
+    });
+</script>
+<script src="https://cdn.earthdata.nasa.gov/tophat2/tophat2.js" id="earthdata-tophat-script" data-show-status="true" data-show-fbm="false" data-current-daac="LAADS"></script>
+<script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&amp;subagency=GSFC&amp;dclink=true" id="_fed_an_ua_tag"></script>
+
+</body>
+</html>

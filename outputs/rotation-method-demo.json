@@ -1,0 +1,2959 @@
+{
+  "method_id": "fieldshift-rotation-exploration",
+  "method_version": "0.1.0",
+  "is_synthetic_scenario": true,
+  "is_verified_farm": false,
+  "application_implemented": false,
+  "fixture_path": "specs/fixtures/rotation-demo.json",
+  "assumptions": [
+    "Existing padi-padi is a hypothetical continuation for this fixture, not an observed farmer history.",
+    "The first crop is held fixed for comparison, not a verified crop currently growing.",
+    "Both planting starts, all three elapsed-day durations, direct seeding and 14-day preparation gap are synthetic assumptions.",
+    "The 90-day soybean duration does not resolve the ambiguous duration origin in the Anjasmoro cultivar reference or select that cultivar.",
+    "Environmental inputs remain unchanged real data; this replay is not a forecast for a future season."
+  ],
+  "generation": {
+    "strategies": {
+      "existing": [
+        "padi",
+        "padi"
+      ],
+      "candidate_1": [
+        "padi",
+        "jagung"
+      ],
+      "candidate_2": [
+        "padi",
+        "kedelai"
+      ]
+    },
+    "generated_count": 2,
+    "generation_status": "complete",
+    "missing_inputs": [],
+    "warnings": [],
+    "errors": []
+  },
+  "comparison_context": {
+    "location_id": "klaten_cropland_primary",
+    "coordinate": {
+      "longitude": 110.55354472008753,
+      "latitude": -7.721875031299882
+    },
+    "is_verified_farm": false,
+    "climate_context_id": "power_regional_yogyakarta",
+    "climate_context_role": "Explicit regional example context, not a meteorological measurement at the crop pixel.",
+    "soil_ph_0_5cm": {
+      "status": "evidence_available",
+      "origin": "SoilGrids_prediction_not_laboratory",
+      "depth": "0-5cm",
+      "row": 4,
+      "column": 6,
+      "value": 5.8,
+      "q05": 4.2,
+      "q95": 7.8,
+      "unit": "pH",
+      "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+    },
+    "gaez": {
+      "status": "historical_reference_only",
+      "rows": [
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+          "raw_class": 4,
+          "class_label": "SI >40 : Medium",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif"
+        },
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+          "raw_class": 4,
+          "class_label": "SI >40 : Medium",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif"
+        },
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+          "raw_class": 5,
+          "class_label": "SI >25 : Moderate",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif"
+        },
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+          "raw_class": 5,
+          "class_label": "SI >25 : Moderate",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif"
+        },
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+          "raw_class": 5,
+          "class_label": "SI >25 : Moderate",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif"
+        },
+        {
+          "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+          "raw_class": 5,
+          "class_label": "SI >25 : Moderate",
+          "bounds": {
+            "west": 110.5,
+            "east": 110.58333333333331,
+            "north": -7.666666666666657,
+            "south": -7.75
+          },
+          "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif"
+        }
+      ],
+      "period": "2001-2020",
+      "management_regime_selected": null,
+      "note": "Regimes remain separate; RCW represents wetland rice, which is not confirmed for this scenario. No suitability score is inferred."
+    },
+    "whole_horizon_environment": {
+      "start": "2025-01-01",
+      "end_exclusive": "2026-01-01",
+      "days_expected": 365,
+      "rainfall_total_mm": 2964.05,
+      "reference_eto_total_mm": 1372.0954,
+      "rain_minus_reference_eto_total_mm": 1591.9546,
+      "temperature_mean_c": 26.16421917808219,
+      "valid_days": {
+        "rainfall_total_mm": 365,
+        "reference_eto_total_mm": 365,
+        "rain_minus_reference_eto_total_mm": 365,
+        "temperature_mean_c": 365
+      },
+      "eto_guard_days": 2
+    },
+    "whole_horizon_historical_analogue": {
+      "mode": "historical_analogue_not_forecast",
+      "start": "2025-01-01",
+      "end_exclusive": "2026-01-01",
+      "days_expected": 365,
+      "baseline_start_year": 1991,
+      "baseline_end_year": 2020,
+      "counts_by_metric": {
+        "rainfall_total_mm": 22,
+        "reference_eto_total_mm": 22,
+        "rain_minus_reference_eto_total_mm": 22,
+        "temperature_mean_c": 22
+      },
+      "statistics": {
+        "rainfall_total_mm": {
+          "count": 22,
+          "mean": 2037.2572727272725,
+          "median": 1950.28,
+          "p10": 1476.493,
+          "p90": 2515.914
+        },
+        "reference_eto_total_mm": {
+          "count": 22,
+          "mean": 1546.304890909091,
+          "median": 1551.7092,
+          "p10": 1453.5354100000002,
+          "p90": 1674.28621
+        },
+        "rain_minus_reference_eto_total_mm": {
+          "count": 22,
+          "mean": 490.95238181818183,
+          "median": 370.2442,
+          "p10": -91.90188999999998,
+          "p90": 1064.4571500000002
+        },
+        "temperature_mean_c": {
+          "count": 22,
+          "mean": 25.773764632627646,
+          "median": 25.763219178082192,
+          "p10": 25.500564383561642,
+          "p90": 26.064106849315067
+        }
+      },
+      "mapped_windows": [
+        {
+          "anchor_year": 1991,
+          "summary": {
+            "start": "1991-01-01",
+            "end_exclusive": "1992-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1675.26,
+            "reference_eto_total_mm": 1650.8206,
+            "rain_minus_reference_eto_total_mm": 24.439399999999985,
+            "temperature_mean_c": 25.700520547945207,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1993,
+          "summary": {
+            "start": "1993-01-01",
+            "end_exclusive": "1994-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2245.82,
+            "reference_eto_total_mm": 1547.3339,
+            "rain_minus_reference_eto_total_mm": 698.4861,
+            "temperature_mean_c": 25.652794520547946,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 2
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1994,
+          "summary": {
+            "start": "1994-01-01",
+            "end_exclusive": "1995-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1793.59,
+            "reference_eto_total_mm": 1635.663,
+            "rain_minus_reference_eto_total_mm": 157.92700000000002,
+            "temperature_mean_c": 25.253917808219178,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 1
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1995,
+          "summary": {
+            "start": "1995-01-01",
+            "end_exclusive": "1996-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2636.06,
+            "reference_eto_total_mm": 1498.233,
+            "rain_minus_reference_eto_total_mm": 1137.827,
+            "temperature_mean_c": 25.618438356164383,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1997,
+          "summary": {
+            "start": "1997-01-01",
+            "end_exclusive": "1998-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1150.2,
+            "reference_eto_total_mm": 1679.5533,
+            "rain_minus_reference_eto_total_mm": -529.3533,
+            "temperature_mean_c": 25.574191780821916,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1998,
+          "summary": {
+            "start": "1998-01-01",
+            "end_exclusive": "1999-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2428.84,
+            "reference_eto_total_mm": 1462.6281,
+            "rain_minus_reference_eto_total_mm": 966.2119,
+            "temperature_mean_c": 26.498794520547943,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 1999,
+          "summary": {
+            "start": "1999-01-01",
+            "end_exclusive": "2000-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1454.59,
+            "reference_eto_total_mm": 1556.0845,
+            "rain_minus_reference_eto_total_mm": -101.49449999999999,
+            "temperature_mean_c": 25.615232876712327,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2001,
+          "summary": {
+            "start": "2001-01-01",
+            "end_exclusive": "2002-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1838.12,
+            "reference_eto_total_mm": 1521.372,
+            "rain_minus_reference_eto_total_mm": 316.748,
+            "temperature_mean_c": 25.707123287671234,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2002,
+          "summary": {
+            "start": "2002-01-01",
+            "end_exclusive": "2003-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1345.8799999999999,
+            "reference_eto_total_mm": 1676.8935,
+            "rain_minus_reference_eto_total_mm": -331.0135,
+            "temperature_mean_c": 25.992082191780824,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 1
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2003,
+          "summary": {
+            "start": "2003-01-01",
+            "end_exclusive": "2004-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1879.3,
+            "reference_eto_total_mm": 1600.3884,
+            "rain_minus_reference_eto_total_mm": 278.9116,
+            "temperature_mean_c": 25.742383561643834,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 1
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2005,
+          "summary": {
+            "start": "2005-01-01",
+            "end_exclusive": "2006-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2522.13,
+            "reference_eto_total_mm": 1453.3828,
+            "rain_minus_reference_eto_total_mm": 1068.7472,
+            "temperature_mean_c": 25.78695890410959,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2006,
+          "summary": {
+            "start": "2006-01-01",
+            "end_exclusive": "2007-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1904.58,
+            "reference_eto_total_mm": 1559.4155,
+            "rain_minus_reference_eto_total_mm": 345.1645,
+            "temperature_mean_c": 25.492383561643834,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 1
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2007,
+          "summary": {
+            "start": "2007-01-01",
+            "end_exclusive": "2008-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1928.26,
+            "reference_eto_total_mm": 1557.1296,
+            "rain_minus_reference_eto_total_mm": 371.1304,
+            "temperature_mean_c": 25.818136986301372,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2009,
+          "summary": {
+            "start": "2009-01-01",
+            "end_exclusive": "2010-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2239.31,
+            "reference_eto_total_mm": 1518.834,
+            "rain_minus_reference_eto_total_mm": 720.476,
+            "temperature_mean_c": 25.806602739726028,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 2
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2010,
+          "summary": {
+            "start": "2010-01-01",
+            "end_exclusive": "2011-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 3256.42,
+            "reference_eto_total_mm": 1336.0393,
+            "rain_minus_reference_eto_total_mm": 1920.3807,
+            "temperature_mean_c": 26.09405479452055,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 3
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2011,
+          "summary": {
+            "start": "2011-01-01",
+            "end_exclusive": "2012-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1972.3,
+            "reference_eto_total_mm": 1467.8786,
+            "rain_minus_reference_eto_total_mm": 504.4214,
+            "temperature_mean_c": 25.369260273972603,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2013,
+          "summary": {
+            "start": "2013-01-01",
+            "end_exclusive": "2014-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2459.97,
+            "reference_eto_total_mm": 1434.1233,
+            "rain_minus_reference_eto_total_mm": 1025.8467,
+            "temperature_mean_c": 25.78405479452055,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2014,
+          "summary": {
+            "start": "2014-01-01",
+            "end_exclusive": "2015-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2447.64,
+            "reference_eto_total_mm": 1505.6251,
+            "rain_minus_reference_eto_total_mm": 942.0149,
+            "temperature_mean_c": 25.960082191780824,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 1
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2015,
+          "summary": {
+            "start": "2015-01-01",
+            "end_exclusive": "2016-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1732.09,
+            "reference_eto_total_mm": 1619.1298,
+            "rain_minus_reference_eto_total_mm": 112.9602,
+            "temperature_mean_c": 25.89339726027397,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2017,
+          "summary": {
+            "start": "2017-01-01",
+            "end_exclusive": "2018-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 2262.2400000000002,
+            "reference_eto_total_mm": 1454.9089,
+            "rain_minus_reference_eto_total_mm": 807.3311,
+            "temperature_mean_c": 25.737260273972602,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 3
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2018,
+          "summary": {
+            "start": "2018-01-01",
+            "end_exclusive": "2019-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1973.44,
+            "reference_eto_total_mm": 1604.082,
+            "rain_minus_reference_eto_total_mm": 369.358,
+            "temperature_mean_c": 25.85304109589041,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        },
+        {
+          "anchor_year": 2019,
+          "summary": {
+            "start": "2019-01-01",
+            "end_exclusive": "2020-01-01",
+            "days_expected": 365,
+            "rainfall_total_mm": 1673.62,
+            "reference_eto_total_mm": 1679.1884,
+            "rain_minus_reference_eto_total_mm": -5.568400000000016,
+            "temperature_mean_c": 26.072109589041094,
+            "valid_days": {
+              "rainfall_total_mm": 365,
+              "reference_eto_total_mm": 365,
+              "rain_minus_reference_eto_total_mm": 365,
+              "temperature_mean_c": 365
+            },
+            "eto_guard_days": 0
+          },
+          "incomplete_metrics": []
+        }
+      ],
+      "skipped_years": [
+        {
+          "anchor_year": 1992,
+          "start": "1992-01-01",
+          "end_exclusive": "1993-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 1996,
+          "start": "1996-01-01",
+          "end_exclusive": "1997-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2000,
+          "start": "2000-01-01",
+          "end_exclusive": "2001-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2004,
+          "start": "2004-01-01",
+          "end_exclusive": "2005-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2008,
+          "start": "2008-01-01",
+          "end_exclusive": "2009-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2012,
+          "start": "2012-01-01",
+          "end_exclusive": "2013-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2016,
+          "start": "2016-01-01",
+          "end_exclusive": "2017-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        },
+        {
+          "anchor_year": 2020,
+          "start": "2020-01-01",
+          "end_exclusive": "2021-01-01",
+          "reason": "duration_mismatch",
+          "mapped_days": 366,
+          "target_days": 365
+        }
+      ],
+      "mapping_policy": "month_day_endpoints_same_year_offset_and_duration; all days inside baseline"
+    },
+    "vegetation_context": {
+      "mode": "historical_vegetation_context",
+      "point_id": "klaten_cropland_primary",
+      "start": "2025-01-01",
+      "end_exclusive": "2026-01-01",
+      "days_expected": 365,
+      "point_in_prepared_data": true,
+      "n_selected_observations": 23,
+      "n_good_strict": 7,
+      "n_marginal_review": 3,
+      "n_excluded": 13,
+      "valid_good_observations": {
+        "ndvi": 7,
+        "evi": 7
+      },
+      "ndvi_good_mean": 0.6889428571428571,
+      "evi_good_mean": 0.49867142857142854,
+      "good_observation_dates": [
+        "2025-04-22",
+        "2025-04-29",
+        "2025-06-06",
+        "2025-07-08",
+        "2025-08-14",
+        "2025-09-03",
+        "2025-09-20"
+      ],
+      "coverage_status": "has_good_observations",
+      "interpolated": false,
+      "interpretation": "Mixed-pixel vegetation context; no species, planting, harvest or fallow inference"
+    }
+  },
+  "strategies": [
+    {
+      "strategy_id": "existing",
+      "sequence": [
+        "padi",
+        "padi"
+      ],
+      "calendar_source": "explicit_synthetic_fixture",
+      "cycles": [
+        {
+          "crop_id": "padi",
+          "calendar_inputs": {
+            "crop_id": "padi",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-01-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 120,
+              "max_days": 120,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-padi"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-01-01",
+            "earliest_harvest_date": "2025-05-01",
+            "latest_harvest_date": "2025-05-01",
+            "earliest_release_date": "2025-05-02",
+            "latest_release_date": "2025-05-02",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-01-01",
+            "end_exclusive": "2025-05-02",
+            "days_expected": 121,
+            "rainfall_total_mm": 1081.16,
+            "reference_eto_total_mm": 443.99490000000003,
+            "rain_minus_reference_eto_total_mm": 637.1650999999999,
+            "temperature_mean_c": 26.551652892561982,
+            "valid_days": {
+              "rainfall_total_mm": 121,
+              "reference_eto_total_mm": 121,
+              "rain_minus_reference_eto_total_mm": 121,
+              "temperature_mean_c": 121
+            },
+            "eto_guard_days": 2
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              20.0,
+              30.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.5,
+              7.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 450,
+            "max": 700,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        },
+        {
+          "crop_id": "padi",
+          "calendar_inputs": {
+            "crop_id": "padi",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-06-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 120,
+              "max_days": 120,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-padi"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-06-01",
+            "earliest_harvest_date": "2025-09-29",
+            "latest_harvest_date": "2025-09-29",
+            "earliest_release_date": "2025-09-30",
+            "latest_release_date": "2025-09-30",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-06-01",
+            "end_exclusive": "2025-09-30",
+            "days_expected": 121,
+            "rainfall_total_mm": 472.1,
+            "reference_eto_total_mm": 468.5152,
+            "rain_minus_reference_eto_total_mm": 3.5848000000000035,
+            "temperature_mean_c": 25.564545454545453,
+            "valid_days": {
+              "rainfall_total_mm": 121,
+              "reference_eto_total_mm": 121,
+              "rain_minus_reference_eto_total_mm": 121,
+              "temperature_mean_c": 121
+            },
+            "eto_guard_days": 0
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              20.0,
+              30.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.5,
+              7.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 450,
+            "max": 700,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "status": "no_calendar_conflict",
+          "earliest_ready_date": "2025-05-16",
+          "latest_ready_date": "2025-05-16",
+          "next_field_start": "2025-06-01",
+          "missing_inputs": [],
+          "errors": [],
+          "notes": [
+            "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "window": [
+              "2025-01-01",
+              "2025-05-02"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.5,
+              7.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "mean_temperature_c": 26.551652892561982,
+            "reference": [
+              20.0,
+              30.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "reference": {
+              "min": 450,
+              "max": 700,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "window": [
+              "2025-06-01",
+              "2025-09-30"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.5,
+              7.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "mean_temperature_c": 25.564545454545453,
+            "reference": [
+              20.0,
+              30.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "reference": {
+              "min": 450,
+              "max": 700,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "calendar",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "transitions": [
+              {
+                "status": "no_calendar_conflict",
+                "earliest_ready_date": "2025-05-16",
+                "latest_ready_date": "2025-05-16",
+                "next_field_start": "2025-06-01",
+                "missing_inputs": [],
+                "errors": [],
+                "notes": [
+                  "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+                ]
+              }
+            ],
+            "preparation_gap_days": 14
+          },
+          "source_refs": [
+            "method-calendar-policy"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Tidak ditemukan konflik pada kalender asumsi yang diisi; hasil ini bukan sertifikat kelayakan agronomi.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "paddy_upland_transition",
+          "status": "not_applicable",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "padi"
+            ],
+            "rice_water_regime": null
+          },
+          "source_refs": [
+            "fao-paddy-irrigation",
+            "fao-aquacrop-inputs"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan ini tidak memuat transisi padi ke jagung/kedelai. Rezim air padi sendiri tetap belum diketahui.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "legume_mechanism",
+          "status": "not_applicable",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "padi"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan tidak memuat kedelai; kredit nitrogen tidak dihitung.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "pest_break",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "padi"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan tanaman saja belum membuktikan pemutusan hama/penyakit.",
+          "missing_inputs": [
+            "local_pest_or_pathogen",
+            "host_range",
+            "management_history"
+          ],
+          "next_action": "Identifikasi masalah dan tanaman inangnya."
+        },
+        {
+          "rule_id": "coverage",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "location_id": "klaten_cropland_primary",
+            "coordinate": {
+              "longitude": 110.55354472008753,
+              "latitude": -7.721875031299882
+            },
+            "climate_context_id": "power_regional_yogyakarta",
+            "is_verified_farm": false
+          },
+          "source_refs": [
+            "analysis-profile"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Titik contoh belum merupakan lahan terverifikasi; POWER memakai konteks regional eksplisit dan layer lain memakai dukungan yang diekstrak.",
+          "missing_inputs": [
+            "verified_farm_geometry"
+          ],
+          "next_action": "Verifikasi batas dan lokasi lahan sebelum analisis petani."
+        },
+        {
+          "rule_id": "vegetation_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "mode": "historical_vegetation_context",
+            "point_id": "klaten_cropland_primary",
+            "start": "2025-01-01",
+            "end_exclusive": "2026-01-01",
+            "days_expected": 365,
+            "point_in_prepared_data": true,
+            "n_selected_observations": 23,
+            "n_good_strict": 7,
+            "n_marginal_review": 3,
+            "n_excluded": 13,
+            "valid_good_observations": {
+              "ndvi": 7,
+              "evi": 7
+            },
+            "ndvi_good_mean": 0.6889428571428571,
+            "evi_good_mean": 0.49867142857142854,
+            "good_observation_dates": [
+              "2025-04-22",
+              "2025-04-29",
+              "2025-06-06",
+              "2025-07-08",
+              "2025-08-14",
+              "2025-09-03",
+              "2025-09-20"
+            ],
+            "coverage_status": "has_good_observations",
+            "interpolated": false,
+            "interpretation": "Mixed-pixel vegetation context; no species, planting, harvest or fallow inference"
+          },
+          "source_refs": [
+            "modis-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Ringkasan MODIS memakai observasi strict-good dan mempertahankan gap; piksel campuran tidak mengidentifikasi tanaman atau tanggal tanam.",
+          "missing_inputs": [
+            "field_observations"
+          ],
+          "next_action": "Gunakan hanya sebagai konteks historis piksel."
+        },
+        {
+          "rule_id": "gaez_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "status": "historical_reference_only",
+            "rows": [
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif"
+              }
+            ],
+            "period": "2001-2020",
+            "management_regime_selected": null,
+            "note": "Regimes remain separate; RCW represents wetland rice, which is not confirmed for this scenario. No suitability score is inferred."
+          },
+          "source_refs": [
+            "gaez-six-legend",
+            "gaez-user-guide"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Kategori model historis disajikan terpisah menurut rezim. Belum ada rezim yang dipilih dan RCW hanya merepresentasikan wetland rice.",
+          "missing_inputs": [
+            "rice_water_regime",
+            "management_regime"
+          ],
+          "next_action": "Tinjau kecocokan definisi tanaman dan pengelolaan."
+        },
+        {
+          "rule_id": "economics",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_yield": null,
+            "farm_prices": null,
+            "costs": null
+          },
+          "source_refs": [
+            "method-accounting-boundary"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Perbandingan ekonomi belum termasuk MVP dan tidak dihitung dari referensi tanaman atau citra satelit.",
+          "missing_inputs": [
+            "marketable_yield",
+            "farm_gate_price",
+            "costs",
+            "units",
+            "time_and_location_basis"
+          ],
+          "next_action": "Tetap kosong; metode ekonomi memerlukan perluasan cakupan dan data lokal."
+        }
+      ],
+      "whole_horizon_environment": {
+        "start": "2025-01-01",
+        "end_exclusive": "2026-01-01",
+        "days_expected": 365,
+        "rainfall_total_mm": 2964.05,
+        "reference_eto_total_mm": 1372.0954,
+        "rain_minus_reference_eto_total_mm": 1591.9546,
+        "temperature_mean_c": 26.16421917808219,
+        "valid_days": {
+          "rainfall_total_mm": 365,
+          "reference_eto_total_mm": 365,
+          "rain_minus_reference_eto_total_mm": 365,
+          "temperature_mean_c": 365
+        },
+        "eto_guard_days": 2
+      },
+      "analysis_status": "partial",
+      "local_agronomic_validation": false,
+      "overall_suitability_score": null,
+      "ranking": null,
+      "crop_yield_prediction": null,
+      "water_saving_percent": null,
+      "net_irrigation_mm": null,
+      "gross_irrigation_mm": null,
+      "nitrogen_credit_kg_ha": null,
+      "profit_difference_idr_ha": null,
+      "soil_health_gain": null
+    },
+    {
+      "strategy_id": "candidate_1",
+      "sequence": [
+        "padi",
+        "jagung"
+      ],
+      "calendar_source": "explicit_synthetic_fixture",
+      "cycles": [
+        {
+          "crop_id": "padi",
+          "calendar_inputs": {
+            "crop_id": "padi",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-01-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 120,
+              "max_days": 120,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-padi"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-01-01",
+            "earliest_harvest_date": "2025-05-01",
+            "latest_harvest_date": "2025-05-01",
+            "earliest_release_date": "2025-05-02",
+            "latest_release_date": "2025-05-02",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-01-01",
+            "end_exclusive": "2025-05-02",
+            "days_expected": 121,
+            "rainfall_total_mm": 1081.16,
+            "reference_eto_total_mm": 443.99490000000003,
+            "rain_minus_reference_eto_total_mm": 637.1650999999999,
+            "temperature_mean_c": 26.551652892561982,
+            "valid_days": {
+              "rainfall_total_mm": 121,
+              "reference_eto_total_mm": 121,
+              "rain_minus_reference_eto_total_mm": 121,
+              "temperature_mean_c": 121
+            },
+            "eto_guard_days": 2
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              20.0,
+              30.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.5,
+              7.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 450,
+            "max": 700,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        },
+        {
+          "crop_id": "jagung",
+          "calendar_inputs": {
+            "crop_id": "jagung",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-06-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 100,
+              "max_days": 100,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-jagung"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-06-01",
+            "earliest_harvest_date": "2025-09-09",
+            "latest_harvest_date": "2025-09-09",
+            "earliest_release_date": "2025-09-10",
+            "latest_release_date": "2025-09-10",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-06-01",
+            "end_exclusive": "2025-09-10",
+            "days_expected": 101,
+            "rainfall_total_mm": 329.49,
+            "reference_eto_total_mm": 381.2903,
+            "rain_minus_reference_eto_total_mm": -51.8003,
+            "temperature_mean_c": 25.46950495049505,
+            "valid_days": {
+              "rainfall_total_mm": 101,
+              "reference_eto_total_mm": 101,
+              "rain_minus_reference_eto_total_mm": 101,
+              "temperature_mean_c": 101
+            },
+            "eto_guard_days": 0
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              18.0,
+              33.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.0,
+              7.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 500,
+            "max": 800,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "status": "no_calendar_conflict",
+          "earliest_ready_date": "2025-05-16",
+          "latest_ready_date": "2025-05-16",
+          "next_field_start": "2025-06-01",
+          "missing_inputs": [],
+          "errors": [],
+          "notes": [
+            "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "window": [
+              "2025-01-01",
+              "2025-05-02"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.5,
+              7.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "mean_temperature_c": 26.551652892561982,
+            "reference": [
+              20.0,
+              30.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "reference": {
+              "min": 450,
+              "max": 700,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "jagung",
+            "window": [
+              "2025-06-01",
+              "2025-09-10"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "jagung",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.0,
+              7.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-maize",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "jagung",
+            "mean_temperature_c": 25.46950495049505,
+            "reference": [
+              18.0,
+              33.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-maize",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "jagung",
+            "reference": {
+              "min": 500,
+              "max": 800,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "calendar",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "transitions": [
+              {
+                "status": "no_calendar_conflict",
+                "earliest_ready_date": "2025-05-16",
+                "latest_ready_date": "2025-05-16",
+                "next_field_start": "2025-06-01",
+                "missing_inputs": [],
+                "errors": [],
+                "notes": [
+                  "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+                ]
+              }
+            ],
+            "preparation_gap_days": 14
+          },
+          "source_refs": [
+            "method-calendar-policy"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Tidak ditemukan konflik pada kalender asumsi yang diisi; hasil ini bukan sertifikat kelayakan agronomi.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "paddy_upland_transition",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "jagung"
+            ],
+            "rice_water_regime": null
+          },
+          "source_refs": [
+            "fao-paddy-irrigation",
+            "fao-aquacrop-inputs"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rezim air padi belum diketahui. Tanam langsung tidak membuktikan sawah tergenang; relevansi transisi ke upland perlu ditinjau.",
+          "missing_inputs": [
+            "rice_water_regime",
+            "drainage",
+            "water_control",
+            "soil_management"
+          ],
+          "next_action": "Lengkapi sistem air dan tinjau pengelolaan bersama penyuluh."
+        },
+        {
+          "rule_id": "legume_mechanism",
+          "status": "not_applicable",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "jagung"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan tidak memuat kedelai; kredit nitrogen tidak dihitung.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "pest_break",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "jagung"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan tanaman saja belum membuktikan pemutusan hama/penyakit.",
+          "missing_inputs": [
+            "local_pest_or_pathogen",
+            "host_range",
+            "management_history"
+          ],
+          "next_action": "Identifikasi masalah dan tanaman inangnya."
+        },
+        {
+          "rule_id": "coverage",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "location_id": "klaten_cropland_primary",
+            "coordinate": {
+              "longitude": 110.55354472008753,
+              "latitude": -7.721875031299882
+            },
+            "climate_context_id": "power_regional_yogyakarta",
+            "is_verified_farm": false
+          },
+          "source_refs": [
+            "analysis-profile"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Titik contoh belum merupakan lahan terverifikasi; POWER memakai konteks regional eksplisit dan layer lain memakai dukungan yang diekstrak.",
+          "missing_inputs": [
+            "verified_farm_geometry"
+          ],
+          "next_action": "Verifikasi batas dan lokasi lahan sebelum analisis petani."
+        },
+        {
+          "rule_id": "vegetation_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "mode": "historical_vegetation_context",
+            "point_id": "klaten_cropland_primary",
+            "start": "2025-01-01",
+            "end_exclusive": "2026-01-01",
+            "days_expected": 365,
+            "point_in_prepared_data": true,
+            "n_selected_observations": 23,
+            "n_good_strict": 7,
+            "n_marginal_review": 3,
+            "n_excluded": 13,
+            "valid_good_observations": {
+              "ndvi": 7,
+              "evi": 7
+            },
+            "ndvi_good_mean": 0.6889428571428571,
+            "evi_good_mean": 0.49867142857142854,
+            "good_observation_dates": [
+              "2025-04-22",
+              "2025-04-29",
+              "2025-06-06",
+              "2025-07-08",
+              "2025-08-14",
+              "2025-09-03",
+              "2025-09-20"
+            ],
+            "coverage_status": "has_good_observations",
+            "interpolated": false,
+            "interpretation": "Mixed-pixel vegetation context; no species, planting, harvest or fallow inference"
+          },
+          "source_refs": [
+            "modis-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Ringkasan MODIS memakai observasi strict-good dan mempertahankan gap; piksel campuran tidak mengidentifikasi tanaman atau tanggal tanam.",
+          "missing_inputs": [
+            "field_observations"
+          ],
+          "next_action": "Gunakan hanya sebagai konteks historis piksel."
+        },
+        {
+          "rule_id": "gaez_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "status": "historical_reference_only",
+            "rows": [
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif"
+              }
+            ],
+            "period": "2001-2020",
+            "management_regime_selected": null,
+            "note": "Regimes remain separate; RCW represents wetland rice, which is not confirmed for this scenario. No suitability score is inferred."
+          },
+          "source_refs": [
+            "gaez-six-legend",
+            "gaez-user-guide"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Kategori model historis disajikan terpisah menurut rezim. Belum ada rezim yang dipilih dan RCW hanya merepresentasikan wetland rice.",
+          "missing_inputs": [
+            "rice_water_regime",
+            "management_regime"
+          ],
+          "next_action": "Tinjau kecocokan definisi tanaman dan pengelolaan."
+        },
+        {
+          "rule_id": "economics",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_yield": null,
+            "farm_prices": null,
+            "costs": null
+          },
+          "source_refs": [
+            "method-accounting-boundary"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Perbandingan ekonomi belum termasuk MVP dan tidak dihitung dari referensi tanaman atau citra satelit.",
+          "missing_inputs": [
+            "marketable_yield",
+            "farm_gate_price",
+            "costs",
+            "units",
+            "time_and_location_basis"
+          ],
+          "next_action": "Tetap kosong; metode ekonomi memerlukan perluasan cakupan dan data lokal."
+        }
+      ],
+      "whole_horizon_environment": {
+        "start": "2025-01-01",
+        "end_exclusive": "2026-01-01",
+        "days_expected": 365,
+        "rainfall_total_mm": 2964.05,
+        "reference_eto_total_mm": 1372.0954,
+        "rain_minus_reference_eto_total_mm": 1591.9546,
+        "temperature_mean_c": 26.16421917808219,
+        "valid_days": {
+          "rainfall_total_mm": 365,
+          "reference_eto_total_mm": 365,
+          "rain_minus_reference_eto_total_mm": 365,
+          "temperature_mean_c": 365
+        },
+        "eto_guard_days": 2
+      },
+      "analysis_status": "partial",
+      "local_agronomic_validation": false,
+      "overall_suitability_score": null,
+      "ranking": null,
+      "crop_yield_prediction": null,
+      "water_saving_percent": null,
+      "net_irrigation_mm": null,
+      "gross_irrigation_mm": null,
+      "nitrogen_credit_kg_ha": null,
+      "profit_difference_idr_ha": null,
+      "soil_health_gain": null
+    },
+    {
+      "strategy_id": "candidate_2",
+      "sequence": [
+        "padi",
+        "kedelai"
+      ],
+      "calendar_source": "explicit_synthetic_fixture",
+      "cycles": [
+        {
+          "crop_id": "padi",
+          "calendar_inputs": {
+            "crop_id": "padi",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-01-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 120,
+              "max_days": 120,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-padi"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-01-01",
+            "earliest_harvest_date": "2025-05-01",
+            "latest_harvest_date": "2025-05-01",
+            "earliest_release_date": "2025-05-02",
+            "latest_release_date": "2025-05-02",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-01-01",
+            "end_exclusive": "2025-05-02",
+            "days_expected": 121,
+            "rainfall_total_mm": 1081.16,
+            "reference_eto_total_mm": 443.99490000000003,
+            "rain_minus_reference_eto_total_mm": 637.1650999999999,
+            "temperature_mean_c": 26.551652892561982,
+            "valid_days": {
+              "rainfall_total_mm": 121,
+              "reference_eto_total_mm": 121,
+              "rain_minus_reference_eto_total_mm": 121,
+              "temperature_mean_c": 121
+            },
+            "eto_guard_days": 2
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              20.0,
+              30.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.5,
+              7.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 450,
+            "max": 700,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        },
+        {
+          "crop_id": "kedelai",
+          "calendar_inputs": {
+            "crop_id": "kedelai",
+            "production_method": "direct_seeded",
+            "sowing_date": "2025-06-01",
+            "transplanting_date": null,
+            "duration": {
+              "min_days": 90,
+              "max_days": 90,
+              "basis": "sowing",
+              "source_kind": "scenario_assumption",
+              "source_id": "fixture-duration-kedelai"
+            },
+            "nursery_off_main_field": null
+          },
+          "calendar": {
+            "field_start": "2025-06-01",
+            "earliest_harvest_date": "2025-08-30",
+            "latest_harvest_date": "2025-08-30",
+            "earliest_release_date": "2025-08-31",
+            "latest_release_date": "2025-08-31",
+            "status": "calendar_computed",
+            "missing_inputs": [],
+            "review_issues": [],
+            "errors": [],
+            "notes": [
+              "Day 0 is the duration origin; endpoints are not averaged.",
+              "Harvest day is occupied; release starts the following day."
+            ]
+          },
+          "environment_window": {
+            "start": "2025-06-01",
+            "end_exclusive": "2025-08-31",
+            "days_expected": 91,
+            "rainfall_total_mm": 308.21,
+            "reference_eto_total_mm": 333.2444,
+            "rain_minus_reference_eto_total_mm": -25.034399999999994,
+            "temperature_mean_c": 25.4378021978022,
+            "valid_days": {
+              "rainfall_total_mm": 91,
+              "reference_eto_total_mm": 91,
+              "rain_minus_reference_eto_total_mm": 91,
+              "temperature_mean_c": 91
+            },
+            "eto_guard_days": 0
+          },
+          "temperature_reference": {
+            "optimum_c": [
+              20.0,
+              33.0
+            ],
+            "mean_relation": "within_reference_optimum",
+            "note": "Historical species optimum, not a Tmax stress threshold or yield model"
+          },
+          "ph_reference": {
+            "optimum": [
+              5.5,
+              6.5
+            ],
+            "mean_relation": "within_reference_optimum",
+            "prediction_interval_extends_beyond_optimum": true
+          },
+          "seasonal_et_reference": {
+            "min": 450,
+            "max": 700,
+            "source_id": "fao-seasonal-water",
+            "source_locator": "Section 3.3.4, Table 14",
+            "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+            "status": "rough_planning_reference_only",
+            "local_seasonal_etc_mm": null,
+            "local_net_irrigation_mm": null,
+            "local_gross_irrigation_mm": null
+          }
+        }
+      ],
+      "transitions": [
+        {
+          "status": "no_calendar_conflict",
+          "earliest_ready_date": "2025-05-16",
+          "latest_ready_date": "2025-05-16",
+          "next_field_start": "2025-06-01",
+          "missing_inputs": [],
+          "errors": [],
+          "notes": [
+            "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "window": [
+              "2025-01-01",
+              "2025-05-02"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.5,
+              7.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "mean_temperature_c": 26.551652892561982,
+            "reference": [
+              20.0,
+              30.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-rice",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "padi",
+            "reference": {
+              "min": 450,
+              "max": 700,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "climate_exposure",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "kedelai",
+            "window": [
+              "2025-06-01",
+              "2025-08-31"
+            ],
+            "climate_context_id": "power_regional_yogyakarta"
+          },
+          "source_refs": [
+            "nasa-power",
+            "fao56",
+            "climate-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Paparan historis regional pada jendela kalender yang diisi; bukan konsumsi atau kebutuhan irigasi tanaman.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "ph_reference",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "kedelai",
+            "soil": {
+              "status": "evidence_available",
+              "origin": "SoilGrids_prediction_not_laboratory",
+              "depth": "0-5cm",
+              "row": 4,
+              "column": 6,
+              "value": 5.8,
+              "q05": 4.2,
+              "q95": 7.8,
+              "unit": "pH",
+              "source": "data/prepared/soil-terrain/processed/soil-cells.csv"
+            },
+            "reference": [
+              5.5,
+              6.5
+            ]
+          },
+          "source_refs": [
+            "ecocrop-soybean",
+            "soil-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Mean prediksi pH berada dalam optimum referensi, tetapi kuantil prediksi melintasi batasnya. Kedalaman 0–5 cm dan peta model tidak membuktikan kondisi seluruh zona akar.",
+          "missing_inputs": [
+            "soil_lab_or_local_review"
+          ],
+          "next_action": "Tinjau metode/kedalaman dan hasil uji tanah bila tersedia."
+        },
+        {
+          "rule_id": "temperature_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "kedelai",
+            "mean_temperature_c": 25.4378021978022,
+            "reference": [
+              20.0,
+              33.0
+            ]
+          },
+          "source_refs": [
+            "ecocrop-soybean",
+            "nasa-power"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rerata T2M historis dibandingkan dengan optimum spesies; bukan ambang stres, kegagalan atau kehilangan hasil.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "seasonal_et_reference",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_id": "kedelai",
+            "reference": {
+              "min": 450,
+              "max": 700,
+              "source_id": "fao-seasonal-water",
+              "source_locator": "Section 3.3.4, Table 14",
+              "meaning": "Indicative crop evapotranspiration over total growing period; not gross irrigation, rainfall requirement, or field-specific prediction",
+              "status": "rough_planning_reference_only",
+              "local_seasonal_etc_mm": null,
+              "local_net_irrigation_mm": null,
+              "local_gross_irrigation_mm": null
+            }
+          },
+          "source_refs": [
+            "fao-seasonal-water"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rentang ET seluruh musim adalah referensi umum. Tidak diskalakan menjadi konsumsi lokal, kebutuhan irigasi atau ranking hemat air.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "calendar",
+          "status": "evidence_available",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "transitions": [
+              {
+                "status": "no_calendar_conflict",
+                "earliest_ready_date": "2025-05-16",
+                "latest_ready_date": "2025-05-16",
+                "next_field_start": "2025-06-01",
+                "missing_inputs": [],
+                "errors": [],
+                "notes": [
+                  "This checks the main-field calendar, not agronomic suitability or nursery resource overlap."
+                ]
+              }
+            ],
+            "preparation_gap_days": 14
+          },
+          "source_refs": [
+            "method-calendar-policy"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Tidak ditemukan konflik pada kalender asumsi yang diisi; hasil ini bukan sertifikat kelayakan agronomi.",
+          "missing_inputs": [],
+          "next_action": null
+        },
+        {
+          "rule_id": "paddy_upland_transition",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "kedelai"
+            ],
+            "rice_water_regime": null
+          },
+          "source_refs": [
+            "fao-paddy-irrigation",
+            "fao-aquacrop-inputs"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Rezim air padi belum diketahui. Tanam langsung tidak membuktikan sawah tergenang; relevansi transisi ke upland perlu ditinjau.",
+          "missing_inputs": [
+            "rice_water_regime",
+            "drainage",
+            "water_control",
+            "soil_management"
+          ],
+          "next_action": "Lengkapi sistem air dan tinjau pengelolaan bersama penyuluh."
+        },
+        {
+          "rule_id": "legume_mechanism",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "kedelai"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Kedelai memberi alasan meninjau potensi fiksasi nitrogen; besar kredit N/penghematan pupuk belum dapat dihitung.",
+          "missing_inputs": [
+            "nodulation",
+            "inoculation",
+            "residue_fate",
+            "nutrient_balance"
+          ],
+          "next_action": "Periksa kondisi nodulasi, residu dan neraca hara lokal."
+        },
+        {
+          "rule_id": "pest_break",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "sequence": [
+              "padi",
+              "kedelai"
+            ]
+          },
+          "source_refs": [
+            "fao-crop-rotation"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Urutan tanaman saja belum membuktikan pemutusan hama/penyakit.",
+          "missing_inputs": [
+            "local_pest_or_pathogen",
+            "host_range",
+            "management_history"
+          ],
+          "next_action": "Identifikasi masalah dan tanaman inangnya."
+        },
+        {
+          "rule_id": "coverage",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "location_id": "klaten_cropland_primary",
+            "coordinate": {
+              "longitude": 110.55354472008753,
+              "latitude": -7.721875031299882
+            },
+            "climate_context_id": "power_regional_yogyakarta",
+            "is_verified_farm": false
+          },
+          "source_refs": [
+            "analysis-profile"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Titik contoh belum merupakan lahan terverifikasi; POWER memakai konteks regional eksplisit dan layer lain memakai dukungan yang diekstrak.",
+          "missing_inputs": [
+            "verified_farm_geometry"
+          ],
+          "next_action": "Verifikasi batas dan lokasi lahan sebelum analisis petani."
+        },
+        {
+          "rule_id": "vegetation_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "mode": "historical_vegetation_context",
+            "point_id": "klaten_cropland_primary",
+            "start": "2025-01-01",
+            "end_exclusive": "2026-01-01",
+            "days_expected": 365,
+            "point_in_prepared_data": true,
+            "n_selected_observations": 23,
+            "n_good_strict": 7,
+            "n_marginal_review": 3,
+            "n_excluded": 13,
+            "valid_good_observations": {
+              "ndvi": 7,
+              "evi": 7
+            },
+            "ndvi_good_mean": 0.6889428571428571,
+            "evi_good_mean": 0.49867142857142854,
+            "good_observation_dates": [
+              "2025-04-22",
+              "2025-04-29",
+              "2025-06-06",
+              "2025-07-08",
+              "2025-08-14",
+              "2025-09-03",
+              "2025-09-20"
+            ],
+            "coverage_status": "has_good_observations",
+            "interpolated": false,
+            "interpretation": "Mixed-pixel vegetation context; no species, planting, harvest or fallow inference"
+          },
+          "source_refs": [
+            "modis-manifest"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Ringkasan MODIS memakai observasi strict-good dan mempertahankan gap; piksel campuran tidak mengidentifikasi tanaman atau tanggal tanam.",
+          "missing_inputs": [
+            "field_observations"
+          ],
+          "next_action": "Gunakan hanya sebagai konteks historis piksel."
+        },
+        {
+          "rule_id": "gaez_context",
+          "status": "review_required",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "status": "historical_reference_only",
+            "rows": [
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+                "raw_class": 4,
+                "class_label": "SI >40 : Medium",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif"
+              },
+              {
+                "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+                "raw_class": 5,
+                "class_label": "SI >25 : Moderate",
+                "bounds": {
+                  "west": 110.5,
+                  "east": 110.58333333333331,
+                  "north": -7.666666666666657,
+                  "south": -7.75
+                },
+                "source_url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif"
+              }
+            ],
+            "period": "2001-2020",
+            "management_regime_selected": null,
+            "note": "Regimes remain separate; RCW represents wetland rice, which is not confirmed for this scenario. No suitability score is inferred."
+          },
+          "source_refs": [
+            "gaez-six-legend",
+            "gaez-user-guide"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Kategori model historis disajikan terpisah menurut rezim. Belum ada rezim yang dipilih dan RCW hanya merepresentasikan wetland rice.",
+          "missing_inputs": [
+            "rice_water_regime",
+            "management_regime"
+          ],
+          "next_action": "Tinjau kecocokan definisi tanaman dan pengelolaan."
+        },
+        {
+          "rule_id": "economics",
+          "status": "needs_input",
+          "scope": "labelled_synthetic_scenario_at_example_location",
+          "inputs_used": {
+            "crop_yield": null,
+            "farm_prices": null,
+            "costs": null
+          },
+          "source_refs": [
+            "method-accounting-boundary"
+          ],
+          "assumptions": [
+            "Calendar and farming inputs are fixture assumptions; environmental values are source data."
+          ],
+          "explanation": "Perbandingan ekonomi belum termasuk MVP dan tidak dihitung dari referensi tanaman atau citra satelit.",
+          "missing_inputs": [
+            "marketable_yield",
+            "farm_gate_price",
+            "costs",
+            "units",
+            "time_and_location_basis"
+          ],
+          "next_action": "Tetap kosong; metode ekonomi memerlukan perluasan cakupan dan data lokal."
+        }
+      ],
+      "whole_horizon_environment": {
+        "start": "2025-01-01",
+        "end_exclusive": "2026-01-01",
+        "days_expected": 365,
+        "rainfall_total_mm": 2964.05,
+        "reference_eto_total_mm": 1372.0954,
+        "rain_minus_reference_eto_total_mm": 1591.9546,
+        "temperature_mean_c": 26.16421917808219,
+        "valid_days": {
+          "rainfall_total_mm": 365,
+          "reference_eto_total_mm": 365,
+          "rain_minus_reference_eto_total_mm": 365,
+          "temperature_mean_c": 365
+        },
+        "eto_guard_days": 2
+      },
+      "analysis_status": "partial",
+      "local_agronomic_validation": false,
+      "overall_suitability_score": null,
+      "ranking": null,
+      "crop_yield_prediction": null,
+      "water_saving_percent": null,
+      "net_irrigation_mm": null,
+      "gross_irrigation_mm": null,
+      "nitrogen_credit_kg_ha": null,
+      "profit_difference_idr_ha": null,
+      "soil_health_gain": null
+    }
+  ],
+  "numerical_examples": [
+    {
+      "start": "2023-05-01",
+      "end_exclusive": "2023-09-01",
+      "days_expected": 123,
+      "rainfall_total_mm": 306.5,
+      "reference_eto_total_mm": 480.9418,
+      "rain_minus_reference_eto_total_mm": -174.4418,
+      "temperature_mean_c": 25.082764227642276,
+      "valid_days": {
+        "rainfall_total_mm": 123,
+        "reference_eto_total_mm": 123,
+        "rain_minus_reference_eto_total_mm": 123,
+        "temperature_mean_c": 123
+      },
+      "eto_guard_days": 0
+    },
+    {
+      "start": "2025-05-01",
+      "end_exclusive": "2025-09-01",
+      "days_expected": 123,
+      "rainfall_total_mm": 733.79,
+      "reference_eto_total_mm": 441.2481,
+      "rain_minus_reference_eto_total_mm": 292.5419,
+      "temperature_mean_c": 25.739186991869918,
+      "valid_days": {
+        "rainfall_total_mm": 123,
+        "reference_eto_total_mm": 123,
+        "rain_minus_reference_eto_total_mm": 123,
+        "temperature_mean_c": 123
+      },
+      "eto_guard_days": 0
+    },
+    {
+      "start": "2026-11-01",
+      "end_exclusive": "2026-11-06",
+      "days_expected": 5,
+      "rainfall_total_mm": 25.09,
+      "reference_eto_total_mm": null,
+      "rain_minus_reference_eto_total_mm": null,
+      "temperature_mean_c": 26.536,
+      "valid_days": {
+        "rainfall_total_mm": 5,
+        "reference_eto_total_mm": 2,
+        "rain_minus_reference_eto_total_mm": 2,
+        "temperature_mean_c": 5
+      },
+      "eto_guard_days": 0
+    }
+  ],
+  "checks_passed": [
+    "three_filled_distinct_strategies",
+    "same_horizon_and_context",
+    "calendar_no_conflict_for_explicit_fixture",
+    "whole_horizon_environment_invariant",
+    "finding_rule_status_and_sources_resolve",
+    "prepared_sources_match_sha256"
+  ],
+  "source_integrity": {
+    "manifest": "data/prepared/file-manifest.json",
+    "sha256_files_verified": 390,
+    "all_match_preparation_manifest": true
+  }
+}

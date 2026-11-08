@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "tables": {
+    "MOD13Q1-supplemental-qa.csv": {"platform": "Terra", "scope": "2026 catalog-available composites only"},
+    "MYD13Q1-supplemental-qa.csv": {"platform": "Aqua", "scope": "2021 to as-of available composites, separate from Terra"},
+    "monthly-good-only": {"grouping": "product, point_id, selected-observation calendar month", "aggregation": "mean of good_strict values only", "empty": "no primary-quality observations; not zero", "interpolation": "none"},
+    "POWER-recent-recheck.csv": {"scope": "same representative regional point, 2026-10-25 through 2026-11-07 LST", "role": "publication-latency recheck, not forecast or overwrite"}
+  },
+  "vegetation_key": ["product", "point_id", "modis_date"],
+  "fields": {
+    "product": "MOD13Q1 or MYD13Q1; never omit product when comparing records",
+    "composite_start_date": "nominal composite start; not necessarily acquisition date",
+    "selected_observation_date": "selected pixel day from day-of-year; blank when unresolved/invalid",
+    "ndvi_raw_evi_raw": "integer valid -2000 to 10000, fill -3000",
+    "ndvi_evi": "dimensionless = valid raw * 0.0001; raw low-quality values remain, always apply quality_status",
+    "pixel_reliability": {"-1": "fill", "0": "good", "1": "marginal", "2": "snow_ice", "3": "cloudy"},
+    "vi_quality_raw": "unsigned bitfield; decoded flags are preserved as separate columns",
+    "quality_status": "good_strict, marginal_review, excluded; same conservative project thresholds as frozen package",
+    "source_file": "path relative to data/supplemental/environment; adjacent .source.json contains provenance",
+    "eto_fao56_mm_day": "derived grass-reference ETo, mm/day; null unless required daily inputs exist and pass guards",
+    "rain_minus_reference_eto_mm_day": "P minus grass-reference ETo, mm/day, paired valid days only; not irrigation",
+    "qa_flags": "operational radiation guard and/or missing or invalid ETo inputs; no hidden imputations"
+  },
+  "power_original_units": {
+    "T2M_T2M_MAX_T2M_MIN_T2MDEW": "degrees C",
+    "PRECTOTCORR": "mm/day",
+    "RH2M": "percent",
+    "WS2M": "m/s",
+    "ALLSKY_SFC_SW_DWN": "MJ/m2/day",
+    "EVPTRNS": "MJ/m2/day, not mm/day",
+    "GWETTOP_GWETROOT": "dimensionless model wetness, not measured volumetric field water",
+    "PS": "kPa"
+  },
+  "spatial_policy": "Point subsets retain native header grid; mixed land-cover context, no field-boundary claim or silent resampling",
+  "temporal_policy": "Observation, processing and download dates remain distinct; no real-time or future-weather inference",
+  "collection_version": "Not explicit in ORNL subset response; no claim of verified 061 subset collection",
+  "attribution": "NASA MODIS Terra/Aqua via ORNL DAAC; NASA POWER; provider catalog references retain their source identity"
+}

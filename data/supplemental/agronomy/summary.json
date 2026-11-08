@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-11-08T11:20:55.835174+00:00",
+  "module": "agronomy_supplement",
+  "status": "public_reference_enrichment_and_input_contract_complete;farm_actuals_unknown;local_validation_pending",
+  "what_filled": [
+    {
+      "id": "anjasmoro_duration_origin",
+      "status": "filled_reference",
+      "detail": "Official BRMP catalog PDF page 87 (printed 64), Lampiran 27: 82–93 hari setelah tanam. PVT 82.5–92.5 days and LAKIN 82.5–92.5 HST retained as distinct evidence."
+    },
+    {
+      "id": "rice_ecosystems_and_management",
+      "status": "filled_reference",
+      "detail": "FAO taxonomy, upland/rainfed lowland definitions; separate ecosystem, establishment and water-regime inputs with local review prerequisites."
+    },
+    {
+      "id": "input_contract",
+      "status": "filled_contract",
+      "detail": "91 original fields plus 28 additions, nullable typed schemas, units, record shapes, valid negative coordinates and explicit legacy-weight exclusion."
+    },
+    {
+      "id": "rule_input_mapping",
+      "status": "filled_contract",
+      "detail": "All 12 method rules and each named input requirement mapped; farmer-only, public-selection, scenario and local-validation gaps separated."
+    }
+  ],
+  "remaining_gaps": {
+    "category_counts": {
+      "public_reference_gap": 11,
+      "farmer_only_input": 94,
+      "local_validation_gap": 9,
+      "scenario_configuration": 15
+    },
+    "farmer_values_supplied": 0,
+    "farmer_values_policy": "All actuals remain null; public context can be used without actual farm records.",
+    "unresolved": [
+      "actual field boundary/location, crop rotation, cultivar, dates, water regime, drainage, lab, management, prices/costs/yields",
+      "explicit selection of references, labelled scenarios and calendar assumptions",
+      "local agronomic validation and calibration",
+      "water saving, yield, N credit, profit and soil-health outcomes remain unavailable"
+    ]
+  },
+  "references": {
+    "index": "data/supplemental/agronomy/source-evidence.json",
+    "snapshot_index": "data/supplemental/agronomy/source-snapshots.json",
+    "new_snapshots": 5,
+    "reused_prepared_snapshots": 11,
+    "failed_legacy_url_attempts": 1,
+    "claims": 7,
+    "source_manifest": "data/supplemental/agronomy/manifest.json"
+  },
+  "validation": {
+    "created_at_utc": "2026-11-08T11:20:55.835174+00:00",
+    "prepared_files_checked": 390,
+    "mismatches": [],
+    "prepared_immutable": true,
+    "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde",
+    "original_fields_typed": 91,
+    "supplemental_fields": 28,
+    "total_fields": 119,
+    "all_template_field_values_null": true,
+    "all_fields_rule_mapped_or_legacy_unused": true,
+    "legacy_unused_fields": 3,
+    "method_rules_mapped": 12,
+    "source_hashes_verified": 16,
+    "claim_source_links_valid": true,
+    "outcomes_remain_null": true,
+    "json_schema_validation": "passed_draft202012_schema_null_template_and_boundaries",
+    "cross_field_semantics": "Documented contract requirements; not implemented backend checks.",
+    "schema_checks": [
+      {
+        "check": "negative_latitude_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "latitude_south_boundary_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "latitude_north_boundary_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "latitude_out_of_range_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "longitude_out_of_range_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "negative_area_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "known_zero_area_structurally_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "irrigation_fraction_out_of_range_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "explicit_false_is_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "string_not_boolean",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "unknown_crop_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "impossible_date_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "empty_history_structurally_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "duplicate_crop_ids_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "more_than_three_locked_slots_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "fractional_gap_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "malformed_polygon_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      },
+      {
+        "check": "explicit_scenario_duration_record_valid",
+        "passed": true,
+        "expected_structural_validity": true
+      },
+      {
+        "check": "fractional_calendar_duration_invalid",
+        "passed": true,
+        "expected_structural_validity": false
+      }
+    ],
+    "schema_check_count": 19,
+    "validator": {
+      "package": "jsonschema",
+      "version": "4.26.0",
+      "python_version": "3.11.1",
+      "isolated_target": "work/validation-deps",
+      "reproduce": "python -m pip install --target work/validation-deps jsonschema==4.26.0",
+      "synthetic_checks_only": "Boundary checks are ephemeral validation values; no actual farm records or geometry were generated."
+    }
+  },
+  "backend_implemented": false,
+  "local_agronomic_validation": false
+}

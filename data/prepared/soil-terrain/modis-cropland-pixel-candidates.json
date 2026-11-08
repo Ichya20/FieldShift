@@ -1,0 +1,2401 @@
+{
+  "prepared_utc": "2026-11-08T10:03:22.657405+00:00",
+  "role": "Potential demonstration pixels, not user farms",
+  "method": "Assign native WorldCover2021 cell centers to the reported MODIS sinusoidal grid; rank cells whose complete pixel footprint lies inside Klaten bbox by crop-class fraction.",
+  "evaluated_interior_pixels": 74,
+  "ranked_pixels": [
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.55354472008753,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -858750.123641736,
+        12181649.655433055,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 24
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 74
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 533
+          }
+        },
+        "cropland_fraction_valid_cells": 0.8446909667194928,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.54568022926269,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -858981.78,
+        12180723.03,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 32
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 525
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 74
+          }
+        },
+        "cropland_fraction_valid_cells": 0.8320126782884311,
+        "built_up_fraction_valid_cells": 0.11727416798732171
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.54778263756462,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -858981.78,
+        12180954.686358264,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 124
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 22
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 436
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 48
+          }
+        },
+        "cropland_fraction_valid_cells": 0.692063492063492,
+        "built_up_fraction_valid_cells": 0.0761904761904762
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.55510211681576,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -858518.4672834721,
+        12181881.31179132,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 155
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 28
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 433
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 15
+          }
+        },
+        "cropland_fraction_valid_cells": 0.6862123613312203,
+        "built_up_fraction_valid_cells": 0.02377179080824089
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.54832790038186,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -859213.4363582641,
+        12180954.686358264,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 224
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 408
+          }
+        },
+        "cropland_fraction_valid_cells": 0.6455696202531646,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.55455726714847,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -858286.810925208,
+        12181881.31179132,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 176
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 398
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 55
+          }
+        },
+        "cropland_fraction_valid_cells": 0.6317460317460317,
+        "built_up_fraction_valid_cells": 0.0873015873015873
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.5445142427733,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -857591.841850416,
+        12180954.686358264,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 255
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 7
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 358
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 11
+          }
+        },
+        "cropland_fraction_valid_cells": 0.5673534072900158,
+        "built_up_fraction_valid_cells": 0.017432646592709985
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.55821730271957,
+      "sinusoidal_bounds_m": [
+        12182112.968149584,
+        -858055.154566944,
+        12182344.624507848,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 112
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 153
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 348
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 17
+          }
+        },
+        "cropland_fraction_valid_cells": 0.5523809523809524,
+        "built_up_fraction_valid_cells": 0.026984126984126985
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.55299972924489,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -858518.4672834721,
+        12181649.655433055,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 231
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 51
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 313
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 35
+          }
+        },
+        "cropland_fraction_valid_cells": 0.49682539682539684,
+        "built_up_fraction_valid_cells": 0.05555555555555555
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.55720450438662,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -858518.4672834721,
+        12182112.968149584,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 213
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 89
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 312
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 16
+          }
+        },
+        "cropland_fraction_valid_cells": 0.49523809523809526,
+        "built_up_fraction_valid_cells": 0.025396825396825397
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.54980783531433,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -858055.154566944,
+        12181417.999074792,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 288
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 31
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 310
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 1
+          }
+        },
+        "cropland_fraction_valid_cells": 0.49206349206349204,
+        "built_up_fraction_valid_cells": 0.0015873015873015873
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.55035251272918,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -858286.810925208,
+        12181417.999074792,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 229
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 101
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 295
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 6
+          }
+        },
+        "cropland_fraction_valid_cells": 0.4675118858954041,
+        "built_up_fraction_valid_cells": 0.009508716323296355
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.5566596443581,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -858286.810925208,
+        12182112.968149584,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 242
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 47
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 294
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 48
+          }
+        },
+        "cropland_fraction_valid_cells": 0.4659270998415214,
+        "built_up_fraction_valid_cells": 0.07606973058637084
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.55564711802249,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -858750.123641736,
+        12181881.31179132,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 104
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 251
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 258
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 18
+          }
+        },
+        "cropland_fraction_valid_cells": 0.40887480190174325,
+        "built_up_fraction_valid_cells": 0.028526148969889066
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.55673757506905,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -859213.4363582641,
+        12181881.31179132,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 155
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 258
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 218
+          }
+        },
+        "cropland_fraction_valid_cells": 0.40822784810126583,
+        "built_up_fraction_valid_cells": 0.3449367088607595
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.54825013551952,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -858286.810925208,
+        12181186.342716528,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 290
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 69
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 257
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 14
+          }
+        },
+        "cropland_fraction_valid_cells": 0.40793650793650793,
+        "built_up_fraction_valid_cells": 0.022222222222222223
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.54505859643406,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -857823.4982086801,
+        12180954.686358264,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 335
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 47
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 233
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 15
+          }
+        },
+        "cropland_fraction_valid_cells": 0.36984126984126986,
+        "built_up_fraction_valid_cells": 0.023809523809523808
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.55712831963307,
+      "sinusoidal_bounds_m": [
+        12182112.968149584,
+        -857591.841850416,
+        12182344.624507848,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 386
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 231
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 13
+          }
+        },
+        "cropland_fraction_valid_cells": 0.36608557844690964,
+        "built_up_fraction_valid_cells": 0.020602218700475437
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.55774951595745,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -858750.123641736,
+        12182112.968149584,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 239
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 106
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 184
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 101
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2920634920634921,
+        "built_up_fraction_valid_cells": 0.16031746031746033
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.55728303091622,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -859445.092716528,
+        12181881.31179132,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 148
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 24
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 181
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 277
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2873015873015873,
+        "built_up_fraction_valid_cells": 0.4396825396825397
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.54350073476039,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -858055.154566944,
+        12180723.03,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 392
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 180
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 58
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2857142857142857,
+        "built_up_fraction_valid_cells": 0.09206349206349207
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.5524548899388,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -858286.810925208,
+        12181649.655433055,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 323
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 19
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 171
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 118
+          }
+        },
+        "cropland_fraction_valid_cells": 0.27099841521394613,
+        "built_up_fraction_valid_cells": 0.18700475435816163
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.55082128120317,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -857591.841850416,
+        12181649.655433055,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 352
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 37
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 165
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 77
+          }
+        },
+        "cropland_fraction_valid_cells": 0.26148969889064977,
+        "built_up_fraction_valid_cells": 0.12202852614896989
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.54248779139058,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -858518.4672834721,
+        12180491.373641735,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 301
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 159
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 171
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2519809825673534,
+        "built_up_fraction_valid_cells": 0.27099841521394613
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.55829467907431,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -858981.78,
+        12182112.968149584,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 35
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 154
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 442
+          }
+        },
+        "cropland_fraction_valid_cells": 0.24405705229793978,
+        "built_up_fraction_valid_cells": 0.7004754358161648
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.5514423221526,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -858750.123641736,
+        12181417.999074792,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 196
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 281
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 153
+          }
+        },
+        "cropland_fraction_valid_cells": 0.24285714285714285,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.54256602760445,
+      "sinusoidal_bounds_m": [
+        12180028.060925208,
+        -859445.092716528,
+        12180259.717283472,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 312
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 149
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 171
+          }
+        },
+        "cropland_fraction_valid_cells": 0.23575949367088608,
+        "built_up_fraction_valid_cells": 0.27056962025316456
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.55767273540923,
+      "sinusoidal_bounds_m": [
+        12182112.968149584,
+        -857823.4982086801,
+        12182344.624507848,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 340
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 137
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 143
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 11
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2266244057052298,
+        "built_up_fraction_valid_cells": 0.017432646592709985
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.55089734167404,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -858518.4672834721,
+        12181417.999074792,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 307
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 183
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 141
+          }
+        },
+        "cropland_fraction_valid_cells": 0.22345483359746435,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.54716095292991,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -857823.4982086801,
+        12181186.342716528,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 275
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 64
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 138
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 155
+          }
+        },
+        "cropland_fraction_valid_cells": 0.21835443037974683,
+        "built_up_fraction_valid_cells": 0.24525316455696203
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.54357782096075,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -858981.78,
+        12180491.373641735,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 148
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 134
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 350
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2120253164556962,
+        "built_up_fraction_valid_cells": 0.5537974683544303
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.54770546846301,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -858055.154566944,
+        12181186.342716528,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 244
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 19
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 130
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 238
+          }
+        },
+        "cropland_fraction_valid_cells": 0.20602218700475436,
+        "built_up_fraction_valid_cells": 0.37717908082408874
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.54513512834771,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -858750.123641736,
+        12180723.03,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 266
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 129
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 235
+          }
+        },
+        "cropland_fraction_valid_cells": 0.20476190476190476,
+        "built_up_fraction_valid_cells": 0.373015873015873
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.54879495410317,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -858518.4672834721,
+        12181186.342716528,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 369
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 118
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 129
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 15
+          }
+        },
+        "cropland_fraction_valid_cells": 0.20443740095087162,
+        "built_up_fraction_valid_cells": 0.02377179080824089
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.55611493586827,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -858055.154566944,
+        12182112.968149584,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 374
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 53
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 128
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 75
+          }
+        },
+        "cropland_fraction_valid_cells": 0.20317460317460317,
+        "built_up_fraction_valid_cells": 0.11904761904761904
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.54622548171007,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -859213.4363582641,
+        12180723.03,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 319
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 88
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 127
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 96
+          }
+        },
+        "cropland_fraction_valid_cells": 0.2015873015873016,
+        "built_up_fraction_valid_cells": 0.1523809523809524
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.55136566592164,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -857823.4982086801,
+        12181649.655433055,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 432
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 123
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 74
+          }
+        },
+        "cropland_fraction_valid_cells": 0.19523809523809524,
+        "built_up_fraction_valid_cells": 0.11746031746031746
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.54614775830989,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -858286.810925208,
+        12180954.686358264,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 410
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 35
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 119
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 67
+          }
+        },
+        "cropland_fraction_valid_cells": 0.18858954041204437,
+        "built_up_fraction_valid_cells": 0.10618066561014262
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.54887331473806,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -859445.092716528,
+        12180954.686358264,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 74
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 26
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 111
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 419
+          }
+        },
+        "cropland_fraction_valid_cells": 0.1761904761904762,
+        "built_up_fraction_valid_cells": 0.665079365079365
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.54295623993819,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -857823.4982086801,
+        12180723.03,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 416
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 8
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 111
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 95
+          }
+        },
+        "cropland_fraction_valid_cells": 0.1761904761904762,
+        "built_up_fraction_valid_cells": 0.15079365079365079
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.55043031905367,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -859213.4363582641,
+        12181186.342716528,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 176
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 2
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 110
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 343
+          }
+        },
+        "cropland_fraction_valid_cells": 0.17432646592709986,
+        "built_up_fraction_valid_cells": 0.5435816164817749
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.54404538110023,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -858286.810925208,
+        12180723.03,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 440
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 81
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 110
+          }
+        },
+        "cropland_fraction_valid_cells": 0.17432646592709986,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.5519874541685,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -858981.78,
+        12181417.999074792,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 352
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 157
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 102
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 21
+          }
+        },
+        "cropland_fraction_valid_cells": 0.16139240506329114,
+        "built_up_fraction_valid_cells": 0.03322784810126582
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.55557037891337,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -857823.4982086801,
+        12182112.968149584,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 414
+          },
+          "20": {
+            "label": "Shrubland",
+            "cells": 1
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 123
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 94
+          }
+        },
+        "cropland_fraction_valid_cells": 0.14873417721518986,
+        "built_up_fraction_valid_cells": 0.0
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.5487189350599,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -857591.841850416,
+        12181417.999074792,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 306
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 71
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 254
+          }
+        },
+        "cropland_fraction_valid_cells": 0.11251980982567353,
+        "built_up_fraction_valid_cells": 0.40253565768621236
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.55292362734646,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -857591.841850416,
+        12181881.31179132,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 253
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 69
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 309
+          }
+        },
+        "cropland_fraction_valid_cells": 0.10935023771790808,
+        "built_up_fraction_valid_cells": 0.4896988906497623
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.54933992421763,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -858750.123641736,
+        12181186.342716528,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 315
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 193
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 65
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 58
+          }
+        },
+        "cropland_fraction_valid_cells": 0.10301109350237718,
+        "built_up_fraction_valid_cells": 0.0919175911251981
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.5466165889166,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -857591.841850416,
+        12181186.342716528,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 278
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 8
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 64
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 280
+          }
+        },
+        "cropland_fraction_valid_cells": 0.10158730158730159,
+        "built_up_fraction_valid_cells": 0.4444444444444444
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.54412306303826,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -859213.4363582641,
+        12180491.373641735,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 246
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 26
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 62
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 296
+          }
+        },
+        "cropland_fraction_valid_cells": 0.09841269841269841,
+        "built_up_fraction_valid_cells": 0.46984126984126984
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.54303273041273,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -858750.123641736,
+        12180491.373641735,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 347
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 59
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 224
+          }
+        },
+        "cropland_fraction_valid_cells": 0.09365079365079365,
+        "built_up_fraction_valid_cells": 0.35555555555555557
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.55191020216563,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -858055.154566944,
+        12181649.655433055,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 375
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 130
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 59
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 67
+          }
+        },
+        "cropland_fraction_valid_cells": 0.09350237717908082,
+        "built_up_fraction_valid_cells": 0.10618066561014262
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.55463515639725,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -859213.4363582641,
+        12181649.655433055,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 126
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 293
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 57
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 154
+          }
+        },
+        "cropland_fraction_valid_cells": 0.09047619047619047,
+        "built_up_fraction_valid_cells": 0.24444444444444444
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.54466845664898,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -859445.092716528,
+        12180491.373641735,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 245
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 49
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 336
+          }
+        },
+        "cropland_fraction_valid_cells": 0.07777777777777778,
+        "built_up_fraction_valid_cells": 0.5333333333333333
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.55502597348976,
+      "sinusoidal_bounds_m": [
+        12181881.31179132,
+        -857591.841850416,
+        12182112.968149584,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 391
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 7
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 49
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 183
+          }
+        },
+        "cropland_fraction_valid_cells": 0.07777777777777778,
+        "built_up_fraction_valid_cells": 0.2904761904761905
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.55401256901695,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -858055.154566944,
+        12181881.31179132,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 164
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 11
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 48
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 409
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0759493670886076,
+        "built_up_fraction_valid_cells": 0.6471518987341772
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.54988504586657,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -858981.78,
+        12181186.342716528,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 365
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 161
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 36
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 68
+          }
+        },
+        "cropland_fraction_valid_cells": 0.05714285714285714,
+        "built_up_fraction_valid_cells": 0.10793650793650794
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.55408986247043,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -858981.78,
+        12181649.655433055,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 226
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 87
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 32
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 286
+          }
+        },
+        "cropland_fraction_valid_cells": 0.05071315372424723,
+        "built_up_fraction_valid_cells": 0.4532488114104596
+      }
+    },
+    {
+      "latitude": -7.721875031299882,
+      "longitude": 110.54723752628267,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -858750.123641736,
+        12180954.686358264,
+        -858518.467283472
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 278
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 27
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 24
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 303
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0379746835443038,
+        "built_up_fraction_valid_cells": 0.47943037974683544
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.54677088569352,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -859445.092716528,
+        12180723.03,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 42
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 23
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 565
+          }
+        },
+        "cropland_fraction_valid_cells": 0.03645007923930269,
+        "built_up_fraction_valid_cells": 0.8954041204437401
+      }
+    },
+    {
+      "latitude": -7.7177083646335864,
+      "longitude": 110.54194300389058,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -858286.810925208,
+        12180491.373641735,
+        -858055.154566944
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 324
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 19
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 287
+          }
+        },
+        "cropland_fraction_valid_cells": 0.03015873015873016,
+        "built_up_fraction_valid_cells": 0.45555555555555555
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.54459017896144,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -858518.4672834721,
+        12180723.03,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 458
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 18
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 155
+          }
+        },
+        "cropland_fraction_valid_cells": 0.028526148969889066,
+        "built_up_fraction_valid_cells": 0.24564183835182252
+      }
+    },
+    {
+      "latitude": -7.7114583646341455,
+      "longitude": 110.54241189663,
+      "sinusoidal_bounds_m": [
+        12180491.373641735,
+        -857591.841850416,
+        12180723.03,
+        -857360.185492152
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 330
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 3
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 16
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 283
+          }
+        },
+        "cropland_fraction_valid_cells": 0.02531645569620253,
+        "built_up_fraction_valid_cells": 0.4477848101265823
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.54139836790905,
+      "sinusoidal_bounds_m": [
+        12180259.71728347,
+        -858055.154566944,
+        12180491.373641735,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 388
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 10
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 233
+          }
+        },
+        "cropland_fraction_valid_cells": 0.01584786053882726,
+        "built_up_fraction_valid_cells": 0.3692551505546751
+      }
+    },
+    {
+      "latitude": -7.719791697966735,
+      "longitude": 110.54669256653231,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -858518.4672834721,
+        12180954.686358264,
+        -858286.810925208
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 375
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 24
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 9
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 222
+          }
+        },
+        "cropland_fraction_valid_cells": 0.014285714285714285,
+        "built_up_fraction_valid_cells": 0.3523809523809524
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.54926330942578,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -857823.4982086801,
+        12181417.999074792,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 159
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 8
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 464
+          }
+        },
+        "cropland_fraction_valid_cells": 0.012678288431061807,
+        "built_up_fraction_valid_cells": 0.7353407290015848
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.55518060187167,
+      "sinusoidal_bounds_m": [
+        12181417.99907479,
+        -859445.092716528,
+        12181649.655433055,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 323
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 24
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 7
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 277
+          }
+        },
+        "cropland_fraction_valid_cells": 0.011093502377179081,
+        "built_up_fraction_valid_cells": 0.43898573692551507
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.55619227077237,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -858981.78,
+        12181881.31179132,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 56
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 94
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 6
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 474
+          }
+        },
+        "cropland_fraction_valid_cells": 0.009523809523809525,
+        "built_up_fraction_valid_cells": 0.7523809523809524
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.55253273772547,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -859213.4363582641,
+        12181417.999074792,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 268
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 3
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 359
+          }
+        },
+        "cropland_fraction_valid_cells": 0.004761904761904762,
+        "built_up_fraction_valid_cells": 0.5698412698412698
+      }
+    },
+    {
+      "latitude": -7.71562503130044,
+      "longitude": 110.5456031016117,
+      "sinusoidal_bounds_m": [
+        12180723.03,
+        -858055.154566944,
+        12180954.686358264,
+        -857823.49820868
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 478
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 13
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 3
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 137
+          }
+        },
+        "cropland_fraction_valid_cells": 0.004754358161648178,
+        "built_up_fraction_valid_cells": 0.21711568938193343
+      }
+    },
+    {
+      "latitude": -7.713541697967293,
+      "longitude": 110.55346802241749,
+      "sinusoidal_bounds_m": [
+        12181649.655433055,
+        -857823.4982086801,
+        12181881.31179132,
+        -857591.841850416
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 169
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 461
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0,
+        "built_up_fraction_valid_cells": 0.7317460317460317
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.55097574378262,
+      "sinusoidal_bounds_m": [
+        12180954.686358264,
+        -859445.092716528,
+        12181186.342716528,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 112
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 1
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 517
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0,
+        "built_up_fraction_valid_cells": 0.8206349206349206
+      }
+    },
+    {
+      "latitude": -7.728125031299323,
+      "longitude": 110.55307817282716,
+      "sinusoidal_bounds_m": [
+        12181186.342716528,
+        -859445.092716528,
+        12181417.999074792,
+        -859213.436358264
+      ],
+      "landcover_stats": {
+        "grid_cells": 632,
+        "valid_cells": 632,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 397
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 235
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0,
+        "built_up_fraction_valid_cells": 0.37183544303797467
+      }
+    },
+    {
+      "latitude": -7.723958364633028,
+      "longitude": 110.54147541265883,
+      "sinusoidal_bounds_m": [
+        12180028.060925208,
+        -858981.78,
+        12180259.717283472,
+        -858750.123641736
+      ],
+      "landcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 283
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 347
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0,
+        "built_up_fraction_valid_cells": 0.5507936507936508
+      }
+    },
+    {
+      "latitude": -7.726041697966176,
+      "longitude": 110.54202064436649,
+      "sinusoidal_bounds_m": [
+        12180028.060925208,
+        -859213.4363582641,
+        12180259.717283472,
+        -858981.78
+      ],
+      "landcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 390
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 241
+          }
+        },
+        "cropland_fraction_valid_cells": 0.0,
+        "built_up_fraction_valid_cells": 0.38193343898573695
+      }
+    }
+  ],
+  "limitations": "2021 classification uncertainty and possible land-use changes; never a claim of current crop species, crop-specific rotation, ownership, or plot extent."
+}

@@ -1,0 +1,20 @@
+{
+  "file": "sources/MYD13Q1-earthengine-catalog.html",
+  "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+  "effective_url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+  "http_status": 200,
+  "retrieved_at_utc": "2026-11-08T11:24:08.853372+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at_utc": "2026-11-08T11:24:07.643285+00:00",
+      "ended_at_utc": "2026-11-08T11:24:08.852951+00:00",
+      "return_code": 0,
+      "result": "200|https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD13Q1",
+      "error": ""
+    }
+  ],
+  "bytes": 111352,
+  "sha256": "56b60a57e8a6eb73ff973e7e6227325d92365032bbc9d30ceb04db06907b6de6",
+  "transport": "Windows curl Schannel TLS verification enabled"
+}

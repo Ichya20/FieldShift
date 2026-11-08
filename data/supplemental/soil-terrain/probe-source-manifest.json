@@ -1,0 +1,60 @@
+{
+  "prepared_at_utc": "2026-11-08T11:07:34.620022+00:00",
+  "records": [
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05.vrt",
+      "path": "raw/cfvo-Q0.05-head.xml",
+      "accessed_at_utc": "2026-11-08T11:07:34.620022+00:00",
+      "http_status": 206,
+      "bytes": 8192,
+      "sha256": "2cd1598177ce9a62a64f7b4a5327429843693ccfc266fe7bf9b8494be8e4c7f4",
+      "range_requested": "bytes=0-8191",
+      "content_type": "application/octet-stream",
+      "content_range": "bytes 0-8191/5939086"
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/cfvo/",
+      "path": "raw/cfvo-index.html",
+      "accessed_at_utc": "2026-11-08T11:07:34.620022+00:00",
+      "http_status": 200,
+      "bytes": 28858,
+      "sha256": "aca560a1cfb72b724079ccd4feca16ba8ad4069ea44198ed2ac614a42dd8b034",
+      "range_requested": null,
+      "content_type": "text/html; charset=utf-8",
+      "content_range": null
+    },
+    {
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fphh2o.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=phh2o_0-5cm_mean&FORMAT=GEOTIFF_INT16&SUBSET=X%28110.54%2C110.56%29&SUBSET=Y%28-7.73%2C-7.71%29&SUBSETTINGCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F4326&OUTPUTCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F152160&INTERPOLATION=NEAREST",
+      "path": "raw/phh2o_0-5cm_mean-native.tif",
+      "accessed_at_utc": "2026-11-08T11:07:34.620022+00:00",
+      "http_status": 200,
+      "bytes": 1121,
+      "sha256": "8016d4c9ab46de70624ba61cfb13d80a2bd534f53d46e1f635f0ab385c0cfc64",
+      "range_requested": null,
+      "content_type": "image/tiff",
+      "content_range": null
+    },
+    {
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fcfvo.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=cfvo_0-5cm_Q0.05&FORMAT=GEOTIFF_INT16&SUBSET=X%28110.54%2C110.56%29&SUBSET=Y%28-7.73%2C-7.71%29&SUBSETTINGCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F4326&OUTPUTCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F152160&INTERPOLATION=NEAREST",
+      "path": "raw/cfvo_0-5cm_Q0.05-native.tif",
+      "accessed_at_utc": "2026-11-08T11:07:34.620022+00:00",
+      "http_status": 200,
+      "bytes": 1061,
+      "sha256": "ab8bfab62f20a0e95269445273b1f5620d4213474d11eadc868867ea07a63159",
+      "range_requested": null,
+      "content_type": "image/tiff",
+      "content_range": null
+    },
+    {
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fwv0033.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=wv0033_0-5cm_mean&FORMAT=GEOTIFF_INT16&SUBSET=X%28110.54%2C110.56%29&SUBSET=Y%28-7.73%2C-7.71%29&SUBSETTINGCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F4326&OUTPUTCRS=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F152160&INTERPOLATION=NEAREST",
+      "path": "raw/wv0033_0-5cm_mean-native.tif",
+      "accessed_at_utc": "2026-11-08T11:07:34.620022+00:00",
+      "http_status": 200,
+      "bytes": 1192,
+      "sha256": "cbb8c917d29ec634e05daa64f6e6c95832aac85f34eab801b375e33a5dc93287",
+      "range_requested": null,
+      "content_type": "image/tiff",
+      "content_range": null
+    }
+  ]
+}

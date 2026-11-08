@@ -1,0 +1,45 @@
+{
+  "prepared_utc": "2026-11-08T10:08:12.234012+00:00",
+  "location_role": "primary demonstration pixel, not a farm boundary",
+  "sample_coordinate": {
+    "latitude": -7.721875031299882,
+    "longitude": 110.55354472008753
+  },
+  "worldcover_point_class_code": 40,
+  "worldcover_point_class_label": "Cropland",
+  "modis_metadata_file": "data/prepared/vegetation/raw/klaten_cropland_primary-A2021001-A2021145.json",
+  "modis_metadata_sha256": "3f03318b273900ae77010e52d0531673b7a6fc94bb9c078fda35434f5589d4b1",
+  "modis_source_url": "https://modisrest.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+  "sinusoidal_crs": "+proj=sinu +R=6371007.181 +nadgrids=@null +wktext",
+  "sinusoidal_bounds_m": [
+    12181417.98,
+    -858750.16,
+    12181649.636358265,
+    -858518.503641736
+  ],
+  "sinusoidal_cellsize_m": 231.656358264,
+  "nominal_product_resolution_m": 250,
+  "worldcover_epoch": 2021,
+  "worldcover_stats_within_modis_pixel": {
+    "grid_cells": 631,
+    "valid_cells": 631,
+    "class_histogram": {
+      "10": {
+        "label": "Tree cover",
+        "cells": 24
+      },
+      "30": {
+        "label": "Grassland",
+        "cells": 74
+      },
+      "40": {
+        "label": "Cropland",
+        "cells": 533
+      }
+    },
+    "cropland_fraction_valid_cells": 0.8446909667194928,
+    "built_up_fraction_valid_cells": 0.0
+  },
+  "method": "Densify 1x1 REST-reported sinusoidal pixel edges (16 segments/edge), project to WGS84 sphere R=6371007.181, then count native WorldCover cells whose centers lie inside polygon; no all-touched expansion.",
+  "limitations": "WorldCover2021 classification is uncertain and land use may have changed. Class fractions use native grid cell counts; geographic cell areas vary negligibly across this small pixel. This is no claim of farm ownership, field extent, current crop species, or collection version of REST MODIS service."
+}

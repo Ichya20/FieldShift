@@ -1,0 +1,51 @@
+{
+  "checked_date": "2026-11-08",
+  "timezone": "Asia/Jakarta",
+  "purpose": "Read-only data feasibility audit, not a farm recommendation",
+  "sample_locations": "Yogyakarta and Klaten, Indonesia; not a verified user farm",
+  "samples": [
+    {
+      "file": "power-yogyakarta-2021-2025.json",
+      "bytes": 362850,
+      "sha256": "70E6BCD1A2D3DC3BA8CB1008EE673DE767414DB9A9CFA4FF26FBEF67DD426A74",
+      "source": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M,T2M_MAX,T2M_MIN,PRECTOTCORR,RH2M,WS2M,ALLSKY_SFC_SW_DWN,GWETTOP,GWETROOT,EVPTRNS,PS,T2MDEW&community=AG&longitude=110.37&latitude=-7.8&start=20210101&end=20251231&format=JSON&time-standard=LST",
+      "status": "1826 days, 12 parameters, no -999 or null; regional model estimates"
+    },
+    {
+      "file": "power-coverage.csv",
+      "bytes": 979,
+      "sha256": "7C4CC590B24E4702CC487806DCDB3C431F290D42E16CCD3EB459CBF8B8ECBB45",
+      "source": "Derived completeness summary of included NASA POWER JSON",
+      "status": "12 parameters; 1826 valid values each"
+    },
+    {
+      "file": "modis-actual-sample.json",
+      "bytes": 4227,
+      "sha256": "9C641C45D4578BA1DD6D2BD48ABA71A5A4339897427007FD7A4BE477695B3AB1",
+      "source": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.8&longitude=110.37&startDate=A2025001&endDate=A2025017&kmAboveBelow=0&kmLeftRight=0",
+      "status": "Access sample only; two composites flagged cloudy"
+    },
+    {
+      "file": "modis-actual-dryseason.json",
+      "bytes": 4228,
+      "sha256": "D8F090B4F81150DC5C796AF968F2B6B3D5979BEF8BB18AA956BE977430D71D7D",
+      "source": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.8&longitude=110.37&startDate=A2025209&endDate=A2025225&kmAboveBelow=0&kmLeftRight=0",
+      "status": "Access sample only; one cloudy, one marginal composite"
+    },
+    {
+      "file": "ph-rural-subset.tif",
+      "bytes": 648,
+      "sha256": "C8F1217A6D7218A26181C8110F64DE5225167694FCAB6C5373587F571FC668B2",
+      "source": "https://maps.isric.org/mapserv?map=/map/phh2o.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=phh2o_0-5cm_mean&FORMAT=GEOTIFF_INT16&SUBSET=X(110.54,110.56)&SUBSET=Y(-7.73,-7.71)&SUBSETTINGCRS=http://www.opengis.net/def/crs/EPSG/0/4326&OUTPUTCRS=http://www.opengis.net/def/crs/EPSG/0/4326",
+      "status": "ISRIC SoilGrids CC-BY-4.0; predicted pH x10, 68 nonzero cells, 4 unresolved zero values excluded from interpretation"
+    },
+    {
+      "file": "crop-reference.csv",
+      "bytes": 927,
+      "sha256": "FC426B33596C3CBBB283C1D24F6C1FB0ED63F6C367EBD45763280F9E37CFC9CC",
+      "source": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1574 ; https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175 ; https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1150",
+      "status": "FAO ECOCROP species references, historical, not calibrated local cultivars"
+    }
+  ],
+  "metadata_note": "Files in metadata prove catalog discovery only; no scientific pixel values from these full rasters have been downloaded or validated."
+}

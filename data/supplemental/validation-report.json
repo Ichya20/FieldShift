@@ -1,0 +1,438 @@
+{
+  "validated_at_utc": "2026-11-08T11:30:34.774484+00:00",
+  "pass": true,
+  "checks": [
+    {
+      "check": "Original prepared snapshot retains all original hashes",
+      "pass": true,
+      "detail": {
+        "files": 390,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Climate baseline is complete for every numeric metric",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Comparison history is complete for every numeric metric",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Primary pH covers all five depths and three source statistics",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Elevation and slope have numeric valid cells",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Both example pixels have quality-screened vegetation context",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "All three crops have traceable numeric pH, temperature and seasonal ET references",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Extracted GAEZ classes and bounds are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Complete typed input definitions and twelve rule mappings are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "environment supplemental validation passed",
+      "pass": true,
+      "detail": {
+        "checked_at_utc": "2026-11-08T11:26:12.884010+00:00",
+        "pass": true,
+        "status": "passed",
+        "scope": "Integrity and requested catalog-available numeric samples only; not completeness of all field or agronomic knowledge",
+        "frozen_prepared_files_before": 391,
+        "frozen_prepared_files_after": 391,
+        "changed_frozen_files": [],
+        "unique_product_point_composite_keys": true,
+        "actual_composites": 304,
+        "expected_composites": 304,
+        "strict_good_rows": 69,
+        "maximum_grid_discrepancy_from_frozen_Terra_m": 0.0,
+        "failed_acquisitions": [],
+        "warnings": [
+          {
+            "file": "sources/MYD13Q1-v61-filespec.html",
+            "error": "Previous three-attempt failure retained without retry: https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD13Q1"
+          }
+        ],
+        "local_verifier": "scripts/data/supplemental_environment/verify_environment.py"
+      }
+    },
+    {
+      "check": "soil-terrain supplemental validation passed",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "checks": {
+          "all_180_native_rasters_retrieved": true,
+          "all_12960_legacy_centers_audited": true,
+          "every_legacy_bad_record_has_an_audit": true,
+          "legacy_positive_values_all_match_native": true,
+          "no_legacy_positive_values_changed_or_disagreed": true,
+          "all_original_zeros_classified_without_imputation": true,
+          "all_four_negative_sentinels_confirmed_source_nodata": true,
+          "native_subset_checksums_match": true,
+          "all_native_layers250m": true,
+          "native_masks_match_explicit_nodata_tags": true,
+          "all_anchors_180_valid_values": true,
+          "no_quantile_inversions": true,
+          "texture_mean_closure_pass": true,
+          "retention_mean_monotonic": true,
+          "prepared390_files_still_match": true
+        },
+        "prepared_integrity": {
+          "files": 390,
+          "mismatches": [],
+          "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde"
+        },
+        "quantile_inversions": [],
+        "texture_checks": [
+          {
+            "depth": "0-5cm",
+            "valid_cells": 92,
+            "sum_percent_min": 99.9,
+            "sum_percent_max": 100.1,
+            "outside_99_5_to_100_5_percent": 0
+          },
+          {
+            "depth": "5-15cm",
+            "valid_cells": 92,
+            "sum_percent_min": 99.9,
+            "sum_percent_max": 100.1,
+            "outside_99_5_to_100_5_percent": 0
+          },
+          {
+            "depth": "15-30cm",
+            "valid_cells": 92,
+            "sum_percent_min": 99.9,
+            "sum_percent_max": 100.1,
+            "outside_99_5_to_100_5_percent": 0
+          },
+          {
+            "depth": "30-60cm",
+            "valid_cells": 92,
+            "sum_percent_min": 99.9,
+            "sum_percent_max": 100.1,
+            "outside_99_5_to_100_5_percent": 0
+          },
+          {
+            "depth": "60-100cm",
+            "valid_cells": 92,
+            "sum_percent_min": 99.9,
+            "sum_percent_max": 100.1,
+            "outside_99_5_to_100_5_percent": 0
+          }
+        ],
+        "retention_checks": [
+          {
+            "depth": "0-5cm",
+            "valid_cells": 92,
+            "nonmonotonic_cells": 0
+          },
+          {
+            "depth": "5-15cm",
+            "valid_cells": 92,
+            "nonmonotonic_cells": 0
+          },
+          {
+            "depth": "15-30cm",
+            "valid_cells": 92,
+            "nonmonotonic_cells": 0
+          },
+          {
+            "depth": "30-60cm",
+            "valid_cells": 92,
+            "nonmonotonic_cells": 0
+          },
+          {
+            "depth": "60-100cm",
+            "valid_cells": 92,
+            "nonmonotonic_cells": 0
+          }
+        ],
+        "native_mask_identical_across_layers": true,
+        "bad_subset_hashes": []
+      }
+    },
+    {
+      "check": "agronomy supplemental validation passed",
+      "pass": true,
+      "detail": {
+        "created_at_utc": "2026-11-08T11:20:55.835174+00:00",
+        "prepared_files_checked": 390,
+        "mismatches": [],
+        "prepared_immutable": true,
+        "manifest_sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde",
+        "original_fields_typed": 91,
+        "supplemental_fields": 28,
+        "total_fields": 119,
+        "all_template_field_values_null": true,
+        "all_fields_rule_mapped_or_legacy_unused": true,
+        "legacy_unused_fields": 3,
+        "method_rules_mapped": 12,
+        "source_hashes_verified": 16,
+        "claim_source_links_valid": true,
+        "outcomes_remain_null": true,
+        "json_schema_validation": "passed_draft202012_schema_null_template_and_boundaries",
+        "cross_field_semantics": "Documented contract requirements; not implemented backend checks.",
+        "schema_checks": [
+          {
+            "check": "negative_latitude_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "latitude_south_boundary_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "latitude_north_boundary_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "latitude_out_of_range_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "longitude_out_of_range_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "negative_area_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "known_zero_area_structurally_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "irrigation_fraction_out_of_range_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "explicit_false_is_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "string_not_boolean",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "unknown_crop_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "impossible_date_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "empty_history_structurally_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "duplicate_crop_ids_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "more_than_three_locked_slots_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "fractional_gap_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "malformed_polygon_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          },
+          {
+            "check": "explicit_scenario_duration_record_valid",
+            "passed": true,
+            "expected_structural_validity": true
+          },
+          {
+            "check": "fractional_calendar_duration_invalid",
+            "passed": true,
+            "expected_structural_validity": false
+          }
+        ],
+        "schema_check_count": 19,
+        "validator": {
+          "package": "jsonschema",
+          "version": "4.26.0",
+          "python_version": "3.11.1",
+          "isolated_target": "work/validation-deps",
+          "reproduce": "python -m pip install --target work/validation-deps jsonschema==4.26.0",
+          "synthetic_checks_only": "Boundary checks are ephemeral validation values; no actual farm records or geometry were generated."
+        }
+      }
+    },
+    {
+      "check": "regional-context supplemental validation passed",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "unique_sorted_times": true,
+        "three_hour_intervals": true,
+        "utc_local_consistent": true,
+        "physical_ranges": true,
+        "source_hashes": 3
+      }
+    },
+    {
+      "check": "crop-water supplemental validation passed",
+      "pass": true,
+      "detail": {
+        "pass": true,
+        "exact_source_rows_checked": 8,
+        "source_hashes": 2,
+        "rice_special_footnote_checked": true
+      }
+    },
+    {
+      "check": "Collector inventory remains intact: agronomy/manifest.json",
+      "pass": true,
+      "detail": {
+        "files": 26,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Collector inventory remains intact: soil-terrain/file-manifest.json",
+      "pass": true,
+      "detail": {
+        "files": 396,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Environment source and derived inventories remain intact",
+      "pass": true,
+      "detail": {
+        "files": 49,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Official source snapshots remain intact: regional-context",
+      "pass": true,
+      "detail": {
+        "files": 3,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Official source snapshots remain intact: crop-water",
+      "pass": true,
+      "detail": {
+        "files": 2,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Requirement daily_climate_baseline resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement quality_screened_vegetation resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement soil_properties_and_uncertainty resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement terrain_and_landcover resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement crop_references resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement gaez resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement input_definitions_and_rule_requirements resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement repeatable_comparison_case resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement short_term_weather resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement future_crop_water_parameters resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement actual_farm_and_management resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Requirement optional_nasa_missions resolves to a real file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Every supplemental file matches the final checksum inventory",
+      "pass": true,
+      "detail": {
+        "files": 526
+      }
+    }
+  ],
+  "supplemental_files": 526,
+  "local_agronomic_validation": false,
+  "archive_verification_sidecar": "outputs/data-package-verification.json",
+  "scope": "Data/source integrity and current-MVP public context coverage; not field/model accuracy. Archive CRC/digest is recorded separately to avoid a self-referential archive hash."
+}

@@ -1,0 +1,11 @@
+{
+  "file": "raw/klaten_cropland_primary-A2024337-A2025113.json",
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+  "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+  "request_started_at_utc": "2026-11-08T10:07:17.097354+00:00",
+  "retrieved_at_utc": "2026-11-08T10:07:37.013217+00:00",
+  "http_status": 200,
+  "transport": "curl.exe with Windows Schannel TLS validation",
+  "bytes": 19831,
+  "sha256": "c9d7452bc2295b9a4eedb47610de28e29712b6f0baf498f82892f9916bb442fb"
+}

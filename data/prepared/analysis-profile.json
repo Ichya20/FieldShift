@@ -1,0 +1,51 @@
+{
+  "project": "FieldShift",
+  "prepared_date": "2026-11-08",
+  "timezone": "Asia/Jakarta",
+  "scope_confirmed_by_user": {
+    "area": "Yogyakarta-Klaten, Indonesia, as a study example",
+    "crops": ["rice", "maize", "soybean"],
+    "purpose": "Prepare evidence and numeric inputs before application implementation"
+  },
+  "farm_boundary_verified": false,
+  "minimum_public_data_layers": [
+    "regional_daily_climate_and_30_year_baseline",
+    "quality_screened_vegetation_history_at_a_candidate_cropland_location",
+    "predicted_soil_properties_with_depth_and_uncertainty",
+    "terrain_elevation_and_slope",
+    "land_cover_for_sample_location_screening",
+    "crop_references_and_rotation_evidence"
+  ],
+  "spatial_policy": {
+    "retain_original_support": true,
+    "climate": "One representative POWER point; meteorological grid spans tens of kilometres. No claim that this equals each field's weather.",
+    "soil": "SoilGrids predictions over a small rural Klaten subset; not a laboratory test or verified field boundary.",
+    "vegetation": "MODIS composite pixels; mask clouds and quality flags; cropland screening is historical and does not confirm crop species or an individual farm.",
+    "terrain": "Copernicus DEM fallback must retain its source identity; a surface model is not a survey of field microtopography.",
+    "gaez": "Historical model baseline at 5 arc-minute support; retain categorical legend and management assumptions.",
+    "fusion": "Join by location, period and source support. A common map display must not imply identical source resolution or produce invented 30m field observations."
+  },
+  "temporal_policy": {
+    "climate_baseline": "1991-2020",
+    "comparison_history": "2021-2025",
+    "recent_2026": "Separate partial near-real-time series. Source latency and missing dates remain explicit.",
+    "vegetation": "Historical composites, not daily or necessarily cloud-free.",
+    "soil_and_land_cover": "Static or historical maps, not live observations.",
+    "forecast": "No seasonal weather forecast has been acquired or inferred from historical climatology."
+  },
+  "farm_specific_outputs_require": [
+    "verified_boundary_and_area",
+    "existing_rotation_and_planting_harvest_dates",
+    "cultivar_and_management",
+    "irrigation_source_availability_and_drainage",
+    "farmer_priorities_and_constraints",
+    "locally_reviewed_agronomic_assumptions"
+  ],
+  "economic_outputs_require": [
+    "farmer_relevant_sale_prices_and_buyers",
+    "input_labor_equipment_and_irrigation_costs",
+    "yield_history_or_explicit_locally_validated_yield_model"
+  ],
+  "unknown_policy": "Missing inputs stay null/unavailable. Never substitute invented farm history, market prices, yield, nitrogen credit or profit.",
+  "application_status": "not_started"
+}

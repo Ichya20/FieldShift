@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "timing_note": "Local snapshot file-write time; a cache reuse is not a fresh network request.",
+      "path": "sources/fao56-chapter6.html",
+      "url": "https://www.fao.org/4/x0490e/x0490e0b.htm",
+      "sha256": "cad0afe7873296b2a91c1a70b0d1fdf4cb37b5ee94a892521a478b2b1a4a2e3c",
+      "source_snapshot_saved_at_utc": "2026-11-08T11:11:46.9025133Z",
+      "bytes": 235891,
+      "id": "fao56-table12",
+      "retrieval": "HTTPS with system certificate validation; saved response bytes"
+    },
+    {
+      "timing_note": "Local snapshot file-write time; a cache reuse is not a fresh network request.",
+      "path": "sources/fao56-chapter8.html",
+      "url": "https://www.fao.org/4/x0490e/x0490e0e.htm",
+      "sha256": "f7eabb739742734c411a8d31527b709fba004a943e373ed406587017b3be0e98",
+      "source_snapshot_saved_at_utc": "2026-11-08T11:11:47.0626546Z",
+      "bytes": 137909,
+      "id": "fao56-table22",
+      "retrieval": "HTTPS with system certificate validation; saved response bytes"
+    }
+  ]
+}

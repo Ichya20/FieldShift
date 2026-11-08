@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-11-08T10:09:37.839649+00:00",
+  "status": "passed",
+  "checks": [
+    "complete expected date coverage",
+    "unique keys",
+    "consistent coordinates",
+    "raw-to-scaled units",
+    "selected day lies within composite interval",
+    "strict quality selection and cloudy exclusions",
+    "monthly counts and means recomputed from primary-quality data only",
+    "missing months blank, no interpolation",
+    "source and derived SHA-256 and sizes"
+  ],
+  "files_checksums_verified": 45,
+  "rows_verified": 230,
+  "monthly_rows_verified": 120,
+  "points": [
+    {
+      "point_id": "klaten_cropland_primary",
+      "sample_role": "primary_demonstration_pixel",
+      "composites": 115,
+      "quality_counts": {
+        "excluded": 52,
+        "good_strict": 42,
+        "marginal_review": 21
+      },
+      "months_with_strict_good_data": 31,
+      "months_without_strict_good_data": 29
+    },
+    {
+      "point_id": "klaten_cropland_candidate",
+      "sample_role": "mixed_pixel_comparison",
+      "composites": 115,
+      "quality_counts": {
+        "excluded": 51,
+        "good_strict": 42,
+        "marginal_review": 22
+      },
+      "months_with_strict_good_data": 32,
+      "months_without_strict_good_data": 28
+    }
+  ]
+}

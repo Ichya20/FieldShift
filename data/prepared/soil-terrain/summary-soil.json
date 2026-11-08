@@ -1,0 +1,47 @@
+{
+  "prepared_utc": "2026-11-08T10:04:13.037316+00:00",
+  "bbox_wgs84": [
+    110.54,
+    -7.73,
+    110.56,
+    -7.71
+  ],
+  "sample_location": "Rural Klaten; not verified user farm",
+  "soil": {
+    "status": "downloaded",
+    "properties": [
+      "phh2o",
+      "sand",
+      "silt",
+      "clay",
+      "soc",
+      "nitrogen",
+      "cec",
+      "bdod",
+      "cfvo",
+      "wv0010",
+      "wv0033",
+      "wv1500"
+    ],
+    "depths": [
+      "0-5cm",
+      "5-15cm",
+      "15-30cm",
+      "30-60cm",
+      "60-100cm"
+    ],
+    "statistics": [
+      "mean",
+      "Q0.05",
+      "Q0.95"
+    ],
+    "successful_rasters": 180,
+    "requested_rasters": 180,
+    "interpretable_nonzero_rasters": 175,
+    "zero_only_unresolved_rasters": 5,
+    "cell_records": 12960,
+    "numeric_cells": 11900,
+    "unresolved_zeros": 1056,
+    "download_bytes": 126893
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "url": "https://files.isric.org/soilgrids/latest/data/nitrogen/nitrogen_0-5cm_mean/tileSG-021-071/tileSG-021-071_1-4.tif",
+  "accessed_at_utc": "2026-11-08T11:13:36.181376+00:00",
+  "source_shape": [
+    253,
+    450
+  ],
+  "source_transform": [
+    250.0,
+    0.0,
+    12250000.0,
+    0.0,
+    -250.0,
+    -849250.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "source_bounds": [
+    12250000.0,
+    -912500.0,
+    12362500.0,
+    -849250.0
+  ],
+  "source_crs_wkt": "PROJCS[\"Interrupted_Goode_Homolosine\",GEOGCS[\"GCS_unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"Unknown\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "source_nodata_tag": -32768.0,
+  "source_tags": {
+    "AREA_OR_POINT": "Area"
+  },
+  "window_native_pixels": [
+    339,
+    36,
+    11,
+    9
+  ],
+  "read_method": "Original TIFF window read, no reprojection/interpolation; output retains source grid and nodata tag.",
+  "remote_full_file_sha256": null,
+  "checksum_note": "Subset bytes are hashed; complete remote source raster was not downloaded or hashed."
+}

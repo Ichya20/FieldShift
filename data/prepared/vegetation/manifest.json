@@ -1,0 +1,422 @@
+{
+  "created_at_utc": "2026-11-08T10:09:37.712743+00:00",
+  "sources": [
+    {
+      "file": "sources/bands.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/bands",
+      "request_started_at_utc": "2026-11-08T09:56:40.524051+00:00",
+      "retrieved_at_utc": "2026-11-08T09:56:41.833436+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 2366,
+      "sha256": "d41dc06bed934ea5f032e0eb88b047c1c3c65df1c46db58aa6420be791475303"
+    },
+    {
+      "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD13Q1",
+      "retrieved_at_utc": "2026-11-08T09:53:18.690006+00:00",
+      "retrieval_time_basis": "local_file_modification_time_from_same-session_download",
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "cached": true,
+      "file": "sources/mod13q1-v61-filespec.html",
+      "bytes": 49518,
+      "sha256": "5ed85b1b4ee4ddf520dbba2b308197b2ab95ab4fe8cfb5b65e790ff246e4ee57"
+    },
+    {
+      "file": "raw/dates-klaten_cropland_primary.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.721875031299882&longitude=110.55354472008753",
+      "request_started_at_utc": "2026-11-08T10:05:39.603313+00:00",
+      "retrieved_at_utc": "2026-11-08T10:05:42.483278+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 36238,
+      "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9"
+    },
+    {
+      "file": "raw/dates-klaten_cropland_candidate.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.7240416666666665&longitude=110.546875",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.7240416666666665&longitude=110.546875",
+      "request_started_at_utc": "2026-11-08T10:00:59.738081+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:02.709560+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 36238,
+      "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2021001-A2021145.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:05:42.501203+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:03.840366+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19838,
+      "sha256": "3f03318b273900ae77010e52d0531673b7a6fc94bb9c078fda35434f5589d4b1"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2021161-A2021305.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:05:42.502209+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:02.188157+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19848,
+      "sha256": "6bede7334795e7c9a1c35c23682f20d39b3d8675768b1e92f208c2c3f0d9d474"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2021321-A2022097.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021321&endDate=A2022097&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021321&endDate=A2022097&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:02.188157+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:36.485211+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19830,
+      "sha256": "15650e27d0df90fd20d77e9736c3a47ba5709fedc2d1da501dd9d7060fb4cfda"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2022113-A2022257.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022113&endDate=A2022257&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022113&endDate=A2022257&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:03.840366+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:26.206135+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19843,
+      "sha256": "ac45fde5e3ad95276d534a85c3dea02c222647df2632a913d6ecb3a16e8cd186"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2022273-A2023049.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022273&endDate=A2023049&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2022273&endDate=A2023049&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:26.207450+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:47.418283+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19838,
+      "sha256": "619ff9444ccab2e325e2c233a62b6b4b7e1c92fb85645a1dad340d7ef3836cdd"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2023065-A2023209.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023065&endDate=A2023209&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023065&endDate=A2023209&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:36.485211+00:00",
+      "retrieved_at_utc": "2026-11-08T10:06:56.014085+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19840,
+      "sha256": "b9682c59e5cf707b417d1abb88ee8df0f88e08b1e14929cd4877a1b98db496a4"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2023225-A2024001.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023225&endDate=A2024001&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2023225&endDate=A2024001&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:47.418283+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:07.269274+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19846,
+      "sha256": "ddf3f7328b13e880cdcf8f0f03f4c07639eeb7beffd753335e6395c8b5e5f763"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2024017-A2024161.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024017&endDate=A2024161&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024017&endDate=A2024161&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:06:56.015502+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:17.093800+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19836,
+      "sha256": "24f42c9410c81d5e2afd06473bf7d81014c3b15910bd4878a517681775c18a8a"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2024177-A2024321.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024177&endDate=A2024321&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024177&endDate=A2024321&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:07:07.273714+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:27.587141+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19841,
+      "sha256": "4512a3c11203cc39294d4e8d4f0fcb138099a5a3b52046c6ddf42d542a06d7b4"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2024337-A2025113.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:07:17.097354+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:37.013217+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19831,
+      "sha256": "c9d7452bc2295b9a4eedb47610de28e29712b6f0baf498f82892f9916bb442fb"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2025129-A2025273.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025129&endDate=A2025273&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025129&endDate=A2025273&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:07:27.588223+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:47.873776+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19842,
+      "sha256": "2bb6b09bcbeefc1159175157067cebe964e1f7f2b2c1252413ae33eee8aa5bc2"
+    },
+    {
+      "file": "raw/klaten_cropland_primary-A2025289-A2025353.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025289&endDate=A2025353&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2025289&endDate=A2025353&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:07:37.013217+00:00",
+      "retrieved_at_utc": "2026-11-08T10:07:47.061619+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 10117,
+      "sha256": "607a8d5c43fe3a1937d9cde3cebf2c539ed6be528d7320e0746c50f2186f6feb"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2021001-A2021145.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021001&endDate=A2021145&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:02.822495+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:23.155187+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19823,
+      "sha256": "ae34cd3484b98306149ec3ff6cffad846e46b57e33f025b9f542fc1e5174cd68"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2021161-A2021305.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021161&endDate=A2021305&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:02.823821+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:24.010030+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19832,
+      "sha256": "9206877c7aefca1690b476023ce0674a33cee767f43d0ad735360471a146f7b2"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2021321-A2022097.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021321&endDate=A2022097&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2021321&endDate=A2022097&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:23.156929+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:42.156602+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19818,
+      "sha256": "8370232803d94a81db9e310e2adf2012333588b6f881f43276e8bf5031f9cd55"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2022113-A2022257.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022113&endDate=A2022257&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022113&endDate=A2022257&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:24.010030+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:42.662587+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19830,
+      "sha256": "4263336fbbf13bba65d9b94207e55f48a3201a2a44f2e7aa2e383b779bfc4a15"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2022273-A2023049.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022273&endDate=A2023049&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2022273&endDate=A2023049&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:42.156602+00:00",
+      "retrieved_at_utc": "2026-11-08T10:01:59.765331+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19826,
+      "sha256": "8944ccb1c2e83b98237843fa9aba4c57c17b8ac6385faaa5ab688f33c5db2b88"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2023065-A2023209.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023065&endDate=A2023209&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023065&endDate=A2023209&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:42.663894+00:00",
+      "retrieved_at_utc": "2026-11-08T10:02:00.032859+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19828,
+      "sha256": "13d77f72513fc3b170d0d50623468d3e06d0d61aab4267bf28ae4ef6a16b5b67"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2023225-A2024001.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023225&endDate=A2024001&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2023225&endDate=A2024001&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:01:59.766807+00:00",
+      "retrieved_at_utc": "2026-11-08T10:02:21.282393+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19825,
+      "sha256": "26ae19ac46fcc9519cae25f5e3cd64b81b1e4bab814a815eaf70e6bed36e9f5b"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2024017-A2024161.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024017&endDate=A2024161&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024017&endDate=A2024161&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:03:03.278949+00:00",
+      "retrieved_at_utc": "2026-11-08T10:03:23.493250+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19826,
+      "sha256": "62067c4cb252da7a9bd4c311e8b84b816c9c45985228825d96dae5083485b4c4"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2024177-A2024321.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024177&endDate=A2024321&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024177&endDate=A2024321&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:02:21.283406+00:00",
+      "retrieved_at_utc": "2026-11-08T10:03:23.445851+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19829,
+      "sha256": "e0c2dea3b42e36885e32f18fdc15ddaead17db12c2328cdb4e1d3d69d0895ad1"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2024337-A2025113.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2024337&endDate=A2025113&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:03:23.450836+00:00",
+      "retrieved_at_utc": "2026-11-08T10:04:02.036314+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19818,
+      "sha256": "a720347fba627080d610139e6c3a9bc7983dbd157c4dc98d938b4f39f9995703"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2025129-A2025273.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025129&endDate=A2025273&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025129&endDate=A2025273&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:03:23.494889+00:00",
+      "retrieved_at_utc": "2026-11-08T10:03:43.904290+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 19826,
+      "sha256": "fe1bea28b9bb1675e183566f42b784c8abac7d5b2578b5ab507629a82b169f43"
+    },
+    {
+      "file": "raw/klaten_cropland_candidate-A2025289-A2025353.json",
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025289&endDate=A2025353&kmAboveBelow=0&kmLeftRight=0",
+      "effective_url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.7240416666666665&longitude=110.546875&startDate=A2025289&endDate=A2025353&kmAboveBelow=0&kmLeftRight=0",
+      "request_started_at_utc": "2026-11-08T10:03:43.905513+00:00",
+      "retrieved_at_utc": "2026-11-08T10:04:13.953538+00:00",
+      "http_status": 200,
+      "transport": "curl.exe with Windows Schannel TLS validation",
+      "bytes": 10106,
+      "sha256": "25c06628814804acf358171625f68dd78b397b4544d1bc307e2cdcd28a903600"
+    },
+    {
+      "file": "modis_16day_qa.csv",
+      "type": "derived",
+      "bytes": 66836,
+      "sha256": "130c5211cb28ba29cab2f9a1df1e578a74b9433f1560e9591e7e4aa550f4e0b8",
+      "derivation_script": "scripts/data/vegetation/prepare_modis.py"
+    },
+    {
+      "file": "modis_monthly_good_only.csv",
+      "type": "derived",
+      "bytes": 10058,
+      "sha256": "3e05040b6a2f43d8048065a99585d7305e30a2e0d3edaf0beef2f887195a91e7",
+      "derivation_script": "scripts/data/vegetation/prepare_modis.py"
+    },
+    {
+      "file": "summary.json",
+      "type": "derived",
+      "bytes": 4222,
+      "sha256": "956cf936adea96a6d3758c1c2c14d4ac6847e96b954012a72e25aec6f57376a5",
+      "derivation_script": "scripts/data/vegetation/prepare_modis.py"
+    }
+  ],
+  "download_bytes": 580897,
+  "auth": "public, no account or credentials used",
+  "failures": [],
+  "excluded_context_files": [
+    {
+      "file": "raw/excluded_context_points/dates-yogyakarta.json",
+      "bytes": 36238,
+      "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/dates-yogyakarta.json.source.json",
+      "bytes": 466,
+      "sha256": "50e5dcae970d07c310caf9ea359a96dd4f6f349cda7b457dd8905ae04071682c",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021001-A2021145.json",
+      "bytes": 19793,
+      "sha256": "0782d6572a824db50585a77571cbe33f720b46c766aa114505f15202b0b469de",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021001-A2021145.json.source.json",
+      "bytes": 544,
+      "sha256": "bc035dcb8c4fbfa2f5cd33d59082dad70bc4e6d5d7c5b135bc35eb96b7aa28bd",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021161-A2021305.json",
+      "bytes": 19802,
+      "sha256": "d10cd4e1a75ec297654fe8025b5018d033930d9064e94358085bafb1a6a166da",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021161-A2021305.json.source.json",
+      "bytes": 695,
+      "sha256": "2386d864432e182b399f8261850f28c5115ceae151b17d080f21efa3e8af2901",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021321-A2022097.json",
+      "bytes": 19799,
+      "sha256": "9442324daab766b576d6e62a3f4502c5d8b620ede6e65d0996c25beaf527bcc3",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2021321-A2022097.json.source.json",
+      "bytes": 695,
+      "sha256": "65092ba60da49ea103f04204032b9b00d9a253ce1a074e2b950c1f5aed3211af",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2022113-A2022257.json",
+      "bytes": 19801,
+      "sha256": "4551fa2a60df0c7bc4306f9a45fabf6afa361a4a70c40344d8116a61c5ff64c0",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2022113-A2022257.json.source.json",
+      "bytes": 695,
+      "sha256": "ea2d1853dead1ecc60d6c6c9b73a51e72fba609c5315c6532e0edf70d218bbbb",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2022273-A2023049.json",
+      "bytes": 19797,
+      "sha256": "5f6130e5ad9872faf0b6a4d84ee7e716695ed3913a308bf90f7311f2fee3d71d",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2022273-A2023049.json.source.json",
+      "bytes": 695,
+      "sha256": "d4e07570c429caf840fa1c56cca636e47fde9f8ed4a64d9b4990f05df8ca8a8d",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2023065-A2023209.json",
+      "bytes": 19794,
+      "sha256": "0f7e705a4b6c8cc72dca850e97ec7447125e5e9a15764489c72aa809a47c006b",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    },
+    {
+      "file": "raw/excluded_context_points/yogyakarta-A2023065-A2023209.json.source.json",
+      "bytes": 695,
+      "sha256": "977b533b2c71a83536814b9a509bca44fee4a0c490b0ed168a6c214c21c786e3",
+      "usage": "Excluded context only; old Yogyakarta urban sample, not used in primary CSV or monthly means"
+    }
+  ]
+}

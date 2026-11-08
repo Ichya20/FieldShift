@@ -1,0 +1,36 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "code" : "WSIM-RES05",
+  "caption" : "Input",
+  "description" : null,
+  "type" : "WHAT",
+  "timeSubtype" : null,
+  "additionalInfo" : null,
+  "tags" : null,
+  "members" : {
+    "HILM" : {
+      "code" : "HILM",
+      "caption" : "Irrigation and high input level of management",
+      "description" : null,
+      "index" : 1
+    },
+    "HRLM" : {
+      "code" : "HRLM",
+      "caption" : "Rain-fed and high input level of management",
+      "description" : null,
+      "index" : 2
+    },
+    "LILM" : {
+      "code" : "LILM",
+      "caption" : "Irrigation and low input level of management",
+      "description" : null,
+      "index" : 3
+    },
+    "LRLM" : {
+      "code" : "LRLM",
+      "caption" : "Rain-fed and low input level of management",
+      "description" : null,
+      "index" : 4
+    }
+  }
+}

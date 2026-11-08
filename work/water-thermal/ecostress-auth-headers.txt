@@ -1,0 +1,48 @@
+HTTP/1.1 303 See Other
+Content-Type: application/json
+Content-Length: 0
+Connection: keep-alive
+Date: Sun, 08 Nov 2026 09:23:08 GMT
+x-amzn-Remapped-Date: Sun, 08 Nov 2026 09:23:08 GMT
+x-amzn-RequestId: 89f0c5c6-7afa-425f-958f-0fd2dd205caa
+x-amzn-Remapped-x-amzn-RequestId: 2664ff7f-bf8a-475c-9ecc-1416661044a6
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+x-amzn-Remapped-Content-Length: 0
+X-Frame-Options: SAMEORIGIN
+x-amzn-Remapped-Connection: keep-alive
+x-request-id: d8143de3-c727-4d26-a1b8-e2c1f0d64416
+x-amz-apigw-id: Gg7bdGj1PHcElYA=
+x-amzn-Remapped-Server: Server
+X-Content-Type-Options: nosniff
+location: https://d1nklfio7vscoe.cloudfront.net/head-2d2df3a34830d5223d1e9547cd713408/lp-prod-protected.s3.us-west-2.amazonaws.com/ECO_L2T_LSTE.003/ECOv003_L2T_LSTE_47217_025_49MDM_20261102T115606_01/ECOv003_L2T_LSTE_47217_025_49MDM_20261102T115606_01_view_zenith.tif?backend_params=B/XShr6/v61AdxDjVNboTQ==.zE/NCt3OoyfqalTCy3d96lBir6/JPQCQz0Sxims0Rs5zsZsQwNIwnkHbjEqx6osQXtaMXZ/Vl7VkZtBTF1gNrUiRcEs55d3b+AL6kjUFsmSoiPu0uSwbriYxtVaAhj64kxoM0wsu54tva1n4QWcaSVMsjF35m8tY8ruIUACPDUlk4UhAbmxIWYzzxWVPqhVQng+QpBiiu8iMBlezWOk/gdxuMjsQYDVzBEgCTSp1+iYyft5r7tUHy1ilXq7gOdJU+lJNUeCT8WQGrau/zbzz28sHW+t7Mx32+BenQdkS0opGULr4wEQ1YiRaNFxKcYez/e7fA6OsVHeU/n3NUXOufWfCblSCUJ7msDmVWVCSXyrbNRwdXaDpJOsBgDZje9bt33hhyEdu1FoSddLLO263FFKG1KhisSc26OQCfMBWLAbvAckrczrYa14KglpLr1CNk2ajmLP3CDTJ3bF1fuJogAjloOved/qSbAV54TAsi69GaiGDj7LeWlaSrfnvLHCIQNGA2EabsJ8U21wohPYGZjcZipJlG2MROYuLEPs7vBliWRPNru1570YmIvBr7/m4znPDzUC+MgJC1ReNF56yAPsyMgSiHHB2Mp7LaH2CzhcQsq+MaD8wSOXP2TSbEbnCoFL5754A6cjhcKdwPTkDTF/EO0QwMuAStNqMj1qNWifqAEaQkVS5wlzLNa6Qdk7oPFh9NO/vS5lIxQeWTTevAtp4HiXEz9/COqEivWLQBnJnbZLOP2J1WLxq6Tkk2+OQzse9RMn1Fjjclph9wOkOSByqg072knMGpYQQyTEyZ0QjTlm+vkewebz9Kf5B8uZODj+BJFxSUvFAKw0hhgV4SB4RvuaFCbaadEq2b9YmhhjsxWmtaDQEtl8EvS89EN7ODe/6SKNBcsHDze42RZBCLl3eIUrPJ8rR0QulYAbXEYnrkc/i/DqRh17DlyJ+/w5kj3k2vqiqQnYMN6Mu2SMCOx2r6VwPLY1gGoZDLXz/p1PT8VWERiHwHNs7IMeHaBjg8/14U5uIkKpD5CAe4/AdVr9A1Yh3BWnGavkxR6m5n6ed8XpuQd8bEbvNCL6fWs/M8jcwhFVC12o/qvNyptOIFC1O3JyuaPn9UIpfdBOLT5PFU2xKB3QpDnjKlANddoFsAdUsnf/4XX9bhMHU23D9MjIPpPzBB93Zh5QnAm7Kwz4HjbOLR8Iqbx1EUTHlVNyupGQWsAy4j+05uoQQlohKQbiTc9V5xMpnFl2G89SAwLRwxeAM2GlZRYqGmgWNzgsTlseId/0Hxrn6dXIWgC9L+BQ6DYvPiEZ8zLJcOnjQ14Ccwi9Jl8OGhmcaVhp5gi6sFKshF+yUUCxy6gmFg3KK4smY0kRCDi8icFg3DGhMS3x+SuNawliwDIo6faCrfh/iAQ5bttdKX1S515VOY2C0Yzqzo4OX2YXcxOEO1uNXB+MleRdI+64DafmmcENOUMpHPwP8PYq5jbyjICTM34KBog==&Expires=1794133388&Signature=NU4jPjSLZVNUFZDoSj~j3hfxKDd2Nxf2L~iC9hNmsNaB2GbRck1J6-GoSX5M8kOdQijqeIMyrjVVU~P44qzW0qVJezJsWDTDE2dgb4igmCs~DqJqmO9u-lCNeNEHw755-sxwJWhM1Jo929QcXXkKstru~KP9Ccg-9fhHfBNSCtAAWdroPpAuox5oD2rIUZlJ9engdIdr6JcXeXqw5dn8CveRy5Wwzb6fRVWmEO0JFWkWqVkinjuP0RUFaIcirCsyO2zLt0JMTwz7beDc6aLC--qNJCmUg3wnBd2xLqvoWd8n4SWbPh~cEt-DWqwqDbEAUFq~CpcH6f-z6IOvosj5iw__&Key-Pair-Id=K2HTAORYPAMHYX
+X-Amzn-Trace-Id: Root=1-6af03f7c-6d27166a1bf26a8665b23be8;Parent=1e46b03f8d9dd0cd;Sampled=0;Lineage=1:2c4399c3:0
+x-amzn-Remapped-X-Forwarded-For: 118.99.73.80, 18.68.32.114
+X-Cache: Miss from cloudfront
+Via: 1.1 0a2c7c875f8793c5e59592c87bbf97ea.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MRS52-P6
+X-Amz-Cf-Id: ypgM3i-ymFIsH-bbCu79aTWdj9cgS3VkisI8YcfKyCCQ4LI8qvSEpg==
+
+HTTP/1.1 200 OK
+Content-Type: binary/octet-stream
+Content-Length: 4610793
+Connection: keep-alive
+x-amz-id-2: 5zNAeNlecWiJs0H4U6nnmu+RIaVR6nqww9jwcnMrxZu6D6onQ+bePfrbzqXjgzkWeacAh7nyjmSEdadITTOa35w4UQIqye+0
+x-amz-request-id: 99PM2E5D709D9BXT
+Server: AmazonS3
+Date: Sun, 08 Nov 2026 09:23:10 GMT
+Last-Modified: Thu, 05 Nov 2026 12:37:08 GMT
+ETag: "728a6eae36ee23430274673d47b89f2b-1"
+x-amz-storage-class: INTELLIGENT_TIERING
+x-amz-server-side-encryption: AES256
+x-amz-version-id: uCBPeOsGfmSMoyL_qG9P9CD.w9N1UdKQ
+Accept-Ranges: bytes
+X-Cache: Miss from cloudfront
+Via: 1.1 aea722b4b9e2359f3af8916b147fa3f6.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MRS52-P6
+X-Amz-Cf-Id: dATu73ZxzIBMNgaQKvmuvVlNNSb7fuh6GAT11cS3qLAQVTEo6K_Org==
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+

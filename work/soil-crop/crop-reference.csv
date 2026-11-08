@@ -1,0 +1,4 @@
+crop,species,source_id,temp_opt_min_c,temp_opt_max_c,annual_rain_opt_min_mm,annual_rain_opt_max_mm,soil_ph_opt_min,soil_ph_opt_max,crop_cycle_min_days,crop_cycle_max_days,source_url,caveat
+Padi,Oryza sativa,1574,20,30,1500,2000,5.5,7,80,180,https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1574,"Species-level historical reference; not local cultivar calibration; annual rainfall is not crop-season water requirement"
+Jagung,Zea mays,2175,18,33,600,1200,5,7,65,365,https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175,"Species-level historical reference; very broad crop-cycle range needs local cultivar refinement; annual rainfall is not crop-season water requirement"
+Kedelai,Glycine max,1150,20,33,600,1500,5.5,6.5,75,180,https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1150,"Species-level historical reference; not local cultivar calibration; annual rainfall is not crop-season water requirement"

@@ -1,0 +1,26 @@
+{
+  "kind": "storage#objects",
+  "nextPageToken": "Ch5EQVRBL0dBRVotVjUvTUFQU0VUL1JFUzA1LVNJWC8=",
+  "items": [
+    {
+      "kind": "storage#object",
+      "id": "fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX//1739806595834224",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/fao-gismgr-gaez-v5-data/o/DATA%2FGAEZ-V5%2FMAPSET%2FRES05-SIX%2F",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/fao-gismgr-gaez-v5-data/o/DATA%2FGAEZ-V5%2FMAPSET%2FRES05-SIX%2F?generation=1739806595834224&alt=media",
+      "name": "DATA/GAEZ-V5/MAPSET/RES05-SIX/",
+      "bucket": "fao-gismgr-gaez-v5-data",
+      "generation": "1739806595834224",
+      "metageneration": "1",
+      "contentType": "application/octet-stream",
+      "storageClass": "STANDARD",
+      "size": "0",
+      "md5Hash": "1B2M2Y8AsgTpgAmY7PhCfg==",
+      "crc32c": "AAAAAA==",
+      "etag": "CPDC/dCEy4sDEAE=",
+      "timeCreated": "2025-02-17T15:36:35.837Z",
+      "updated": "2025-02-17T15:36:35.837Z",
+      "timeStorageClassUpdated": "2025-02-17T15:36:35.837Z",
+      "timeFinalized": "2025-02-17T15:36:35.837Z"
+    }
+  ]
+}

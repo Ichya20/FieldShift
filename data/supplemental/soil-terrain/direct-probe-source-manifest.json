@@ -1,0 +1,16 @@
+{
+  "prepared_at_utc": "2026-11-08T11:10:51.378602+00:00",
+  "records": [
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_Q0.05/tileSG-021-071/",
+      "path": "raw/cfvo-Q05-tile-directory-021-071.html",
+      "accessed_at_utc": "2026-11-08T11:10:51.378602+00:00",
+      "http_status": 200,
+      "bytes": 4523,
+      "sha256": "9f58c55e684d75aaa990e30872085e36052e658781bb323c5936620e5dcdeff9",
+      "range_requested": null,
+      "content_type": "text/html; charset=utf-8",
+      "content_range": null
+    }
+  ]
+}

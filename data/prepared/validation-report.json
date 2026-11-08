@@ -1,0 +1,92 @@
+{
+  "validated_at_utc": "2026-11-08T10:11:19.885525+00:00",
+  "checks": [
+    {
+      "check": "Prepared JSON documents parse with no NaN/Infinity",
+      "pass": true,
+      "detail": {
+        "documents": 136
+      }
+    },
+    {
+      "check": "Climate daily dates are unique and sorted",
+      "pass": true
+    },
+    {
+      "check": "Climate daily rows are contiguous",
+      "pass": true
+    },
+    {
+      "check": "30-year daily baseline has 10958 records",
+      "pass": true
+    },
+    {
+      "check": "Monthly climate aggregates agree with independent daily calculations",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "All baseline calendar-month metrics have 30 complete years",
+      "pass": true
+    },
+    {
+      "check": "Climate physical ranges and finite derived values",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "FAO56 calculation matches published independent numerical example",
+      "pass": true,
+      "detail": {
+        "source": "https://www.fao.org/4/x0490e/x0490e08.htm",
+        "example": 18,
+        "published_eto_mm_day_rounded": 3.9,
+        "calculated_eto_mm_day": 3.8797,
+        "tolerance_mm_day": 0.08,
+        "pass": true,
+        "scope": "Checks equation and radiation implementation, not local field accuracy"
+      }
+    },
+    {
+      "check": "Soil complete small-grid combinations and finite values",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Two vegetation series have 230 unique composites",
+      "pass": true
+    },
+    {
+      "check": "Vegetation scale, packed strict-QA bits and independent good-only monthly aggregation",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Farmer inputs remain 91 unknown values",
+      "pass": true
+    },
+    {
+      "check": "Three strategy slots are unfilled and economics unavailable",
+      "pass": true
+    },
+    {
+      "check": "climate has source manifest and summary",
+      "pass": true
+    },
+    {
+      "check": "vegetation has source manifest and summary",
+      "pass": true
+    },
+    {
+      "check": "soil-terrain has source manifest and summary",
+      "pass": true
+    },
+    {
+      "check": "agronomy has source manifest and summary",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "scope": "File integrity, independent climate aggregation and physical ranges; module-specific QA remains in module reports. Passing is not local agronomic validation."
+}

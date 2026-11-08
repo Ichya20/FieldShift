@@ -1,0 +1,269 @@
+{
+  "summary": {
+    "prepared_at_utc": "2026-11-08T11:10:19.932831+00:00",
+    "module": "regional-context",
+    "data_kind": "official_short_term_weather_forecast_snapshot",
+    "source": "BMKG — Badan Meteorologi, Klimatologi, dan Geofisika",
+    "source_evidence": "source-evidence.json",
+    "location": {
+      "adm1": "33",
+      "adm2": "33.10",
+      "adm3": "33.10.25",
+      "adm4": "33.10.25.1003",
+      "desa": "Klaten",
+      "kecamatan": "Klaten Tengah",
+      "kotkab": "Klaten",
+      "lat": -7.7094134389,
+      "lon": 110.6007765086,
+      "provinsi": "Jawa Tengah",
+      "timezone": "Asia/Jakarta"
+    },
+    "location_role": "Explicit Klaten village administrative forecast context; not the example cropland pixel or a verified farm.",
+    "farm_boundary_verified": false,
+    "automatically_assigned_to_demo_crop_pixel": false,
+    "records": 18,
+    "start_valid_utc": "2026-11-08T11:00:00+00:00",
+    "last_valid_timestamp_utc": "2026-11-10T14:00:00+00:00",
+    "issue_times_utc": [
+      "2026-11-08T00:00:00+00:00"
+    ],
+    "temporal_resolution_hours": 3,
+    "operational_use": "Refetch and check current issue/valid times before display; this saved snapshot expires. No live service is implemented.",
+    "seasonal_forecast_available": false,
+    "merged_with_nasa_history": false,
+    "raw_null_fields": {
+      "vs": 18,
+      "vs_text": 18
+    },
+    "null_policy": "Unreported values stay null in the raw source; no inferred visibility.",
+    "withheld_fields": {
+      "tp": "Field is in raw response but amount unit and accumulation interval are not defined in the captured public API docs; do not publish rainfall totals from it.",
+      "vs": "Raw visibility is unreported; no substitution from other weather fields."
+    },
+    "what_filled": [
+      "Verified public API access and exact administrative forecast location",
+      "Temperature, humidity, wind and cloud forecast with issue and valid times",
+      "Source attribution, cadence, units and saved evidence"
+    ],
+    "remaining_gaps": [
+      "Operational seasonal forecast/crop calendar is not acquired",
+      "The actual farm and its water supply are unknown",
+      "Forecast rainfall amount semantics are not yet verified",
+      "Ongoing refresh is a future implementation task"
+    ],
+    "validation": {
+      "pass": true,
+      "unique_sorted_times": true,
+      "three_hour_intervals": true,
+      "utc_local_consistent": true,
+      "physical_ranges": true,
+      "source_hashes": 3
+    },
+    "provider_terms": {
+      "attribution_required": "BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)",
+      "nominal_refreshes_per_day": 2,
+      "request_limit_per_minute_per_ip": 60,
+      "documentation_url": "https://data.bmkg.go.id/prakiraan-cuaca/"
+    }
+  },
+  "forecast": [
+    {
+      "valid_time_utc": "2026-11-08T11:00:00+00:00",
+      "valid_time_local": "2026-11-08 18:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 28,
+      "relative_humidity_percent": 77,
+      "wind_speed_km_h": 13.7,
+      "wind_from": "SW",
+      "cloud_cover_percent": 44,
+      "weather_description_id": "Hujan Ringan"
+    },
+    {
+      "valid_time_utc": "2026-11-08T14:00:00+00:00",
+      "valid_time_local": "2026-11-08 21:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 26,
+      "relative_humidity_percent": 84,
+      "wind_speed_km_h": 10.4,
+      "wind_from": "SW",
+      "cloud_cover_percent": 50,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-08T17:00:00+00:00",
+      "valid_time_local": "2026-11-09 00:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 86,
+      "wind_speed_km_h": 10.4,
+      "wind_from": "SW",
+      "cloud_cover_percent": 51,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-08T20:00:00+00:00",
+      "valid_time_local": "2026-11-09 03:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 87,
+      "wind_speed_km_h": 8.1,
+      "wind_from": "SW",
+      "cloud_cover_percent": 57,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-08T23:00:00+00:00",
+      "valid_time_local": "2026-11-09 06:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 86,
+      "wind_speed_km_h": 8.8,
+      "wind_from": "SW",
+      "cloud_cover_percent": 10,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-09T02:00:00+00:00",
+      "valid_time_local": "2026-11-09 09:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 31,
+      "relative_humidity_percent": 61,
+      "wind_speed_km_h": 8.6,
+      "wind_from": "S",
+      "cloud_cover_percent": 28,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-09T05:00:00+00:00",
+      "valid_time_local": "2026-11-09 12:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 34,
+      "relative_humidity_percent": 52,
+      "wind_speed_km_h": 14.3,
+      "wind_from": "S",
+      "cloud_cover_percent": 8,
+      "weather_description_id": "Hujan Ringan"
+    },
+    {
+      "valid_time_utc": "2026-11-09T08:00:00+00:00",
+      "valid_time_local": "2026-11-09 15:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 29,
+      "relative_humidity_percent": 70,
+      "wind_speed_km_h": 11.9,
+      "wind_from": "S",
+      "cloud_cover_percent": 86,
+      "weather_description_id": "Hujan Ringan"
+    },
+    {
+      "valid_time_utc": "2026-11-09T11:00:00+00:00",
+      "valid_time_local": "2026-11-09 18:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 26,
+      "relative_humidity_percent": 91,
+      "wind_speed_km_h": 10.3,
+      "wind_from": "SW",
+      "cloud_cover_percent": 8,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-09T14:00:00+00:00",
+      "valid_time_local": "2026-11-09 21:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 26,
+      "relative_humidity_percent": 90,
+      "wind_speed_km_h": 9.7,
+      "wind_from": "SW",
+      "cloud_cover_percent": 70,
+      "weather_description_id": "Cerah Berawan"
+    },
+    {
+      "valid_time_utc": "2026-11-09T17:00:00+00:00",
+      "valid_time_local": "2026-11-10 00:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 90,
+      "wind_speed_km_h": 10.1,
+      "wind_from": "SW",
+      "cloud_cover_percent": 76,
+      "weather_description_id": "Cerah Berawan"
+    },
+    {
+      "valid_time_utc": "2026-11-09T20:00:00+00:00",
+      "valid_time_local": "2026-11-10 03:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 24,
+      "relative_humidity_percent": 92,
+      "wind_speed_km_h": 9.3,
+      "wind_from": "SW",
+      "cloud_cover_percent": 90,
+      "weather_description_id": "Berawan"
+    },
+    {
+      "valid_time_utc": "2026-11-09T23:00:00+00:00",
+      "valid_time_local": "2026-11-10 06:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 88,
+      "wind_speed_km_h": 8.2,
+      "wind_from": "SW",
+      "cloud_cover_percent": 69,
+      "weather_description_id": "Cerah Berawan"
+    },
+    {
+      "valid_time_utc": "2026-11-10T02:00:00+00:00",
+      "valid_time_local": "2026-11-10 09:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 30,
+      "relative_humidity_percent": 64,
+      "wind_speed_km_h": 8.2,
+      "wind_from": "SW",
+      "cloud_cover_percent": 54,
+      "weather_description_id": "Cerah"
+    },
+    {
+      "valid_time_utc": "2026-11-10T05:00:00+00:00",
+      "valid_time_local": "2026-11-10 12:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 34,
+      "relative_humidity_percent": 51,
+      "wind_speed_km_h": 6.9,
+      "wind_from": "S",
+      "cloud_cover_percent": 80,
+      "weather_description_id": "Cerah Berawan"
+    },
+    {
+      "valid_time_utc": "2026-11-10T08:00:00+00:00",
+      "valid_time_local": "2026-11-10 15:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 29,
+      "relative_humidity_percent": 70,
+      "wind_speed_km_h": 6.9,
+      "wind_from": "S",
+      "cloud_cover_percent": 70,
+      "weather_description_id": "Hujan Ringan"
+    },
+    {
+      "valid_time_utc": "2026-11-10T11:00:00+00:00",
+      "valid_time_local": "2026-11-10 18:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 26,
+      "relative_humidity_percent": 84,
+      "wind_speed_km_h": 9.9,
+      "wind_from": "S",
+      "cloud_cover_percent": 86,
+      "weather_description_id": "Hujan Ringan"
+    },
+    {
+      "valid_time_utc": "2026-11-10T14:00:00+00:00",
+      "valid_time_local": "2026-11-10 21:00:00",
+      "issue_time_utc": "2026-11-08T00:00:00+00:00",
+      "temperature_c": 25,
+      "relative_humidity_percent": 94,
+      "wind_speed_km_h": 9.9,
+      "wind_from": "S",
+      "cloud_cover_percent": 94,
+      "weather_description_id": "Hujan Ringan"
+    }
+  ]
+}

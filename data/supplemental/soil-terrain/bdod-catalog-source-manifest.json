@@ -1,0 +1,13 @@
+[
+  {
+    "url": "https://files.isric.org/soilgrids/latest/data/bdod/bdod_0-5cm_mean/tileSG-021-071/",
+    "path": "raw/bdod-local-tile-index.html",
+    "accessed_at_utc": "2026-11-08T11:15:09.658070+00:00",
+    "http_status": 200,
+    "bytes": 4246,
+    "sha256": "7701efefd6b760c3efbdc551b4101f6e6bc8f67e5694ae3c96ef1e046314dc2c",
+    "range_requested": null,
+    "content_type": "text/html; charset=utf-8",
+    "content_range": null
+  }
+]

@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "prepared_at_utc": "2026-11-08T10:08:01.715758+00:00",
+  "purpose": "Evidence and input requirements for a future analytical model; these are not computed recommendations.",
+  "automatic_rotation_ranking_ready": false,
+  "rules": [
+    {
+      "id": "water_balance",
+      "statement": "Distinguish crop ET, effective rainfall, soil storage, net irrigation and gross irrigation. Paddy accounting additionally needs land preparation/saturation, percolation/seepage and water-layer management.",
+      "source_ids": [
+        "fao-water-needs",
+        "fao-paddy-irrigation"
+      ],
+      "requires": [
+        "planting dates and cultivar",
+        "daily climate and validated ETo",
+        "soil profile/available water",
+        "effective rainfall method",
+        "irrigation efficiency/capacity",
+        "paddy losses where applicable"
+      ],
+      "status": "concept_documented_model_not_implemented",
+      "numeric_effect": null
+    },
+    {
+      "id": "rotation_pest_break",
+      "statement": "Crop diversity can interrupt crop-specific pest and disease carry-over. Benefit requires the next crop to be a non-host for the identified local problem.",
+      "source_ids": [
+        "fao-crop-rotation"
+      ],
+      "requires": [
+        "pest/pathogen identification",
+        "host range",
+        "history",
+        "local extension validation"
+      ],
+      "status": "qualitative_conditional_evidence",
+      "numeric_effect": null
+    },
+    {
+      "id": "legume_nitrogen",
+      "statement": "Symbiotic nitrogen fixation is a possible mechanism. Do not assign soybean a fixed nitrogen credit or fertilizer saving without nodulation, inoculation, biomass/residue fate and nutrient-balance evidence.",
+      "source_ids": [
+        "fao-crop-rotation"
+      ],
+      "requires": [
+        "soil tests",
+        "nodulation/inoculation",
+        "residue retention/removal",
+        "grain/biomass N removal",
+        "fertilizer management"
+      ],
+      "status": "qualitative_conditional_evidence",
+      "nitrogen_credit_kg_ha": null,
+      "numeric_effect": null
+    },
+    {
+      "id": "soil_health",
+      "statement": "Diversified rooting/residue inputs may affect soil processes; satellite greenness or a crop label does not measure improvement in soil organic carbon.",
+      "source_ids": [
+        "fao-crop-rotation"
+      ],
+      "requires": [
+        "baseline soil tests",
+        "repeat sampling at matched depth/method",
+        "residue and tillage history",
+        "time horizon"
+      ],
+      "status": "mechanism_only_no_local_effect_size",
+      "numeric_effect": null
+    },
+    {
+      "id": "season_fit",
+      "statement": "Candidate crop sequences must fit observed sowing/harvest dates, cultivar durations, field preparation and water windows. Reference duration is not the farm calendar.",
+      "source_ids": [
+        "fao-water-needs",
+        "kementan-siap-tanam"
+      ],
+      "requires": [
+        "farm rotation history",
+        "sowing/transplant/harvest dates",
+        "cultivar and management",
+        "irrigation availability",
+        "local calendar advice"
+      ],
+      "status": "required_constraint_not_evaluated",
+      "numeric_effect": null
+    },
+    {
+      "id": "rice_upland_transition",
+      "statement": "Paddy irrigation management cannot be carried unchanged to an upland crop. Check drainage and the ability to prepare/manage the next crop under local conditions.",
+      "source_ids": [
+        "fao-paddy-irrigation",
+        "fao-aquacrop-inputs"
+      ],
+      "requires": [
+        "field drainage",
+        "soil profile",
+        "water table",
+        "irrigation control",
+        "locally validated non-rice management"
+      ],
+      "status": "design_constraint_pending_local_validation",
+      "numeric_effect": null
+    },
+    {
+      "id": "economic_comparison",
+      "statement": "Calculate net returns only from crop-specific expected marketable yield, farm-gate price, actual costs, labor/transport/storage and timing. Generic suitability and potential yield are not realized profit.",
+      "source_ids": [],
+      "evidence_type": "application_accounting_requirement_not_empirical_agronomic_effect",
+      "requires": [
+        "price and buyer",
+        "marketable yield basis",
+        "cost records",
+        "currency/date",
+        "labor and sales constraints"
+      ],
+      "status": "blocked_missing_farmer_and_market_inputs",
+      "profit_difference_idr_ha": null,
+      "numeric_effect": null
+    },
+    {
+      "id": "gaez_scale",
+      "statement": "GAEZ HIST suitability classes are long-term model/grid context, not live observations or a per-field recommendation. Never label class code 7 as 7/100.",
+      "source_ids": [
+        "gaez-user-guide",
+        "gaez-period",
+        "gaez-crop-res05",
+        "gaez-wsim-res05",
+        "gaez-six-legend"
+      ],
+      "requires": [
+        "exact dimensions and legend",
+        "grid footprint",
+        "farmer field geometry",
+        "current conditions and local validation"
+      ],
+      "status": "historical_context_available",
+      "numeric_effect": null
+    },
+    {
+      "id": "crop_model_inputs",
+      "statement": "AquaCrop simulation needs climate, crop, soil profile/groundwater and management inputs; locally adapted crop parameters are still required.",
+      "source_ids": [
+        "fao-aquacrop-inputs"
+      ],
+      "requires": [
+        "climate",
+        "crop parameters",
+        "soil profile",
+        "groundwater",
+        "irrigation and field management"
+      ],
+      "status": "input_inventory_only_model_not_run",
+      "numeric_effect": null
+    }
+  ]
+}

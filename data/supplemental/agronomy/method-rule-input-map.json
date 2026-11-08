@@ -1,0 +1,809 @@
+{
+  "method_version": "0.1.0",
+  "rule_count": 12,
+  "all_91_fields_classified": true,
+  "unmapped_active_fields": [],
+  "legacy_unused_paths": [
+    "farm.priorities.water_saving_weight",
+    "farm.priorities.net_income_weight",
+    "farm.priorities.soil_health_weight"
+  ],
+  "rules": [
+    {
+      "rule_id": "coverage",
+      "requirements": [
+        {
+          "requirement": "location",
+          "input_paths": [
+            "farm.location.geometry_geojson",
+            "farm.location.representative_longitude",
+            "farm.location.representative_latitude"
+          ]
+        },
+        {
+          "requirement": "layer_support",
+          "input_paths": [
+            "context.layer_support"
+          ]
+        }
+      ],
+      "source_refs": [
+        "analysis-profile"
+      ],
+      "output_limit": "Per-layer availability and source support; unavailable layers do not become zero.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.location.area_ha_reported",
+        "farm.location.area_ha_geometry",
+        "farm.location.village",
+        "farm.location.district",
+        "farm.location.province",
+        "farm.location.country_code",
+        "farm.location.boundary_recorded_at",
+        "farm.location.boundary_source",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.selected_priorities",
+        "context.explicit_climate_context",
+        "context.layer_support",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "calendar",
+      "requirements": [
+        {
+          "requirement": "dates",
+          "input_paths": [
+            "farm.current_crop.sowing_date",
+            "farm.current_crop.transplanting_date",
+            "farm.current_crop.expected_harvest_date",
+            "planning.horizon",
+            "planning.existing_sequence",
+            "planning.slot_start_dates"
+          ]
+        },
+        {
+          "requirement": "duration_basis",
+          "input_paths": [
+            "planning.duration_by_crop"
+          ]
+        },
+        {
+          "requirement": "duration_range",
+          "input_paths": [
+            "planning.duration_by_crop"
+          ]
+        },
+        {
+          "requirement": "preparation_gap",
+          "input_paths": [
+            "planning.preparation_gap_days",
+            "planning.existing_sequence"
+          ]
+        },
+        {
+          "requirement": "nursery_resource_when_relevant",
+          "input_paths": [
+            "planning.nursery_separate_from_main_field",
+            "planning.nursery_location_ref"
+          ]
+        }
+      ],
+      "source_refs": [
+        "method-calendar-policy"
+      ],
+      "output_limit": "Specific missing inputs, certain conflict, possible conflict, or no conflict in the supplied calendar. This is not agronomic suitability.",
+      "status_without_farmer_data": "needs_explicit_scenario_or_farmer_input",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.current_crop.cultivar",
+        "farm.current_crop.seed_source",
+        "farm.current_crop.sowing_date",
+        "farm.current_crop.transplanting_date",
+        "farm.current_crop.expected_harvest_date",
+        "farm.current_crop.observed_growth_stage",
+        "farm.current_crop.stage_observed_at",
+        "farm.rotation_history",
+        "farm.irrigation.availability_window_start",
+        "farm.irrigation.availability_window_end",
+        "farm.resources.labor_available_days_season",
+        "farm.resources.machinery_access",
+        "farm.resources.seed_access",
+        "farm.market.crop_preferences",
+        "farm.market.contract_constraints",
+        "farm.priorities.risk_tolerance",
+        "farm.priorities.planning_horizon_start",
+        "farm.priorities.planning_horizon_end",
+        "farm.priorities.excluded_crops",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "farm.current_crop.establishment_method",
+        "planning.horizon",
+        "planning.allowed_crop_ids",
+        "planning.excluded_crop_ids",
+        "planning.existing_sequence",
+        "planning.slot_start_dates",
+        "planning.locked_prefix_length",
+        "planning.continuation_confirmed",
+        "planning.duration_by_crop",
+        "planning.preparation_gap_days",
+        "planning.nursery_separate_from_main_field",
+        "planning.nursery_location_ref",
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "climate_exposure",
+      "requirements": [
+        {
+          "requirement": "time_mode",
+          "input_paths": [
+            "context.time_mode"
+          ]
+        },
+        {
+          "requirement": "window",
+          "input_paths": [
+            "context.climate_window",
+            "planning.horizon",
+            "planning.existing_sequence"
+          ]
+        },
+        {
+          "requirement": "explicit_climate_context",
+          "input_paths": [
+            "context.explicit_climate_context",
+            "context.layer_support"
+          ]
+        }
+      ],
+      "source_refs": [
+        "nasa-power",
+        "fao56",
+        "climate-manifest"
+      ],
+      "output_limit": "P, ETo, paired P-ETo, mean T2M, coverage and operational-guard count. Irrigation demand remains null.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.sowing_date",
+        "farm.current_crop.transplanting_date",
+        "farm.current_crop.expected_harvest_date",
+        "farm.priorities.risk_tolerance",
+        "farm.priorities.planning_horizon_start",
+        "farm.priorities.planning_horizon_end",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.horizon",
+        "planning.existing_sequence",
+        "planning.slot_start_dates",
+        "planning.selected_priorities",
+        "context.time_mode",
+        "context.climate_window",
+        "context.explicit_climate_context",
+        "context.layer_support",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "ph_reference",
+      "requirements": [
+        {
+          "requirement": "pH_origin",
+          "input_paths": [
+            "context.ph_reference_input",
+            "farm.soil_lab.ph_h2o"
+          ]
+        },
+        {
+          "requirement": "depth",
+          "input_paths": [
+            "context.ph_reference_input",
+            "farm.soil_lab.depth_top_cm",
+            "farm.soil_lab.depth_bottom_cm"
+          ]
+        },
+        {
+          "requirement": "method_or_prediction_source",
+          "input_paths": [
+            "context.ph_reference_input",
+            "farm.soil_lab.method",
+            "farm.soil_lab.laboratory"
+          ]
+        },
+        {
+          "requirement": "date_or_model_epoch",
+          "input_paths": [
+            "context.ph_reference_input",
+            "farm.soil_lab.sampling_date"
+          ]
+        },
+        {
+          "requirement": "valid_value",
+          "input_paths": [
+            "context.ph_reference_input",
+            "farm.soil_lab.ph_h2o"
+          ]
+        }
+      ],
+      "source_refs": [
+        "ecocrop-rice",
+        "ecocrop-maize",
+        "ecocrop-soybean",
+        "soil-manifest"
+      ],
+      "output_limit": "Relationship to historical species optimum, plus uncertainty. An outside-optimum value never proves crop failure.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.soil_lab.sampling_date",
+        "farm.soil_lab.laboratory",
+        "farm.soil_lab.method",
+        "farm.soil_lab.depth_top_cm",
+        "farm.soil_lab.depth_bottom_cm",
+        "farm.soil_lab.ph_h2o",
+        "farm.soil_lab.report_file",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.selected_priorities",
+        "context.layer_support",
+        "context.ph_reference_input",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "temperature_reference",
+      "requirements": [
+        {
+          "requirement": "historical_temperature_summary",
+          "input_paths": [
+            "context.temperature_reference_input"
+          ]
+        },
+        {
+          "requirement": "crop_id",
+          "input_paths": [
+            "farm.current_crop.crop_id",
+            "planning.existing_sequence"
+          ]
+        }
+      ],
+      "source_refs": [
+        "ecocrop-rice",
+        "ecocrop-maize",
+        "ecocrop-soybean",
+        "nasa-power"
+      ],
+      "output_limit": "Context relative to species optimum only. Do not interpret Tmax above optimum as stress/failure days or yield loss.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.selected_priorities",
+        "context.time_mode",
+        "context.climate_window",
+        "context.explicit_climate_context",
+        "context.temperature_reference_input",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "seasonal_et_reference",
+      "requirements": [
+        {
+          "requirement": "crop_id",
+          "input_paths": [
+            "farm.current_crop.crop_id",
+            "planning.existing_sequence"
+          ]
+        }
+      ],
+      "source_refs": [
+        "fao-seasonal-water"
+      ],
+      "output_limit": "Generic whole-season ET reference per crop. Do not scale, subtract annual rainfall, calculate local ET or rank water savings from overlapping ranges.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "paddy_upland_transition",
+      "requirements": [
+        {
+          "requirement": "sequence",
+          "input_paths": [
+            "planning.existing_sequence",
+            "farm.rotation_history"
+          ]
+        },
+        {
+          "requirement": "rice_water_regime",
+          "input_paths": [
+            "farm.current_crop.rice_water_regime",
+            "farm.current_crop.rice_ecosystem",
+            "planning.existing_sequence"
+          ]
+        },
+        {
+          "requirement": "drainage",
+          "input_paths": [
+            "farm.irrigation.drainage_condition",
+            "farm.irrigation.water_table_depth_m"
+          ]
+        },
+        {
+          "requirement": "water_control",
+          "input_paths": [
+            "farm.irrigation.water_control",
+            "farm.irrigation.availability_window_start",
+            "farm.irrigation.availability_window_end"
+          ]
+        },
+        {
+          "requirement": "soil_management",
+          "input_paths": [
+            "farm.management.soil_management_for_transition",
+            "farm.management.tillage"
+          ]
+        }
+      ],
+      "source_refs": [
+        "fao-paddy-irrigation",
+        "fao-aquacrop-inputs"
+      ],
+      "output_limit": "Rice direct seeding/transplanting does not establish a flooded-paddy or upland ecosystem. Unknown water regime needs input; known flooded-paddy to upland transition triggers management review. User-reported good drainage alone is not verified suitability.",
+      "status_without_farmer_data": "needs_explicit_scenario_or_farmer_input",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.current_crop.production_system",
+        "farm.rotation_history",
+        "farm.irrigation.system",
+        "farm.irrigation.source",
+        "farm.irrigation.rainfed",
+        "farm.irrigation.availability_window_start",
+        "farm.irrigation.availability_window_end",
+        "farm.irrigation.capacity_m3_day",
+        "farm.irrigation.allocation_m3_season",
+        "farm.irrigation.application_efficiency_fraction",
+        "farm.irrigation.water_table_depth_m",
+        "farm.irrigation.drainage_condition",
+        "farm.irrigation.flooding_history",
+        "farm.soil_lab.ec_ds_m",
+        "farm.soil_lab.texture_class",
+        "farm.soil_lab.bulk_density_g_cm3",
+        "farm.soil_lab.field_capacity_fraction",
+        "farm.soil_lab.wilting_point_fraction",
+        "farm.soil_lab.rootable_depth_cm",
+        "farm.management.tillage",
+        "farm.resources.machinery_access",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "farm.current_crop.establishment_method",
+        "farm.current_crop.rice_ecosystem",
+        "farm.current_crop.rice_water_regime",
+        "farm.irrigation.water_control",
+        "farm.management.soil_management_for_transition",
+        "planning.existing_sequence",
+        "planning.preparation_gap_days",
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "legume_mechanism",
+      "requirements": [
+        {
+          "requirement": "sequence",
+          "input_paths": [
+            "planning.existing_sequence"
+          ]
+        },
+        {
+          "requirement": "nodulation",
+          "input_paths": [
+            "farm.management.nodulation_observations"
+          ]
+        },
+        {
+          "requirement": "inoculation",
+          "input_paths": [
+            "farm.management.legume_inoculation"
+          ]
+        },
+        {
+          "requirement": "residue_fate",
+          "input_paths": [
+            "farm.management.residue_fate"
+          ]
+        },
+        {
+          "requirement": "nutrient_balance",
+          "input_paths": [
+            "farm.management.nutrient_balance",
+            "farm.management.fertilizer_history",
+            "farm.management.organic_amendments",
+            "farm.soil_lab.total_n_percent"
+          ]
+        }
+      ],
+      "source_refs": [
+        "fao-crop-rotation"
+      ],
+      "output_limit": "Conditional fixation mechanism if soybean is included. Nitrogen credit and fertilizer savings remain null.",
+      "status_without_farmer_data": "needs_explicit_scenario_or_farmer_input",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.current_crop.cultivar",
+        "farm.current_crop.seed_source",
+        "farm.rotation_history",
+        "farm.soil_lab.sampling_date",
+        "farm.soil_lab.laboratory",
+        "farm.soil_lab.method",
+        "farm.soil_lab.depth_top_cm",
+        "farm.soil_lab.depth_bottom_cm",
+        "farm.soil_lab.organic_carbon_percent",
+        "farm.soil_lab.total_n_percent",
+        "farm.soil_lab.available_p_mg_kg",
+        "farm.soil_lab.exchangeable_k_cmolc_kg",
+        "farm.soil_lab.report_file",
+        "farm.management.tillage",
+        "farm.management.residue_fate",
+        "farm.management.fertilizer_history",
+        "farm.management.organic_amendments",
+        "farm.management.legume_inoculation",
+        "farm.management.nodulation_observations",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "farm.management.nutrient_balance",
+        "planning.existing_sequence",
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "pest_break",
+      "requirements": [
+        {
+          "requirement": "local_pest_or_pathogen",
+          "input_paths": [
+            "farm.management.pest_disease_weed_history"
+          ]
+        },
+        {
+          "requirement": "host_range",
+          "input_paths": [
+            "farm.management.local_host_range_evidence"
+          ]
+        },
+        {
+          "requirement": "management_history",
+          "input_paths": [
+            "farm.management.pesticide_history",
+            "farm.management.residue_fate",
+            "farm.rotation_history"
+          ]
+        }
+      ],
+      "source_refs": [
+        "fao-crop-rotation"
+      ],
+      "output_limit": "Needs local host evidence; a different crop name alone is not a demonstrated pest break.",
+      "status_without_farmer_data": "needs_explicit_scenario_or_farmer_input",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.rotation_history",
+        "farm.management.residue_fate",
+        "farm.management.pest_disease_weed_history",
+        "farm.management.pesticide_history",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "farm.management.local_host_range_evidence",
+        "planning.existing_sequence",
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "vegetation_context",
+      "requirements": [
+        {
+          "requirement": "exact_extracted_pixel",
+          "input_paths": [
+            "context.vegetation_reference_input",
+            "context.layer_support"
+          ]
+        },
+        {
+          "requirement": "window",
+          "input_paths": [
+            "context.vegetation_reference_input",
+            "planning.horizon"
+          ]
+        },
+        {
+          "requirement": "qa",
+          "input_paths": [
+            "context.vegetation_reference_input",
+            "context.layer_support"
+          ]
+        }
+      ],
+      "source_refs": [
+        "modis-manifest"
+      ],
+      "output_limit": "Historical strict-good indices and counts as context; no inferred farm rotation or causal strategy benefit.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.priorities.risk_tolerance",
+        "farm.priorities.planning_horizon_start",
+        "farm.priorities.planning_horizon_end",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.horizon",
+        "planning.selected_priorities",
+        "context.time_mode",
+        "context.layer_support",
+        "context.vegetation_reference_input",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "gaez_context",
+      "requirements": [
+        {
+          "requirement": "containing_extracted_cell",
+          "input_paths": [
+            "context.gaez_reference_input",
+            "context.layer_support"
+          ]
+        },
+        {
+          "requirement": "crop_code",
+          "input_paths": [
+            "context.gaez_reference_input"
+          ]
+        },
+        {
+          "requirement": "management_regime_or_explicit_unknown",
+          "input_paths": [
+            "context.gaez_reference_input",
+            "farm.current_crop.rice_ecosystem",
+            "farm.irrigation.rainfed"
+          ]
+        }
+      ],
+      "source_refs": [
+        "gaez-six-legend",
+        "gaez-user-guide"
+      ],
+      "output_limit": "Historical categorical model reference, keeping management regimes separate. No continuous score or prediction of current field performance.",
+      "status_without_farmer_data": "public_context_available_after_explicit_selection",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.current_crop.crop_id",
+        "farm.current_crop.production_system",
+        "farm.irrigation.system",
+        "farm.irrigation.rainfed",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "farm.current_crop.rice_ecosystem",
+        "planning.selected_priorities",
+        "context.layer_support",
+        "context.gaez_reference_input",
+        "provenance.fields"
+      ]
+    },
+    {
+      "rule_id": "economics",
+      "requirements": [
+        {
+          "requirement": "marketable_yield",
+          "input_paths": [
+            "farm.market.expected_marketable_yield_kg_ha"
+          ]
+        },
+        {
+          "requirement": "farm_gate_price",
+          "input_paths": [
+            "farm.market.farm_gate_prices"
+          ]
+        },
+        {
+          "requirement": "costs",
+          "input_paths": [
+            "farm.costs.seed_idr_ha",
+            "farm.costs.fertilizer_idr_ha",
+            "farm.costs.pest_management_idr_ha",
+            "farm.costs.labor_idr_ha",
+            "farm.costs.machinery_idr_ha",
+            "farm.costs.irrigation_idr_ha",
+            "farm.costs.other_idr_ha",
+            "farm.market.transport_storage_costs"
+          ]
+        },
+        {
+          "requirement": "units",
+          "input_paths": [
+            "farm.market.currency",
+            "farm.market.farm_gate_prices",
+            "farm.market.transport_storage_costs"
+          ]
+        },
+        {
+          "requirement": "time_and_location_basis",
+          "input_paths": [
+            "farm.costs.reference_season",
+            "farm.market.price_observed_at",
+            "farm.location.representative_longitude",
+            "farm.location.representative_latitude"
+          ]
+        }
+      ],
+      "source_refs": [
+        "method-accounting-boundary"
+      ],
+      "output_limit": "Deferred from MVP; no revenue/profit from suitability, satellite greenness or species labels.",
+      "status_without_farmer_data": "deferred_from_MVP",
+      "original_91_paths": [
+        "farm.farm_id",
+        "farm.field_id",
+        "farm.location.geometry_geojson",
+        "farm.location.representative_longitude",
+        "farm.location.representative_latitude",
+        "farm.location.area_ha_reported",
+        "farm.location.area_ha_geometry",
+        "farm.location.village",
+        "farm.location.district",
+        "farm.location.province",
+        "farm.irrigation.water_cost_idr_m3",
+        "farm.management.fertilizer_history",
+        "farm.management.pesticide_history",
+        "farm.resources.labor_available_days_season",
+        "farm.resources.machinery_access",
+        "farm.resources.budget_idr_season",
+        "farm.market.buyer_access",
+        "farm.market.crop_preferences",
+        "farm.market.contract_constraints",
+        "farm.market.farm_gate_prices",
+        "farm.market.expected_marketable_yield_kg_ha",
+        "farm.market.transport_storage_costs",
+        "farm.market.currency",
+        "farm.market.price_observed_at",
+        "farm.costs.seed_idr_ha",
+        "farm.costs.fertilizer_idr_ha",
+        "farm.costs.pest_management_idr_ha",
+        "farm.costs.labor_idr_ha",
+        "farm.costs.machinery_idr_ha",
+        "farm.costs.irrigation_idr_ha",
+        "farm.costs.other_idr_ha",
+        "farm.costs.reference_season",
+        "farm.priorities.risk_tolerance",
+        "farm.provenance.respondent_role",
+        "farm.provenance.information_source",
+        "farm.provenance.recorded_at",
+        "farm.provenance.local_extension_reviewed_at"
+      ],
+      "supplemental_paths": [
+        "planning.selected_priorities",
+        "provenance.fields"
+      ]
+    }
+  ],
+  "notes": [
+    "Field-to-rule associations include contextual prerequisites; they do not claim every field is mandatory in every check.",
+    "Exact requirements are listed separately; e.g. soil total N alone does not satisfy a nutrient balance.",
+    "GAEZ regime is a model selection; farmer irrigation state does not automatically select high-management HRLM/HILM."
+  ]
+}

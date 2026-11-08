@@ -1,0 +1,43 @@
+{
+  "fixture_id": "klaten-two-season-historical-replay",
+  "method_version": "0.1.0",
+  "purpose": "Numerical method exercise using real environmental data and entirely hypothetical farm/calendar inputs.",
+  "is_verified_farm": false,
+  "is_synthetic_scenario": true,
+  "assumptions_explicitly_selected_for_fixture": true,
+  "time_mode": "historical_replay",
+  "location_id": "klaten_cropland_primary",
+  "coordinate": {"longitude":110.55354472008753,"latitude":-7.721875031299882},
+  "climate_context_id": "power_regional_yogyakarta",
+  "climate_context_role": "Explicit regional example context, not a meteorological measurement at the crop pixel.",
+  "horizon": {"start_date":"2025-01-01","end_exclusive":"2026-01-01"},
+  "allowed_crop_ids": ["padi","jagung","kedelai"],
+  "excluded_crop_ids": [],
+  "existing_sequence": ["padi","padi"],
+  "slot_start_dates": ["2025-01-01","2025-06-01"],
+  "locked_prefix_length": 1,
+  "continuation_confirmed": true,
+  "preparation_gap_days": 14,
+  "duration_assumptions": {
+    "padi": {"min_days":120,"max_days":120,"basis":"sowing","source_kind":"scenario_assumption","source_id":"fixture-duration-padi"},
+    "jagung": {"min_days":100,"max_days":100,"basis":"sowing","source_kind":"scenario_assumption","source_id":"fixture-duration-jagung"},
+    "kedelai": {"min_days":90,"max_days":90,"basis":"sowing","source_kind":"scenario_assumption","source_id":"fixture-duration-kedelai"}
+  },
+  "production_method_assumption": "direct_seeded",
+  "rice_water_regime": null,
+  "drainage": null,
+  "irrigation_capacity": null,
+  "farmer_priorities": null,
+  "pest_history": null,
+  "soil_lab": null,
+  "crop_yield": null,
+  "farm_prices": null,
+  "costs": null,
+  "assumptions": [
+    "Existing padi-padi is a hypothetical continuation for this fixture, not an observed farmer history.",
+    "The first crop is held fixed for comparison, not a verified crop currently growing.",
+    "Both planting starts, all three elapsed-day durations, direct seeding and 14-day preparation gap are synthetic assumptions.",
+    "The 90-day soybean duration does not resolve the ambiguous duration origin in the Anjasmoro cultivar reference or select that cultivar.",
+    "Environmental inputs remain unchanged real data; this replay is not a forecast for a future season."
+  ]
+}

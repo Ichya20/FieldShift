@@ -1,0 +1,33 @@
+{
+  "prepared_at_utc": "2026-11-08T11:23:47.015458+00:00",
+  "module": "crop-water",
+  "crops": [
+    "padi",
+    "jagung",
+    "kedelai"
+  ],
+  "source_tables": [
+    12,
+    22
+  ],
+  "what_filled": [
+    "Published stage coefficients with initial-group provenance",
+    "Maximum effective root-depth ranges",
+    "ET-dependent depletion references including the special rice saturation footnote"
+  ],
+  "remaining_gaps": [
+    "Local growth-stage dates",
+    "Actual soil-water initial conditions",
+    "Effective rain/runoff",
+    "Paddy water control/losses",
+    "Actual irrigation allocation/efficiency",
+    "Local model validation"
+  ],
+  "local_irrigation_ready": false,
+  "validation": {
+    "pass": true,
+    "exact_source_rows_checked": 8,
+    "source_hashes": 2,
+    "rice_special_footnote_checked": true
+  }
+}

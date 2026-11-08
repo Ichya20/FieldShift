@@ -1,0 +1,120 @@
+{
+  "verified_at_utc": "2026-11-08T11:02:24.399572+00:00",
+  "method_version": "0.1.0",
+  "python_version": "3.11.1",
+  "command": "py -3.11 scripts/method/verify_rotation_method.py",
+  "status": "passed_reference_checks_not_local_agronomic_validation",
+  "tests": {
+    "run": 55,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "demo_checks": [
+    "three_filled_distinct_strategies",
+    "same_horizon_and_context",
+    "calendar_no_conflict_for_explicit_fixture",
+    "whole_horizon_environment_invariant",
+    "finding_rule_status_and_sources_resolve",
+    "prepared_sources_match_sha256"
+  ],
+  "rule_count": 12,
+  "all_rule_source_ids_resolve": true,
+  "local_markdown_links_checked": [
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../specs/rotation-method-v1.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "mvp.md"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/agronomy/farm-input-data-dictionary.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../specs/fixtures/rotation-demo.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../outputs/rotation-method-demo.md"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../outputs/rotation-method-demo.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../outputs/rotation-method-verification.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/agronomy/crop-reference.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/agronomy/source-evidence.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/agronomy/agronomy-rules.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/climate/manifest.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/climate/daily.csv"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/climate/method-validation.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/vegetation/summary.json"
+    },
+    {
+      "document": "docs/rotation-method.md",
+      "target": "../data/prepared/soil-terrain/manifest.json"
+    },
+    {
+      "document": "docs/roadmap.md",
+      "target": "mvp.md"
+    },
+    {
+      "document": "docs/roadmap.md",
+      "target": "rotation-method.md"
+    },
+    {
+      "document": "docs/roadmap.md",
+      "target": "../outputs/rotation-method-demo.md"
+    },
+    {
+      "document": "docs/roadmap.md",
+      "target": "../outputs/rotation-method-verification.json"
+    },
+    {
+      "document": "outputs/rotation-method-demo.md",
+      "target": "rotation-method-demo.json"
+    },
+    {
+      "document": "outputs/rotation-method-demo.md",
+      "target": "../docs/rotation-method.md"
+    },
+    {
+      "document": "outputs/rotation-method-demo.md",
+      "target": "../specs/fixtures/rotation-demo.json"
+    }
+  ],
+  "source_integrity": {
+    "manifest": "data/prepared/file-manifest.json",
+    "sha256_files_verified": 390,
+    "all_match_preparation_manifest": true
+  },
+  "local_agronomic_validation": false,
+  "application_implemented": false
+}

@@ -1,0 +1,44 @@
+{
+  "prepared_utc": "2026-11-08T09:55:27.325582+00:00",
+  "bbox_wgs84": [
+    110.54,
+    -7.73,
+    110.56,
+    -7.71
+  ],
+  "sample_location": "Rural Klaten; not verified user farm",
+  "terrain": {
+    "status": "downloaded",
+    "source_product": "Copernicus DEM GLO-30 DSM (not NASADEM)",
+    "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S08_00_E110_00_DEM/Copernicus_DSM_COG_10_S08_00_E110_00_DEM.tif",
+    "stac_source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=cop-dem-glo-30&bbox=110.54%2C-7.73%2C110.56%2C-7.71&limit=3",
+    "stac_id": "Copernicus_DSM_COG_10_S08_00_E110_00_DEM",
+    "accessed_utc": "2026-11-08T09:55:27.325582+00:00",
+    "license": "Copernicus DEM license; attribution required",
+    "native_crs": "EPSG:4326",
+    "analysis_crs": "EPSG:32749",
+    "analysis_resolution_m": 30,
+    "subset_shape": [
+      74,
+      74
+    ],
+    "analysis_shape": [
+      76,
+      76
+    ],
+    "elevation_m": {
+      "min": 158.40814208984375,
+      "mean": 177.5883331298828,
+      "max": 202.60240173339844,
+      "valid_cells": 5776
+    },
+    "slope_degrees": {
+      "min": 0.019894910976290703,
+      "mean": 1.8586235046386719,
+      "max": 10.681572914123535,
+      "valid_cells": 5476
+    },
+    "method": "Windowed COG read; bilinear reprojection of elevation to UTM49S 30m; slope atan(sqrt((dz/dx)^2+(dz/dy)^2)) with centered finite differences; edge slopes omitted.",
+    "caveat": "DSM includes vegetation/buildings; not a surveyed bare-earth farm elevation. Sample bbox is not a verified farm boundary. No resampling creates extra independent detail."
+  }
+}

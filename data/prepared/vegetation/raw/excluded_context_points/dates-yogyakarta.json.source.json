@@ -1,0 +1,10 @@
+{
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates?latitude=-7.8&longitude=110.37",
+  "retrieved_at_utc": "2026-11-08T09:53:00.809935+00:00",
+  "retrieval_time_basis": "local_file_modification_time_from_same-session_download",
+  "transport": "curl.exe with Windows Schannel TLS validation",
+  "cached": true,
+  "file": "raw/dates-yogyakarta.json",
+  "bytes": 36238,
+  "sha256": "f373f0968cc81004e2879ac14a266516a51d333daa31e369d70ed1775523f5f9"
+}

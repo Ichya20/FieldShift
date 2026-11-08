@@ -1,0 +1,1727 @@
+{
+  "schema_version": "1.0",
+  "sample_is_verified_farm": false,
+  "period": "2001-2020",
+  "climate": "AgERA5",
+  "scenario": "HIST",
+  "spatial_resolution_degrees": 0.08333333333333333,
+  "use": "historical coarse-grid reference only; never current field recommendation",
+  "rows": [
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.179304+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "RCW"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:56:53.421681+00:00",
+        "tile": "2026-11-08T09:56:55.713494+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 71839,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 344469-350133"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.180332+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "RCW"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:00.600865+00:00",
+        "tile": "2026-11-08T09:57:01.170370+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 72007,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 561296-567128"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.180332+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "MZE"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:03.788110+00:00",
+        "tile": "2026-11-08T09:57:04.242931+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 69792,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 455596-459213"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.253581+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "MZE"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:07.683491+00:00",
+        "tile": "2026-11-08T09:57:08.132905+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 69966,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 579377-583168"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.253581+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "SOY"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:11.465421+00:00",
+        "tile": "2026-11-08T09:57:13.634477+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 70429,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 447171-451425"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif",
+      "requested_point": {
+        "longitude": 110.37,
+        "latitude": -7.8,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.253581+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "SOY"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:16.847481+00:00",
+        "tile": "2026-11-08T09:57:19.021086+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 7,
+      "class_label": "SI >0 : Very marginal",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3484,
+        "row": 1173
+      },
+      "pixel_bounds": {
+        "west": 110.33333333333331,
+        "east": 110.41666666666663,
+        "north": -7.75,
+        "south": -7.833333333333329
+      },
+      "bytes_in_source_subset": 70552,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 580690-585067"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.266873+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "RCW"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:56:53.421681+00:00",
+        "tile": "2026-11-08T09:56:55.713494+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 4,
+      "class_label": "SI >40 : Medium",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 71839,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 344469-350133"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.266873+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.RCW.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "RCW"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:00.600865+00:00",
+        "tile": "2026-11-08T09:57:01.170370+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 4,
+      "class_label": "SI >40 : Medium",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 72007,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 561296-567128"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.266873+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "MZE"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:03.788110+00:00",
+        "tile": "2026-11-08T09:57:04.242931+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 5,
+      "class_label": "SI >25 : Moderate",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 69792,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 455596-459213"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.274589+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.MZE.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "MZE"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:07.683491+00:00",
+        "tile": "2026-11-08T09:57:08.132905+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 5,
+      "class_label": "SI >25 : Moderate",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 69966,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 579377-583168"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.274589+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HRLM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "SOY"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HRLM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:11.465421+00:00",
+        "tile": "2026-11-08T09:57:13.634477+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 5,
+      "class_label": "SI >25 : Moderate",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 70429,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 447171-451425"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    },
+    {
+      "layer_code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+      "url": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/MAPSET/RES05-SIX/GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM.tif",
+      "requested_point": {
+        "longitude": 110.55,
+        "latitude": -7.72,
+        "crs": "EPSG:4326"
+      },
+      "processed_at_utc": "2026-11-08T10:04:55.274589+00:00",
+      "download_mode": "HTTP Range: TIFF header and one tile only; cached source subsets reused when present",
+      "status": "pixel_extracted",
+      "layer_metadata": {
+        "workspaceCode": "GAEZ-V5",
+        "mapsetCode": "RES05-SIX",
+        "code": "GAEZ-V5.RES05-SIX.HP0120.AGERA5.HIST.SOY.HILM",
+        "dimensionMembers": [
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "PERIOD",
+            "code": "HP0120"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CLIM",
+            "code": "AGERA5"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "SSP",
+            "code": "HIST"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "CROP-RES05",
+            "code": "SOY"
+          },
+          {
+            "workspaceCode": "GAEZ-V5",
+            "dimensionCode": "WSIM-RES05",
+            "code": "HILM"
+          }
+        ],
+        "styleCode": null
+      },
+      "tiff_metadata": {
+        "256": 4320,
+        "257": 2160,
+        "258": [
+          8
+        ],
+        "259": 5,
+        "322": 256,
+        "262": 3,
+        "323": 256,
+        "33922": [
+          0.0,
+          0.0,
+          0.0,
+          -180.0,
+          90.0,
+          0.0
+        ],
+        "33550": [
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0
+        ],
+        "339": [
+          1
+        ],
+        "277": 1,
+        "284": 2,
+        "42112": "<GDALMetadata>\n  <Item name=\"COLORINTERP\" sample=\"0\" role=\"colorinterp\">Gray</Item>\n</GDALMetadata>\n",
+        "42113": "0",
+        "34735": [
+          1,
+          1,
+          0,
+          7,
+          1024,
+          0,
+          1,
+          2,
+          1025,
+          0,
+          1,
+          1,
+          2048,
+          0,
+          1,
+          4326,
+          2049,
+          34737,
+          7,
+          0,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          1,
+          2059,
+          34736,
+          1,
+          0
+        ],
+        "34736": [
+          298.257223563,
+          6378137.0
+        ],
+        "34737": "WGS 84|",
+        "317": 1
+      },
+      "source_snapshot_written_at_utc": {
+        "header": "2026-11-08T09:57:16.847481+00:00",
+        "tile": "2026-11-08T09:57:19.021086+00:00"
+      },
+      "retrieval_timing_note": "Snapshot file-write times locate initial bounded retrieval; processed_at is local extraction time and is not a claim of a fresh network request.",
+      "raw_value": 5,
+      "class_label": "SI >25 : Moderate",
+      "continuous_suitability_score": null,
+      "legend_source": "https://storage.googleapis.com/fao-gismgr-gaez-v5-data/DATA/GAEZ-V5/STYLE/GAEZ-V5.SIX.json",
+      "nodata_tag": "0",
+      "pixel_index": {
+        "column": 3486,
+        "row": 1172
+      },
+      "pixel_bounds": {
+        "west": 110.5,
+        "east": 110.58333333333331,
+        "north": -7.666666666666657,
+        "south": -7.75
+      },
+      "bytes_in_source_subset": 70552,
+      "range_headers": {
+        "header": "cached bytes 0-65535",
+        "tile": "cached bytes 580690-585067"
+      },
+      "units": "categorical_GAEZ_SIX_legend_code",
+      "interpretation_status": "historical_model_class_only; not observed or recommended farm suitability"
+    }
+  ]
+}

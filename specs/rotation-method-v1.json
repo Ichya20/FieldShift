@@ -1,0 +1,79 @@
+{
+  "method_id": "fieldshift-rotation-exploration",
+  "method_version": "0.1.0",
+  "date": "2026-11-08",
+  "status": "reference_method_not_locally_validated",
+  "purpose": "Compare evidence and constraints for one explicit continuation and up to two exploratory crop sequences on the same location and horizon.",
+  "supported_crop_ids": ["padi", "jagung", "kedelai"],
+  "generation": {
+    "maximum_automatic_slots": 3,
+    "required": ["horizon", "allowed_crop_ids", "excluded_crop_ids", "existing_sequence", "slot_start_dates", "locked_prefix_length", "continuation_confirmed"],
+    "null_policy": "Unknown remains unknown; null and intentionally empty lists are distinct.",
+    "continuation": "History alone does not determine a future continuation. Existing requires explicit continuation dates/sequence or a confirmed, phase-anchored repetition.",
+    "locked_prefix": "Preserve crops already fixed for the scenario; future exclusions apply to mutable candidate slots. Baseline stays visible even if it conflicts with new crop preferences.",
+    "candidate_1": "Minimum number of changes from existing among distinct permitted sequences, then stable crop-ID order. This is a deterministic design choice, not an agronomic ranking.",
+    "candidate_2": "Prefer a different crop multiset from candidate_1, then use the same stable enumeration. If unavailable, use a genuinely different temporal sequence.",
+    "insufficient": "Return fewer than two candidates explicitly; do not clone a candidate or fabricate an existing rotation.",
+    "environmental_constraints": "Unknown environmental inputs do not silently exclude crops. Calendar/management findings are reported after generation; generation is not a suitability certificate."
+  },
+  "calendar": {
+    "date_format": "ISO8601 date without time; no timezone conversion",
+    "horizon": "[start_date,end_exclusive)",
+    "origin": "Sowing or transplanting event is day zero for an explicitly sourced elapsed-day duration.",
+    "harvest": "origin_date + duration_days; harvest day still occupies the main field",
+    "release": "harvest_date + 1 day",
+    "field_occupation": "[sowing_date,release_date) for direct-seeded; [transplanting_date,release_date) for transplanted",
+    "preparation": "A declared gap starts at release; next start must be at least release + gap. Null gap does not mean zero.",
+    "uncertain_duration": "Keep earliest/latest harvest and release; never select midpoint silently. Environmental summaries of endpoint windows are alternatives, not universal bounds on signed P-ETo or temperature.",
+    "nursery": "Sowing-based total duration already includes nursery. Distinguish nursery and main-field resources; overlap is allowed only when separation is explicit.",
+    "horizon_start": "An explicitly locked ongoing crop may start before the horizon. Preserve biological dates and verify occupation overlaps the horizon; a crop already finished before the horizon is not an ongoing crop. Clip exposure to the intersection, not the biological calendar.",
+    "horizon_end": "Retain crops that continue past the horizon, show that state and clip only the exposure window. Never shorten the crop or extend the comparison horizon."
+  },
+  "environment": {
+    "time_modes": ["historical_replay", "historical_analogue_not_forecast", "recent_partial"],
+    "sum_rule": "Publish each total only when every expected day is valid for that metric; report expected and valid-day counts.",
+    "paired_difference": "D = sum(P_t-ETo_t) on identical paired days; incomplete pairs make the window D null. Keep negative and positive values.",
+    "whole_horizon_invariance": "Same location/source, dates and time mode must produce identical whole-horizon P, ETo and D for every strategy, including unassigned days.",
+    "crop_windows": "Exposure differs only through explicit field-occupation dates; this does not measure crop water consumption or savings.",
+    "climatology": {
+      "reference_period": "1991-2020",
+      "mapping": "Map target month/day endpoints and year offsets to each reference anchor year. Keep target duration; skip invalid leap dates, different day counts and windows extending beyond reference coverage, with reasons.",
+      "aggregation": "Compute each yearly window first, then arithmetic mean, median, p10 and p90; type7 linear quantiles. D distribution comes from yearly paired D values.",
+      "sample_count": "Report complete years per metric and skipped years; percentiles unavailable with fewer than two complete windows. A full 365-day year has 22 analogues and a 366-day year has 8 under this strict mapping; the 1991-2020 source baseline remains 30 calendar years.",
+      "comparison_cohort": "Separate distributions retain their anchor-year lists/counts and a cohort-difference note. Any numerical cross-window delta requires recomputation over the same paired anchor years complete for both metrics/windows; never subtract means from different cohorts or infer a causal crop benefit.",
+      "forecast_label": "Never label an analogue as a seasonal forecast."
+    },
+    "vegetation": "Strict-good MODIS only, assigned by selected pixel observation date; counts/gaps/mixed-pixel and spatial limits remain visible. No species, planting, harvest or fallow inference.",
+    "soil": "Use the containing extracted cell and stated depth. Quantiles describe source prediction uncertainty, not spatial variation over the farm. No averaging pH across depths.",
+    "spatial_support": "Explicit example/regional context or extracted containing support per layer. No silent nearest-point fallback or invented field resolution."
+  },
+  "check_statuses": ["evidence_available", "needs_input", "input_conflict", "review_required", "outside_coverage", "not_applicable"],
+  "additional_source_refs": {
+    "analysis-profile": {"path":"data/prepared/analysis-profile.json","kind":"project_data_contract"},
+    "method-calendar-policy": {"path":"docs/rotation-method.md","kind":"explicit_method_convention_not_empirical_crop_claim"},
+    "nasa-power": {"url":"https://power.larc.nasa.gov/docs/services/api/temporal/daily/","kind":"provider_documentation"},
+    "fao56": {"url":"https://www.fao.org/4/x0490e/x0490e00.htm","kind":"published_reference_eto_method"},
+    "climate-manifest": {"path":"data/prepared/climate/manifest.json","kind":"numeric_data_provenance"},
+    "soil-manifest": {"path":"data/prepared/soil-terrain/manifest.json","kind":"numeric_data_provenance"},
+    "modis-manifest": {"path":"data/prepared/vegetation/manifest.json","kind":"numeric_data_provenance"},
+    "method-accounting-boundary": {"path":"docs/mvp.md","kind":"scope_requirement_not_empirical_crop_claim"}
+  },
+  "rules": [
+    {"id":"coverage","input_requirements":["location","layer_support"],"source_refs":["analysis-profile"],"output":"Per-layer availability and source support; unavailable layers do not become zero."},
+    {"id":"calendar","input_requirements":["dates","duration_basis","duration_range","preparation_gap","nursery_resource_when_relevant"],"source_refs":["method-calendar-policy"],"output":"Specific missing inputs, certain conflict, possible conflict, or no conflict in the supplied calendar. This is not agronomic suitability."},
+    {"id":"climate_exposure","input_requirements":["time_mode","window","explicit_climate_context"],"source_refs":["nasa-power","fao56","climate-manifest"],"output":"P, ETo, paired P-ETo, mean T2M, coverage and operational-guard count. Irrigation demand remains null."},
+    {"id":"ph_reference","input_requirements":["pH_origin","depth","method_or_prediction_source","date_or_model_epoch","valid_value"],"source_refs":["ecocrop-rice","ecocrop-maize","ecocrop-soybean","soil-manifest"],"output":"Relationship to historical species optimum, plus uncertainty. An outside-optimum value never proves crop failure."},
+    {"id":"temperature_reference","input_requirements":["historical_temperature_summary","crop_id"],"source_refs":["ecocrop-rice","ecocrop-maize","ecocrop-soybean","nasa-power"],"output":"Context relative to species optimum only. Do not interpret Tmax above optimum as stress/failure days or yield loss."},
+    {"id":"seasonal_et_reference","input_requirements":["crop_id"],"source_refs":["fao-seasonal-water"],"output":"Generic whole-season ET reference per crop. Do not scale, subtract annual rainfall, calculate local ET or rank water savings from overlapping ranges."},
+    {"id":"paddy_upland_transition","input_requirements":["sequence","rice_water_regime","drainage","water_control","soil_management"],"source_refs":["fao-paddy-irrigation","fao-aquacrop-inputs"],"output":"Rice direct seeding/transplanting does not establish a flooded-paddy or upland ecosystem. Unknown water regime needs input; known flooded-paddy to upland transition triggers management review. User-reported good drainage alone is not verified suitability."},
+    {"id":"legume_mechanism","input_requirements":["sequence","nodulation","inoculation","residue_fate","nutrient_balance"],"source_refs":["fao-crop-rotation"],"output":"Conditional fixation mechanism if soybean is included. Nitrogen credit and fertilizer savings remain null."},
+    {"id":"pest_break","input_requirements":["local_pest_or_pathogen","host_range","management_history"],"source_refs":["fao-crop-rotation"],"output":"Needs local host evidence; a different crop name alone is not a demonstrated pest break."},
+    {"id":"vegetation_context","input_requirements":["exact_extracted_pixel","window","qa"],"source_refs":["modis-manifest"],"output":"Historical strict-good indices and counts as context; no inferred farm rotation or causal strategy benefit."},
+    {"id":"gaez_context","input_requirements":["containing_extracted_cell","crop_code","management_regime_or_explicit_unknown"],"source_refs":["gaez-six-legend","gaez-user-guide"],"output":"Historical categorical model reference, keeping management regimes separate. No continuous score or prediction of current field performance."},
+    {"id":"economics","input_requirements":["marketable_yield","farm_gate_price","costs","units","time_and_location_basis"],"source_refs":["method-accounting-boundary"],"output":"Deferred from MVP; no revenue/profit from suitability, satellite greenness or species labels."}
+  ],
+  "finding_fields": ["rule_id","status","scope","inputs_used","source_refs","assumptions","explanation","missing_inputs","next_action"],
+  "unavailable_outputs": ["overall_suitability_score","ranking","crop_yield_prediction","water_saving_percent","net_irrigation_mm","gross_irrigation_mm","nitrogen_credit_kg_ha","profit_difference_idr_ha","soil_health_gain"],
+  "priority_policy": "Highlight checks relevant to the explicitly selected priorities. Do not fabricate weights or turn presentation order into a benefit ranking.",
+  "overall_status": "Use invalid_input, partial, or complete_for_selected_checks. Always keep local_agronomic_validation=false until actual review; completed checks do not imply safe field advice."
+}

@@ -1,0 +1,415 @@
+{
+  "prepared_utc": "2026-11-08T10:08:12.867138+00:00",
+  "sample_region": "Yogyakarta–Klaten, Indonesia; unverified demonstration locations",
+  "bbox_soil_terrain_wgs84": [
+    110.54,
+    -7.73,
+    110.56,
+    -7.71
+  ],
+  "soil": {
+    "status": "downloaded",
+    "properties": [
+      "phh2o",
+      "sand",
+      "silt",
+      "clay",
+      "soc",
+      "nitrogen",
+      "cec",
+      "bdod",
+      "cfvo",
+      "wv0010",
+      "wv0033",
+      "wv1500"
+    ],
+    "depths": [
+      "0-5cm",
+      "5-15cm",
+      "15-30cm",
+      "30-60cm",
+      "60-100cm"
+    ],
+    "statistics": [
+      "mean",
+      "Q0.05",
+      "Q0.95"
+    ],
+    "successful_rasters": 180,
+    "requested_rasters": 180,
+    "interpretable_nonzero_rasters": 175,
+    "zero_only_unresolved_rasters": 5,
+    "cell_records": 12960,
+    "numeric_cells": 11900,
+    "unresolved_zeros": 1056,
+    "download_bytes": 126893
+  },
+  "terrain": {
+    "status": "downloaded",
+    "source_product": "Copernicus DEM GLO-30 DSM (not NASADEM)",
+    "source_url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S08_00_E110_00_DEM/Copernicus_DSM_COG_10_S08_00_E110_00_DEM.tif",
+    "stac_source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=cop-dem-glo-30&bbox=110.54%2C-7.73%2C110.56%2C-7.71&limit=3",
+    "stac_id": "Copernicus_DSM_COG_10_S08_00_E110_00_DEM",
+    "accessed_utc": "2026-11-08T09:55:27.325582+00:00",
+    "license": "Copernicus DEM license; attribution required",
+    "native_crs": "EPSG:4326",
+    "analysis_crs": "EPSG:32749",
+    "analysis_resolution_m": 30,
+    "subset_shape": [
+      74,
+      74
+    ],
+    "analysis_shape": [
+      76,
+      76
+    ],
+    "elevation_m": {
+      "min": 158.40814208984375,
+      "mean": 177.5883331298828,
+      "max": 202.60240173339844,
+      "valid_cells": 5776
+    },
+    "slope_degrees": {
+      "min": 0.019894910976290703,
+      "mean": 1.8586235046386719,
+      "max": 10.681572914123535,
+      "valid_cells": 5476
+    },
+    "method": "Windowed COG read; bilinear reprojection of elevation to UTM49S 30m; slope atan(sqrt((dz/dx)^2+(dz/dy)^2)) with centered finite differences; edge slopes omitted.",
+    "caveat": "DSM includes vegetation/buildings; not a surveyed bare-earth farm elevation. Sample bbox is not a verified farm boundary. No resampling creates extra independent detail.",
+    "downloaded_window_bbox_wgs84": [
+      110.53958333333334,
+      -7.730138888888889,
+      110.5601388888889,
+      -7.709583333333334
+    ],
+    "analysis_bbox_utm49s_m": [
+      449226.66878388467,
+      9145502.959602937,
+      451506.66878388467,
+      9147782.959602937
+    ]
+  },
+  "landcover": {
+    "status": "downloaded",
+    "product": "ESA WorldCover 2021 v200",
+    "epoch": 2021,
+    "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S09E108_Map.tif",
+    "stac_source_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search?collections=esa-worldcover&bbox=110.36%2C-7.81%2C110.56%2C-7.71&datetime=2021-01-01T00%3A00%3A00Z%2F2021-12-31T23%3A59%3A59Z&limit=3",
+    "stac_id": "ESA_WorldCover_10m_2021_v200_S09E108",
+    "accessed_utc": "2026-11-08T09:59:37.280031+00:00",
+    "license": "CC BY 4.0",
+    "attribution": "ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+    "class_codes": {
+      "10": "Tree cover",
+      "20": "Shrubland",
+      "30": "Grassland",
+      "40": "Cropland",
+      "50": "Built-up",
+      "60": "Bare / sparse vegetation",
+      "70": "Snow and ice",
+      "80": "Permanent water bodies",
+      "90": "Herbaceous wetland",
+      "95": "Mangroves",
+      "100": "Moss and lichen",
+      "0": "No data"
+    },
+    "sites": [
+      {
+        "id": "klaten",
+        "lat": -7.72,
+        "lon": 110.55,
+        "bbox": [
+          110.54,
+          -7.73,
+          110.56,
+          -7.71
+        ],
+        "point_class_code": 10,
+        "point_class_label": "Tree cover",
+        "bbox_stats": {
+          "grid_cells": 57600,
+          "valid_cells": 57600,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 23407
+            },
+            "20": {
+              "label": "Shrubland",
+              "cells": 1
+            },
+            "30": {
+              "label": "Grassland",
+              "cells": 4312
+            },
+            "40": {
+              "label": "Cropland",
+              "cells": 14353
+            },
+            "50": {
+              "label": "Built-up",
+              "cells": 15527
+            }
+          },
+          "cropland_fraction_valid_cells": 0.2491840277777778,
+          "built_up_fraction_valid_cells": 0.2695659722222222
+        },
+        "centered_250m_square_stats": {
+          "grid_cells": 729,
+          "valid_cells": 729,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 329
+            },
+            "30": {
+              "label": "Grassland",
+              "cells": 172
+            },
+            "40": {
+              "label": "Cropland",
+              "cells": 226
+            },
+            "50": {
+              "label": "Built-up",
+              "cells": 2
+            }
+          },
+          "cropland_fraction_valid_cells": 0.3100137174211248,
+          "built_up_fraction_valid_cells": 0.0027434842249657062
+        },
+        "cropland_context_candidate": {
+          "latitude": -7.7240416666666665,
+          "longitude": 110.546875,
+          "selection": "Highest WorldCover2021 crop count in a 27x27-cell window inside Klaten bbox; tie nearest bbox center. This is a candidate demonstration sample, not a verified farm.",
+          "nominal_square_size_m": 250,
+          "class_code": 40,
+          "square_stats": {
+            "grid_cells": 729,
+            "valid_cells": 729,
+            "class_histogram": {
+              "10": {
+                "label": "Tree cover",
+                "cells": 46
+              },
+              "30": {
+                "label": "Grassland",
+                "cells": 3
+              },
+              "40": {
+                "label": "Cropland",
+                "cells": 632
+              },
+              "50": {
+                "label": "Built-up",
+                "cells": 48
+              }
+            },
+            "cropland_fraction_valid_cells": 0.8669410150891632,
+            "built_up_fraction_valid_cells": 0.06584362139917696
+          }
+        }
+      },
+      {
+        "id": "yogyakarta",
+        "lat": -7.8,
+        "lon": 110.37,
+        "bbox": [
+          110.36,
+          -7.81,
+          110.38,
+          -7.79
+        ],
+        "point_class_code": 50,
+        "point_class_label": "Built-up",
+        "bbox_stats": {
+          "grid_cells": 57600,
+          "valid_cells": 57600,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 1949
+            },
+            "30": {
+              "label": "Grassland",
+              "cells": 356
+            },
+            "40": {
+              "label": "Cropland",
+              "cells": 338
+            },
+            "50": {
+              "label": "Built-up",
+              "cells": 54957
+            }
+          },
+          "cropland_fraction_valid_cells": 0.005868055555555555,
+          "built_up_fraction_valid_cells": 0.9541145833333333
+        },
+        "centered_250m_square_stats": {
+          "grid_cells": 729,
+          "valid_cells": 729,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 4
+            },
+            "50": {
+              "label": "Built-up",
+              "cells": 725
+            }
+          },
+          "cropland_fraction_valid_cells": 0.0,
+          "built_up_fraction_valid_cells": 0.9945130315500685
+        }
+      }
+    ],
+    "caveat": "2021 classified land cover, with classification error and possible subsequent land-use change; not verified farm boundaries or actual crop species. Centered 250m square is contextual, not the exact MODIS footprint.",
+    "frozen_modis_anchors": {
+      "primary": {
+        "sample_coordinate": {
+          "latitude": -7.721875031299882,
+          "longitude": 110.55354472008753
+        },
+        "worldcover_epoch": 2021,
+        "modis_reported_grid_footprint": true,
+        "worldcover_stats": {
+          "grid_cells": 631,
+          "valid_cells": 631,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 24
+            },
+            "30": {
+              "label": "Grassland",
+              "cells": 74
+            },
+            "40": {
+              "label": "Cropland",
+              "cells": 533
+            }
+          },
+          "cropland_fraction_valid_cells": 0.8446909667194928,
+          "built_up_fraction_valid_cells": 0.0
+        },
+        "footprint_report_file": "modis-primary-footprint-landcover-summary.json",
+        "status": "crop-dominant mixed observation pixel; not a verified user farm"
+      },
+      "comparison": {
+        "sample_coordinate": {
+          "latitude": -7.7240416666666665,
+          "longitude": 110.546875
+        },
+        "worldcover_epoch": 2021,
+        "modis_reported_grid_footprint": true,
+        "worldcover_stats": {
+          "grid_cells": 630,
+          "valid_cells": 630,
+          "class_histogram": {
+            "10": {
+              "label": "Tree cover",
+              "cells": 124
+            },
+            "30": {
+              "label": "Grassland",
+              "cells": 22
+            },
+            "40": {
+              "label": "Cropland",
+              "cells": 436
+            },
+            "50": {
+              "label": "Built-up",
+              "cells": 48
+            }
+          },
+          "cropland_fraction_valid_cells": 0.692063492063492,
+          "built_up_fraction_valid_cells": 0.0761904761904762
+        },
+        "footprint_report_file": "modis-footprint-landcover-summary.json",
+        "status": "crop-dominant mixed observation pixel; not a verified user farm"
+      }
+    }
+  },
+  "frozen_observation_anchors": {
+    "primary": {
+      "sample_coordinate": {
+        "latitude": -7.721875031299882,
+        "longitude": 110.55354472008753
+      },
+      "worldcover_epoch": 2021,
+      "modis_reported_grid_footprint": true,
+      "worldcover_stats": {
+        "grid_cells": 631,
+        "valid_cells": 631,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 24
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 74
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 533
+          }
+        },
+        "cropland_fraction_valid_cells": 0.8446909667194928,
+        "built_up_fraction_valid_cells": 0.0
+      },
+      "footprint_report_file": "modis-primary-footprint-landcover-summary.json",
+      "status": "crop-dominant mixed observation pixel; not a verified user farm"
+    },
+    "comparison": {
+      "sample_coordinate": {
+        "latitude": -7.7240416666666665,
+        "longitude": 110.546875
+      },
+      "worldcover_epoch": 2021,
+      "modis_reported_grid_footprint": true,
+      "worldcover_stats": {
+        "grid_cells": 630,
+        "valid_cells": 630,
+        "class_histogram": {
+          "10": {
+            "label": "Tree cover",
+            "cells": 124
+          },
+          "30": {
+            "label": "Grassland",
+            "cells": 22
+          },
+          "40": {
+            "label": "Cropland",
+            "cells": 436
+          },
+          "50": {
+            "label": "Built-up",
+            "cells": 48
+          }
+        },
+        "cropland_fraction_valid_cells": 0.692063492063492,
+        "built_up_fraction_valid_cells": 0.0761904761904762
+      },
+      "footprint_report_file": "modis-footprint-landcover-summary.json",
+      "status": "crop-dominant mixed observation pixel; not a verified user farm"
+    }
+  },
+  "qa": {
+    "aligned_soil_grids": true,
+    "quantile_inversion_cells": 0,
+    "out_of_range_issues": 0,
+    "retention_nonmonotonic_cells": 0
+  },
+  "limitations": [
+    "SoilGrids predictions, not laboratory soil tests or live nutrient availability.",
+    "Separate property predictions are not guaranteed to be jointly physically consistent; raw means retained without forced normalization.",
+    "Predicted retention at fixed suctions is not measured irrigation capacity.",
+    "Copernicus DSM includes canopy/buildings; NASADEM remains metadata-only in the earlier audit.",
+    "Land-cover classification shows original Yogyakarta point is urban and original Klaten point tree-cover; use crop-dominant candidate only as labeled contextual sample."
+  ]
+}

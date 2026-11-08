@@ -1,0 +1,10 @@
+{
+  "url": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD13Q1",
+  "retrieved_at_utc": "2026-11-08T09:53:18.690006+00:00",
+  "retrieval_time_basis": "local_file_modification_time_from_same-session_download",
+  "transport": "curl.exe with Windows Schannel TLS validation",
+  "cached": true,
+  "file": "sources/mod13q1-v61-filespec.html",
+  "bytes": 49518,
+  "sha256": "5ed85b1b4ee4ddf520dbba2b308197b2ab95ab4fe8cfb5b65e790ff246e4ee57"
+}

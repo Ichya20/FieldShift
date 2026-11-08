@@ -1,0 +1,48 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "code" : "PERIOD",
+  "caption" : "Period",
+  "description" : null,
+  "type" : "WHAT",
+  "timeSubtype" : null,
+  "additionalInfo" : null,
+  "tags" : null,
+  "members" : {
+    "HP8100" : {
+      "code" : "HP8100",
+      "caption" : "1981-2000",
+      "description" : null,
+      "index" : 1
+    },
+    "HP0120" : {
+      "code" : "HP0120",
+      "caption" : "2001-2020",
+      "description" : null,
+      "index" : 2
+    },
+    "FP2140" : {
+      "code" : "FP2140",
+      "caption" : "2021-2040",
+      "description" : null,
+      "index" : 3
+    },
+    "FP4160" : {
+      "code" : "FP4160",
+      "caption" : "2041-2060",
+      "description" : null,
+      "index" : 4
+    },
+    "FP6180" : {
+      "code" : "FP6180",
+      "caption" : "2061-2080",
+      "description" : null,
+      "index" : 5
+    },
+    "FP8100" : {
+      "code" : "FP8100",
+      "caption" : "2081-2100",
+      "description" : null,
+      "index" : 6
+    }
+  }
+}

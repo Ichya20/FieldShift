@@ -1,0 +1,101 @@
+{
+  "area": "Yogyakarta-Klaten regional context; one representative POWER point, no field boundaries",
+  "coordinate": [
+    110.37,
+    -7.8
+  ],
+  "records": 13095,
+  "parameters": 12,
+  "start": "1991-01-01",
+  "end": "2026-11-07",
+  "baseline_days": 10958,
+  "baseline_months": 360,
+  "missing_parameter_values": {
+    "ALLSKY_SFC_SW_DWN": 5,
+    "T2M": 2,
+    "T2M_MAX": 2,
+    "T2M_MIN": 2,
+    "PRECTOTCORR": 2,
+    "RH2M": 2,
+    "WS2M": 2,
+    "GWETTOP": 2,
+    "GWETROOT": 2,
+    "EVPTRNS": 2,
+    "PS": 2,
+    "T2MDEW": 2
+  },
+  "missing_dates_within_series": [],
+  "eto_valid_days": 13090,
+  "eto_operational_guard_days": 27,
+  "last_valid_date_by_parameter": {
+    "T2M": "2026-11-05",
+    "T2M_MAX": "2026-11-05",
+    "T2M_MIN": "2026-11-05",
+    "PRECTOTCORR": "2026-11-05",
+    "RH2M": "2026-11-05",
+    "WS2M": "2026-11-05",
+    "ALLSKY_SFC_SW_DWN": "2026-11-02",
+    "GWETTOP": "2026-11-05",
+    "GWETROOT": "2026-11-05",
+    "EVPTRNS": "2026-11-05",
+    "PS": "2026-11-05",
+    "T2MDEW": "2026-11-05"
+  },
+  "missing_dates_by_parameter": {
+    "T2M": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "T2M_MAX": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "T2M_MIN": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "PRECTOTCORR": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "RH2M": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "WS2M": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "ALLSKY_SFC_SW_DWN": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "GWETTOP": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "GWETROOT": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "EVPTRNS": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "PS": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "T2MDEW": [
+      "2026-11-06",
+      "2026-11-07"
+    ]
+  },
+  "last_valid_eto_date": "2026-11-02",
+  "recent_request_error": null,
+  "numeric_status": "downloaded_and_checked",
+  "farm_recommendation_ready": false
+}

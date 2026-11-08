@@ -1,0 +1,1613 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-11-08T11:20:55.835174+00:00",
+  "categories": {
+    "public_reference_gap": "Can enrich references or select already available public supports; cannot create farm actuals.",
+    "farmer_only_input": "Actual farmer/field observation;public sources cannot fill it.",
+    "local_validation_gap": "Needs real field measurements, agronomic review or calibration.",
+    "scenario_configuration": "Explicit planning/model choice; labelled assumptions may support a demo, never farm history."
+  },
+  "user_context": "No actual farmer/field data supplied; user authorized publicly available sources only. Proceed with public context without requesting invented farm records.",
+  "gaps": [
+    {
+      "id": "input:farm.farm_id",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.farm_id",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.field_id",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.field_id",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.geometry_geojson",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.geometry_geojson",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.representative_longitude",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.representative_longitude",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.representative_latitude",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.representative_latitude",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.area_ha_reported",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.area_ha_reported",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.area_ha_geometry",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.area_ha_geometry",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.village",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.village",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.district",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.district",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.province",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.province",
+      "rule_ids": [
+        "coverage",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.country_code",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.country_code",
+      "rule_ids": [
+        "coverage"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.boundary_recorded_at",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.boundary_recorded_at",
+      "rule_ids": [
+        "coverage"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.location.boundary_source",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.location.boundary_source",
+      "rule_ids": [
+        "coverage"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.crop_id",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.crop_id",
+      "rule_ids": [
+        "calendar",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.cultivar",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.cultivar",
+      "rule_ids": [
+        "calendar",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.seed_source",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.seed_source",
+      "rule_ids": [
+        "calendar",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.production_system",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.production_system",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.sowing_date",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.sowing_date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.transplanting_date",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.transplanting_date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.expected_harvest_date",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.expected_harvest_date",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.observed_growth_stage",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.observed_growth_stage",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.stage_observed_at",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.stage_observed_at",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.rotation_history",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.rotation_history",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.system",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.system",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.source",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.source",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.rainfed",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.rainfed",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.availability_window_start",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.availability_window_start",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.availability_window_end",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.availability_window_end",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.capacity_m3_day",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.capacity_m3_day",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.allocation_m3_season",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.allocation_m3_season",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.application_efficiency_fraction",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.application_efficiency_fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.water_cost_idr_m3",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.water_cost_idr_m3",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.water_table_depth_m",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.water_table_depth_m",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.drainage_condition",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.drainage_condition",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.flooding_history",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.flooding_history",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.sampling_date",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.sampling_date",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.laboratory",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.laboratory",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.method",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.method",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.depth_top_cm",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.depth_top_cm",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.depth_bottom_cm",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.depth_bottom_cm",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.ph_h2o",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.ph_h2o",
+      "rule_ids": [
+        "ph_reference"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.organic_carbon_percent",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.organic_carbon_percent",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.total_n_percent",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.total_n_percent",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.available_p_mg_kg",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.available_p_mg_kg",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.exchangeable_k_cmolc_kg",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.exchangeable_k_cmolc_kg",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.ec_ds_m",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.ec_ds_m",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.texture_class",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.texture_class",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.bulk_density_g_cm3",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.bulk_density_g_cm3",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.field_capacity_fraction",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.field_capacity_fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.wilting_point_fraction",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.wilting_point_fraction",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.rootable_depth_cm",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.rootable_depth_cm",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.soil_lab.report_file",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.soil_lab.report_file",
+      "rule_ids": [
+        "ph_reference",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.tillage",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.tillage",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.residue_fate",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.residue_fate",
+      "rule_ids": [
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.fertilizer_history",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.fertilizer_history",
+      "rule_ids": [
+        "legume_mechanism",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.organic_amendments",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.organic_amendments",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.legume_inoculation",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.legume_inoculation",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.nodulation_observations",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.nodulation_observations",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.pest_disease_weed_history",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.pest_disease_weed_history",
+      "rule_ids": [
+        "pest_break"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.pesticide_history",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.pesticide_history",
+      "rule_ids": [
+        "pest_break",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.resources.labor_available_days_season",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.resources.labor_available_days_season",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.resources.machinery_access",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.resources.machinery_access",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.resources.seed_access",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.resources.seed_access",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.resources.budget_idr_season",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.resources.budget_idr_season",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.buyer_access",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.buyer_access",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.crop_preferences",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.crop_preferences",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.contract_constraints",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.contract_constraints",
+      "rule_ids": [
+        "calendar",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.farm_gate_prices",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.farm_gate_prices",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.expected_marketable_yield_kg_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.expected_marketable_yield_kg_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.transport_storage_costs",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.transport_storage_costs",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.currency",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.currency",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.market.price_observed_at",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.market.price_observed_at",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.seed_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.seed_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.fertilizer_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.fertilizer_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.pest_management_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.pest_management_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.labor_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.labor_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.machinery_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.machinery_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.irrigation_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.irrigation_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.other_idr_ha",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.other_idr_ha",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.costs.reference_season",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.costs.reference_season",
+      "rule_ids": [
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.priorities.risk_tolerance",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.priorities.risk_tolerance",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.priorities.planning_horizon_start",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.priorities.planning_horizon_start",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.priorities.planning_horizon_end",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.priorities.planning_horizon_end",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.priorities.excluded_crops",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.priorities.excluded_crops",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.provenance.respondent_role",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.provenance.respondent_role",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.provenance.information_source",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.provenance.information_source",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.provenance.recorded_at",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.provenance.recorded_at",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.provenance.local_extension_reviewed_at",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.provenance.local_extension_reviewed_at",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.establishment_method",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.establishment_method",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.rice_ecosystem",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.rice_ecosystem",
+      "rule_ids": [
+        "paddy_upland_transition",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.current_crop.rice_water_regime",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.current_crop.rice_water_regime",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.irrigation.water_control",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.irrigation.water_control",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.soil_management_for_transition",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.soil_management_for_transition",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.nutrient_balance",
+      "category": "farmer_only_input",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.nutrient_balance",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Keep null; public data supplies context only. User has no actual farm data and this does not block reference/demo work."
+    },
+    {
+      "id": "input:farm.management.local_host_range_evidence",
+      "category": "local_validation_gap",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "farm.management.local_host_range_evidence",
+      "rule_ids": [
+        "pest_break"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Requires an actual qualified local review/measurement; leave null."
+    },
+    {
+      "id": "input:planning.horizon",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.horizon",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "vegetation_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.allowed_crop_ids",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.allowed_crop_ids",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.excluded_crop_ids",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.excluded_crop_ids",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.existing_sequence",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.existing_sequence",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.slot_start_dates",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.slot_start_dates",
+      "rule_ids": [
+        "calendar",
+        "climate_exposure"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.locked_prefix_length",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.locked_prefix_length",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.continuation_confirmed",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.continuation_confirmed",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.duration_by_crop",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.duration_by_crop",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.preparation_gap_days",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.preparation_gap_days",
+      "rule_ids": [
+        "calendar",
+        "paddy_upland_transition"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.nursery_separate_from_main_field",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.nursery_separate_from_main_field",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.nursery_location_ref",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.nursery_location_ref",
+      "rule_ids": [
+        "calendar"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:planning.selected_priorities",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "planning.selected_priorities",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.time_mode",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "context.time_mode",
+      "rule_ids": [
+        "climate_exposure",
+        "temperature_reference",
+        "vegetation_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.climate_window",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "context.climate_window",
+      "rule_ids": [
+        "climate_exposure",
+        "temperature_reference"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.explicit_climate_context",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.explicit_climate_context",
+      "rule_ids": [
+        "coverage",
+        "climate_exposure",
+        "temperature_reference"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.layer_support",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.layer_support",
+      "rule_ids": [
+        "coverage",
+        "climate_exposure",
+        "vegetation_context",
+        "ph_reference",
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.ph_reference_input",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.ph_reference_input",
+      "rule_ids": [
+        "ph_reference"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.temperature_reference_input",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.temperature_reference_input",
+      "rule_ids": [
+        "temperature_reference"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.vegetation_reference_input",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.vegetation_reference_input",
+      "rule_ids": [
+        "vegetation_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:context.gaez_reference_input",
+      "category": "public_reference_gap",
+      "status": "available_reference_requires_explicit_selection",
+      "path": "context.gaez_reference_input",
+      "rule_ids": [
+        "gaez_context"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "input:provenance.fields",
+      "category": "scenario_configuration",
+      "status": "unknown_no_actual_field_supplied",
+      "path": "provenance.fields",
+      "rule_ids": [
+        "coverage",
+        "calendar",
+        "climate_exposure",
+        "ph_reference",
+        "temperature_reference",
+        "seasonal_et_reference",
+        "paddy_upland_transition",
+        "legume_mechanism",
+        "pest_break",
+        "vegetation_context",
+        "gaez_context",
+        "economics"
+      ],
+      "can_fill_actual_from_public_sources": false,
+      "next_action": "Select a public reference or an explicitly labelled scenario; never record as observed farm actual."
+    },
+    {
+      "id": "public:anjasmoro-duration-origin",
+      "category": "public_reference_gap",
+      "status": "filled",
+      "rule_ids": [
+        "calendar"
+      ],
+      "explanation": "Official catalog explicitly reports 82–93 days after planting; preserve source differences and do not auto-select cultivar.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "public:rice-ecosystem-vocabulary",
+      "category": "public_reference_gap",
+      "status": "filled",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "explanation": "Official FAO ecosystem definitions and separate operational water-regime/establishment vocabulary now documented.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "public:typed-input-units",
+      "category": "public_reference_gap",
+      "status": "filled",
+      "rule_ids": [
+        "coverage"
+      ],
+      "explanation": "All 91 original fields typed and unit applicability explicit; negative latitude, hectares, records and legacy weighting corrected in additive contract.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "public:all-method-requirements",
+      "category": "public_reference_gap",
+      "status": "filled",
+      "rule_ids": [
+        "calendar"
+      ],
+      "explanation": "All 12 rules input requirements linked to concrete original/supplemental paths.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "public:legacy-bsip-catalog-url",
+      "category": "public_reference_gap",
+      "status": "filled_via_official_brmp_alternative",
+      "rule_ids": [
+        "calendar"
+      ],
+      "explanation": "Old BSIP host DNS failure preserved; same resource retrieved from official BRMP host, hash and visual QA captured.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:duration-calendar-calibration",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "calendar"
+      ],
+      "explanation": "Cultivar and site-specific maturity, actual field-harvest dates, integer calendar conventions and management gaps require explicit scenario choices or local validation.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:paddy-upland-transition",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "paddy_upland_transition"
+      ],
+      "explanation": "Drainage, water control, soil preparation and feasibility for a real field are unknown.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:legume-effects",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "legume_mechanism"
+      ],
+      "explanation": "No measured fixation, residue/nutrient balance or local fertilizer-credit calibration; benefits remain null.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:pest-host-evidence",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "pest_break"
+      ],
+      "explanation": "No identified field organism, local host range or validated rotation effect.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:ph-temperature-effect",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "ph_reference"
+      ],
+      "explanation": "Species optima are historical references; no locally calibrated failure thresholds, yield response or stress-day rules.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:water-accounting",
+      "category": "local_validation_gap",
+      "status": "out_of_MVP",
+      "rule_ids": [
+        "seasonal_et_reference"
+      ],
+      "explanation": "No calibrated local Kc, effective rainfall, root-zone balance, paddy seepage/percolation or actual irrigation-accounting model.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:economics",
+      "category": "local_validation_gap",
+      "status": "deferred_from_MVP",
+      "rule_ids": [
+        "economics"
+      ],
+      "explanation": "Actual prices, costs, marketable yields and validated economic method absent; generic catalog yields cannot substitute.",
+      "can_fill_actual_from_public_sources": false
+    },
+    {
+      "id": "local:agronomic-approval",
+      "category": "local_validation_gap",
+      "status": "unresolved",
+      "rule_ids": [
+        "coverage"
+      ],
+      "explanation": "Method remains reference_method_not_locally_validated; schema/reference coverage is not field approval.",
+      "can_fill_actual_from_public_sources": false
+    }
+  ]
+}

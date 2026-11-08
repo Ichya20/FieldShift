@@ -1,0 +1,435 @@
+[
+  {
+    "source": "cfvo-Q05-head.xml",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "cfvo-Q0.05-head.xml",
+    "nodata": [
+      "-32768"
+    ],
+    "statistics_min": [],
+    "depth_0_5_links": []
+  },
+  {
+    "source": "cfvo-index.html",
+    "nodata": [],
+    "statistics_min": [],
+    "depth_0_5_links": [
+      "./cfvo_0-5cm_mean/",
+      "./cfvo_0-5cm_Q0.05/",
+      "./cfvo_0-5cm_Q0.5/",
+      "./cfvo_0-5cm_Q0.95/",
+      "./cfvo_0-5cm_uncertainty/",
+      "cfvo_0-5cm_mean.vrt",
+      "cfvo_0-5cm_mean.vrt.ovr",
+      "cfvo_0-5cm_Q0.05.vrt",
+      "cfvo_0-5cm_Q0.05.vrt.ovr",
+      "cfvo_0-5cm_Q0.5.vrt",
+      "cfvo_0-5cm_Q0.5.vrt.ovr",
+      "cfvo_0-5cm_Q0.95.vrt",
+      "cfvo_0-5cm_Q0.95.vrt.ovr",
+      "cfvo_0-5cm_uncertainty.vrt",
+      "cfvo_0-5cm_uncertainty.vrt.ovr"
+    ]
+  },
+  {
+    "source": "phh2o_0-5cm_mean-native.tif",
+    "shape": [
+      8,
+      9
+    ],
+    "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      261.9481521495618,
+      0.0,
+      12334904.793277454,
+      0.0,
+      -278.2987269831855,
+      -858273.2740161393,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      12334904.793277454,
+      -860499.6638320048,
+      12337262.3266468,
+      -858273.2740161393
+    ],
+    "nodata_tag": null,
+    "min": 0,
+    "max": 58,
+    "zeros": 4,
+    "negative_sentinel": 0,
+    "values": [
+      [
+        57,
+        57,
+        56,
+        56,
+        57,
+        56,
+        56,
+        57,
+        56
+      ],
+      [
+        57,
+        57,
+        57,
+        56,
+        57,
+        57,
+        57,
+        57,
+        57
+      ],
+      [
+        58,
+        58,
+        57,
+        57,
+        58,
+        58,
+        57,
+        57,
+        57
+      ],
+      [
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      [
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      [
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      [
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        57,
+        57
+      ],
+      [
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        58,
+        57,
+        57
+      ]
+    ]
+  },
+  {
+    "source": "cfvo_0-5cm_Q0.05-native.tif",
+    "shape": [
+      8,
+      9
+    ],
+    "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      261.9481521495618,
+      0.0,
+      12334904.793277454,
+      0.0,
+      -278.2987269831855,
+      -858273.2740161393,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      12334904.793277454,
+      -860499.6638320048,
+      12337262.3266468,
+      -858273.2740161393
+    ],
+    "nodata_tag": null,
+    "min": 0,
+    "max": 0,
+    "zeros": 72,
+    "negative_sentinel": 0,
+    "values": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "source": "wv0033_0-5cm_mean-native.tif",
+    "shape": [
+      8,
+      9
+    ],
+    "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Interrupted_Goode_Homolosine\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "transform": [
+      261.9481521495618,
+      0.0,
+      12334904.793277454,
+      0.0,
+      -278.2987269831855,
+      -858273.2740161393,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      12334904.793277454,
+      -860499.6638320048,
+      12337262.3266468,
+      -858273.2740161393
+    ],
+    "nodata_tag": null,
+    "min": 0,
+    "max": 360,
+    "zeros": 4,
+    "negative_sentinel": 0,
+    "values": [
+      [
+        349,
+        355,
+        359,
+        360,
+        338,
+        347,
+        340,
+        340,
+        339
+      ],
+      [
+        346,
+        347,
+        360,
+        357,
+        342,
+        338,
+        340,
+        338,
+        340
+      ],
+      [
+        349,
+        351,
+        352,
+        355,
+        353,
+        351,
+        354,
+        352,
+        357
+      ],
+      [
+        349,
+        350,
+        348,
+        356,
+        351,
+        352,
+        354,
+        352,
+        355
+      ],
+      [
+        353,
+        352,
+        350,
+        354,
+        348,
+        349,
+        347,
+        348,
+        351
+      ],
+      [
+        351,
+        350,
+        349,
+        349,
+        345,
+        341,
+        342,
+        342,
+        347
+      ],
+      [
+        346,
+        344,
+        344,
+        343,
+        342,
+        341,
+        341,
+        343,
+        345
+      ],
+      [
+        346,
+        344,
+        0,
+        0,
+        0,
+        0,
+        340,
+        341,
+        343
+      ]
+    ]
+  },
+  {
+    "legacy_negative_records": [
+      {
+        "property": "wv0010",
+        "depth": "5-15cm",
+        "statistic": "mean",
+        "row": "7",
+        "col": "2",
+        "raw_value": "-32768"
+      },
+      {
+        "property": "wv0010",
+        "depth": "5-15cm",
+        "statistic": "mean",
+        "row": "7",
+        "col": "3",
+        "raw_value": "-32768"
+      },
+      {
+        "property": "wv0010",
+        "depth": "5-15cm",
+        "statistic": "mean",
+        "row": "7",
+        "col": "4",
+        "raw_value": "-32768"
+      },
+      {
+        "property": "wv0010",
+        "depth": "5-15cm",
+        "statistic": "mean",
+        "row": "7",
+        "col": "5",
+        "raw_value": "-32768"
+      }
+    ]
+  }
+]

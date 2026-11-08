@@ -1,0 +1,480 @@
+{
+  "workspaceCode" : "GAEZ-V5",
+  "code" : "CROP-RES05",
+  "caption" : "Crop",
+  "description" : null,
+  "type" : "WHAT",
+  "timeSubtype" : null,
+  "additionalInfo" : null,
+  "tags" : null,
+  "members" : {
+    "ALF" : {
+      "code" : "ALF",
+      "caption" : "Alfalfa",
+      "description" : null,
+      "index" : 1
+    },
+    "BAN" : {
+      "code" : "BAN",
+      "caption" : "Banana",
+      "description" : null,
+      "index" : 2
+    },
+    "BRL" : {
+      "code" : "BRL",
+      "caption" : "Barley",
+      "description" : null,
+      "index" : 3
+    },
+    "BSG" : {
+      "code" : "BSG",
+      "caption" : "Biomass sorghum",
+      "description" : null,
+      "index" : 4
+    },
+    "BCH" : {
+      "code" : "BCH",
+      "caption" : "Brachiaria",
+      "description" : null,
+      "index" : 5
+    },
+    "BCK" : {
+      "code" : "BCK",
+      "caption" : "Buckwheat",
+      "description" : null,
+      "index" : 6
+    },
+    "CAB" : {
+      "code" : "CAB",
+      "caption" : "Cabbage",
+      "description" : null,
+      "index" : 7
+    },
+    "CAM" : {
+      "code" : "CAM",
+      "caption" : "Camelina",
+      "description" : null,
+      "index" : 8
+    },
+    "CRT" : {
+      "code" : "CRT",
+      "caption" : "Carinata",
+      "description" : null,
+      "index" : 9
+    },
+    "CAR" : {
+      "code" : "CAR",
+      "caption" : "Carrot",
+      "description" : null,
+      "index" : 10
+    },
+    "CSH" : {
+      "code" : "CSH",
+      "caption" : "Cashew",
+      "description" : null,
+      "index" : 11
+    },
+    "CSV" : {
+      "code" : "CSV",
+      "caption" : "Cassava",
+      "description" : null,
+      "index" : 12
+    },
+    "CST" : {
+      "code" : "CST",
+      "caption" : "Castor bean",
+      "description" : null,
+      "index" : 13
+    },
+    "CHK" : {
+      "code" : "CHK",
+      "caption" : "Chickpea",
+      "description" : null,
+      "index" : 14
+    },
+    "CIT" : {
+      "code" : "CIT",
+      "caption" : "Citrus",
+      "description" : null,
+      "index" : 15
+    },
+    "COC" : {
+      "code" : "COC",
+      "caption" : "Cocoa",
+      "description" : null,
+      "index" : 16
+    },
+    "CON" : {
+      "code" : "CON",
+      "caption" : "Coconut",
+      "description" : null,
+      "index" : 17
+    },
+    "COF" : {
+      "code" : "COF",
+      "caption" : "Coffee",
+      "description" : null,
+      "index" : 18
+    },
+    "COT" : {
+      "code" : "COT",
+      "caption" : "Cotton",
+      "description" : null,
+      "index" : 19
+    },
+    "COW" : {
+      "code" : "COW",
+      "caption" : "Cowpea",
+      "description" : null,
+      "index" : 20
+    },
+    "RCD" : {
+      "code" : "RCD",
+      "caption" : "Dryland rice",
+      "description" : null,
+      "index" : 21
+    },
+    "PEA" : {
+      "code" : "PEA",
+      "caption" : "Dry pea",
+      "description" : null,
+      "index" : 22
+    },
+    "ECN" : {
+      "code" : "ECN",
+      "caption" : "Energy cane (better of Energy cane Type Vertix 2 and Vertix 3)",
+      "description" : null,
+      "index" : 23
+    },
+    "FLX" : {
+      "code" : "FLX",
+      "caption" : "Flax",
+      "description" : null,
+      "index" : 24
+    },
+    "FML" : {
+      "code" : "FML",
+      "caption" : "Foxtail millet",
+      "description" : null,
+      "index" : 25
+    },
+    "GRM" : {
+      "code" : "GRM",
+      "caption" : "Gram",
+      "description" : null,
+      "index" : 26
+    },
+    "GRD" : {
+      "code" : "GRD",
+      "caption" : "Groundnut",
+      "description" : null,
+      "index" : 27
+    },
+    "JTR" : {
+      "code" : "JTR",
+      "caption" : "Jatropha",
+      "description" : null,
+      "index" : 28
+    },
+    "MCA" : {
+      "code" : "MCA",
+      "caption" : "Macauba palm",
+      "description" : null,
+      "index" : 29
+    },
+    "MZE" : {
+      "code" : "MZE",
+      "caption" : "Maize",
+      "description" : null,
+      "index" : 30
+    },
+    "MNG" : {
+      "code" : "MNG",
+      "caption" : "Mango",
+      "description" : null,
+      "index" : 31
+    },
+    "MIS" : {
+      "code" : "MIS",
+      "caption" : "Miscanthus",
+      "description" : null,
+      "index" : 32
+    },
+    "NAP" : {
+      "code" : "NAP",
+      "caption" : "Napier grass",
+      "description" : null,
+      "index" : 33
+    },
+    "OAT" : {
+      "code" : "OAT",
+      "caption" : "Oat",
+      "description" : null,
+      "index" : 34
+    },
+    "OLP" : {
+      "code" : "OLP",
+      "caption" : "Oil palm",
+      "description" : null,
+      "index" : 35
+    },
+    "OLV" : {
+      "code" : "OLV",
+      "caption" : "Olive",
+      "description" : null,
+      "index" : 36
+    },
+    "ONI" : {
+      "code" : "ONI",
+      "caption" : "Onion",
+      "description" : null,
+      "index" : 37
+    },
+    "PML" : {
+      "code" : "PML",
+      "caption" : "Pearl millet",
+      "description" : null,
+      "index" : 38
+    },
+    "PHB" : {
+      "code" : "PHB",
+      "caption" : "Phaseolus bean",
+      "description" : null,
+      "index" : 39
+    },
+    "PIG" : {
+      "code" : "PIG",
+      "caption" : "Pigeonpea",
+      "description" : null,
+      "index" : 40
+    },
+    "RSD" : {
+      "code" : "RSD",
+      "caption" : "Rapeseed",
+      "description" : null,
+      "index" : 41
+    },
+    "RCG" : {
+      "code" : "RCG",
+      "caption" : "Reed canary grass",
+      "description" : null,
+      "index" : 42
+    },
+    "RUB" : {
+      "code" : "RUB",
+      "caption" : "Rubber",
+      "description" : null,
+      "index" : 43
+    },
+    "RYE" : {
+      "code" : "RYE",
+      "caption" : "Rye",
+      "description" : null,
+      "index" : 44
+    },
+    "SES" : {
+      "code" : "SES",
+      "caption" : "Sesame",
+      "description" : null,
+      "index" : 45
+    },
+    "MZS" : {
+      "code" : "MZS",
+      "caption" : "Silage maize",
+      "description" : null,
+      "index" : 46
+    },
+    "SOL" : {
+      "code" : "SOL",
+      "caption" : "Solaris energy tobacco ",
+      "description" : null,
+      "index" : 47
+    },
+    "SRG" : {
+      "code" : "SRG",
+      "caption" : "Sorghum",
+      "description" : null,
+      "index" : 48
+    },
+    "SOY" : {
+      "code" : "SOY",
+      "caption" : "Soybean",
+      "description" : null,
+      "index" : 49
+    },
+    "SUB" : {
+      "code" : "SUB",
+      "caption" : "Sugar beet",
+      "description" : null,
+      "index" : 50
+    },
+    "SUC" : {
+      "code" : "SUC",
+      "caption" : "Sugar cane",
+      "description" : null,
+      "index" : 51
+    },
+    "SFL" : {
+      "code" : "SFL",
+      "caption" : "Sunflower",
+      "description" : null,
+      "index" : 52
+    },
+    "SPO" : {
+      "code" : "SPO",
+      "caption" : "Sweet potato",
+      "description" : null,
+      "index" : 53
+    },
+    "SWG" : {
+      "code" : "SWG",
+      "caption" : "Switchgrass",
+      "description" : null,
+      "index" : 54
+    },
+    "CYA" : {
+      "code" : "CYA",
+      "caption" : "Taro",
+      "description" : null,
+      "index" : 55
+    },
+    "TEA" : {
+      "code" : "TEA",
+      "caption" : "Tea",
+      "description" : null,
+      "index" : 56
+    },
+    "TOB" : {
+      "code" : "TOB",
+      "caption" : "Tobacco",
+      "description" : null,
+      "index" : 57
+    },
+    "TOM" : {
+      "code" : "TOM",
+      "caption" : "Tomato",
+      "description" : null,
+      "index" : 58
+    },
+    "TRI" : {
+      "code" : "TRI",
+      "caption" : "Triticale",
+      "description" : null,
+      "index" : 59
+    },
+    "RCW" : {
+      "code" : "RCW",
+      "caption" : "Wetland rice",
+      "description" : null,
+      "index" : 60
+    },
+    "WHE" : {
+      "code" : "WHE",
+      "caption" : "Wheat",
+      "description" : null,
+      "index" : 61
+    },
+    "WPO" : {
+      "code" : "WPO",
+      "caption" : "White potato",
+      "description" : null,
+      "index" : 62
+    },
+    "YAM" : {
+      "code" : "YAM",
+      "caption" : "Yam",
+      "description" : null,
+      "index" : 63
+    },
+    "EC2" : {
+      "code" : "EC2",
+      "caption" : "Energy cane Type Vertix 2 (developed by GranBio)",
+      "description" : null,
+      "index" : 64
+    },
+    "EC3" : {
+      "code" : "EC3",
+      "caption" : "Energy cane Type Vertix3 (developed by GranBio)",
+      "description" : null,
+      "index" : 65
+    },
+    "FIML" : {
+      "code" : "FIML",
+      "caption" : "Finger Millet",
+      "description" : null,
+      "index" : 66
+    },
+    "FONIO" : {
+      "code" : "FONIO",
+      "caption" : "Fonio",
+      "description" : null,
+      "index" : 67
+    },
+    "OKRA" : {
+      "code" : "OKRA",
+      "caption" : "Okra",
+      "description" : null,
+      "index" : 68
+    },
+    "PST" : {
+      "code" : "PST",
+      "caption" : "Pasture grasses",
+      "description" : null,
+      "index" : 69
+    },
+    "TANN" : {
+      "code" : "TANN",
+      "caption" : "Tannia (Xanthosoma sagittifolium)",
+      "description" : null,
+      "index" : 70
+    },
+    "TAROW" : {
+      "code" : "TAROW",
+      "caption" : "Taro wetland (Colocasia esculenta)",
+      "description" : null,
+      "index" : 71
+    },
+    "TAROD" : {
+      "code" : "TAROD",
+      "caption" : "Taro dryaland (Colocasia esculenta)",
+      "description" : null,
+      "index" : 72
+    },
+    "TEF" : {
+      "code" : "TEF",
+      "caption" : "Tef",
+      "description" : null,
+      "index" : 73
+    },
+    "WMEL" : {
+      "code" : "WMEL",
+      "caption" : "Watermelon",
+      "description" : null,
+      "index" : 74
+    },
+    "AVOC" : {
+      "code" : "AVOC",
+      "caption" : "Avocado",
+      "description" : null,
+      "index" : 75
+    },
+    "AVOST" : {
+      "code" : "AVOST",
+      "caption" : "Avocado subtropical ecotype",
+      "description" : null,
+      "index" : 76
+    },
+    "AVOTH" : {
+      "code" : "AVOTH",
+      "caption" : "Avocado tropical highland",
+      "description" : null,
+      "index" : 77
+    },
+    "AVOTL" : {
+      "code" : "AVOTL",
+      "caption" : "Avocado tropical lowland",
+      "description" : null,
+      "index" : 78
+    }
+  }
+}

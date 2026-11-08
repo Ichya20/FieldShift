@@ -1,0 +1,129 @@
+{
+  "prepared_utc": "2026-11-08T10:05:27.880025+00:00",
+  "sources": [
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/phh2o/phh2o_0-5cm_mean.vrt",
+      "file": "raw/phh2o-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/sand/sand_0-5cm_mean.vrt",
+      "file": "raw/sand-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/silt/silt_0-5cm_mean.vrt",
+      "file": "raw/silt-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/clay/clay_0-5cm_mean.vrt",
+      "file": "raw/clay-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/soc/soc_0-5cm_mean.vrt",
+      "file": "raw/soc-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/nitrogen/nitrogen_0-5cm_mean.vrt",
+      "file": "raw/nitrogen-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/cec/cec_0-5cm_mean.vrt",
+      "file": "raw/cec-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/bdod/bdod_0-5cm_mean.vrt",
+      "file": "raw/bdod-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/cfvo/cfvo_0-5cm_mean.vrt",
+      "file": "raw/cfvo-source-vrt-head.xml",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": 206,
+      "bytes": 8192,
+      "partial": true,
+      "notes": "Only first8192bytes; source VRT may be incomplete XML. Range header requested."
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/wv0010/wv0010_0-5cm_mean.vrt",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/wv0033/wv0033_0-5cm_mean.vrt",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://files.isric.org/soilgrids/latest/data/wv1500/wv1500_0-5cm_mean.vrt",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://registry.opendata.aws/copernicus-dem/",
+      "file": "raw/copernicus-dem-aws-registry.html",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": "downloaded",
+      "bytes": 10002
+    },
+    {
+      "url": "https://esa-worldcover.org/en/data-access",
+      "file": "raw/worldcover-data-access.html",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": "downloaded",
+      "bytes": 49887
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover",
+      "file": "raw/worldcover-collection.json",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "status": "downloaded",
+      "bytes": 7270
+    },
+    {
+      "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset?latitude=-7.721875031299882&longitude=110.55354472008753&startDate=A2021001&endDate=A2021001&kmAboveBelow=0&kmLeftRight=0",
+      "file": "raw/modis-primary-grid-check.json",
+      "status": "downloaded",
+      "accessed_utc": "2026-11-08T10:05:27.880025+00:00",
+      "bytes": 2330
+    }
+  ]
+}

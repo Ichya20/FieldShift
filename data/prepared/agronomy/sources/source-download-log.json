@@ -1,0 +1,136 @@
+[
+  {
+    "id": "gaez-user-guide",
+    "url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/21.-GAEZ-v5-Platform-User-Guide.md",
+    "accessed_at_utc": "2026-11-08T09:54:16.218787+00:00",
+    "path": "sources/gaez-user-guide.md",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 12344,
+    "sha256": "8b0fc35f2526d6d391d67540477a96c42911fa5059ce88a30874a2469ccb3e6c",
+    "final_url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/21.-GAEZ-v5-Platform-User-Guide.md"
+  },
+  {
+    "id": "gaez-theme4-mapping",
+    "url": "https://github.com/user-attachments/files/21917536/_readme_RES05.xlsx",
+    "accessed_at_utc": "2026-11-08T09:54:16.218787+00:00",
+    "path": "sources/gaez-theme4-mapping.xlsx",
+    "status": "failed",
+    "error": "HTTP Error 504: Gateway Time-out"
+  },
+  {
+    "id": "gaez-crops",
+    "url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/14.-Appendix-4%E2%80%901-Crops.md",
+    "accessed_at_utc": "2026-11-08T09:54:16.218787+00:00",
+    "path": "sources/gaez-crops.md",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 174,
+    "sha256": "c79771c9d15c8146b62b64755731cb58eac4ebf746a9fcc7eb2c521554ce0996",
+    "final_url": "https://raw.githubusercontent.com/wiki/un-fao/gaezv5/14.-Appendix-4%E2%80%901-Crops.md"
+  },
+  {
+    "id": "fao-water-needs",
+    "url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+    "accessed_at_utc": "2026-11-08T09:54:16.221433+00:00",
+    "path": "sources/fao-water-needs.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 35613,
+    "sha256": "8a415afc75f3f9dbf2a6a7dea0d1009f1c89173ba5b96f7613365c7b00f819fa",
+    "final_url": "https://www.fao.org/4/s2022e/s2022e02.htm"
+  },
+  {
+    "id": "fao-seasonal-water",
+    "url": "https://www.fao.org/4/s2022e/s2022e07.htm",
+    "accessed_at_utc": "2026-11-08T09:54:16.221433+00:00",
+    "path": "sources/fao-seasonal-water.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 127577,
+    "sha256": "86cecd0b1707e18116e6d68e986715e2d5f34d9b67c802fff029394b17cebc62",
+    "final_url": "https://www.fao.org/4/s2022e/s2022e07.htm"
+  },
+  {
+    "id": "fao-paddy-irrigation",
+    "url": "https://www.fao.org/4/t7202e/t7202e07.htm",
+    "accessed_at_utc": "2026-11-08T09:54:17.113807+00:00",
+    "path": "sources/fao-paddy-irrigation.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 12445,
+    "sha256": "c5c75e149444743945445cf2cc39efbf29d40f8e01466657aa94fbd14b3c8e01",
+    "final_url": "https://www.fao.org/4/t7202e/t7202e07.htm"
+  },
+  {
+    "id": "fao-maize",
+    "url": "https://www.fao.org/land-water/databases-and-software/crop-information/maize/",
+    "accessed_at_utc": "2026-11-08T09:54:17.265249+00:00",
+    "path": "sources/fao-maize.html",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "fao-soybean",
+    "url": "https://www.fao.org/land-water/databases-and-software/crop-information/soybean/",
+    "accessed_at_utc": "2026-11-08T09:54:17.278345+00:00",
+    "path": "sources/fao-soybean.html",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "kementan-inpari32",
+    "url": "https://sulbar.brmp.pertanian.go.id/berita/brmp-sulawesi-barat-dampingi-penanaman-varietas-unggul-inpari-32-hdb-di-desa-bumiayu",
+    "accessed_at_utc": "2026-11-08T09:54:17.555099+00:00",
+    "path": "sources/kementan-inpari32.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 58610,
+    "sha256": "80cea237b45f1336f5414b4eba256b3d7a71c8956188e814239cf69a3117bcbd",
+    "final_url": "https://sulbar.brmp.pertanian.go.id/berita/brmp-sulawesi-barat-dampingi-penanaman-varietas-unggul-inpari-32-hdb-di-desa-bumiayu"
+  },
+  {
+    "id": "kementan-anjasmoro",
+    "url": "https://pustaka.bppsdmp.pertanian.go.id/index-berita/varietas-anjasmoro-si-kedelai-biji-besar",
+    "accessed_at_utc": "2026-11-08T09:54:17.853028+00:00",
+    "path": "sources/kementan-anjasmoro.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 98721,
+    "sha256": "b251ed636309e058ca00a2e747a5c7ab01e4c7b0b8ae52154cf3875120a9b64a",
+    "final_url": "https://pustaka.bppsdmp.pertanian.go.id/index-berita/varietas-anjasmoro-si-kedelai-biji-besar"
+  },
+  {
+    "id": "kementan-jakarin",
+    "url": "https://diy.brmp.pertanian.go.id/berita/kunjungan-kepala-bpsi-serealia-ke-ip2sip-banyakan",
+    "accessed_at_utc": "2026-11-08T09:54:17.853028+00:00",
+    "path": "sources/kementan-jakarin.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 64307,
+    "sha256": "13a1f14c8db48e4922e9eaa59bd550f05f27cd7903d4d1d2f1a427f34d20e48a",
+    "final_url": "https://diy.brmp.pertanian.go.id/berita/kunjungan-kepala-bpsi-serealia-ke-ip2sip-banyakan"
+  },
+  {
+    "id": "kementan-siap-tanam",
+    "url": "https://brmp.pertanian.go.id/index.php/layanan/layanan-elektronik/siap-tanam",
+    "accessed_at_utc": "2026-11-08T09:54:17.999714+00:00",
+    "path": "sources/kementan-siap-tanam.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 47921,
+    "sha256": "ad820a4782175e1c6be0e42a14d67409f35aa2a72eca1e570216e9218996be12",
+    "final_url": "https://brmp.pertanian.go.id/index.php/layanan/layanan-elektronik/siap-tanam"
+  },
+  {
+    "id": "fao-aquacrop-inputs",
+    "url": "https://www.fao.org/aquacrop/overview/input-requirements/",
+    "accessed_at_utc": "2026-11-08T09:54:18.175602+00:00",
+    "path": "sources/fao-aquacrop-inputs.html",
+    "status": "downloaded",
+    "http_status": 200,
+    "bytes": 60183,
+    "sha256": "d6dbb82d3f6eaf88dbf356e29e3ff40c7854377e7071a330b6beaaacbb9aca30",
+    "final_url": "https://www.fao.org/aquacrop/overview/input-requirements/"
+  }
+]

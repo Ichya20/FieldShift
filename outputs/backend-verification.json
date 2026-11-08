@@ -1,0 +1,75 @@
+{
+  "verified_at_utc": "2026-11-08T11:56:15.155192+00:00",
+  "status": "passed_backend_mvp_checks_not_local_agronomic_validation",
+  "python_version": "3.11.1",
+  "tests": {
+    "method": {
+      "run": 55,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "backend": {
+      "run": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "real_http": {
+    "binding": "127.0.0.1",
+    "checks": [
+      {
+        "method": "GET",
+        "path": "/health",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/catalog",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/api/v1/demo",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/openapi.json",
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/api/v1/compare",
+        "status": 200,
+        "demo_roundtrip_equal": true
+      }
+    ],
+    "server_stopped": true
+  },
+  "source_integrity": {
+    "data/prepared/file-manifest.json": {
+      "sha256": "1f5eecf85c0c13478eaa09a1b037b3dc0ca01eca061f5dc855c52c3197d9bbde",
+      "files": 390
+    },
+    "data/supplemental/file-manifest.json": {
+      "sha256": "27b67b9f3caf075a20f641437029beb67128abe9426f6b021e244a7b78e8343c",
+      "files": 526
+    }
+  },
+  "method_version": "0.1.0",
+  "rules_per_strategy": 12,
+  "local_agronomic_validation": false,
+  "frontend_implemented": false,
+  "deployed": false,
+  "dependencies": {
+    "fastapi": "0.162.2",
+    "uvicorn": "0.54.0",
+    "pydantic": "2.14.3",
+    "starlette": "1.10.0",
+    "rasterio": "1.4.4",
+    "jsonschema": "4.26.0",
+    "httpx": "0.28.1"
+  }
+}

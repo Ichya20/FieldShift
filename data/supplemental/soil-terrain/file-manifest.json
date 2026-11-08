@@ -1,0 +1,1986 @@
+{
+  "prepared_at_utc": "2026-11-08T11:29:01.731548+00:00",
+  "files": [
+    {
+      "path": "data/supplemental/soil-terrain/bdod-catalog-source-manifest.json",
+      "bytes": 455,
+      "sha256": "281dbe4b81771ddbce1602547b619e196cde4d01ea72d61203dd2d9313761d8a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/catalog-observations.json",
+      "bytes": 7677,
+      "sha256": "23bd649c327ba7f5e7541092c3f157a8a14ca75177f0e5a965ddd3616619a3bd"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/catalog-source-manifest.json",
+      "bytes": 5003,
+      "sha256": "27daa3e1cfc08e1e3375053bb38de17f16febdc4313f1be579adc726d5a24adc"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/direct-probe-source-manifest.json",
+      "bytes": 567,
+      "sha256": "abba8bc90c698073d1b0ee733cd85ba3a1169761b8a0f9790c396baf43a3dbb0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/direct-source-probe.json",
+      "bytes": 3732,
+      "sha256": "5cb45f7514d819f4f28ec67ad8b239dfafdc4d9f4a6a6b0adc9d205552569b2b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/grid-catalog.json",
+      "bytes": 274052,
+      "sha256": "f272e98a975c0f161012ce63060f1fe80cf2465dbc11805efa55a5ea95b7c2ce"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/native-progress.json",
+      "bytes": 253353,
+      "sha256": "2a27f75a8c6380f12826f7eec39ef8eb0ba9fa33927b72e3640714080c3aadb8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/native-source-attempts-initial.json",
+      "bytes": 163896,
+      "sha256": "cd46c13cb0a294c63352264cbd9095e327431d7d24ddaa5139cc67f0a6af0afb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/native-source-manifest.json",
+      "bytes": 267457,
+      "sha256": "98af208cb8c88589344a061e5f23cc7f6b2f77103cffcbe9ff435551efae6691"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/probe-observations.json",
+      "bytes": 9355,
+      "sha256": "7e85077c9fd0ba2de593b80169df2137aa0ac3d695f818ed0dd5fa9fd9160647"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/probe-source-manifest.json",
+      "bytes": 3246,
+      "sha256": "f52f6c3ad99b5569dca43e5ea0a6af2282feabc4d57313158e3e7aab70c53636"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/processed/anchor-native-profiles.csv",
+      "bytes": 94065,
+      "sha256": "705068877e64c8090d015057d3d2655447c0edbb6a08d5fb4a59c456c0f5b0b1"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/processed/legacy-centers-native-audit.csv",
+      "bytes": 3078866,
+      "sha256": "8190a89a2984b7cb4578b3006be59a1a4461152c82a1f20cb7f2f3f457f4bee1"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/processed/native-common-valid-mask.tif",
+      "bytes": 953,
+      "sha256": "f74866847b42f76b3da26f9500d8207c0a3ac6ef3d41c64b52be7764ddc216c5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/bdod-local-tile-index.html",
+      "bytes": 4246,
+      "sha256": "7701efefd6b760c3efbdc551b4101f6e6bc8f67e5694ae3c96ef1e046314dc2c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/cfvo-index.html",
+      "bytes": 28858,
+      "sha256": "aca560a1cfb72b724079ccd4feca16ba8ad4069ea44198ed2ac614a42dd8b034"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/cfvo-Q0.05-head.xml",
+      "bytes": 8192,
+      "sha256": "2cd1598177ce9a62a64f7b4a5327429843693ccfc266fe7bf9b8494be8e4c7f4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/cfvo-Q05-tile-directory-021-071.html",
+      "bytes": 4523,
+      "sha256": "9f58c55e684d75aaa990e30872085e36052e658781bb323c5936620e5dcdeff9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/cfvo-Q05-tile-directory.html",
+      "bytes": 4803,
+      "sha256": "82d2e653e7ffa94668ceeb0277d2dede43f4227e8a9cff56d347611f4d4f48c2"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/cfvo_0-5cm_Q0.05-native.tif",
+      "bytes": 1061,
+      "sha256": "ab8bfab62f20a0e95269445273b1f5620d4213474d11eadc868867ea07a63159"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "55bbdcf69d9fffdc35f6160c901234504b750c58572655b8dcd04a41c485e955"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_mean.tif",
+      "bytes": 1008,
+      "sha256": "200e82f5de0451089b7f40db9df9899e1a068c59faf4cd38e3ffe384fe417e61"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "0dfba691c6d0bd7250c6832848a8044409d168ea4d852a174c11719d2582822b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_Q0.05.tif",
+      "bytes": 1009,
+      "sha256": "e108169f21253c7942ccca913256db106de423cc92b708619a2d339ec5e3bb6c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "0d70ac9d856082aba55530413a4b1465e4f492b810c5b35132470417e7cfc847"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_0-5cm_Q0.95.tif",
+      "bytes": 1017,
+      "sha256": "2909ebbdbe0da662a3ed508e50cd755fd207b7faa13dbecd9c5793539a8a64e4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "ff1007dead1fc59646e2898bf3e2181df1526521930bf0e013b41c321be1c7b8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_mean.tif",
+      "bytes": 1007,
+      "sha256": "39f8f4dfe8ad4993f29c5e0c3822e07c0d51264d971482a6ac107edafe89fa45"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "ad0e844c87f4f824589f4f977b3632ee5045ecba15264025cce7ef7ba79a9eea"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_Q0.05.tif",
+      "bytes": 1017,
+      "sha256": "60c23ef9fb380fc8a03cd09eeaf1b7b459a9009c54e1bda499e38195188bd09c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "8ccc63c71c57a61801b131e85f3b79352e1185c3e473e97e37ef686953acc4ab"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_15-30cm_Q0.95.tif",
+      "bytes": 1017,
+      "sha256": "c494340b225ebe242b41249642120ceb26c57cbf842db7a57946b2d9a8572290"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "5bf63d4e9c5a6a2174f818f58124f7523d20b184db88cb7f2beb07c2d2cee37f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_mean.tif",
+      "bytes": 1008,
+      "sha256": "2e1c7a5c599c374d5372be5bf3db46851b9c4d833427c1a5a39939efe15e0a87"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "d00d6aaddc01eceedcb834c4b5691e417268a12934870fb966ca0fe0046d4f3b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_Q0.05.tif",
+      "bytes": 1015,
+      "sha256": "9e1ba71b068eb1959354a631ba3646af331d54ae50e5f4aa72cd652be22be9a5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "89abf3efc6a9731612fa2b63d77d366a7eec2e9be586235b5a20720f9cec80b9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_30-60cm_Q0.95.tif",
+      "bytes": 1018,
+      "sha256": "2e3741224e294f7c4a17d2d0aae4d485c0bb20e100e23c1649956223785ac9b5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "2d29c2a38dd9cfcb20f4b7ed727827f53abc6927df7411c0ded0d83af89331c6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_mean.tif",
+      "bytes": 1010,
+      "sha256": "055ab0d67f50e6d178dac0d4347c79389fc367f7bea504b3c6ccf88c6a584fce"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "658b3f079903bad1cb6b944c1ccb0a8e947c30c252a8e9ec1ae674b5f169f9c3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_Q0.05.tif",
+      "bytes": 1018,
+      "sha256": "d997fee96d69740d0cbfd728e9907bb1582281001003c03eb43c73901c895801"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "96b7d165cecb92f9a6a2020daa885b17a0f29f745d346236b3ee16275010f573"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_5-15cm_Q0.95.tif",
+      "bytes": 1011,
+      "sha256": "1c8d47001d2698646619b5ba2a2597b5667fcae7c4eacea4a70c8c8199c537cf"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "d0ccddd33dee8d4ae10bf514533055cc1a3f1b22f25f30ea96e1392cf72f78b3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_mean.tif",
+      "bytes": 1003,
+      "sha256": "9e62c01778f4753132bd7c557addb9c306426d17052e83eaf79bd4f7f6b06d7c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "605295da8a2048881e884a9d3111f6924ab95c7740535a9e88c47f7898f69237"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_Q0.05.tif",
+      "bytes": 1021,
+      "sha256": "21a1c8d1ebd8a99911fc27d81c73cc5f2395adc0132c85fdf14a8bf25f59b35c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "a9098989e9e3c80838a349a2760a55ed8df579375a6aa6694edb020111db9f95"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/bdod_60-100cm_Q0.95.tif",
+      "bytes": 1017,
+      "sha256": "1f9161a92a2f24a04881b5fcb723cd7b9884f910bf7c42ca8b2296c616e97649"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_mean.source.json",
+      "bytes": 1241,
+      "sha256": "4d126ca7e6befcbf419162f75f9b66b107bf29d384bc35996a74e527b667223b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_mean.tif",
+      "bytes": 1045,
+      "sha256": "91da187d6692189dcee07bee9be45980d5e416f30ed09f6ac28a8fddc398697c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_Q0.05.source.json",
+      "bytes": 1242,
+      "sha256": "94cd16356a391bf93c88d70261ae3a2d3c65b9ab9256ca3d1d04e091c14d8feb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_Q0.05.tif",
+      "bytes": 1020,
+      "sha256": "02e42edf3777234b3d871ba6cbc3c87e811c055fba1a3449db6c08a7613439be"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_Q0.95.source.json",
+      "bytes": 1242,
+      "sha256": "c8ad98696d22e47d26ec5f834140be698d355b34c90c14a5dd36243f46c14249"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_0-5cm_Q0.95.tif",
+      "bytes": 1041,
+      "sha256": "a52d695ecea5cdf85888a0ebad436c2971b8f8b8187768ce3e8ba9bf1f8afb4e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "cec891561f63e3e03bdd4edb1512bde47ba412cd3f79bd6780b70a9b6050654c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_mean.tif",
+      "bytes": 1059,
+      "sha256": "12b343863508d2d3cf182f3fdb05e9594174821c091a2f989467bc6fc5e97de4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "f71468ff8cb36b16345d9dd51da4ffd5aab902fec8d10278d884649a1f1acba6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_Q0.05.tif",
+      "bytes": 1023,
+      "sha256": "8712ce562a0a0cbc83f290f962d0420df0327e7fc3b29cee04f43da53883e089"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "af0dd3f2aec975fa52f9d7edf3ae53b802cd2bc3037bb4df79531ffc88fe2867"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_15-30cm_Q0.95.tif",
+      "bytes": 1038,
+      "sha256": "7f2cc7a5fb1401cc6a0b53529a4acb0bc7110dc6b7fbb4a58f21562081b6122b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "73b15abf42668cdab96761c4bf798567ca7d05245b48c54abb8e0453635ae319"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_mean.tif",
+      "bytes": 1060,
+      "sha256": "3104838cee2baf1470aa4955d9b6a3ccfc64aa1ce96f3abf04ca71cd05049ebb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "6f1c34fbb4d67f0ac4abfd123e735aba5f1ccd961c544ecf5174e40903954a6c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_Q0.05.tif",
+      "bytes": 1020,
+      "sha256": "f7183fe76bfe60acdaab63cb3a742152bab82c4a319f8b164a43cd98d68f6461"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "0a41f61b0c6a0869ae0dd759a35f2a306c5bb6d6320a931b54a0d85d7633715f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_30-60cm_Q0.95.tif",
+      "bytes": 1046,
+      "sha256": "d5fbe27eb1dcdb468ca9c10edb487ab24d4785f3b89300d81bb621a7d329e144"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_mean.source.json",
+      "bytes": 1242,
+      "sha256": "dedd2596e2d8ecc63797747ee062a249f0aae6a2000d309c0ae05ef6b25171a4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_mean.tif",
+      "bytes": 1057,
+      "sha256": "c57309c2ac04ef0e23a767cb0a7e089ee805560ffec3fd1c790e3a290996c52b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_Q0.05.source.json",
+      "bytes": 1243,
+      "sha256": "4e3a07aea892b7d5b1bd26506a38e43dcbcdbccdd7e8fda4b68a21580d06902f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_Q0.05.tif",
+      "bytes": 1021,
+      "sha256": "924d8439a10216c92e8e634ac3bf9477e5cf616fdc3799756168670ba2887df0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_Q0.95.source.json",
+      "bytes": 1243,
+      "sha256": "0773f2e84cc58e580d1a3f96f4e5aa5c80748f4bb1233f48d34973c45d0562b9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_5-15cm_Q0.95.tif",
+      "bytes": 1043,
+      "sha256": "340379ca98224f82229f21bf0de44ddc47573f70506e89d58b3e558f0a1da61c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "54a3881be649c7e0e6279a466da3a689f74d3d63b772873658e134fb602e40b8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_mean.tif",
+      "bytes": 1054,
+      "sha256": "a6727783cba564bc6a278a5bd5c5c2ad8e985a57f16130887a75418c35cc56ff"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "04333448ea08a6429eecdbda288f15ebebbc8a0e0b3009e9acfad379a4ad74e1"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_Q0.05.tif",
+      "bytes": 1017,
+      "sha256": "556219550d4af03dac1d02476a8faed0c42ed867c3945afa61df03d347eb31de"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "c7022a43a3e85e0197f4103db318c364cb328c6d7c3ff54a21cd604dfd71c0a0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cec_60-100cm_Q0.95.tif",
+      "bytes": 1043,
+      "sha256": "9e859efb7bf664fa65669a60d41205d7d6718ac050a939ed3efe6daa6a2507db"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "5366742fa0f18816b8081dc40147930319df99e0baa8da5c537c11a5b0034313"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_mean.tif",
+      "bytes": 1073,
+      "sha256": "a93aeceb2933debe4c122bae54f547293bc5b6a60195df9ade04afdb994cf1ce"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "768ae5831b57cbb9e101891e0a1650d686e264153da22e2131940720c243c98b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_Q0.05.tif",
+      "bytes": 960,
+      "sha256": "8f551fd1465bd63f147804fae0b489d066ea1ada763cc3bc42974de8c7a17190"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "7834937c1f338472c781d94d34e476621bbcfa438963dba14694f3f52290d7d3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_0-5cm_Q0.95.tif",
+      "bytes": 1063,
+      "sha256": "089cfcb04891548002503df9cf0a06c687e38cae745dfe61b1c8522f9b23dc24"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "8f1941262ae1a6e9b45ea459976420597246e75a63c73401cd613c8b0dd7f602"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_mean.tif",
+      "bytes": 1083,
+      "sha256": "7ec757064a600784c74cf2e428f766be885041c08fca725a3c1da5c62c1a5e88"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "cca1b035d9f3de3ad4bb1e787ca23e583732c0ee1033d03a3c96563870729a92"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_Q0.05.tif",
+      "bytes": 960,
+      "sha256": "8f551fd1465bd63f147804fae0b489d066ea1ada763cc3bc42974de8c7a17190"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "ced6339f5fc45e2253c051b9dec72c8a9c44c02eca92f8498fd2f64c1540567f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_15-30cm_Q0.95.tif",
+      "bytes": 1063,
+      "sha256": "0cefeaa6bb33b86fadde9114270eaf35b02c6743030990e23e2e4190fb2c2b8f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "660e38fe4ba5d7e3f259f40f63306640dce6b870f61a9543aa1352d03c636821"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_mean.tif",
+      "bytes": 1084,
+      "sha256": "332246ea63001b970b2c5f4fa0084ed97102609f2da51bf6d8c3f1c4ca151de3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "6c1a3a990500cdd764da9d7337479ae518e2fba1b57e5e6440b1c8df3520e52d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_Q0.05.tif",
+      "bytes": 960,
+      "sha256": "8f551fd1465bd63f147804fae0b489d066ea1ada763cc3bc42974de8c7a17190"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "7295ebabafdc96ce0eedb14de07da49d34a664ef6f9bf51f691326d00723ff2a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_30-60cm_Q0.95.tif",
+      "bytes": 1060,
+      "sha256": "7a2e2bd47b12445191350269e0ab39016645f4bfa601b6d98a1683e060d872c7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "c208c412cff20061a02f18673df40f32491c340f0587659e0126a3b112885b6d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_mean.tif",
+      "bytes": 1073,
+      "sha256": "4a9aadf418a63d4c903ad8ff5e85eb356beb5145fb1b35e3c37c4f3bcaa21134"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "0fc5aba99067d47d0029d3a9b9711f38e3e04162bd25cffd13cbced8882e8688"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_Q0.05.tif",
+      "bytes": 960,
+      "sha256": "8f551fd1465bd63f147804fae0b489d066ea1ada763cc3bc42974de8c7a17190"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "7ed2099d67d6b245bb4b0dd41b8223fd49939f0646b2478bf3e996ea6d3aa841"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_5-15cm_Q0.95.tif",
+      "bytes": 1082,
+      "sha256": "fb102db426e4927ee6fca7c34c02d6480aebba27f8740212af18b4461eea0722"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "6b505fb8e0de27162a8655119e24c7f6c374bbdee4ac16a6c3777bbeb4c6f682"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_mean.tif",
+      "bytes": 1086,
+      "sha256": "b1db29732e6aa2c86b1a0a5959b3f6401c4d6e36f36522c54b8c04155fe57e1b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "40dbac32c277be1abe81790b537cc2e67fd5220f87e9a286acdfc54ad0f03644"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_Q0.05.tif",
+      "bytes": 960,
+      "sha256": "8f551fd1465bd63f147804fae0b489d066ea1ada763cc3bc42974de8c7a17190"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "22bcda811cfdd68892b95fc5a9c69acc4bdd3d0ac7d11776687398667584b8ef"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/cfvo_60-100cm_Q0.95.tif",
+      "bytes": 1072,
+      "sha256": "4924e390b6be65898841b7a6ff6e6aa67855693faacb00249ad3121977b84942"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "f5856873cbb1807c9adeb0942d77ab569b91e740f0165b31ce45d1ef141f1b45"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_mean.tif",
+      "bytes": 1076,
+      "sha256": "075b0798f17ba9d5df85f24fc6f6512c08352dfb34f5a18480f66804885e5a67"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "8b642a4f05dec0255191b6cd65bc050fcefb813b200b3cbe1928dd664bdcc8df"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_Q0.05.tif",
+      "bytes": 1024,
+      "sha256": "e8394b8122aaf1bcd8e38d0b5e88114d031085d94bc5c547b78b6c8b9cb0655b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "a942d5657672642a34f24e9eefc40210ed64cc55d9356fe09c02fe7dbf78264b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_0-5cm_Q0.95.tif",
+      "bytes": 1047,
+      "sha256": "5cb73b541681b38f49319dd22d0d775db5befc158979426a579a99a446f6e095"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "3edb9de7ce74aa26b8a0d3267cff2d012878faf613f8d24314850133c54043ea"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_mean.tif",
+      "bytes": 1083,
+      "sha256": "4c1f6992a264d76b509abb638ae4a9860c0ac76e42edcfc87051fd67475cddf4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "411302cc5a02d9700259906e7fe30cbf551f03d83400c8bf36fada6f32854a47"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_Q0.05.tif",
+      "bytes": 1023,
+      "sha256": "1f4ac176d32f9974d2dc84d7fccad1fc96f85665aa34685e73d1adfef94edce4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "618d0972102867ff3d35e0471a665fdccfb99c65da007c5a27d348eebb664bb9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_15-30cm_Q0.95.tif",
+      "bytes": 1057,
+      "sha256": "b8d72bd8da69766bdd4d8217cad827c252bba434afc8701db66483969cefc503"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "59b50d0652c87edd2b407e4d7c6715108dc050e7b959e6a4864a925d2d82ac63"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_mean.tif",
+      "bytes": 1083,
+      "sha256": "139602448993a04b0e978b7026ff0b2abdb3f9ee198a1836eced3faa527b5a9d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "d2a6ff8a6dcabb0adac0b71e38449fdee81a41b7317108e693124cb9df30b326"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_Q0.05.tif",
+      "bytes": 1036,
+      "sha256": "dca1298a3184da6f4df0b2db26c75fecd5452ec5b46cca67d5f344f18cc9b9a3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "f6c5f9186b3245f1500dfd2fc123fcfceb43f5ef92bd52d4555d0ed24c5915a8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_30-60cm_Q0.95.tif",
+      "bytes": 1032,
+      "sha256": "6745765288687c1ca9a5cc648e5edec16837eee14ac4cfdf06c9013850f9ad12"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "9bec739ee9be34d96b1bda07ea6cdb2d387cf0102ab14ae3bb6f611fa855d3d9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_mean.tif",
+      "bytes": 1076,
+      "sha256": "eb437663aae2438347c6938a1c51b0d3922879f5aec40288c5ea69c6ea667339"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "5c79d9a4c2b24629a725b02bb6204cd4d5be69b8b7125310350f398faabe87a5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_Q0.05.tif",
+      "bytes": 1019,
+      "sha256": "dbfc7988900d6f365f1cfed8625a84702e31272f044310e19b9ffa9f932e4fec"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "9e706d2ab4629780a5eb5be0d893f09a1986eb62ebed12608665d650eb63d5f9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_5-15cm_Q0.95.tif",
+      "bytes": 1050,
+      "sha256": "50bb0edb884e94cca423cf68c5a2474ea9e60e65e1da5fd631942e69b4d2a0a3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "50cbf7e51e7c65143f3534b9ac810fb280edae24301135e1b06549b48a5131b3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_mean.tif",
+      "bytes": 1083,
+      "sha256": "10f57a9b56547e2a7875cceddb4960ab2484f013bccc59a0928af30b438a3e39"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "dbf3b4bfa9f2fac149860e84071eb5dcfb1b50d82b4a23c404cc494fb4fe96dd"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_Q0.05.tif",
+      "bytes": 1034,
+      "sha256": "fbd6d793ca29257da2113abf1c999b0d82babadd5a7021064cd0a1daa3f14785"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "b2b4566ab48fd03ff6a2b47605c13eb0d05df180daf5fcd93a3b9c307b799ba9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/clay_60-100cm_Q0.95.tif",
+      "bytes": 1048,
+      "sha256": "b7c274c2191e980c22c1ba749674bf63f6aaa57c7b42957bad901ad5b668cb82"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_mean.source.json",
+      "bytes": 1251,
+      "sha256": "4b7808b0e2f6ba75af9b64c9337ccb3ec11ec61484b20f8e7681fa800db2226f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_mean.tif",
+      "bytes": 1068,
+      "sha256": "e7cc24a30369d3b8cd8ab8596b3dfb253ba9a00ab702e3dfe374581d3f8ce2aa"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_Q0.05.source.json",
+      "bytes": 1252,
+      "sha256": "31f89166d6b916dfdbcf75de74616b8b040151828026561efda4fd321bbe947d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_Q0.05.tif",
+      "bytes": 995,
+      "sha256": "2b6c4f56ed5e6851484d2fcfc13c586eb5123ca85a5c8baf708618ea0415e3d9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_Q0.95.source.json",
+      "bytes": 1252,
+      "sha256": "d4e397f6763011b6386fc74c381626319a352edad9e5eb752001bf8cbcf4e06a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_0-5cm_Q0.95.tif",
+      "bytes": 1042,
+      "sha256": "f88af4a45ccdf24ee69068e9fddb970ecfe7130dd901fb72baeae71c31274aed"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_mean.source.json",
+      "bytes": 1253,
+      "sha256": "3acaf3c705e635be1faad7a4d891976fb07b86bd3b41b9497cc1b50054485969"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_mean.tif",
+      "bytes": 1053,
+      "sha256": "be641e6a42c0b73774eb4615a0d830b987985aa49a5868b127a4998dad48ae8f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_Q0.05.source.json",
+      "bytes": 1254,
+      "sha256": "81a758206ed4ad03f7b23caaa61ee12ba548db6ed4efc5927542b7a57b2b59bb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_Q0.05.tif",
+      "bytes": 970,
+      "sha256": "3559a69cb6854dd60dc59499decfdf3a88cbb073c34f80c37c2cbdf5a2a283ff"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_Q0.95.source.json",
+      "bytes": 1254,
+      "sha256": "1aef7ae17a19cfcf305e184128a5706c1f8363a49602e916ec3d6fa217e10e80"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_15-30cm_Q0.95.tif",
+      "bytes": 1044,
+      "sha256": "adcf2b6d282c5b481b2ec2157f31d328b49709996c93ef6d342ccc4dd56a661b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_mean.source.json",
+      "bytes": 1253,
+      "sha256": "55b8ce7df8c9a141dd7d139fe1a866021e21b307b9c95de66be157ec29c9623b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_mean.tif",
+      "bytes": 1052,
+      "sha256": "03611e1ec60f782c77b68ea4e420504186dfb3878a8363c8c81737372ee8defc"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_Q0.05.source.json",
+      "bytes": 1254,
+      "sha256": "277f61457e7a90cf36460e83d2c96381245f5ce76c4db1dede2f68179b2f7611"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_Q0.05.tif",
+      "bytes": 964,
+      "sha256": "9657ff67883b8c651e67e36f35c865f3d51922eda6599c3f9f3b02d8b8d4ed1b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_Q0.95.source.json",
+      "bytes": 1254,
+      "sha256": "72d6ff40da22f096b69d1545a952497652f850f6620f54a8a47ad8f2dc76eb05"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_30-60cm_Q0.95.tif",
+      "bytes": 1052,
+      "sha256": "43947e4925907df48cc67e32301c40ef19e92972436023a4f0a32d252241f0ff"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_mean.source.json",
+      "bytes": 1252,
+      "sha256": "fbf079100cbff0efe227135888c1a823c189d1e4a56b9ca070d1447afd686306"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_mean.tif",
+      "bytes": 1067,
+      "sha256": "f501ea47ba8f9d54dadd8970aa8896a82a61a4f1e3fd5f1d77c2d839cc3386b6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_Q0.05.source.json",
+      "bytes": 1253,
+      "sha256": "4c74479f9e36c93bb6d1d99d9ebfd65a3d6e027a224f422b3043bcfcb432faae"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_Q0.05.tif",
+      "bytes": 1012,
+      "sha256": "9f13f9908e0e1aecef9ea939fb944c0247206f1b666def8cb52db71a2c7ebc40"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_Q0.95.source.json",
+      "bytes": 1253,
+      "sha256": "54162bff5142786b192fd297042982f709ce083a3734e86714b6a8c3b178a236"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_5-15cm_Q0.95.tif",
+      "bytes": 1037,
+      "sha256": "10ebe133477a434b0c3c241e1c05bda2e27fded44f4655e8957b315b8bfd2856"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_mean.source.json",
+      "bytes": 1254,
+      "sha256": "6d73caff27c96ee9d2a8177d4bd91ccb3e63d183b9331cd3f9e7d542ba42743b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_mean.tif",
+      "bytes": 1056,
+      "sha256": "ab7b93f7a783f6c2b6a0da7ca68a8f6612f30d92d1ef9a7c30faa9224bda2e27"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_Q0.05.source.json",
+      "bytes": 1255,
+      "sha256": "c09488dc0e3538da51b75476e291f081a56873c059b6dd23415b33bb66f55ba8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_Q0.05.tif",
+      "bytes": 964,
+      "sha256": "9657ff67883b8c651e67e36f35c865f3d51922eda6599c3f9f3b02d8b8d4ed1b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_Q0.95.source.json",
+      "bytes": 1255,
+      "sha256": "3468f8ee9150bb784282dca72a98fea0c371606d736d60ca62a0eaa56e3d2270"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/nitrogen_60-100cm_Q0.95.tif",
+      "bytes": 1047,
+      "sha256": "7a0ceffffd2ea118f75042073c762429f3ed81430a890ee242962ebecb116d7f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "d6312907fb6b4fcb0313cdde4b2ebba3c9b0cdb59d4d6cae4da642d95de27d19"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_mean.tif",
+      "bytes": 990,
+      "sha256": "58e1696c0d82c5e846b7f21fb5cf20b4f626bec32d016c0edb6e75d601192eea"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "f55da2f0104336fd519a86b4fc5492363ffbe3faf3fbe10f5cc96cebe76b1aaa"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_Q0.05.tif",
+      "bytes": 1008,
+      "sha256": "76d2f2c114548757eee56da4133fe6ac91f180c00a4c0a829acbb63e52ec9029"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "b5c876f74323d834e481f488b9c0df59345a698adfde1c6610e9f4da90847642"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_0-5cm_Q0.95.tif",
+      "bytes": 1009,
+      "sha256": "e401d547289478c657c2d2532ba646e5d9ca3988564236427a4e91967115de2c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_mean.source.json",
+      "bytes": 1247,
+      "sha256": "1e804df7e09a6efe8e344edfb01349132759322ff644db42c190b6c275699505"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_mean.tif",
+      "bytes": 987,
+      "sha256": "f10283e209313a2120bba659885bc20c7a116ccbe2a3e913a59c132d4db9fb41"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_Q0.05.source.json",
+      "bytes": 1248,
+      "sha256": "f549c5e8851d9e532abfa565b2b6d97279a52deb59d81e72378e90f8f706e64f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_Q0.05.tif",
+      "bytes": 1013,
+      "sha256": "1c133ae77a31bec77c300a6093866d7f8a648072f18784c13369f718bf07855f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_Q0.95.source.json",
+      "bytes": 1248,
+      "sha256": "d94076284479b0fb6222d3aa829d36cf8dfef7d567f046930cb8b672478c04d9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_15-30cm_Q0.95.tif",
+      "bytes": 1016,
+      "sha256": "e3e9fbc387abdd3777bca846f236ead413289f1ba4fd30d9ef0450d91191debd"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_mean.source.json",
+      "bytes": 1247,
+      "sha256": "dec3a77a36b19fcfbadbaf8fb2106676abd40dc69be4fe71330cde2972f731e6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_mean.tif",
+      "bytes": 995,
+      "sha256": "c4a7913a801596e8eb988eaf58b8651022e35ae695741a1d61754788ddc56fa3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_Q0.05.source.json",
+      "bytes": 1248,
+      "sha256": "8216f67e11c08df0000b515587f79137244d343ba41947e61adb383a6d3855b3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_Q0.05.tif",
+      "bytes": 1012,
+      "sha256": "a6a18d59439c3e121962962fb42f662f79f3cf6ac239fd42dac7edc47192cdea"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_Q0.95.source.json",
+      "bytes": 1248,
+      "sha256": "0a6e5fae53504895ed7b368ded5d3ad7430a608b91f8fdd823b7637136182a34"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_30-60cm_Q0.95.tif",
+      "bytes": 1012,
+      "sha256": "03223412aa25a6e2b0721a246691c52183acb0d138d7a43368582230f6dc0be6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "b4826815543c3d1a00ef8e59bcc17bf44a99bae11ecce2c8c125e7001f5f086d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_mean.tif",
+      "bytes": 992,
+      "sha256": "d2b8c21fd3c27bf46c08bc18a661dea555db87d5da8166756159cf4e5803fa1d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "84b65fa9ab0321ba073d7709b6be32b87b7af35e182b48daa8ba06d3a9ade0e4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_Q0.05.tif",
+      "bytes": 1010,
+      "sha256": "2f0e8dc53cf461cc452c315e039290fd7177e7b8864170ce8e06b37e08865eec"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "470c3c5012b0ef88e9c7fb12bb18d2437355eb06120b5630497d6a98ece2a537"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_5-15cm_Q0.95.tif",
+      "bytes": 1015,
+      "sha256": "79f940046611cf8c35070726ef8a36a6b7bd0dfd4867714bc2080f1311bce329"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_mean.source.json",
+      "bytes": 1248,
+      "sha256": "549bdea0b8969adaf35bf26db828bc943bfb278611f5a3638b8e6fac99aafa33"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_mean.tif",
+      "bytes": 997,
+      "sha256": "ca0264a9e752a016d1f273afe7cffda8afb2c4ecf51394e004accb454093f42c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_Q0.05.source.json",
+      "bytes": 1249,
+      "sha256": "8f2d54f10d1b35a27957c976f94f0b75a6b3d5e49320d72bbeb52e8580e60027"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_Q0.05.tif",
+      "bytes": 1000,
+      "sha256": "f5d8941f9ac4ad7e01037e4889e1dd96e16cf19b14e0c1936c329d8d984aefb0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_Q0.95.source.json",
+      "bytes": 1249,
+      "sha256": "9f96418bac19c02b9eb1672aa7228ffac8ca4adf3f80e2d615ab255ad1cdd3a6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/phh2o_60-100cm_Q0.95.tif",
+      "bytes": 1019,
+      "sha256": "a5f310e2f6c72470320e57f2c5dcaf4eaee9a10be88054e1360caf5886a1a742"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "c41ab06b659e8a974e78cf6d05135d36b152384a69aeb79799c58abc52176a18"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_mean.tif",
+      "bytes": 1067,
+      "sha256": "10e5e7ae882007cf7a848b21c7ceed030e88947abf5f4cce184eea93d14f44f4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "5ecda2c014e63bc888e3da1be36efb6e0a841c9caa3db5546cba8baa3ec5a538"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_Q0.05.tif",
+      "bytes": 1045,
+      "sha256": "f87561877e0d263de803c67abc2d1a0b23abd35010c5a2b6a1907bd9f3ba0f26"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "defe157f9a7b1487a95c85ee611c5a504a88dca385ffefb0da66e02b00d5297a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_0-5cm_Q0.95.tif",
+      "bytes": 1059,
+      "sha256": "0cb7114dc036c921d84edc40f71ecdd8e58373f2a740f124b813c9fcd834ed1e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "f1188044dbf1f507e6ba3db429215e4c94b4a1b3c3e7dbdda6a6f2b2dafa1d15"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_mean.tif",
+      "bytes": 1071,
+      "sha256": "2f9bbcec4b08e4bdd61bb6614cc10590e8738c83ff498e8e006beb22df37ef45"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "1b9027df931bfdc77d4eb7f2ca15015cfa65c7545178827b33f22fcb12f74166"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_Q0.05.tif",
+      "bytes": 1026,
+      "sha256": "fd28484d0c18da29c82e11761c691aa49c55c3e3e9d61c4594376e19158aec6b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "d352282fdb6fffc72c3ef008a78cb71d0f336d2eed84b8b92271560c332772c9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_15-30cm_Q0.95.tif",
+      "bytes": 1075,
+      "sha256": "20801ba4ae2feace0cff5ddadc01189570ac0a1db1b672ec45db9d0828a52005"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "17fba0ea783ac71d92a8633c3696ea1971e1731538deeee98220f22614811503"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_mean.tif",
+      "bytes": 1073,
+      "sha256": "adc99eff385877c147c6ba3e569056a35f10d56982d5bc72fc62387825270e77"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "23df77e3629916bcb2687d37b72baf57e77b4e4327a70b77fc4d957d8ed23cef"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_Q0.05.tif",
+      "bytes": 1043,
+      "sha256": "010f623d0789b0f675572e30a2f826651074f4d1c57dc033b7f9a305a7395997"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "f7879374cb58f8bc5960f64493d028fd2827a44780f2fcd888002bd7a2f63c8f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_30-60cm_Q0.95.tif",
+      "bytes": 1077,
+      "sha256": "4521680d834539dcab440753428d236daa392585ea501e46c0f10c6621719188"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "6208a65ee03d01f965aec917490cf050fdad7a886b0367d2105d8bf016b54dbb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_mean.tif",
+      "bytes": 1068,
+      "sha256": "e319a0c580541b071a946f3ef4184a3596cca4d0a1f05171f39ebf632a1d4631"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "96e109197e06ceadc43b00dcd8b76975118b7c475fbd275977563e9902ea0094"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_Q0.05.tif",
+      "bytes": 1046,
+      "sha256": "c03cd9e0ec1f21e018c6bdef399cb649c1d3385fbbb4cde8ebc65ca703087e20"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "925012c6f225371b859293c3f40d75efe97b2083e5c9dc346202d7ee002fb2da"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_5-15cm_Q0.95.tif",
+      "bytes": 1061,
+      "sha256": "001dbffa53351c24d0f79aea7ab3495da0697b54a8b3c752f7a6629a501a45f8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "6b4bc50d08eb906918609bbb7adc6c89189423a481a70391121c8ef4e6bd87b3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_mean.tif",
+      "bytes": 1070,
+      "sha256": "aa45893907f40fb9cca880ac50f4eb6b65f434a2a4a434a42557a3e296df0d20"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "76cac65c61f48e99a2a496239a4ac00a43442d1e12c91877092ad4ee5d18d620"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_Q0.05.tif",
+      "bytes": 1027,
+      "sha256": "312b61411b06c29e6b29b0bfc1a85e3cc5ea8479db38ff9b5e8bdaf0ab206ef5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "69de8bf67246472debe2d445d836dd0785a57efd1a7d5e06498f6bd4cee94a11"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/sand_60-100cm_Q0.95.tif",
+      "bytes": 1071,
+      "sha256": "05f58019fc8c4380da42bd92d77a809e5e3826cd4b763b71f6e9a7b1400db91e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "9122636057f64e7209c3febf240b55d010f67de15bb9ae27069cd48dfa3e94b6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_mean.tif",
+      "bytes": 1075,
+      "sha256": "d5853ce9397b7944cc0f549f2b16e50a47295cb6863fc00e7e081bc5ef274c30"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "0dba3839426b82843ab137c6704db50dea40a86e9049f541f0c81e09669307f7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_Q0.05.tif",
+      "bytes": 999,
+      "sha256": "a97543ab31088d579b093c4f89c7685b408d543119c159eb4402f368367653cc"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "9178a60d14edcb5f016f480c6f44ee218f80ae5c366d1a24dafa3c7ee3adf746"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_0-5cm_Q0.95.tif",
+      "bytes": 1070,
+      "sha256": "d66cada71fb3895ce198e2dec1b7238ff0d0927ba03c58b7e56120f91dee9d04"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "27757e393312ae531284fd4810f8f09eb066b524394f2fc49bf6ec81e400fe61"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_mean.tif",
+      "bytes": 1074,
+      "sha256": "5300a679c726d1f20ad45b17e19608a4d93dc8aaa8ab3c5d308b1c4714f78c84"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "eb52964777771967a190386734e7e9f33f4a8e65122e89cd46ba2118ea3ceb9d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_Q0.05.tif",
+      "bytes": 1016,
+      "sha256": "b5a27a177891354eda7fa260ec5bcda1036d19bbadb5aade5afa1e0db0002d0c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "388cd8f70377f611c1be0b41d76b47fae953ed9a514bcb1c5ef9e04ad7f94dd3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_15-30cm_Q0.95.tif",
+      "bytes": 1066,
+      "sha256": "af9725e98fb8eef5a27f1eac3ff37e17430929f84bba49d50f6c1375f06e8aae"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_mean.source.json",
+      "bytes": 1245,
+      "sha256": "2ffe9644f988a2623b037e9ddc8c51376e7f648b1c8c634e6e5efb1d1a7efcde"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_mean.tif",
+      "bytes": 1074,
+      "sha256": "ac9e357a9a73be45ab7dc8645d0b28ecd5c2949219a63db37de415adfd5085a4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_Q0.05.source.json",
+      "bytes": 1246,
+      "sha256": "b8c568197ef27d1ff310e092404f8c2092ebc345e434ef74450060cc8fb584f3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_Q0.05.tif",
+      "bytes": 1008,
+      "sha256": "0dc75c8ee3e9536749850944493379aa42296eb5724f610211b8d08821720aba"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_Q0.95.source.json",
+      "bytes": 1246,
+      "sha256": "b5561cad01f57aae37d1b753222c689795ea126f4b40e538d13f1e520711db9b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_30-60cm_Q0.95.tif",
+      "bytes": 1058,
+      "sha256": "bc4d2e230874d2ca7b337ee679aa6b58c5b93d4d1efecd60dbc87d0984a24f2b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "247546acc8a15bdbd15a5d4e42b091ee5d864a6101c46ac30ace59e811bc0dbe"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_mean.tif",
+      "bytes": 1071,
+      "sha256": "b2ea6e996e342b212a8175668fbd3dbc7faed2f95ff80c091e8109845efd4e19"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "555a5638ca72fb8c7e77d835ef21c9ccfcb5ad8e4a0787a475e040b33febbf0f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_Q0.05.tif",
+      "bytes": 1011,
+      "sha256": "9488ce8369bfe287bd2770ff38950a17fcc0daa55acc56ccc987a013022b6214"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "8c4a5224f867913b52dc934ed1be8e354886bb628045d5130a7f1783db7ca075"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_5-15cm_Q0.95.tif",
+      "bytes": 1071,
+      "sha256": "fc8a890566ce84645e5a40ccbd7f446e70e21cee7464b95dbd123f322732724d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_mean.source.json",
+      "bytes": 1246,
+      "sha256": "c0aa1fdbc40cae391a96831331347c01e0a8812240eebbaeb8bff2f110d529aa"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_mean.tif",
+      "bytes": 1078,
+      "sha256": "3abb2954ee7f2e46c63ebde95e55180ccf5cfa844feaef3c9e8fcb72988da3a3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_Q0.05.source.json",
+      "bytes": 1247,
+      "sha256": "3be6b221e43e76151dae6c56e28255e9d15c43bdfc7fddba138bb61a89c768c8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_Q0.05.tif",
+      "bytes": 1000,
+      "sha256": "77d0312d8cb118ae5b2e360f7133b233191bb04e0f645ae996d92fcc917805a7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_Q0.95.source.json",
+      "bytes": 1247,
+      "sha256": "5c4e11306f65714e535e5dcf6b29baee1e8a779b8e6304736b9c177fe081cfc0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/silt_60-100cm_Q0.95.tif",
+      "bytes": 1064,
+      "sha256": "5ee5f6132bd76b54d36406146819c9e50215f380766d720aa974eee67742ac4d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_mean.source.json",
+      "bytes": 1241,
+      "sha256": "fa4de408424b18e18862c5888d91d42f9b04ab4253d0d747a2286d3bc95332c1"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_mean.tif",
+      "bytes": 1084,
+      "sha256": "d9d3df033e016260d111b0bb70d2580772be9dbd911ed984b3e27fb2d54ebcde"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_Q0.05.source.json",
+      "bytes": 1242,
+      "sha256": "ace71296c3ae078ac81a6ff554069aa97654190e97bebb82cabe5f1373407d66"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_Q0.05.tif",
+      "bytes": 1028,
+      "sha256": "35bb542b6e223ba856f04110f63c032c90357b68dfef7172ef40073cf54a9ef5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_Q0.95.source.json",
+      "bytes": 1242,
+      "sha256": "fc0e4c38e60d6588e9d6e950d5f3e6b313940b5a7aac88611f804302908d6270"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_0-5cm_Q0.95.tif",
+      "bytes": 1044,
+      "sha256": "ade059aee293561571e74cfc9d1c97c9c1d29512d8764d3b22ad76638168ab59"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "266b84a5421ac73155efc3779124b6aed2d80a1893b430745600e45642121df5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_mean.tif",
+      "bytes": 1089,
+      "sha256": "f8399269320b6a6717ff07e43afdcdb2d3921f8cdf8220528b06a6b6e029b111"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "a5fc296b6cfbe4c544dd21da3bb37926c0c490e94a70b516d38ed65a35ce29a7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_Q0.05.tif",
+      "bytes": 1024,
+      "sha256": "3d3224839f02b77d141188a0d7f19cc4bd2edc299c36fde2919864723f672aea"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "bd82ccebc5bbc055dde66cb84252e7d77d9585c894185160a78f09a67f2dd362"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_15-30cm_Q0.95.tif",
+      "bytes": 1072,
+      "sha256": "ae8e26513b5cc8f6b0960b5a2d38749070351b6ddcf91e1436531e2eff9e5139"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_mean.source.json",
+      "bytes": 1243,
+      "sha256": "0f614682db58e1615e30e4d923490543029c0c4e367af424e710527043f1a9c0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_mean.tif",
+      "bytes": 1103,
+      "sha256": "75fbf3eb7f51912c782c0efbfc6603a33201579e8e82958699a1a3f520434c57"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_Q0.05.source.json",
+      "bytes": 1244,
+      "sha256": "a61114d3e91ce7822ef95d8eb0443ac1b23f706fb1d91b5d4d628436f9c1cd04"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_Q0.05.tif",
+      "bytes": 1028,
+      "sha256": "b651a7f7af3be7962e87d599839e5a961c25c5e6bf81c454ab25e70c6e133ab6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_Q0.95.source.json",
+      "bytes": 1244,
+      "sha256": "856474f8da01f7b723d3f5152886bf63fad0234c37e343df92b1d8c1558b0bd5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_30-60cm_Q0.95.tif",
+      "bytes": 1095,
+      "sha256": "66ebfb368fd6e4536014c7bc51d332ea5b89f57bf36b5fd78405c4bdf86f198b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_mean.source.json",
+      "bytes": 1242,
+      "sha256": "790c319a269999ca06633eda33c2ac732679bfd65693c90f4eb8b43d496ffc35"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_mean.tif",
+      "bytes": 1089,
+      "sha256": "86424765f43c6d93d9727d0201cbfe1bdcce55179df581418219d5a5a393fe79"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_Q0.05.source.json",
+      "bytes": 1243,
+      "sha256": "ea6500eda664496a7bf76caec8b6744ffafde88b055f6e4d37e65d2de38242f2"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_Q0.05.tif",
+      "bytes": 1033,
+      "sha256": "0ed6efeffd7349f4497cd76d1e9b83e7b8384eb39551a9652caf081e70aa2ad4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_Q0.95.source.json",
+      "bytes": 1243,
+      "sha256": "b5c9c803cc7ef4fce99bee0c2fcdefae5e2f3f0fec64ec73f48cfdfe1bab0c1c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_5-15cm_Q0.95.tif",
+      "bytes": 1046,
+      "sha256": "e33110575b95147d0df17e49c79f1dfc54334e1cfe2fb2c44041c0560c98b6a6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_mean.source.json",
+      "bytes": 1244,
+      "sha256": "a8cc629feb06c37b944ad4a98b0864a2ee6bd0a0e517c751ee88db4e91614191"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_mean.tif",
+      "bytes": 1105,
+      "sha256": "2e2908bcb45160e7b88490a72e2f1ccdaed6af744c85852b8c80f455a0bb7a02"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_Q0.05.source.json",
+      "bytes": 1245,
+      "sha256": "8d03c167f3c7e58a42f865302d565ef6bf2ef146f68f4496a3ce27505937537a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_Q0.05.tif",
+      "bytes": 990,
+      "sha256": "50ea76788bb534b1c8707a77bfc68c85c845018ebf44fda509b972ef605bafd5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_Q0.95.source.json",
+      "bytes": 1245,
+      "sha256": "fbf8828514811cd86b500f8b0ec54070d8e01c87e8404e3c3174b547cabf7f96"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/soc_60-100cm_Q0.95.tif",
+      "bytes": 1094,
+      "sha256": "7e04b355433997aef11229f056f7bf41d026b2cb3a46c0a6e33f9905c5c55d24"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_mean.source.json",
+      "bytes": 2192,
+      "sha256": "5bb58acf074274bf7ae93cad84d2397718983230bcdbe512500f8b5d78cf2f4f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_mean.tif",
+      "bytes": 1161,
+      "sha256": "2a4ffddc09197d0ba62b4397bfa104e0eee4ba6cf9afc058ec43d675b7ea9a08"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_Q0.05.source.json",
+      "bytes": 2193,
+      "sha256": "16b22d13b66706d852fd603d4e0b6f5fb3d983933af20fd3a1ddc9d54ea5e612"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_Q0.05.tif",
+      "bytes": 1128,
+      "sha256": "a9309090ff4d9393ed5feea09851223fdf9163eb94805ae132a900b7186c023d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_Q0.95.source.json",
+      "bytes": 2193,
+      "sha256": "18d2c9f95e4b8ce8b78c519995977a02c5330ef5f597c8d643d408cfd8787854"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_0-5cm_Q0.95.tif",
+      "bytes": 1131,
+      "sha256": "b9b849b23d8b48f1ed6e65dcbc868aa47bb037681227f046abc32576b752cf3f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_mean.source.json",
+      "bytes": 2194,
+      "sha256": "b266404e8ab6f2f10cf6c203cb4b9306a1b8456b4ce6289de451f44f74db98b5"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_mean.tif",
+      "bytes": 1155,
+      "sha256": "de1d280d9745432646f4e1d2bf2bf49760b4ed2008ff338f740c4215f9b44eca"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_Q0.05.source.json",
+      "bytes": 2195,
+      "sha256": "23849b3d0ed68f2695ec08c266d7c5f05e69ee900f5a673671ea39f5578119e0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_Q0.05.tif",
+      "bytes": 1146,
+      "sha256": "fa93551e34abb6e31cc9a62d057dd745944b167f6a8386fab046dfeca3fc0d34"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_Q0.95.source.json",
+      "bytes": 2195,
+      "sha256": "bb5fa0f9f9199bfacb39ec30b610092b07ce624332ae6770631adf36c31582be"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_15-30cm_Q0.95.tif",
+      "bytes": 1112,
+      "sha256": "304250f763248f8280e1e6ae9ebea0cf60aace86aa55bcbc169d09851eac2373"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_mean.source.json",
+      "bytes": 2194,
+      "sha256": "800ffc7c0c62334025379d3d45961a5557e98fb5a2b4ba28d405283ebf5b59a9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_mean.tif",
+      "bytes": 1165,
+      "sha256": "a7309f381f6897ec143386e109111d0331cd9bde9f37c9702dcf851fe5d8ae3e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_Q0.05.source.json",
+      "bytes": 2195,
+      "sha256": "14b4579fbb6c497828b117d1797649deaad3463ac3febe74784aae1be379fe7a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_Q0.05.tif",
+      "bytes": 1156,
+      "sha256": "e8b02532b4a3d1081f3b3404ea050f6b526a4de16bea9de77a378678e586df8e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_Q0.95.source.json",
+      "bytes": 2195,
+      "sha256": "714a04e119f058155f350f11b4e7837f4f5550b7511d56764af959ab597fd7ee"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_30-60cm_Q0.95.tif",
+      "bytes": 1115,
+      "sha256": "505def4a2b1f2a3809c189abb0f876e1cde9ea184e3cff0ea7d028958b9d6e0d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_mean.source.json",
+      "bytes": 2193,
+      "sha256": "46e698c28180497e50c30fda31ea1f4d17f01ad46cb779b40859e915ca640668"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_mean.tif",
+      "bytes": 1159,
+      "sha256": "44b4fcc7c63946d872d36871d5a0232bab84ac791f0ad401e60f68902e62287a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_Q0.05.source.json",
+      "bytes": 2194,
+      "sha256": "4dd9d5a644c3148c4f33edf6852350013e84dee85530566d317099d84ba29a4d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_Q0.05.tif",
+      "bytes": 1136,
+      "sha256": "d4195ace2fb6f1ffd248c556ff84872b898e400d51b59593f14c928ac6339969"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_Q0.95.source.json",
+      "bytes": 2194,
+      "sha256": "ec4620b0beb35a4d6254c8b9e9645028c28601f0baf3b65f7f7e623cf4b812d8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_5-15cm_Q0.95.tif",
+      "bytes": 1132,
+      "sha256": "3d4219213bc3d865b24ade2a10f4a88456257ff5320d9dba4d8aca0914e04255"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_mean.source.json",
+      "bytes": 2195,
+      "sha256": "362d0ace05bceb6c5a38497aefbf39ad8b005b642b7046e169613a6762e75093"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_mean.tif",
+      "bytes": 1167,
+      "sha256": "95f96a77ab6dd6db1e8359667e579a46e02b8fc4001a1c2d5a0e01e24a3bdad7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_Q0.05.source.json",
+      "bytes": 2196,
+      "sha256": "d342be67dacb71f763d2d69c06383f1dbb8c2fa618bf307fe69887826b0e36dc"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_Q0.05.tif",
+      "bytes": 1156,
+      "sha256": "f8b2ace126c9efb463082a9535113e1ef2826f2101b32400e788a414b3720af9"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_Q0.95.source.json",
+      "bytes": 2196,
+      "sha256": "6cfe194fe8d5650cb11b108bdca6e11b0dbe53a1a7f02aa656962932e35019c7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0010_60-100cm_Q0.95.tif",
+      "bytes": 1141,
+      "sha256": "137648a7fe858d0db0b2d9ec0b064d7cfea6e1cb2634ae687c300253880fd45e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_mean.source.json",
+      "bytes": 2135,
+      "sha256": "1d48f11dd3352a4744b3e3fbede547a133ae1e3d163bde4b0022a33b1df7cc26"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_mean.tif",
+      "bytes": 1166,
+      "sha256": "53680a371c48bb17a6871e1cbbffcd9b30ae456e12af37441600244dcc6a6d45"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_Q0.05.source.json",
+      "bytes": 2136,
+      "sha256": "5459ecc20c1fb9739cb836c73c1b73218f1c977fadb2bbd42527e5bf2fbd1c13"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_Q0.05.tif",
+      "bytes": 1165,
+      "sha256": "54f452596b72433f64e71aa25adbc8b536278d76d3314d5b9f97bad39c9da447"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_Q0.95.source.json",
+      "bytes": 2136,
+      "sha256": "fdb2f3f88dacab5d276bcf4cd828366f75fba6d93471e9304d97d85e232784e6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_0-5cm_Q0.95.tif",
+      "bytes": 1078,
+      "sha256": "1979a239ec9c1ff6d73d4d3430b561a072272fb99c6d3f1a5ca5cec6c9e84b04"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_mean.source.json",
+      "bytes": 2137,
+      "sha256": "3f8595abe764c17aa46582cfb6ee60f0c5fda2576ddd071727fbbec690903a0f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_mean.tif",
+      "bytes": 1165,
+      "sha256": "77390995183efb3d09025b77c4c49966c9d7f3b446cabadd55692f7748674727"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_Q0.05.source.json",
+      "bytes": 2138,
+      "sha256": "a2bde65fb4a5ad289e1be6033affae2cc3a21884ee1a848d2b24aa568e697e45"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_Q0.05.tif",
+      "bytes": 1171,
+      "sha256": "67c4e00248b080ad6297d2199010d1ceeeefb1c0238e602f20cfb1e4a545275c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_Q0.95.source.json",
+      "bytes": 2138,
+      "sha256": "fd9952f99dc99d08bb39f255d23ee7c1e9e504efb3a00e73d933affba42d8167"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_15-30cm_Q0.95.tif",
+      "bytes": 1154,
+      "sha256": "d94af8afca276c6fcdc456d3e2ac839fd06c34f5b4f768915ead1ea6af05c595"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_mean.source.json",
+      "bytes": 2137,
+      "sha256": "2c9c7611c49e5d599eefc4c443e6aa3c37ababbb3e4fc010a1d941cafb56d905"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_mean.tif",
+      "bytes": 1171,
+      "sha256": "3424dc4db293b16f8beeb7f1500cdf2b26e30a76c357ea0ae21fd86270bc3e73"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_Q0.05.source.json",
+      "bytes": 2138,
+      "sha256": "5fb3246d10c519f427e2df5d5595a2a4236af1ff35329f01180f2f59efd32837"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_Q0.05.tif",
+      "bytes": 1160,
+      "sha256": "867929e5b30e2f69f96d6ec0b1b0005b4b067cda7acc88ace940b7af200d317e"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_Q0.95.source.json",
+      "bytes": 2138,
+      "sha256": "40ff013cce1212639f3e46c414ce2446638718dbcc42e4daec80c0d642285741"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_30-60cm_Q0.95.tif",
+      "bytes": 1156,
+      "sha256": "12405d87db637a6298b200a569bb8ee8edc9df1501c1cc4c6bc4e1ca32c20418"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_mean.source.json",
+      "bytes": 2136,
+      "sha256": "b44b948c40413c1f0217dc6ae5705e67b829b7151212bd2ae3f043e956b66bf0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_mean.tif",
+      "bytes": 1166,
+      "sha256": "0f40cd4d056e3900f203faa65357c7cecad88c88dcce81bf0464e8a65098b30d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_Q0.05.source.json",
+      "bytes": 2137,
+      "sha256": "d1ca72903f67d8c7e28068997fe8cde46575d899ad43506fbc77c132eb9386d2"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_Q0.05.tif",
+      "bytes": 1166,
+      "sha256": "d6708f6dbb870b896b3444001b7d185c9b5e485737144c2d12523c0b0303d243"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_Q0.95.source.json",
+      "bytes": 2137,
+      "sha256": "adf152e314ee2bbbea973994341bf490a575af09c1fd92234fa9b875e843fbf8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_5-15cm_Q0.95.tif",
+      "bytes": 1129,
+      "sha256": "3645f4faff4ef30681f254f852620eddf36bde95a2b1db7e864af5b3f36d0ba2"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_mean.source.json",
+      "bytes": 2138,
+      "sha256": "488f24150b81ada73bc74d4cea03b764ef7c86b257ace78a9382626eff44a459"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_mean.tif",
+      "bytes": 1168,
+      "sha256": "8d3563a868ff2fd4dd2e13ee68b604c0a5a0f0a6e2d31db3e9dda8337248180b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_Q0.05.source.json",
+      "bytes": 2139,
+      "sha256": "044d333bd7a14cde83d7a3b78893d3995d573511a1831081434c749f5ee966cf"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_Q0.05.tif",
+      "bytes": 1175,
+      "sha256": "46250058a0c39c91f3a8f29445d863d5c03fcf737e15a13e33164cfab2ccdf28"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_Q0.95.source.json",
+      "bytes": 2139,
+      "sha256": "ee2061224198c1600ecd90fbae274657ad4a10877bc7c104532ba8632a321052"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv0033_60-100cm_Q0.95.tif",
+      "bytes": 1157,
+      "sha256": "7f1b9610548607fe294f981473155db96f428f1eb2c31239cbb9404c96e3aea6"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_mean.source.json",
+      "bytes": 2351,
+      "sha256": "b63d47cb4f5ef4a5853c0f888a2f0717f4d193b7841635b2d1824b1e533428a8"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_mean.tif",
+      "bytes": 1167,
+      "sha256": "975675b278c67b0d4fc362c93b8da835c211381162ee45789a737131dc385d9b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_Q0.05.source.json",
+      "bytes": 2352,
+      "sha256": "3a2f38c8983b01eb4ed10c3fb813f4b79cb0e1e3b6e9e956fb8f2d9e1505bd9a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_Q0.05.tif",
+      "bytes": 1128,
+      "sha256": "8ade0f6142bc2c8757a37f91f465159077403cdcada14fae8203919a214c6b64"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_Q0.95.source.json",
+      "bytes": 2352,
+      "sha256": "f19f57b6efdeb026a68211593cf36ee211618edbaade45e8525ae733c216148c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_0-5cm_Q0.95.tif",
+      "bytes": 1149,
+      "sha256": "c87bbaef3e5945c8d23e2ace12cdbabb8339413a31ccb16c8d232a322774dfaf"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_mean.source.json",
+      "bytes": 2353,
+      "sha256": "01b419e38520e539da32e0641c18741fdb80b326d8f41a553bf4ef1bc3ebc39d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_mean.tif",
+      "bytes": 1160,
+      "sha256": "cd5524e4e22dc4f14a4f4341a9da27758b4bb920918bb616eccddfbdde2293e0"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_Q0.05.source.json",
+      "bytes": 2354,
+      "sha256": "7e180ac13884305141235069b4d272a0f1d893e9694c7ff70f22b065b5d8bbec"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_Q0.05.tif",
+      "bytes": 1118,
+      "sha256": "b4fe6075208e1655979ec8c55ea3ae32a79170ef06fd19c9ded189097a7229ed"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_Q0.95.source.json",
+      "bytes": 2354,
+      "sha256": "dcfcf5ee8cf6b36e427333d46491f519fa4fd134737b2a67648313061871a54c"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_15-30cm_Q0.95.tif",
+      "bytes": 1151,
+      "sha256": "200da556c4a043a15b0e15e90b51d306586e636968ea32bf471599e89b07b166"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_mean.source.json",
+      "bytes": 2353,
+      "sha256": "e73a43b068437c8afc4c30040a7a5d5dfef570e775da92127956684420352fdb"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_mean.tif",
+      "bytes": 1172,
+      "sha256": "2c54437816ae0b0cb18b2ca9d04e585a639b8e77162886ecc1dcb769f053115b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_Q0.05.source.json",
+      "bytes": 2354,
+      "sha256": "55fcae3b72ae4c6e9ec17f60061d14bb2cf40b4b1f1efb33e6a7a5fe908e4b7b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_Q0.05.tif",
+      "bytes": 1156,
+      "sha256": "7141756f59445ef183c72e3188ffaf4a3a6c36c146019a239729d4fa817807ca"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_Q0.95.source.json",
+      "bytes": 2354,
+      "sha256": "a555613e29e6cb456c1f74e6dfb58607145fd96d96d3c2c3c0b52d8519737179"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_30-60cm_Q0.95.tif",
+      "bytes": 1148,
+      "sha256": "210813f8fe51e0c5f62e6d983348bf83713d7bb3eb9e8c52a46f85b1f86d7f48"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_mean.source.json",
+      "bytes": 2352,
+      "sha256": "de1a2b57a3ab20e0dd2b75f3b1c86cf2d7556ecdc29c5455836849b092499792"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_mean.tif",
+      "bytes": 1164,
+      "sha256": "6f2ee9e589a2dede33f6aee2e37e39ca5ebc9f53a61d679421d0194b9b0d29b2"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_Q0.05.source.json",
+      "bytes": 2353,
+      "sha256": "67337cd479548d37988b04eee74a38d0f8076a1dc7829ed3bbb0d00ae1cd4648"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_Q0.05.tif",
+      "bytes": 1126,
+      "sha256": "187e3a386db0e214dcb9af7ae1f99f79dca1177582c70bf860bbf18d9fea15a4"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_Q0.95.source.json",
+      "bytes": 2353,
+      "sha256": "d925dbf70b16b586b2adcaa922e82eaea78e4421d05e801bc6ff214f16a9aead"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_5-15cm_Q0.95.tif",
+      "bytes": 1151,
+      "sha256": "61036175125b012290c71543e9a0de44fd5348f77ba3f2f8e394648aae3fc073"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_mean.source.json",
+      "bytes": 2354,
+      "sha256": "6b485bb4a02a291bd9d5a926d1002adef087ce257e4dfe406b159518fcd063bd"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_mean.tif",
+      "bytes": 1171,
+      "sha256": "b703136c36034890bc7570bc6cba82e9b73271c9dd45b0bebc7a98e422406d95"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_Q0.05.source.json",
+      "bytes": 2355,
+      "sha256": "3bb89788eaf166a4bd1638c312b404c946ec0fa9e4d93111f759a44dd5fd9422"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_Q0.05.tif",
+      "bytes": 1160,
+      "sha256": "4e0e17e52415c52317895ee6df17ff5593fbc1dc0ba3c4d932ebeaf0cc107c5a"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_Q0.95.source.json",
+      "bytes": 2355,
+      "sha256": "dbbbd8a8e764fe1cb605c554208b8e37079ee23235d4cd2d156e8acdb8edc617"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/native/wv1500_60-100cm_Q0.95.tif",
+      "bytes": 1167,
+      "sha256": "24a5a5d7dfb50921b5cdf0f738e78215ddd18899cfb0d152b8d64d7846234f36"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/phh2o-local-tile-index.html",
+      "bytes": 4252,
+      "sha256": "111b121feb83137474573d8c4c841c5b46c12c95ff33a8ba9b9d457ad05ca12f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/phh2o_0-5cm_mean-native.tif",
+      "bytes": 1121,
+      "sha256": "8016d4c9ab46de70624ba61cfb13d80a2bd534f53d46e1f635f0ab385c0cfc64"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/retention-map-describe.xml",
+      "bytes": 2539,
+      "sha256": "5d7aba89d60ca869ce403a2c0b964ccfe0f273b7446cf7b0d91893ee12a931e3"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/retention-wv0010-iso.xml",
+      "bytes": 47971,
+      "sha256": "2d6704f0fcf636ed8a1d496de328fe008370ac370120ee4bb315a904e9dc4921"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/retention-wv0033-iso.xml",
+      "bytes": 49194,
+      "sha256": "4e8989c72249f36395ffbe2a651aff1d6b7ac0393231d907b08404b18fdeab32"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/retention-wv0033-page.html",
+      "bytes": 32899,
+      "sha256": "596e8409bcb9d04519c70d725862e84d00e989f71bbc7074277ab420d9d97656"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/retention-wv1500-iso.xml",
+      "bytes": 48130,
+      "sha256": "b30b92a03dea4c8da71fb60d0a4ee910862f7e0092f6404cb0849b96bd5f636f"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/soilgrids-data-index.html",
+      "bytes": 6709,
+      "sha256": "33134ffe3d89f7f78911abb88e504f4ec0551cc2df5b64375363a1a1eb2f69b7"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/soilgrids-latest-index.html",
+      "bytes": 4010,
+      "sha256": "1c4d8aecc02598f29beb6e7c89ce864a900218360c48c055ae56a2ea03bbbf9b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/soilgrids-properties.html",
+      "bytes": 47346,
+      "sha256": "1b0a5c1e951092827eed732dff02deed6ed9aad6f2ff0b54543444dc46259772"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/soilgrids-root-index.html",
+      "bytes": 3733,
+      "sha256": "908f9da6a0b0d3157891d38102ed5155089d863ac94c1d7179b029722973f39d"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/wcs-docs.html",
+      "bytes": 33434,
+      "sha256": "d2a64fdd74c466cf58a44cc70bbeb2baf943f28c708fd1be2232e582feecdeda"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/raw/wv0033_0-5cm_mean-native.tif",
+      "bytes": 1192,
+      "sha256": "cbb8c917d29ec634e05daa64f6e6c95832aac85f34eab801b375e33a5dc93287"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/README.md",
+      "bytes": 6550,
+      "sha256": "9abea8ec2428c61060fa7cee89eb5273718b2fefdfb4751072c4707c1ef3bd7b"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/summary.json",
+      "bytes": 8385,
+      "sha256": "35f986667b040828fe5b7700aab6e4747982aeecaf1ffd2a4b98ac9350dc5a15"
+    },
+    {
+      "path": "data/supplemental/soil-terrain/validation.json",
+      "bytes": 2464,
+      "sha256": "4cd3a847a86bdc5b5b50e383368b8130e6ec50f29f5e7816aa85cee7103c7269"
+    }
+  ],
+  "total_bytes": 4974686
+}

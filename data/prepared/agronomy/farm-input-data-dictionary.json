@@ -1,0 +1,939 @@
+{
+  "schema_version": "1.0",
+  "crs": "EPSG:4326; GeoJSON coordinates [longitude,latitude]",
+  "null_semantics": "unknown or not yet collected; never assumed zero, false, empty history, or nonexistent irrigation",
+  "history_record_shape": {
+    "crop_id": null,
+    "cultivar": null,
+    "sowing_date": null,
+    "transplanting_date": null,
+    "harvest_date": null,
+    "yield_kg_ha": null,
+    "yield_moisture_basis": null,
+    "irrigation_system": null,
+    "pests": null,
+    "residue_fate": null,
+    "source": null
+  },
+  "validation_rules": [
+    "Closed non-self-intersecting polygon within supported AOI; compute geodesic area rather than trusting reported area.",
+    "Sowing <= transplant <= harvest when events apply; distinguish planned from observed dates.",
+    "pH 0..14 and laboratory method/depth/date required; total N is not available N.",
+    "Null history means unknown; [] may mean no records only when respondent explicitly confirms this.",
+    "Farm-gate prices require crop, unit, quality, currency, location and date; costs require area/time basis.",
+    "Weights 0..1 and sum to 1 only after user selection; do not assume priorities.",
+    "SoilGrids/GAEZ values must be stored as model-derived layers, never inserted into soil_lab as measured values."
+  ],
+  "fields": [
+    {
+      "path": "farm.farm_id",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "farm id",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.field_id",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "field id",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.geometry_geojson",
+      "type_when_known": "GeoJSON Polygon or MultiPolygon in WGS84 longitude,latitude order",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "geometry geojson",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.representative_longitude",
+      "type_when_known": "number",
+      "units": "decimal degrees WGS84",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "representative longitude",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.representative_latitude",
+      "type_when_known": "number",
+      "units": "decimal degrees WGS84",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "representative latitude",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.area_ha_reported",
+      "type_when_known": "number",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "area ha reported",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.area_ha_geometry",
+      "type_when_known": "number",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "area ha geometry",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.village",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "village",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.district",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "district",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.province",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "province",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.country_code",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "country code",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.boundary_recorded_at",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "boundary recorded at",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.location.boundary_source",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "boundary source",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.crop_id",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "crop id",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.cultivar",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "cultivar",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.seed_source",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "seed source",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.production_system",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "production system",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.sowing_date",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "sowing date",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.transplanting_date",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "transplanting date",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.expected_harvest_date",
+      "type_when_known": "number",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "expected harvest date",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.observed_growth_stage",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "observed growth stage",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.current_crop.stage_observed_at",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "stage observed at",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.rotation_history",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "rotation history",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.system",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "system",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.source",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "source",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.rainfed",
+      "type_when_known": "boolean",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "rainfed",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.availability_window_start",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "availability window start",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.availability_window_end",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "availability window end",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.capacity_m3_day",
+      "type_when_known": "number",
+      "units": "m3/day",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "capacity m3 day",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.allocation_m3_season",
+      "type_when_known": "number",
+      "units": "m3/season",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "allocation m3 season",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.application_efficiency_fraction",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "application efficiency fraction",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.water_cost_idr_m3",
+      "type_when_known": "number",
+      "units": "IDR/m3",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "water cost idr m3",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.drainage_condition",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "drainage condition",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.water_table_depth_m",
+      "type_when_known": "number",
+      "units": "m",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "water table depth m",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.irrigation.flooding_history",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "flooding history",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.sampling_date",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "sampling date",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.laboratory",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "laboratory",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.method",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "method",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.depth_top_cm",
+      "type_when_known": "number",
+      "units": "cm",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "depth top cm",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.depth_bottom_cm",
+      "type_when_known": "number",
+      "units": "cm",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "depth bottom cm",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.ph_h2o",
+      "type_when_known": "number",
+      "units": "pH measured in water (method required)",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "ph h2o",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.organic_carbon_percent",
+      "type_when_known": "number",
+      "units": "percent",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "organic carbon percent",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.total_n_percent",
+      "type_when_known": "number",
+      "units": "percent",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "total n percent",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.available_p_mg_kg",
+      "type_when_known": "number",
+      "units": "mg/kg",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "available p mg kg",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.exchangeable_k_cmolc_kg",
+      "type_when_known": "number",
+      "units": "cmol(+)/kg",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "exchangeable k cmolc kg",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.ec_ds_m",
+      "type_when_known": "number",
+      "units": "dS/m",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "ec ds m",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.texture_class",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "texture class",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.bulk_density_g_cm3",
+      "type_when_known": "number",
+      "units": "g/cm3",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "bulk density g cm3",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.field_capacity_fraction",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "field capacity fraction",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.wilting_point_fraction",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "wilting point fraction",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.rootable_depth_cm",
+      "type_when_known": "number",
+      "units": "cm",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "rootable depth cm",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.soil_lab.report_file",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "report file",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.tillage",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "tillage",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.residue_fate",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "residue fate",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.fertilizer_history",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "fertilizer history",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.organic_amendments",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "organic amendments",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.legume_inoculation",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "legume inoculation",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.nodulation_observations",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "nodulation observations",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.pest_disease_weed_history",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "pest disease weed history",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.management.pesticide_history",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "pesticide history",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.resources.labor_available_days_season",
+      "type_when_known": "number",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "labor available days season",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.resources.machinery_access",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "machinery access",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.resources.seed_access",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "seed access",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.resources.budget_idr_season",
+      "type_when_known": "number",
+      "units": "IDR/season",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "budget idr season",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.buyer_access",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "buyer access",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.crop_preferences",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "crop preferences",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.contract_constraints",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "contract constraints",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.farm_gate_prices",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "farm gate prices",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.expected_marketable_yield_kg_ha",
+      "type_when_known": "number",
+      "units": "kg/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "expected marketable yield kg ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.transport_storage_costs",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "transport storage costs",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.currency",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "currency",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.market.price_observed_at",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "price observed at",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.seed_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "seed idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.fertilizer_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "fertilizer idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.pest_management_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "pest management idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.labor_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "labor idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.machinery_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "machinery idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.irrigation_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "irrigation idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.other_idr_ha",
+      "type_when_known": "number",
+      "units": "IDR/ha",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "other idr ha",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.costs.reference_season",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "reference season",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.water_saving_weight",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "water saving weight",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.net_income_weight",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "net income weight",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.soil_health_weight",
+      "type_when_known": "number",
+      "units": "fraction 0..1",
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "soil health weight",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.risk_tolerance",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "risk tolerance",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.planning_horizon_start",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "planning horizon start",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.planning_horizon_end",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "planning horizon end",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.priorities.excluded_crops",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "excluded crops",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.provenance.respondent_role",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "respondent role",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.provenance.recorded_at",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "recorded at",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.provenance.information_source",
+      "type_when_known": "string_or_documented_array",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "information source",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    },
+    {
+      "path": "farm.provenance.local_extension_reviewed_at",
+      "type_when_known": "date_iso8601",
+      "units": null,
+      "missing_value": null,
+      "zero_meaning": "Known zero only; never use zero for unknown",
+      "meaning": "local extension reviewed at",
+      "source_required": "farmer record / measurement / named local adviser with observation date",
+      "validation": "Nonnegative where a quantity; weights/efficiency/fractions 0..1; date meaning and units must be preserved."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "location": {
+    "example_id": "klaten_cropland_primary"
+  },
+  "input_kind": "scenario_assumption",
+  "assumptions": [
+    "Kalender sintetis untuk demonstrasi historis 2025, bukan riwayat petani.",
+    "Padi ditanam langsung; umur padi 120, jagung 100, kedelai 90 hari sejak semai (hari nol).",
+    "Tanggal mulai 1 Januari dan 1 Juni; jeda persiapan 14 hari merupakan asumsi."
+  ],
+  "slot_inputs": [
+    {
+      "production_method": "direct_seeded",
+      "sowing_date": "2025-01-01"
+    },
+    {
+      "production_method": "direct_seeded",
+      "sowing_date": "2025-06-01"
+    }
+  ],
+  "document": {
+    "planning": {
+      "horizon": {
+        "start_date": "2025-01-01",
+        "end_exclusive": "2026-01-01"
+      },
+      "allowed_crop_ids": [
+        "padi",
+        "jagung",
+        "kedelai"
+      ],
+      "excluded_crop_ids": [],
+      "existing_sequence": [
+        {
+          "crop_id": "padi",
+          "date_status": "scenario_assumption",
+          "establishment_method": "direct_seeded",
+          "sowing_date": "2025-01-01"
+        },
+        {
+          "crop_id": "padi",
+          "date_status": "scenario_assumption",
+          "establishment_method": "direct_seeded",
+          "sowing_date": "2025-06-01"
+        }
+      ],
+      "slot_start_dates": [
+        "2025-01-01",
+        "2025-06-01"
+      ],
+      "locked_prefix_length": 1,
+      "continuation_confirmed": true,
+      "duration_by_crop": [
+        {
+          "crop_id": "padi",
+          "minimum_days": 120,
+          "maximum_days": 120,
+          "basis_event": "sowing",
+          "counting_convention": "elapsed_day_zero",
+          "source_ref": "demo-assumed-duration-padi",
+          "normalization_policy": "no_rounding_needed"
+        },
+        {
+          "crop_id": "jagung",
+          "minimum_days": 100,
+          "maximum_days": 100,
+          "basis_event": "sowing",
+          "counting_convention": "elapsed_day_zero",
+          "source_ref": "demo-assumed-duration-jagung",
+          "normalization_policy": "no_rounding_needed"
+        },
+        {
+          "crop_id": "kedelai",
+          "minimum_days": 90,
+          "maximum_days": 90,
+          "basis_event": "sowing",
+          "counting_convention": "elapsed_day_zero",
+          "source_ref": "demo-assumed-duration-kedelai",
+          "normalization_policy": "no_rounding_needed"
+        }
+      ],
+      "preparation_gap_days": 14,
+      "selected_priorities": []
+    },
+    "context": {
+      "time_mode": "historical_replay"
+    }
+  }
+}

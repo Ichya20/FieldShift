@@ -1,0 +1,98 @@
+{
+  "created_at_utc": "2026-11-08T10:09:37.681076+00:00",
+  "purpose": "Public sample-point history and QA, not verified farm observations or rotation recommendations",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2025-12-31"
+  },
+  "product": "MOD13Q1 ORNL DAAC REST subset; collection version not stated in subset response",
+  "nominal_spatial_resolution_m": 250,
+  "subset_sinusoidal_cellsize_m": 231.656358264,
+  "scale_factor_ndvi_evi": 0.0001,
+  "index_units": "dimensionless",
+  "expected_composites_by_point": {
+    "klaten_cropland_primary": 115,
+    "klaten_cropland_candidate": 115
+  },
+  "points": [
+    {
+      "id": "klaten_cropland_primary",
+      "latitude": -7.721875031299882,
+      "longitude": 110.55354472008753,
+      "sample_role": "primary_demonstration_pixel",
+      "mixed_landcover_pixel": true,
+      "selection_basis": "WorldCover 2021 ranking of 74 complete MODIS grid cells in Klaten sample bbox: 84.469% cropland, 11.727% grassland, 3.803% tree cover, 0% built-up. Derived grid-center coordinate, not GPS field precision or 2026 land-cover confirmation.",
+      "selection_evidence": "data/prepared/soil-terrain/modis-cropland-pixel-candidates.json",
+      "footprint_landcover_evidence": "data/prepared/soil-terrain/modis-primary-footprint-landcover-summary.json",
+      "footprint_cropland_fraction_worldcover2021": 0.8446909667194928,
+      "is_verified_user_farm": false,
+      "spatial_subset": {
+        "xllcorner": "12181417.98",
+        "yllcorner": "-858750.16",
+        "cellsize": 231.656358264,
+        "nrows": 1,
+        "ncols": 1,
+        "latitude": -7.721875031299882,
+        "longitude": 110.55354472008753
+      },
+      "n_composites": 115,
+      "quality_counts": {
+        "excluded": 52,
+        "good_strict": 42,
+        "marginal_review": 21
+      },
+      "pixel_reliability_counts": {
+        "3": 41,
+        "0": 42,
+        "1": 32
+      },
+      "months_with_primary_data": 31,
+      "months_without_primary_data": 29
+    },
+    {
+      "id": "klaten_cropland_candidate",
+      "latitude": -7.7240416666666665,
+      "longitude": 110.546875,
+      "sample_role": "mixed_pixel_comparison",
+      "mixed_landcover_pixel": true,
+      "selection_basis": "WorldCover 2021 center class cropland; actual reported MODIS grid footprint: 69.206% cropland, 19.683% tree cover, 7.619% built-up, 3.492% grassland. Not proof of 2026 land cover or farm boundary.",
+      "selection_evidence": "data/prepared/soil-terrain/landcover-summary.json",
+      "footprint_landcover_evidence": "data/prepared/soil-terrain/modis-footprint-landcover-summary.json",
+      "footprint_cropland_fraction_worldcover2021": 0.692063492063492,
+      "is_verified_user_farm": false,
+      "spatial_subset": {
+        "xllcorner": "12180723.03",
+        "yllcorner": "-858981.78",
+        "cellsize": 231.656358264,
+        "nrows": 1,
+        "ncols": 1,
+        "latitude": -7.7240416666666665,
+        "longitude": 110.546875
+      },
+      "n_composites": 115,
+      "quality_counts": {
+        "excluded": 51,
+        "good_strict": 42,
+        "marginal_review": 22
+      },
+      "pixel_reliability_counts": {
+        "3": 43,
+        "0": 42,
+        "1": 30
+      },
+      "months_with_primary_data": 32,
+      "months_without_primary_data": 28
+    }
+  ],
+  "failed_batches": [],
+  "total_rows": 230,
+  "monthly_rows": 120,
+  "qa_policy": {
+    "name": "Project conservative selection; QA bit definitions from NASA LAADS MOD13Q1 C6.1 filespec",
+    "primary": "reliability=0; MODLAND=0; usefulness<=2; aerosol<=1; all cloud/snow/shadow flags=0; pure-land=1; valid NDVI/EVI/date",
+    "marginal": "reliability in {0,1}; MODLAND<=1; usefulness<=10; aerosol<=2; cloud/snow/shadow flags=0; pure-land=1; valid values, but not primary",
+    "excluded": "All remaining observations; raw values preserved, never used in monthly means",
+    "monthly_assignment": "Selected pixel observation date, not composite interval start; no interpolation",
+    "threshold_note": "Strict usefulness/aerosol thresholds are project choices, not a NASA validated crop recommendation criterion"
+  }
+}

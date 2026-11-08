@@ -1,0 +1,71 @@
+{
+  "download_budget_bytes": 20000000,
+  "downloaded_or_cached_bytes": 8989243,
+  "sources": [
+    {
+      "id": "kementan-anjasmoro-descriptor",
+      "url": "https://applypvt.pertanian.go.id/storage/deskripsi_varietas_yang_sama/DESKRIPSI_VARIETAS_YANG_SAMA_B933907B-97F0-4BE7-AAF5-6AABC732CE2C.pdf",
+      "accessed_at_utc": "2026-11-08T11:09:41.119773+00:00",
+      "path": "data/supplemental/agronomy/sources/kementan-anjasmoro-descriptor.pdf",
+      "status": "cached_snapshot",
+      "final_url": "https://applypvt.pertanian.go.id/storage/deskripsi_varietas_yang_sama/DESKRIPSI_VARIETAS_YANG_SAMA_B933907B-97F0-4BE7-AAF5-6AABC732CE2C.pdf",
+      "bytes": 471439,
+      "sha256": "11ef43a033707b0075da045ee59ba0f2b54ad42fd853ff785c50263ab490caf9",
+      "pages": 2,
+      "text_extraction_path": "data/supplemental/agronomy/sources/kementan-anjasmoro-descriptor-relevant-pages.json"
+    },
+    {
+      "id": "kementan-lakin-2023",
+      "url": "https://ppid.pertanian.go.id/doc/108/LAKIN%202023%20FINAL%20ir.pdf",
+      "accessed_at_utc": "2026-11-08T11:09:41.342245+00:00",
+      "path": "data/supplemental/agronomy/sources/kementan-lakin-2023.pdf",
+      "status": "cached_snapshot",
+      "final_url": "https://ppid.pertanian.go.id/doc/108/LAKIN%202023%20FINAL%20ir.pdf",
+      "bytes": 2568698,
+      "sha256": "9927cc4b60e88aebd5efc39cbf328f51f5665fd97b6a567be49ab12b417f4d9d",
+      "pages": 52,
+      "text_extraction_path": "data/supplemental/agronomy/sources/kementan-lakin-2023-relevant-pages.json"
+    },
+    {
+      "id": "kementan-variety-catalog",
+      "url": "https://tanamanpangan.bsip.pertanian.go.id/storage/assets/uploads/publikasi/c9a6fj01bn2mX7D8LXFss08241GY6qw5J7tPJS2F.pdf",
+      "accessed_at_utc": "2026-11-08T11:09:43.110779+00:00",
+      "path": "data/supplemental/agronomy/sources/kementan-variety-catalog.pdf",
+      "status": "failed",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "id": "kementan-variety-catalog-brmp",
+      "url": "https://tanamanpangan.brmp.pertanian.go.id/storage/assets/uploads/publikasi/c9a6fj01bn2mX7D8LXFss08241GY6qw5J7tPJS2F.pdf",
+      "accessed_at_utc": "2026-11-08T11:09:43.211596+00:00",
+      "path": "data/supplemental/agronomy/sources/kementan-variety-catalog-brmp.pdf",
+      "status": "downloaded",
+      "http_status": 200,
+      "final_url": "https://tanamanpangan.brmp.pertanian.go.id/storage/assets/uploads/publikasi/c9a6fj01bn2mX7D8LXFss08241GY6qw5J7tPJS2F.pdf",
+      "bytes": 5587934,
+      "sha256": "b2857ed963d8f63c539e4aaea386ec503a50693075583f809bfa374d42b60727",
+      "pages": 154,
+      "text_extraction_path": "data/supplemental/agronomy/sources/kementan-variety-catalog-brmp-relevant-pages.json"
+    },
+    {
+      "id": "fao-rice-ecosystems",
+      "url": "https://www.fao.org/4/ai408e/ai408e05.htm",
+      "accessed_at_utc": "2026-11-08T11:09:47.092964+00:00",
+      "path": "data/supplemental/agronomy/sources/fao-rice-ecosystems.html",
+      "status": "cached_snapshot",
+      "final_url": "https://www.fao.org/4/ai408e/ai408e05.htm",
+      "bytes": 299265,
+      "sha256": "79fcfa2ae733ff0b80e81e24cdfb15f7ac6bbecef29bf569392d57301819e108"
+    },
+    {
+      "id": "fao-rice-phase-water-regimes",
+      "url": "https://www.fao.org/4/ac800e/ac800e05.htm",
+      "accessed_at_utc": "2026-11-08T11:09:47.092964+00:00",
+      "path": "data/supplemental/agronomy/sources/fao-rice-phase-water-regimes.html",
+      "status": "cached_snapshot",
+      "final_url": "https://www.fao.org/4/ac800e/ac800e05.htm",
+      "bytes": 61907,
+      "sha256": "bc6b47cde28af0ccb47faa014da2862b48b3dfc9cc93c0fc54bc5d9099021711"
+    }
+  ]
+}
